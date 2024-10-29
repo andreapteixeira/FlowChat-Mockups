@@ -1,0 +1,132 @@
+
+/****** ANDRE - STYLE FOR NEW PIPELINE ******/
+
+#funnel .table-responsive {border-radius: 5px; background-color: #f1f1f3; cursor: grab;}
+
+#funnel table {background-color: #f1f1f3; width: auto;}
+
+#funnel table thead {background:  linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(252,252,252,1) 100%); background-color: #e9e9ec;}
+
+#funnel table thead th {border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; border-left: 1px solid #bbb; height: 50px; padding: 0; background:url(../media/layout/arrow-pipeline-header.png) center right no-repeat transparent;}
+#funnel table thead th:last-child {background: none;}
+#funnel .table th,
+#funnel .table td {width: 200px;}
+
+
+#funnel table thead th .pipeline-stage-name { padding: 1.5rem 0.3rem 0rem 0.5rem; width: 200px;height: 40px;}
+
+#funnel table thead th .pipeline-stage-name h5 {font-size: 0.95rem;}
+
+#funnel table thead th .pipeline-stage-name h5 nobr {display:block; max-width: 160px; float: left;}
+
+#funnel table thead th .pipeline-stage-description {padding: 0; margin-top:-0.2rem; margin-left: 0.2rem; color: #777; float:left; }
+
+#funnel table thead th .pipeline-stage-values {padding: 0rem 0.1rem 0rem 0.5rem; font-size: 0.9rem; font-weight: normal; float: left;}
+
+#funnel table thead th .pipeline-stage-options {padding: 0.5rem 0rem 0.5rem 0rem;float: left;}
+
+#funnel table thead th .pipeline-stage-options .btn.btn-icon {height: 2rem; width: 1.5rem;}
+
+#funnel table thead th .pipeline-stage-add-middle {display: block; margin-left: -6px; height: 79px; padding: 30px 0 0; transition: all 0.2s; width: 10px; float: left; position: sticky;}
+
+#funnel table thead th .pipeline-stage-add-middle i {opacity: 0; transition: all 0.2s;}
+
+#funnel table thead th .pipeline-stage-add-middle:hover {background-color: rgba(255,255,255,0.5);}
+
+#funnel table thead th .pipeline-stage-add-middle:hover i {opacity: 1;}
+
+#funnel table thead th .pipeline-stage-add {margin: 1rem auto;}
+
+
+
+
+#funnel table tbody td {padding: 0.3rem; background-color: #f1f1f3 !important;}
+
+#funnel .funnel-item,
+#funnel .pipeline-card {background-color: #fff; padding: 0; border-color:#ccc !important; cursor: pointer !important;}
+
+#funnel .pipeline-card .card-top-info { height: 18px; padding: 10px 5px 0px 5px; }
+
+#funnel .pipeline-card .card-top-info .priority-flag {font-size: 0.8rem; padding: 0 0.3rem 0 0; border: none; background: transparent;}
+
+#funnel .pipeline-card .card-top-info .pipeline-card-options {padding: 0; float: right; margin-top: -5px;}
+
+#funnel .pipeline-card .card-top-info .pipeline-card-options .btn.btn-icon { height: 2rem;  width: 1.5rem;}
+
+#funnel .pipeline-card .card-top-info a nobr {display:block; max-width: 145px; float: left;}
+
+#funnel .pipeline-card .card-top-info a {transition: all 0.2s;}
+
+#funnel .pipeline-card .card-top-info a:hover {opacity: 0.5;}
+
+#funnel .pipeline-card .pipeline-card-value {padding: 0 20px; height: 20px; clear: both;}
+
+#funnel .pipeline-card .pipeline-card-social {display: block; height: 25px; padding: 0px 18px;}
+
+#funnel .pipeline-card .pipeline-card-social .icon i {transition: all 0.2s;}
+
+#funnel .pipeline-card .pipeline-card-social .icon i:hover {color: #ccc !important;}
+
+#funnel .pipeline-card .pipeline-card-bottom {padding: 3px 5px 3px 15px; overflow: hidden; color: #fff}
+
+#funnel .pipeline-card .pipeline-card-bottom.card-bg-color.none {color: #aaa;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-date {float: left;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes-btn,
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-color {float: right;}
+
+#funnel .pipeline-card .pipeline-card-bottom .icon i {transition: all 0.2s;}
+#funnel .pipeline-card .pipeline-card-bottom .icon i:hover {opacity: 0.5;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes.kt-hidden { display: block !important; height: 0; min-height: 0px; visibility: hidden; padding-top: 0; padding-bottom: 0; margin-top: 0;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes {background: rgba(0, 0, 0, 0.5); font-size: 0.85rem; clear: both; margin: 26px 0px 0px -10px; border-radius: 5px; padding: 3px; min-height: 113px;transition: all 0.2s; line-height: 1,2rem; }
+
+#funnel .pipeline-card .pipeline-card-bottom.card-bg-color.none .pipeline-card-notes{background: transparent; color: #111}
+
+
+
+#funnel table tbody td .pipeline-card-add {
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    opacity: 0.2;
+    transition: all 0.2s;
+}
+
+#funnel table tbody td .pipeline-card-add:hover {
+    opacity: 0.7;
+}
+
+
+.priority-flag.nopriority {color:#cecece !important;}
+.priority-flag.low {color:#8e9194 !important;}
+.priority-flag.normal {color:#00b3f1 !important;}
+.priority-flag.high {color:#ecc40a !important;}
+.priority-flag.urgent{color:#e7546a !important;}
+
+.color-facebook {color:#1877f2 !important;}
+.color-facebook-messenger {color:#1877f2 !important;}
+.color-linkedin {color:#2d8be8 !important;}
+.color-linkedin-chat {color:#2d8be8 !important;}
+.color-instagram {color:#c32aa3 !important;}
+.color-twitter {color:#1da1f2 !important;}
+.color-tiktok {color:#ff0050 !important;}
+
+.card-bg-color.red {background-color:#e7546a}
+.card-bg-color.green {background-color:#71bb5f;}
+.card-bg-color.yellow {background-color:#ecc40a;}
+.card-bg-color.blue {background-color:#00b3f1;}
+.card-bg-color.none {background-color:transparent;}
+
+
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+}

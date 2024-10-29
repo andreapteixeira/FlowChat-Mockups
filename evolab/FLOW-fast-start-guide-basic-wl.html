@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="">
+		<meta charset="utf-8" />
+    <title>FlowChat - White Label Setup Guide</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+    <!--begin::Page Custom Styles(used by this page) -->
+    <link href="assets/css/pages/wizards/wizard-v2.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/fast-start.css" rel="stylesheet" type="text/css">
+    <!--end::Page Custom Styles -->
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <link id="css_style_bundle" href="" rel="stylesheet" type="text/css">
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <link id="css_header_base" href="https://www.flowchat.com/members/assets/css/skins/header/base/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_header_menu" href="https://www.flowchat.com/members/assets/css/skins/header/menu/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_brand" href="assets/css/skins/brand/fc-brand.css?v=1646659109" rel="stylesheet" type="text/css">
+    <link id="css_aside" href="assets/css/skins/aside/fc-aside.css?v=1646665747" rel="stylesheet" type="text/css">
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/assets/media/logos/favicon-16x16.png?v=1641890934">
+	</head>
+
+	<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-brand--minimize"  >
+
+
+<!-- begin:: Header Mobile -->
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
+	<div class="kt-header-mobile__logo">
+		<a href="./">
+      <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v=1641898431" height="30" width="auto" onerror="this.src='assets/media/logos/fc-white.svg';">
+    </a>
+	</div>
+	<div class="kt-header-mobile__toolbar">
+			
+		<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+			
+		<!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+				
+		<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+	</div>
+</div>
+<!-- end:: Header Mobile -->
+<!-- begin:: Root -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <!-- begin:: Page -->
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <!-- begin:: Aside -->
+    <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+    <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+      <!-- begin::Aside Brand -->
+      <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+        <div class="kt-aside__brand-logo">
+          <a href="./">
+            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png"/>
+          </a>
+        </div>
+	
+        <div class="kt-aside__brand-tools">
+          <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+        </div>
+      </div>
+      <!-- end:: Aside Brand -->
+
+      <!-- begin:: Aside Menu -->
+      <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+        <div id="kt_aside_menu"	class="kt-aside-menu" data-ktmenu-vertical="1"	 data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+
+          <ul class="kt-menu__nav ">
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+<li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a><div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>  <ul class="kt-menu__subnav">
+<li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+  </ul>
+</div></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+<li class="kt-menu__section "><h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i></li>
+<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+  <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+    <i class="kt-menu__link-icon flaticon2-cup"></i>
+    <span class="kt-menu__link-text">Product Guide</span>
+    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+  </a>
+  <div class="kt-menu__submenu ">
+    <span class="kt-menu__arrow"></span>
+    <ul class="kt-menu__subnav">
+      <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+        <span class="kt-menu__link">
+          <span class="kt-menu__link-text">Product Guide</span>
+        </span>
+      </li>
+      
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Facebook Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">LinkedIn Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Instagram Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Organizing Pipelines</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Useful Flows</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+      </div>
+      <!-- end:: Aside Menu -->
+      <!-- begin:: Aside Footer -->
+      <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+        <div class="kt-aside__footer-nav">
+          <div class="kt-aside__footer-item">
+            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                        <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Aside Footer -->
+    </div>
+    <!-- end:: Aside -->
+
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+        <!-- begin:: Header Menu -->
+        <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+        <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+
+          <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+            <ul class="kt-menu__nav  "><!-- Remove kt-hidden to show the drop down menus-->
+
+              <!-- begin:: Menu Pipelines -->
+              <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                  <ul class="kt-menu__subnav">
+<li class="kt-menu__item bg-light">
+  <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+</li>
+<div class="dropdown-divider m-0"></div>
+<li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>                  </ul>
+                </div>
+              </li>
+              <!-- end:: Menu Pipelines-->
+
+
+              <!-- begin:: Menu Reports -->
+              <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                <ul class="kt-menu__subnav">
+
+                  <ul class="kt-menu__content">
+
+                    <li class="kt-menu__item ">
+                      <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                      <ul class="kt-menu__inner">
+                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+                </ul>
+              </div></li>
+              <!-- end:: Menu Reports -->
+
+
+              <!-- begin:: Menu Import / Export -->
+              <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                      <div class="kt-menu__subnav">
+                        <ul class="kt-menu__content">
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                             <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                  <ul class="kt-menu__subnav">
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- end:: Import/Export -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- end:: Header Menu -->
+
+        <!-- begin:: Header Topbar -->
+        <div class="kt-header__topbar">
+
+          <!--begin: Leads -->
+          <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Leads -->
+          <!--begin: Pending helpdesk tickets -->
+          <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-help" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Pending helpdesk tickets -->
+          <!--begin: Search -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+              <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+              <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                <form method="get" class="kt-quick-search__form">
+                <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                  <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                  <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                </div>
+                </form>
+                <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <!--end: Search -->
+
+          <!--begin: Notifications -->
+          <div class="kt-header__topbar-item dropdown">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="false" id="EventNotificationClick">
+              <span class="kt-header__topbar-icon">
+                <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+              <form>
+              <div class="kt-head" style="background-image: url(https://www.flowchat.com/members/assets/media/misc/head_bg_sm.jpg)">
+                <h3 class="kt-head__title">User Notifications</h3>
+                <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+              </div>
+              <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+              <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </form>
+            </div>
+          </div>
+          <!--end: Notifications -->
+
+
+          <!--begin: User Bar -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                <!--use "kt-rounded" class for rounded avatar style-->
+            <div class="kt-header__topbar-user kt-rounded-">
+              <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+              <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+              <img id="MemberPictureUserBar" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+              <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+              <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+            <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+              <div class="kt-user-card__wrapper">
+                <div class="kt-user-card__pic">
+                <!--use "kt-rounded" class for rounded avatar style-->
+                  <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                </div>
+                <div class="kt-user-card__details">
+                    <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                    <div class="kt-user-card__position"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="kt-nav kt-margin-b-10">
+              <li class="kt-nav__item">
+                <a href="./my-profile-personal-information" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                  <span class="kt-nav__link-text">My Profile</span>
+                </a>
+              </li>
+              <li class="kt-nav__item">
+                <a href="./my-profile-change-password" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                  <span class="kt-nav__link-text">Change Password</span>
+                </a>
+              </li>
+                            <li class="kt-nav__separator kt-nav__separator--fit"></li>
+
+              <li class="kt-nav__custom kt-space-between">
+                <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end: User Bar -->
+      </div>
+      <!-- end:: Header Topbar -->
+    </div>
+    <!-- end:: Header -->
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+      <!-- begin:: Subheader -->
+      <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+        <div class="kt-container  kt-container--fluid ">
+          <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">White Label Setup Guide</h3>
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+            </div>
+          </div>
+          <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+
+              <span id="SubHeaderButtons"></span>
+
+              <div class="dropdown dropdown-inline" data-placement="top">
+                <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                  <ul class="kt-nav kt-nav--active-bg" role="tablist">
+
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">FB Group</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./flowcharts-edit" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Flowchart</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Friends</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-group" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Group</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Likes</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Lead</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Product</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Podcast</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Task</span>
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Subheader -->          
+
+      <!-- begin:: Content -->
+      <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid">
+        
+        <!-- begin:: Fast Start --> 
+        <div class="kt-portlet">
+          <div class="kt-portlet__body kt-portlet__body--fit">
+            <div class="kt-wizard-v2 row" id="fc_fast_start_wizard" data-ktwizard-state="first">
+              <div class="kt-grid__item kt-wizard-v2__aside col-md-4 d-none d-md-block">
+
+                <!--begin: Form Wizard Nav -->
+                <div class="kt-wizard-v2__nav p-3">
+
+                  <!--doc: Remove "kt-wizard-v2__nav-items--clickable" class and also set 'clickableSteps: false' in the JS init to disable manually clicking step titles -->
+
+                  <div class="kt-heading kt-heading--md mt-0 mb-1">Complete your White Label Setup Guide:</div>
+                  <div class="mb-1"><span class="kt-font-bold ">Progress</span> ( <span id="progress-lesson-completed-count">1</span> of <span id="progress-lesson-total-item-count">12</span> steps)</div>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated active-lesson-progress" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="kt-wizard-v2__nav-items kt-wizard-v2__nav-items--clickable">
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="current">
+                      <span><i class="far fa-grin-stars d-block mt-3" style="font-size: 1.7rem;"></i></span><i class="far fa-grin-stars" style="font-size: 1.7rem;"></i> Welcome to FlowChat!
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="current">
+                      <span>1</span><i class="fa fa-check"></i> Access Your FlowChat Profile
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>2</span><i class="fa fa-check"></i> Enable White Label Mode
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>3</span><i class="fa fa-check"></i> Define Your Product Settings
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>4</span><i class="fa fa-check"></i> Setup Your Own Domain
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="current">
+                      <span>5</span><i class="fa fa-check"></i> Branding Settings
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>6</span><i class="fa fa-check"></i> Support Box Settings
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="current">
+                      <span>7</span><i class="fa fa-check"></i> Stripe Integration Settings
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>8</span><i class="fa fa-check"></i> White Label Automations
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>9</span><i class="fa fa-check"></i> Mailgun Integration Settings
+                    </div>
+                    <div class="kt-wizard-v2__nav-item mb-3" data-ktwizard-type="step" data-ktwizard-state="pending">
+                      <span>10</span><i class="fa fa-check"></i> Access Slack & Support
+                    </div>
+                  </div>
+                </div>
+
+                <!--end: Form Wizard Nav -->
+              </div>
+              <div class="kt-grid__item kt-grid__item--fluid kt-wizard-v2__wrapper col-md-8">
+
+                <!--begin: Form Wizard Form-->
+                <form class="kt-form" id="kt_form" novalidate="novalidate">
+
+                  <!--begin: Form Wizard Step 0-->
+                  <div class="kt-wizard-v2__content text-center" data-ktwizard-type="step-content" data-ktwizard-state="current" >
+                    <div class=" h-100 w-100 d-flex" style="min-height: 350px;">
+                      <div class="w-100 align-self-center">
+                        <h3 class="text-dark font-weight-light mt-2 mb-2">Hello <span class="fc-user-name">André</span>!</h3>
+                        <div class="d-flex justify-content-center mb-4">
+                          <h3 class="text-dark font-weight-light d-block mt-2 mr-3 text-nowrap">Welcome to</h3>
+                          <span class="fc-logo-bg" style="width: 170px">FlowChat</span>
+                        </div>
+                        <img src="assets/media/misc/welcome.png" style="width: 230px;">
+                        <h2 class="text-dark mt-4">Please complete your <b class="kt-font-danger">White Label Setup Guide</b></h2>
+                        <p class="kt-heading kt-heading--thin mt-1">Let's set up your account and get your <b>White Label Platform</b> ready for your clients.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 0-->
+
+                  <!--begin: Form Wizard Step 1-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content" data-ktwizard-state="current">
+                    <div class="pt-5">
+                      <h3 class="mb-3"><b>Set up your FlowChat Profile</b></h3>
+                      <p>Let’s setup your profile. Be sure to <b>enter your paypal email</b> to receive affiliate commissions. Also, enter a new password and save it for the next time you login!</p>
+                      <p><i class="fas fa-exclamation-triangle text-danger mr-2"></i>You received your login details by email. If you didn’t receive our email, please <b>check the spam folder</b> or contact <a class="kt-font-brand kt-font-bold " href="mailto:support@flowchat.com">support@flowchat.com</a></p>
+                      <div class="mb-3">
+                          <a href="/members/my-profile-personal-information" target="_blank" role="button" class="btn btn-info my-2"><i class="fas fa-user-circle"></i> Access Your Personal Information Area</a>
+                      </div>
+                      
+                      <!--- begin:: Video --->
+                      <div class="youtube-container shadow rounded mb-3" style="border: 5px solid #fff; overflow: hidden;">
+                          <iframe src="https://player.vimeo.com/video/789739896?h=52233de1e4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <!--- end:: Video --->
+                              
+                      <!--- begin:: Step by Step Guide --->
+                      <div class="accordion accordion-outline d-none" id="accordion1">
+                        <div class="card">
+                          <div class="card-header mt-2" id="step1heading1">
+                            <div class="card-title" data-toggle="collapse" data-target="#step1Collapse1" aria-expanded="true" aria-controls="step1Collapse1">
+                              <i class="fas fa-play-circle"></i> Watch Video Guide
+                            </div>
+                          </div>
+                          <div id="step1Collapse1" class="card-body-wrapper collapse show" aria-labelledby="heading1" data-parent="#accordion1" style="">
+                            <div class="card-body text-center">
+                              
+                            </div>
+                          </div>
+                          <div class="card-header mt-2" id="step1heading2">
+                            <div class="card-title collapsed" data-toggle="collapse" data-target="#step1Collapse2" aria-expanded="false" aria-controls="step1Collapse2">
+                              <i class="fas fa-file-alt"></i> Read Step by Step Guide
+                            </div>
+                          </div>
+                          <div id="step1Collapse2" class="card-body-wrapper collapse" aria-labelledby="heading2" data-parent="#accordion1" style="">
+                            <div class="card-body text-center">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--- end:: Step by Step Guide --->
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 1-->
+
+
+                  <!--begin: Form Wizard Step 2-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+                      
+                      <h3 class="mb-3"><b>Enable White Label Mode</b></h3>
+                      <p><b>Alright, let's get your FlowChat platform all set up with your own branding</b>, so you can share this amazing tool with your clients. Follow these simple steps:</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Log in to your account and access your account information</b>. You'll find the White Label option by clicking on your name in the top right corner of the page and selecting it from the dropdown menu. If you prefer, you can also just <a class="text-danger " href="/members/white-label" target="_blank"><u>click here</u></a> to open it in another tab.
+                        </p></div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-1.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Enable White Label</b>. Once you've found the White Label option, you'll need to enable it. This will reveal all the settings available for this feature, so you can start customizing your platform to your liking.</p>
+                        </div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-2.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Now it's time to check out all the cool settings available for the White Label feature</b>. Don't forget to mark this lesson as complete and follow us to the next one for more customization options. Let's get started!</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 2-->
+
+
+                  <!--begin: Form Wizard Step 3-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+
+                      <h3 class="mb-3"><b>Define Your Product Settings</b></h3>
+                      <p>Within the <a href="/members/white-label" target="_blank">White Label Settings</a>, you have the ability to personalize your brand by setting your white label product name, sub-domain and defining your contact email, all of which will be visible to your clients.</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Display your own Product Name</b>. To make your brand stand out, you can replace FlowChat's name with your own product name. Just enable the option and type in your name (try to keep it under 15 characters if possible).</p></div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-3.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Sub-domain</b>. You can also use your own custom sub-domain instead of the flowchat.com domain. Type in your sub-domain and then update your DNS by adding a CNAME record pointing to www.flowchat.com. Once that's done, let us know so we can enable your sub-domain on our end. For more details, check out the next lesson.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-4.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Support Email</b>. If you want clients to be able to contact you directly, enter your custom support email in this field. Otherwise, your account email will be used.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-5.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Failed Payment Email</b>. Similarly, you can set a custom failed payment email to receive notifications from the payment platform about any failed renewals. If you don't want to use a custom email, your account email will be used instead.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-6.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Privacy Policy Link</b>. If you have a custom Privacy Policy enter the link in this field. If the field is left blank, our default text for Privacy Policy will be displayed.  </p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-7.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 6</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Terms & Conditions Link</b>. If you have a custom Terms & Conditions enter the link in this field. If the field is left blank, our default text for Terms & Conditions will be displayed.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-8.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 7</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>GoHighLevel Product Name</b>. If you have White Label of GoHighLevel, put in here the product name so it will show this name instead of GoHighLevel on our 3rd Party Integrations page.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-9.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>   
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 8</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Enable Affiliate Area for Affiliates</b>. If you don't want your members to access the Affiliate resource area or share your platform with a personal link for commission, turn on this option.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-10.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 9</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Show Product Guide</b>. If you don't want your members to access the product guide, turn off this option.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-11.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 10</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Show Support Links</b>. If you don't want your members to access the support links and FAQs, turn off this option.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-12.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 11</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. Remember to always save your changes!</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 3-->
+
+
+                  <!--begin: Form Wizard Step 4-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+
+                      <h3 class="mb-3"><b>Setup Your Own Domain</b></h3>
+                      <p>Here's a detailed guide on how to set up your own sub-domain to work with your white-labeled platform.</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Custom Sub-Domain</b>. Create a custom sub-domain. Just type in the name you want to use for your sub-domain in the <a href="/members/white-label" target="_blank">White Label Settings</a>. For example, you can use "app.yourdomain.com".</p></div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-4.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update Your changes</b>. Once you've entered your sub-domain, don't forget to save your changes by clicking the update button at the bottom right.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Access your domain's DNS Manager</b>. Now you need to access your domain control panel, where you can manage the DNS records for your domain. You can do this through your domain registrar account or on your server control panel, depending on how you have your domain configured.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Add a CNAME record</b>. In your domain's DNS Manager, add a CNAME record to your chosen sub-domain and point it to www.flowchat.com. Once you've made this change, make sure to save it.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-dns.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Contact us</b>. After you've updated your sub-domain, please let us know through <a href="https://app.slack.com/client/T7GNW9DPZ/C01QFQAT78Q" target="_blank">Slack</a> or our support email <a href="mailto:support@flowchat.com">support@flowchat.com</a> so we can update it on our end. We'll let you know once your sub-domain is ready to use. And that's it!</p>
+                        </div>
+                      </div>  
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 4-->
+
+
+                  <!--begin: Form Wizard Step 5-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+
+                      <h3 class="mb-3"><b>Branding Settings</b></h3>
+                      <p>You can add your own logo to the FlowChat platform replacing our brand with your own. For that you need to have your logo image available and follow these simple steps:</p>                
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Upload Your Logo</b>. Now, let's upload your logo. A png file with transparent background would work best, and we recommend a size of around 300x90 or higher. Your logo will pop up on the left side panel, the login page, and the subscription page.</p>
+                        </div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-13.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Upload Your Favicon</b>. Time to upload your favicon - this one will show up on the browser tab. Again, a png file with a transparent background will do the trick, and we suggest a size of 128x128 pixels or higher.</p>
+                        </div>
+                      </div>
+
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-14.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Members Area Left Sidebar Color</b>. Choose a background color for the sidebar on your members' area. This will help create a consistent look and feel throughout your site.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-15.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Login Page Background Color</b>. Select a background color for your login page, as well as other pages outside of the members' area, such as the privacy policy, subscription process, and pricing page.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-16.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Pricing Page Text</b>. You can also customize the text on your pricing page to make it more appealing to potential customers. If you don't have anything specific in mind, don't worry - we've got you covered with a default text.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-17.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 6</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. Finally, don't forget to hit the "Update" button to save your changes. That way, your platform and login page will be looking great in no time!</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 5-->
+
+
+                  <!--begin: Form Wizard Step 6-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+                      
+                      <h3 class="mb-3"><b>Support Box Settings</b></h3>
+                      <p>In the <a href="/members/white-label-support-box" target="_blank">Support Box Settings</a>, you can enable a support box that you can use to display some helpful information to your members, or even create a list of upcoming events that they might be interested in.</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Enable Support Box</b>. To get started, you'll need to enable the support box. If you change your mind later, you can always disable it.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-18.jpg" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Support Box Editor. </b>. Once you've enabled it, you can start customizing it using the Support Box Editor. This will give you a preview of what the support box will look like, and you can make changes to the various information areas by hovering over them.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-19.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Support Box main text</b>. One of the most important areas to customize is the Support Box Main Text. Here, you can create a personalized message for your members using rich text, which means you can add links, format the text, or even throw in a few emojis if you like.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Support Box Image</b>. If you really want to make your support box stand out, you can even add an image! Just make sure it's a square image with dimensions of 250 x 250 pixels.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Name and Job Title</b>. And don't forget to add your name and job title in the designated fields. This helps give your members an idea of who they're talking to.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 6</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Brand Logo</b>. After that, you can add a logo to the support box! It's best to use a PNG format with a transparent background, and the most convenient dimensions are 200 x 50 pixels.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 7</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>List items</b>. Last but not least, you can add a list of events to the support box.</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 8</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Event Details</b>. For each event, you can include a title, subtitle, frequency, start date and time, availability, and button text and URL if you want to provide a link (like a zoom call for example).</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-20.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 9</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Support Box Color</b>. To really make it your own, you can select the Support Box Color and choose a background gradient that matches your branding.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-21.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 10</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. Once you're happy with your changes, be sure to update them before leaving the settings page. And if you ever want to revert back to the default colors, you can always reset them.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 6-->
+
+
+                  <!--begin: Form Wizard Step 7-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+
+                      <h3 class="mb-3"><b>Stripe Integration Settings</b></h3>
+                      <p>In this tutorial, we will show you how to integrate Stripe payments into your platform so that your members can manage their payments and billing. The process involves several steps, which we will explain below.</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Allow Clients to Update the Billing Info and Payment Methods</b>. If you want your members to manage their payments, turn on this option and configure a Stripe Account (see the lesson on that).</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-22.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Enable Stripe Integration</b>. To enable Stripe integration, you need to go to your platform's settings and select the option to enable this feature. Enabling Stripe integration means that your members can manage their billing through Stripe.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-23.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Fill in your Stripe Keys and web hook</b>. To complete the integration, you need to fill in your Stripe Keys and webhook information. You can obtain this information from your Stripe account by visiting the following links:</p>
+                      <ul>
+                        <li>Live API Keys: <a href="https://dashboard.stripe.com/apikeys" target="_blank">https://dashboard.stripe.com/apikeys</a></li>
+                        <li>Live Webhooks: <a href="https://dashboard.stripe.com/webhooks" target="_blank">https://dashboard.stripe.com/webhooks</a></li>
+                        <li>Test API Keys: <a href="https://dashboard.stripe.com/test/apikey" target="_blank">https://dashboard.stripe.com/test/apikeys</a></li>
+                        <li>Test Webhooks: <a href="https://dashboard.stripe.com/test/webhooks" target="_blank">https://dashboard.stripe.com/test/webhooks</a></li>
+                      </ul>
+                      <p>Note that you can include the test credentials for testing purposes only.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-24.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Choose the product/plan</b>. After enabling Stripe integration and filling in your Stripe Keys and webhook information, you need to choose a product or plan that you have created in Stripe. This will associate the product or plan with your white label product and charge your members accordingly.</p>
+                         <p>Only plans with a monthly interval are valid as offered plans to sub-accounts. You can add products and plans to your Stripe account at <a href="https://dashboard.stripe.com/products?active=true" target="_blank">https://dashboard.stripe.com/products?active=true</a>.
+                      </p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-25.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. Once you have completed the above steps, don't forget to hit the "Update" button to save your changes.</p>
+                        </div>
+                      </div>
+
+                      <p class="mt-5">In conclusion, integrating Stripe payments with your platform is a straightforward process that can greatly benefit your members by allowing them to manage their billing easily. By following the steps outlined in this tutorial, you can successfully integrate Stripe payments into your platform.</p>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 7-->
+
+
+                  <!--begin: Form Wizard Step 8-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+                      <h3 class="mb-3"><b>White Label Automations</b></h3>
+                      <p>If you are setting up a White Label platform, you can easily add products and pipelines to your new members by accessing the <a href="/members/white-label-automations" target="_blank">Automations tab</a>. Here's how:</p>
+                      
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Add Products to New Members</b>. In the "Add Products to New Members" dropdown menu, choose the products you want to include in your members' sub-accounts. You can add as many products as you need.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-26.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                                <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Add Pipelines to New Members</b>. In the "Add Pipelines to New Members" dropdown menu, select the pipelines to be added to your members' sub-accounts. You can add as many pipelines as required. The pipelines and any assigned message templates will be available in your members' sub-accounts.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-27.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>             
+                      
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. After completing the above steps, remember to hit the "Update" button to save your changes.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 8-->
+
+
+                  <!--begin: Form Wizard Step 9-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+                      <h3 class="mb-3"><b>Mailgun Integration Settings</b></h3>
+                      <p>Next, we will establish the method for sending email messages to your members. To achieve this, you will need to integrate a 3rd party service, Mailgun. This service will enable you to send bulk messages using your own domain.</p>
+                      <p><i class="fas fa-exclamation-triangle text-danger mr-2"></i>If you haven't done so already, please <a href="https://www.mailgun.com/" traget="_blank">create an account with Mailgun.</a></p>
+                      
+                      
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Access 3rd Party Integrations</b>. To access the 3rd party integration settings, click on your name located at the top right corner of the screen. From the dropdown menu, select "3rd Party Integrations". Alternatively, you can <a href="my-profile-integrations" target="_blank">click here</a> to open the settings in another tab.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-27.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>    
+                      
+                      
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Enable Mailgun Integration</b>. Enable the integration with Mailgun so you can send email messages with your own custom domain.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-28.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+                      
+                      
+                      
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Paste Your Mailgun API Key</b>. Locate the Mailgun API Key field and paste your API key from Mailgun. After that, click “Connect”. You can find your API Key here: <a href="https://app.mailgun.com/app/account/security/api_keys" target="_blank">https://app.mailgun.com/app/account/security/api_keys</a></p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-29.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+                      
+                      
+                      
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 4</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Select a Domain Name</b>. Choose the domain from which you want to send your email messages. You will see a dropdown list of the domains you have set up in Mailgun.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-30.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>  
+                      
+                      
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 5</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Update your changes</b>. Save your changes to ensure that your settings are updated. Don’t forget to do this before moving on to the next step.</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 9-->
+
+
+                  <!--begin: Form Wizard Step 10-->
+                  <div class="kt-wizard-v2__content" data-ktwizard-type="step-content">
+                    <div class="pt-5">
+                      
+                      <h3 class="mb-3"><b>Access Slack & Support</b></h3>
+                      <p>After completing all the previous lessons, you need to contact us to enable your White Label account from our end. We use Slack to provide support and keep in touch with you throughout the process. All major questions, answers, updates, and information are shared through this platform.</p>
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 1</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Open FlowChat Channel on Slack</b>. You received an invitation to FlowChat's Slack channel, by clicking on it you will open the Slack page and you should click "Continue With Email" and type your email address and your full name.</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-slack-1.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>   
+
+                      <div class="d-flex align-items-start">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Fill the verification code</b>. After entering your email and name, a verification code will be sent to your email, so please go to your mailbox and copy that code to the page. After that you should have access to the FlowChat channel and your own private channel! Yeah!</p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-slack-2.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>   
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 2</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>Tag Bruno in Your Private Channel</b>. Now that you have access to your private channel, you should tag Bruno by using the "@Bruno Domingues" mention. This will notify Bruno that you need your white label domain to be enabled, and he will take care of it from there.
+                      </p></div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/white-label-guide-settings-26.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>                  
+
+                      <div class="d-flex align-items-start mt-5">
+                        <span class="badge badge-pill badge-primary mr-2">Step 3</span>
+                        <div class="d-flex flex-column flex-grow-1 mr-2">
+                          <p><b>White Label Browser Extension</b>. To obtain your own extension through the White Label Plan, mention that in your private channel. We will then work on preparing and deploying your extension on the Chrome extension platform.</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto" style="max-width:600px">
+                        <div class="youtube-container shadow rounded mb-3 mx-auto" style="border: 5px solid #fff; overflow: hidden;">
+                          <img width="100%" height="auto" src="https://flowchat.andreteixeira.site/evolab/assets/media/wizards/extension-install-4.jpg" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="">
+                        </div>
+                      </div>
+
+                      <p class="mt-5">In conclusion, enabling your White Label account is a simple process that requires you to contact us through Slack. By following the steps outlined in this tutorial, you can successfully get in touch with Bruno and have your white label domain enabled and your extension deployed.</p>
+
+                    </div>
+                  </div>
+                  <!--end: Form Wizard Step 10-->
+
+                  
+                  <!--begin: Form Actions -->
+                  <div class="kt-form__actions">
+                    <div class="btn btn-outline-success btn-md btn-tall btn-wide btn-bold btn-upper" data-ktwizard-type="action-prev">
+                      Previous
+                    </div>
+                    <div id="checkbox-completed" class="pt-3">
+                      <label class="kt-checkbox kt-checkbox--bold kt-checkbox--brand kt-font-bold">
+                          <input type="checkbox"> Mark as Completed
+                          <span></span>
+                      </label>
+                    </div>
+                    <div id="fast-start-wizard-finish" class="btn btn-success btn-md btn-tall btn-wide btn-bold btn-upper" data-ktwizard-type="action-submit">
+                      Finish
+                    </div>
+                    <div class="btn btn-success btn-md btn-tall btn-wide btn-bold btn-upper" data-ktwizard-type="action-next">
+                      Next Step
+                    </div>
+                  </div>
+
+                  <!--end: Form Actions -->
+                </form>
+
+                <!--end: Form Wizard Form-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end:: Fast Start --> 
+
+      </div>
+      <!-- end:: Content --> 
+
+    </div>
+	</div>
+	<!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+
+     
+<!-- begin:: Scrolltop -->
+<div id="kt_scrolltop" class="kt-scrolltop">
+	<i class="la la-arrow-up"></i>
+</div>
+<!-- end:: Scrolltop -->
+					
+										
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#5d78ff",
+						"metal": "#c4c5d6",
+						"light": "#ffffff",
+						"accent": "#00c5dc",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995",
+						"focus": "#9816f4"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="https://www.flowchat.com/members/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="https://www.flowchat.com/members/assets/js/scripts.bundle.js" type="text/javascript"></script>
+		<script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Scripts(used by this page) -->
+    <script type="text/javascript">
+      // Class definition
+      var FCWizardFastStart = function () {
+          // Base elements
+          var wizardEl;
+          var formEl;
+          var validator;
+          var wizard;
+
+          // Private functions
+          var initWizard = function () {
+              // Initialize form wizard
+              wizard = new KTWizard('fc_fast_start_wizard', {
+                  startStep: 1,
+                  clickableSteps: true //Enable/disable manually clicking step titles
+              });
+
+              // Change event
+              wizard.on('change', function(wizard) {
+                  KTUtil.scrollTop();
+                  $( "#checkbox-completed input" ).prop( "checked", false );
+              });
+          }
+
+          var initSubmit = function() {
+
+            $( "#fast-start-wizard-finish" ).click(function() {
+                swal.fire({
+                    "title": "Thank you for completing the Fast Start Guide!",
+                    "text": "Take a peek at your brand new tool!",
+                    "type": "success",
+                    "confirmButtonText": 'Go to the Dashboard',
+                    "confirmButtonClass": "btn btn-brand"
+                }).then((result) => {
+                    window.open("FLOW-fast-start-guide-dashboard-3.html","_self")
+                });
+              });
+          }
+
+          return {
+              // public functions
+              init: function() {
+                  wizardEl = KTUtil.get('fc_fast_start_wizard');
+                  formEl = $('#kt_form');
+                  initWizard();
+                  initSubmit();
+              }
+          };
+      }();
+
+      function updateFacebookOption() {
+        let isFacebook = $('#facebookOption input[name="isFacebook"]:checked').val();
+
+        if (isFacebook =="true") {
+          $('#step6FacebookInfo').removeClass('d-none');
+          $('#step6NoFacebookInfo').addClass('d-none');
+          $('#fast-start-mark-complete').prop('checked', false);
+
+        } else if (isFacebook =="false") {
+          $('#step6FacebookInfo').addClass('d-none');
+          $('#step6NoFacebookInfo').removeClass('d-none');
+          $('#fast-start-mark-complete').prop('checked', true);
+        }
+      }
+
+      jQuery(document).ready(function() {
+          FCWizardFastStart.init();
+      });
+
+
+    </script>
+
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
+</html>

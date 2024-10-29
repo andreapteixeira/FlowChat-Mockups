@@ -1,0 +1,26 @@
+/**** CSS KPI DASHBOARD  ****/
+ 
+
+
+.kpi-portlet {line-height: 1;}
+.kpi-portlet small {font-size: 1rem !important;}
+.kpi-portlet i {font-size: 2.5rem;}
+
+.kpi-portlet i.fa-angry {color: #dd1b25}
+.kpi-portlet i.fa-frown {color: #fa9315}
+.kpi-portlet i.fa-meh {color: #fbb300}
+.kpi-portlet i.fa-smile {color: #91c200}
+.kpi-portlet i.fa-grin-stars {color: #37a300}
+
+
+.kpi-portlet .survey-bg-0 {background-color:#dd1b25 !important;}
+.kpi-portlet .survey-bg-1 {background-color:#ec2935 !important;}
+.kpi-portlet .survey-bg-2 {background-color:#f74a32 !important;}
+.kpi-portlet .survey-bg-3 {background-color:#f86e26 !important;}
+.kpi-portlet .survey-bg-4 {background-color:#fa9315 !important;}
+.kpi-portlet .survey-bg-5 {background-color:#fbb300 !important;}
+.kpi-portlet .survey-bg-6 {background-color:#dbb800 !important;}
+.kpi-portlet .survey-bg-7 {background-color:#b5bf00 !important;}
+.kpi-portlet .survey-bg-8 {background-color:#91c200 !important;}
+.kpi-portlet .survey-bg-9 {background-color:#6fc200 !important;}
+.kpi-portlet .survey-bg-10 {background-color:#37a300 !important;}

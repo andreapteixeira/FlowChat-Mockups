@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- begin::Head -->
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>FlowChat LAB</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <!--<link href="https://www.flowchat.com/members/assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">-->
+    <link id="css_style_bundle" href="" rel="stylesheet" type="text/css">
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <link id="css_header_base" href="https://www.flowchat.com/members/assets/css/skins/header/base/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_header_menu" href="https://www.flowchat.com/members/assets/css/skins/header/menu/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_brand" href="assets/css/skins/brand/fc-brand.css?v=1646659109" rel="stylesheet" type="text/css">
+    <link id="css_aside" href="assets/css/skins/aside/fc-aside.css?v=1646665747" rel="stylesheet" type="text/css">
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/assets/media/logos/favicon-16x16.png?v=1641890934">
+</head>
+<!-- end::Head -->
+<!-- begin::Body -->
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading kt-brand--minimize kt-aside--minimize">
+    <!-- begin:: Header Mobile -->
+    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+        <div class="kt-header-mobile__logo">
+            <a href="./">
+                <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v=1641898431" height="30" width="auto" onerror="this.src='assets/media/logos/fc-white.svg';">
+            </a>
+        </div>
+        <div class="kt-header-mobile__toolbar">
+            <button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+            <!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        </div>
+    </div>
+    <!-- end:: Header Mobile -->
+    <!-- begin:: Root -->
+    <div class="kt-grid kt-grid--hor kt-grid--root">
+        <!-- begin:: Page -->
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+            <!-- begin:: Aside -->
+            <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+                <!-- begin::Aside Brand -->
+                <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+                    <div class="kt-aside__brand-logo">
+                        <a href="./">
+                            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png" />
+                        </a>
+                    </div>
+                    <div class="kt-aside__brand-tools">
+                        <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+                    </div>
+                </div>
+                <!-- end:: Aside Brand -->
+                <!-- begin:: Aside Menu -->
+                <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+                    <div id="kt_aside_menu" class="kt-aside-menu" data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+                        <ul class="kt-menu__nav ">
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+                            <li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                <div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Product Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="kt-menu__submenu ">
+                                    <span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+                                            <span class="kt-menu__link">
+                                                <span class="kt-menu__link-text">Product Guide</span>
+                                            </span>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Facebook Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">LinkedIn Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Instagram Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Organizing Pipelines</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Useful Flows</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end:: Aside Menu -->
+                <!-- begin:: Aside Footer -->
+                <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+                    <div class="kt-aside__footer-nav">
+                        <div class="kt-aside__footer-item">
+                            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+                            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                            <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end:: Aside Footer -->
+            </div>
+            <!-- end:: Aside -->
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+                <!-- begin:: Header -->
+                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+                    <!-- begin:: Header Menu -->
+                    <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+                    <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+                        <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+                            <ul class="kt-menu__nav  ">
+                                <!-- Remove kt-hidden to show the drop down menus-->
+                                <!-- begin:: Menu Pipelines -->
+                                <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item bg-light">
+                                                <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Pipelines-->
+                                <!-- begin:: Menu Reports -->
+                                <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                                    <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                                        <ul class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Reports -->
+                                <!-- begin:: Menu Import / Export -->
+                                <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                                        <div class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Import/Export -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end:: Header Menu -->
+                    <!-- begin:: Header Topbar -->
+                    <div class="kt-header__topbar">
+                        <!--begin: Leads -->
+                        <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Leads -->
+                        <!--begin: Pending helpdesk tickets -->
+                        <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-help" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Pending helpdesk tickets -->
+                        <!--begin: Search -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+                                <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+                                <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                                    <form method="get" class="kt-quick-search__form">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                                            <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                                            <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                                        </div>
+                                    </form>
+                                    <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Search -->
+                        <!--begin: Notifications -->
+                        <div class="kt-header__topbar-item dropdown">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+                                <span class="kt-header__topbar-icon">
+                                    <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+                                </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+                                <form>
+                                    <div class="kt-head" style="background-image: url(https://www.flowchat.com/members/assets/media/misc/head_bg_sm.jpg)">
+                                        <h3 class="kt-head__title">User Notifications</h3>
+                                        <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+                                    </div>
+                                    <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--end: Notifications -->
+                        <!--begin: User Bar -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--user">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                                <!--use "kt-rounded" class for rounded avatar style-->
+                                <div class="kt-header__topbar-user kt-rounded-">
+                                    <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+                                    <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+                                    <img id="MemberPictureUserBar" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                    <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                    <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+                                <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                                    <div class="kt-user-card__wrapper">
+                                        <div class="kt-user-card__pic">
+                                            <!--use "kt-rounded" class for rounded avatar style-->
+                                            <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                        </div>
+                                        <div class="kt-user-card__details">
+                                            <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                                            <div class="kt-user-card__position"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="kt-nav kt-margin-b-10">
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-personal-information" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                                            <span class="kt-nav__link-text">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-change-password" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                                            <span class="kt-nav__link-text">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__separator kt-nav__separator--fit"></li>
+                                    <li class="kt-nav__custom kt-space-between">
+                                        <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end: User Bar -->
+                    </div>
+                    <!-- end:: Header Topbar -->
+                </div>
+                <!-- end:: Header -->
+                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+                    <!-- begin:: Subheader -->
+                    <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+                        <div class="kt-container  kt-container--fluid ">
+                            <div class="kt-subheader__main">
+                                <h3 class="kt-subheader__title">My Profile - Subscription</h3>
+                                <span class="kt-subheader__separator kt-hidden"></span>
+                                <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+                                </div>
+                            </div>
+                            <div class="kt-subheader__toolbar">
+                                <div class="kt-subheader__wrapper">
+                                    <span id="SubHeaderButtons"></span>
+                                    <div class="dropdown dropdown-inline" data-placement="top">
+                                        <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                                            <ul class="kt-nav kt-nav--active-bg" role="tablist">
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">FB Group</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./flowcharts-edit" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Flowchart</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Friends</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-group" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Group</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Likes</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Lead</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Product</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Podcast</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Task</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:: Subheader -->
+                    <!-- begin:: Content -->
+                    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid" id="page-content">
+                        <!--Begin::App-->
+                        <div class="kt-grid kt-grid--desktop kt-grid--ver kt-grid--ver-desktop kt-app">
+                            <!--Begin:: App Aside Mobile Toggle-->
+                            <button class="kt-app__aside-close" id="kt_profile_aside_close">
+                                <i class="la la-close"></i>
+                            </button>
+                            <!--End:: App Aside Mobile Toggle-->
+                            <!--Begin:: App Aside-->
+                            <div class="kt-grid__item kt-app__toggle kt-app__aside kt-app__aside--sm kt-app__aside--fit" id="kt_profile_aside">
+                                <!--Begin:: Portlet-->
+                                <div class="kt-portlet">
+                                    <div class="kt-portlet__body">
+                                        <div class="kt-widget kt-widget--general-1">
+                                            <div class="kt-media kt-media--brand kt-media--md kt-media--circle">
+                                                <img id="MemberPictureAppAside" src="https://25412480912591194df8-0169dac72ee4fc1cf23cfd1ba8f0a79a.ssl.cf1.rackcdn.com/test/users/2.jpg?v=20230908145931" alt="Profile picture" onerror="this.src='assets/media/users/default.jpg';">
+                                            </div>
+                                            <div class="kt-widget__wrapper">
+                                                <div class="kt-widget__label">
+                                                    <a href="#" class="kt-widget__title">Test André</a>
+                                                    <span class="kt-widget__desc">UI / UX Designer, FlowChat</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kt-portlet__separator"></div>
+                                    <div class="kt-portlet__body">
+                                        <ul class="kt-nav kt-nav--bolder kt-nav--fit-ver kt-nav--v4" role="tablist">
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-personal-information" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+                                                    <span class="kt-nav__link-text">Personal Information</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-team" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="flaticon-users-1"></i></span>
+                                                    <span class="kt-nav__link-text">Team</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-change-password" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="flaticon2-settings"></i></span>
+                                                    <span class="kt-nav__link-text">Change Password</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-integrations" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="flaticon2-reload"></i></span>
+                                                    <span class="kt-nav__link-text">3rd Party Integrations</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item  active">
+                                                <a class="kt-nav__link  active" href="./my-profile-subscription" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="fa fa-redo"></i></span>
+                                                    <span class="kt-nav__link-text">Subscription</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-reports" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="fas fa-chart-bar"></i></span>
+                                                    <span class="kt-nav__link-text">Email Reports</span>
+                                                </a>
+                                            </li>
+                                            <li class="kt-nav__item ">
+                                                <a class="kt-nav__link " href="./my-profile-notifications" role="tab">
+                                                    <span class="kt-nav__link-icon"><i class="flaticon2-notification"></i></span>
+                                                    <span class="kt-nav__link-text">Notifications</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--End:: Portlet-->
+                            </div>
+                            <!--End:: App Aside-->
+                            <!--Begin:: App Content-->
+                            <div class="kt-grid__item kt-grid__item--fluid kt-app__content">
+                                <div class="kt-portlet ">
+                                    <div class="kt-portlet__head">
+                                        <div class="kt-portlet__head-label">
+                                            <h3 class="kt-portlet__head-title">Subscription</h3>
+                                        </div>
+                                        <div class="kt-portlet__head-toolbar">
+                                            <a href="https://billing.stripe.com/p/session/test_YWNjdF8xSVdxNUpCUjRXVjZNdzgxLF9PYlBYWGhSVGVGSWN6bFJWY05ISHl6TEdiNkwxUTFw0100rCAH0a6U" target="_blank" class="btn btn-info">Manage Billing</a>
+                                        </div>
+                                    </div>
+                                    <div class="kt-portlet__body">
+                                        <div class="kt-section kt-section--first" id="subscription-info-div">
+                                            <!--subscription-details-div -->
+                                            <div class="kt-section__body py-4">
+                                                <div class="row">
+                                                    <div class="col-xl-6 py-0">
+                                                        <div class="form-group row">
+                                                            <label class="col-lg-4 col-form-label kt-font-bold py-0">Current Plan:</label>
+                                                            <div class="col-lg-8 col-xl-6 py-0">
+                                                                <span id="fc-plan"><span class="kt-font-bold kt-font-focus">White Label Plan</span> </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-lg-4 col-form-label kt-font-bold py-0">Status:</label>
+                                                            <div class="col-lg-8 py-0 col-lg-8 py-0 mt-n2 mb-n2">
+                                                                <span id="fc-subscription-status" class="btn btn-sm btn-label-success mb-1"><b>Active</b></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-lg-4 col-form-label kt-font-bold py-0">Signed Up Since:</label>
+                                                            <div id="fc-renewal-date" class="col-lg-8 py-0 fc-renewal-date">13 August 2023</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6 py-0">
+                                                        <div class="form-group row">
+                                                            <label class="col-lg-4 col-form-label kt-font-bold py-0">Renewal Date:</label>
+                                                            <div id="fc-renewal-date" class="col-lg-8 py-0 fc-renewal-date">13 September 2023 for $997.00 /month</div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-lg-4 col-form-label kt-font-bold py-0">Price:</label>
+                                                            <div id="fc-subscription-price" class="col-lg-8 py-0">
+                                                                $997.00 /month </div>
+                                                        </div>
+                                                        <div class="mt-n2 mb-n2">
+                                                            <button type="button" class="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#changeSubscriptionModal">Change Plan</button>
+                                                            <button type="button" class="btn btn-danger btn-sm mr-2 fc-cancel-link" data-toggle="modal" data-target="#cancelSubscriptionModal1">Cancel Subscription</button>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="kt-portlet border-top shadow-none p-0 m-0 mt-3">
+                                                    <div class="kt-portlet__head border-0 p-0">
+                                                        <div class="kt-portlet__head-label">
+                                                            <h3 class="kt-portlet__head-title" style="font-size:">
+                                                                Other Subscriptions:
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="kt-portlet__body p-0">
+                                                        <div class="kt-portlet__content">
+                                                            <div class="kt-scroll" data-scroll="true" data-scroll-x="true" style="overflow: auto;">
+                                                            <table id="addOn-table" class="table table-bordered table-striped" style="min-width: 600px;">
+                                                                <tbody>
+                                                                    <tr id="addOn-row-sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                        <!--<td>sub_1NfLImBR4WV6Mw81NUXGq8pE</td>-->
+                                                                        <td class="kt-font-bold align-middle">Prospecting Services</td>
+                                                                        <td class="add-on-status align-middle" style="width:170px"><span class="btn btn-bold btn-sm btn-font-sm  btn-label-success mb-1">Active</span></td>
+                                                                        <td class="align-middle text-right" style="width:150px">$1,500 /month</td>
+                                                                        <td class="add-on-action align-middle text-center"  style="width:100px">
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="popover" data-trigger="hover focus" data-html="true" data-placement="left" data-content="<b>Billing:</b> <span class='text-capitalize'>monthly</span><br><b>Renewal:</b> <span class='text-capitalize'>October 11, 2023</span><br><b>Item Quantity:</b> <span class='text-capitalize'>1</span><br><b>Unit Price:</b> <span class='text-capitalize'>$1,500</span><br><b>Started:</b> <span class='text-capitalize'>August 15, 2023</span>">
+                                                                                <i class="fas fa-info-circle"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="modal" data-target="#ReActivateAddOnSubscriptionModal" data-subscription-id="sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                                <i class="fas fa-times" data-toggle="kt-tooltip" title="" data-original-title="Cancel Subscription"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="addOn-row-sub_1Nf21UBR4WV6Mw81gszM0Sxz">
+                                                                        <!--<td>sub_1Nf21UBR4WV6Mw81gszM0Sxz</td>-->
+                                                                        <td class="kt-font-bold align-middle">Increase Limit of Team Members by 1</td>
+                                                                        <td class="add-on-status align-middle" style="width:170px"><span class="btn btn-bold btn-sm btn-font-sm  btn-label-success mb-1">Active</span></td>
+                                                                        <td class="align-middle text-right" style="width:150px">$50 /month</td>
+                                                                        <td class="add-on-action align-middle text-center" style="width:90px">
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="popover" data-trigger="hover focus" data-html="true" data-placement="left" data-content="<b>Billing:</b> <span class='text-capitalize'>monthly</span><br><b>Renewal:</b> <span class='text-capitalize'>October 11, 2023</span><br><b>Item Quantity:</b> <span class='text-capitalize'>1</span><br><b>Unit Price:</b> <span class='text-capitalize'>$1,500</span><br><b>Started:</b> <span class='text-capitalize'>August 15, 2023</span>">
+                                                                                <i class="fas fa-info-circle"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="modal" data-target="#ReActivateAddOnSubscriptionModal" data-subscription-id="sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                                <i class="fas fa-times" data-toggle="kt-tooltip" title="" data-original-title="Cancel Subscription"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="addOn-row-sub_1Nf211BR4WV6Mw81I6SrRJuV">
+                                                                        <!--<td>sub_1Nf211BR4WV6Mw81I6SrRJuV</td>-->
+                                                                        <td class="kt-font-bold align-middle">Increase Limit of Team Members by 1</td>
+                                                                        <td class="add-on-status align-middle" style="width:170px"><span class="btn btn-bold btn-sm btn-font-sm  btn-label-warning mb-1">Pending Cancellation</span></td>
+                                                                        <td class="align-middle text-right" style="width:150px">$50 /month</td>
+                                                                        <td class="add-on-action align-middle text-center" style="width:90px">
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="popover" data-trigger="hover focus" data-html="true" data-placement="left" data-content="<b>Billing:</b> <span class='text-capitalize'>monthly</span><br><b>Renewal:</b> <span class='text-capitalize'>Cancellation after September 15, 2023</span><br><b>Item Quantity:</b> <span class='text-capitalize'>1</span><br><b>Unit Price:</b> <span class='text-capitalize'>$1,500</span><br><b>Started:</b> <span class='text-capitalize'>August 15, 2023</span>">
+                                                                                <i class="fas fa-info-circle"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="modal" data-target="#ReActivateAddOnSubscriptionModal" data-subscription-id="sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                                <i class="fas fa-history" data-toggle="kt-tooltip" title="" data-original-title="Resume Subscription"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="addOn-row-sub_1NdycEBR4WV6Mw813NROZmb0">
+                                                                        <!--<td>sub_1NdycEBR4WV6Mw813NROZmb0</td>-->
+                                                                        <td class="kt-font-bold align-middle">Prospecting Services</td>
+                                                                        <td class="add-on-status align-middle" style="width:170px"><span class="btn btn-bold btn-sm btn-font-sm  btn-label-warning mb-1">Pending Cancellation</span></td>
+                                                                        <td class="align-middle text-right" style="width:150px">$1,500 /month</td>
+                                                                        <td class="add-on-action align-middle text-center" style="width:90px">
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="popover" data-trigger="hover focus" data-html="true" data-placement="left" data-content="<b>Billing:</b> <span class='text-capitalize'>monthly</span><br><b>Renewal:</b> <span class='text-capitalize'>Cancellation after September 15, 2023</span><br><b>Item Quantity:</b> <span class='text-capitalize'>1</span><br><b>Unit Price:</b> <span class='text-capitalize'>$1,500</span><br><b>Started:</b> <span class='text-capitalize'>August 15, 2023</span>">
+                                                                                <i class="fas fa-info-circle"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="modal" data-target="#ReActivateAddOnSubscriptionModal" data-subscription-id="sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                                <i class="fas fa-history" data-toggle="kt-tooltip" title="" data-original-title="Resume Subscription"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr id="addOn-row-sub_1NdxnZBR4WV6Mw81jSZpuqMK">
+                                                                        <!--<td>sub_1NdxnZBR4WV6Mw81jSZpuqMK</td>-->
+                                                                        <td class="kt-font-bold align-middle">Increase Limit of Pipelines by 10</td>
+                                                                        <td class="add-on-status align-middle" style="width:170px"><span class="btn btn-bold btn-sm btn-font-sm  btn-label-success mb-1">Active</span></td>
+                                                                        <td class="align-middle text-right" style="width:150px">$100 /month</td>
+                                                                        <td class="add-on-action align-middle text-center" style="width:90px">
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="popover" data-trigger="hover focus" data-html="true" data-placement="left" data-content="<b>Billing:</b> <span class='text-capitalize'>monthly</span><br><b>Renewal:</b> <span class='text-capitalize'>October 11, 2023</span><br><b>Item Quantity:</b> <span class='text-capitalize'>1</span><br><b>Unit Price:</b> <span class='text-capitalize'>$1,500</span><br><b>Started:</b> <span class='text-capitalize'>August 15, 2023</span>">
+                                                                                <i class="fas fa-info-circle"></i>
+                                                                            </a>
+                                                                            <a class="btn btn-sm btn-clean btn-icon btn-icon-sm" href="javascript:;" data-toggle="modal" data-target="#ReActivateAddOnSubscriptionModal" data-subscription-id="sub_1NfLImBR4WV6Mw81NUXGq8pE">
+                                                                                <i class="fas fa-times" data-toggle="kt-tooltip" title="" data-original-title="Cancel Subscription"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--subscription-details-div: end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End:: App Content-->
+                        </div>
+                        <!--End::App-->
+                        <!--cancel SubscriptionModal 1: start -->
+                        <div class="modal fade" id="cancelSubscriptionModal1" tabindex="-1" role="dialog" aria-labelledby="cancelSubscription1lLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cancel Subscription <small>Step 1 of 2</small></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="kt-font-bold mb-0">We are sorry to see you go... <i class="fas fa-frown mr-2 kt-heading kt-heading--md my-0"></i> Are you sure?</p>
+                                        <p>If you continue, your subscription will be canceled on <span class="fc-renewal-date">Sep 13, 2023</span>.</p>
+                                        <div class="card mb-3">
+                                            <div class="card-body kt-shape-bg-color-1">
+                                                <p class="kt-font-bold mb-2"><i class="fas fa-exclamation-triangle mr-2 my-0 kt-font-danger"></i>From this date onwards you will lose:</p>
+                                                <ul class="pl-0 ml-4 mb-0" style="list-style:none;">
+                                                    <li><i class="fas fa-times kt-font-danger mr-2 mb-1"></i>All your leads, pipelines and templates</li>
+                                                    <li><i class="fas fa-times kt-font-danger mr-2 mb-1"></i>Our Chrome extension to import prospects from major social platforms</li>
+                                                    <li><i class="fas fa-times kt-font-danger mr-2 mb-1"></i>Our pipeline system to manage your chats</li>
+                                                    <li><i class="fas fa-times kt-font-danger mr-2 mb-1"></i>All the updates our members asked for that we will launch soon</li>
+                                                    <li><i class="fas fa-times kt-font-danger mr-2 mb-1"></i>Your special discount (if applied)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">Instead of canceling, you can:</p>
+                                        <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#changeSubscriptionModal"><i class="fas fa-level-down-alt"></i> Downgrade Plan</button>
+                                        <a type="button" class="btn btn-outline-primary btn-sm" target="_blank" href="https://call.flowchat.com/connectionexpert"><i class="fas fa-headset"></i>Book a call with us!</a>
+                                        <a type="button" class="btn btn-outline-focus btn-sm" target="_blank" href="https://flow-chat.slack.com/archives/C01QFQAT78Q"><i class="fab fa-slack"></i> Chat with us!</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#cancelSubscriptionModal2">Continue to cancel my subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cancel SubscriptionModal 1: end -->
+                        <!--cancel SubscriptionModal 2: start -->
+                        <div class="modal fade" id="cancelSubscriptionModal2" tabindex="-1" role="dialog" aria-labelledby="cancelSubscriptionModal2Label" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cancel Subscription <small>Step 2 of 2</small></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="kt-font-bold mb-0">Can you tell us the reason you are canceling?</p>
+                                        <p>Your feedback is important for us to keep improving our product.</p>
+                                        <div class="form-group mb-2">
+                                            <select class="form-control" id="reasonsForCanceling" onchange="$('.fc-btn-pause').removeAttr('disabled');$('.fc-btn-cancel').removeAttr('disabled');">
+                                                <option value="" disabled="" selected="">-- Reason for canceling --</option>
+                                                <option value="16">Can't Afford It</option>
+                                                <option value="15">Didn't See Value</option>
+                                                <option value="1">No Response</option>
+                                                <option value="2">Not a Good Fit</option>
+                                                <option value="12">Not Committed</option>
+                                                <option value="14">Not Enough Support</option>
+                                                <option value="13">Not Getting Results</option>
+                                            </select>
+                                            <small>Required.</small>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="cancelationMessage">What would have made your experience better?</label>
+                                            <textarea class="form-control" id="cancelationMessage" rows="3"></textarea>
+                                            <small>Required.</small>
+                                        </div>
+                                        <div class="card-body kt-shape-bg-color-1">
+                                            <p class="kt-font-bold mb-2"><i class="fas fa-info-circle mr-2 my-0 kt-font-primary"></i>Did you know you can pause your subscription?</p>
+                                            <p class="mb-2">We keep your data free of charge for 60 days and you can reactivate your account within this period.</p>
+                                            <p class="mb-0">If you don't take action after 60 days, your data will be permanently deleted and your subscription will be definitely cancelled.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary fc-btn-pause action-button-cancel-subscription" id="pauseConfirmationButton">Pause my subscription</button>
+                                        <button type="button" class="btn btn-danger fc-btn-cancel action-button-cancel-subscription" id="cancelConfirmationButton">Cancel my subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cancel SubscriptionModal 2: end -->
+                        <!--pause Subscription Confirmation Modal: start -->
+                        <div class="modal fade" id="pauseSubscriptionConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="pauseSubscriptionConfirmationLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Pause Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Subscription Paused!</p>
+                                        <p>Your subscription will be paused at <span class="fc-renewal-date">Sep 13, 2023</span>.<br>You can export your data before this date. All your data will be kept free of charge for 60 days after this date.</p>
+                                        <p>You can reactivate your account any time during this period. If you don't take action after 60 days, your data will be permanently deleted and your subscription definitely cancelled.</p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--pause Subscription Confirmation Modal: end -->
+                        <!--cancel Subscription Confirmation Modal: start -->
+                        <div class="modal fade show" id="cancelSubscriptionConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="cancelSubscriptionConfirmationLabel" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cancel Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Cancelation Confirmed!</p>
+                                        <p>We are sorry to see you leave.</p>
+                                        <p>Your subscription will end at <span class="fc-renewal-date">Sep 13, 2023</span>.<br>Until then you can export your data. All your data will be permanently deleted 30 days after this date.</p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cancel Subscription Confirmation Modal: end -->
+                        <!-- Resume Subcription Modal-->
+                        <div class="modal fade" id="resumeSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="resumeSubscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="resumeSubscriptionModalLabel">Resume Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <i aria-hidden="true" class="ki ki-close"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <p>This will resume your subscription.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="actionResumeCustomerSubscription">Resume my subscription</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- modal end -->
+                        <!--cancel Subscription Confirmation Modal: start -->
+                        <div class="modal fade show" id="resumeSubscriptionConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="resumeSubscriptionConfirmationLabel" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="resumeSubscriptionConfirmationLabel">Resume Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Resume Subscription Confirmed!</p>
+                                        <p>Your subscription has resumed.<br></p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cancel Subscription Confirmation Modal: end -->
+                        <!--change Subscription Modal: start -->
+                        <div class="modal fade show" id="changeSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="changeSubscriptionLabel" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="changeSubscriptionLabel">Change Subscription Plan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group form-group-marginless mb-3">
+                                            <label>Choose your Subscription Plan:</label>
+                                            <div class="row">
+                                                <div class="col-lg-12 planOption-billing-month" id="planOption-month-moAffiliate">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="price_1MWPiIBR4WV6Mw81ne5ptOy1" data-billing_period="month" data-plan_category="moAffiliate" data-row_index="0">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-info">
+                                                                    Affiliate Plan<br><small>Limited functionality, maximum 500 leads stored</small> </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$25</span>
+                                                                    <small class="fc-billing-period">/month</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-year kt-hidden" id="planOption-year-yrAffiliate">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="" data-billing_period="year" data-plan_category="yrAffiliate" data-row_index="0" disabled="">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-info">
+                                                                    Affiliate Plan<br><small>Limited functionality, maximum 500 leads stored</small> </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">Annual Plan <br></span>
+                                                                    <small class="fc-billing-period">Not Available</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-month" id="planOption-month-moBasic">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="moBasic247" data-billing_period="month" data-plan_category="moBasic" data-row_index="1">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-success">
+                                                                    Basic Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$247</span>
+                                                                    <small class="fc-billing-period">/month</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-year kt-hidden" id="planOption-year-yrBasic">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="yrBasic1997" data-billing_period="year" data-plan_category="yrBasic" data-row_index="1">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-success">
+                                                                    Basic Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$1,997</span>
+                                                                    <small class="fc-billing-period">/year</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-month" id="planOption-month-moGrowth">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="moGrowth497" data-billing_period="month" data-plan_category="moGrowth" data-row_index="2">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-danger">
+                                                                    Growth Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$497</span>
+                                                                    <small class="fc-billing-period">/month</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-year kt-hidden" id="planOption-year-yrGrowth">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="price_1MJpq9BR4WV6Mw81XA2G34hw" data-billing_period="year" data-plan_category="yrGrowth" data-row_index="2">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-danger">
+                                                                    Growth Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$3,997</span>
+                                                                    <small class="fc-billing-period">/year</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-month" id="planOption-month-moWhiteLabel">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="moPro997" checked="" data-billing_period="month" data-plan_category="moWhiteLabel" data-row_index="3">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-warning">
+                                                                    White Label Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$997</span>
+                                                                    <small class="fc-billing-period">/month</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-year kt-hidden" id="planOption-year-yrAffiliate">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="" data-billing_period="year" data-plan_category="yrAffiliate" data-row_index="3" disabled="">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-warning">
+                                                                    White Label Pro Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">Annual Plan <br></span>
+                                                                    <small class="fc-billing-period">Not Available</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-month" id="planOption-month-moPro">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="moPro1697" data-billing_period="month" data-plan_category="moPro" data-row_index="4">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-focus">
+                                                                    Pro Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$1,697</span>
+                                                                    <small class="fc-billing-period">/month</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-12 planOption-billing-year kt-hidden" id="planOption-year-yrPro">
+                                                    <label class="kt-option">
+                                                        <span class="kt-option__control">
+                                                            <span class="kt-radio kt-radio--check-bold">
+                                                                <input type="radio" class="action-change-subscription" name="changePlan" value="yrPro17997" data-billing_period="year" data-plan_category="yrPro" data-row_index="4">
+                                                                <span></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="kt-option__label">
+                                                            <span class="kt-option__head">
+                                                                <span class="kt-option__title kt-font-bold kt-font-focus">
+                                                                    Pro Plan </span>
+                                                                <span class="kt-option__focus">
+                                                                    <span class="fc-basic-price">$17,997</span>
+                                                                    <small class="fc-billing-period">/year</small>
+                                                                </span>
+                                                            </span>
+                                                            <!--
+                                        <span class="kt-option__body">
+                                          Software
+                                        </span> -->
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label>Choose your billing period:</label>
+                                            <div class="kt-radio-inline">
+                                                <label class="kt-radio kt-hidden" id="changeBilling-year-div">
+                                                    <input type="radio" class="action-change-subscription" name="changeBilling" data-test="month" value="year"> Annual Plan
+                                                    <span></span>
+                                                </label>
+                                                <label class="kt-radio">
+                                                    <input type="radio" class="action-change-subscription" name="changeBilling" checked="" value="month"> Monthly Plan
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body kt-shape-bg-color-1 pb-0" id="currentsubscribedPlanMessage" style="">
+                                            <p class="mb-0"><i class="fas fa-info-circle mr-2 my-0 kt-font-primary"></i>You are currenty subcribed to this plan - <span class="kt-font-bold">White Label Plan $997/month</span>.</p>
+                                        </div>
+                                        <div class="card-body kt-shape-bg-color-1 pb-0" id="changePlanOptionMessage" style="">
+                                            <p class="mb-0"><i class="fas fa-info-circle mr-2 my-0 kt-font-primary"></i>You will pay <span class="kt-font-bold fc-subscription-price">$997/month</span> <span id="changePlanNewDatePrefix">starting at</span> <span class="kt-font-bold fc-renewal-date" id="changePlanNewDate">September 13, 2023</span>.</p>
+                                            <a href="/pricing" target="_blank"><small class="kt-font-danger"><u>See all features in our website</u></small></a><br>
+                                        </div>
+                                        <div id="previewProrationUpcomingInvoiceDiv" class="card-body kt-shape-bg-color-1" style="display: none;">
+                                            <p class="mb-0"><i class="fas fa-info-circle mr-2 my-0 kt-font-primary"></i>You can calculate the pro-rated price here. This amount is calculated by substracting the unused time of your current subscription and your upgraded subscription will start immediately.</p>
+                                            <a href="#" id="actionCalculatePreviewProrationButton"><small class="kt-font-danger"><u>Recalculate Price w/ pro-rate</u></small></a>
+                                            <p id="calculatingText" class="mt-2" style="display: none;">Recalculating...</p>
+                                            <p id="previewProrationResult" class="mt-0" style="display: none;">-</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel" id="actionChangeSubscriptionConfirmation" data-changemode="downgrade" disabled="">Change my subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--change Subscription  Modal: end -->
+                        <!--Upgrade Subscription Modal: start -->
+                        <div class="modal fade show" id="upgradeSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="upgradeSubscriptionLabel" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="upgradeSubscriptionLabel">Change Subscription Plan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="upgradeSubscriptionForm" novalidate="novalidate">
+                                            <div class="form-group  form-group-marginless mb-3">
+                                                <label>Choose your payment method:</label>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <select class="form-control select2 selectedPaymentMethod select2-hidden-accessible" id="selectedPaymentMethod" name="selected_payment_method" style="width: 100%" data-select2-id="selectedPaymentMethod" tabindex="-1" aria-hidden="true">
+                                                            <option value="card_1Lagf0BR4WV6Mw81Mhc2JAUa" selected="" data-select2-id="2"> *** 4242 - visa</option>
+                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-selectedPaymentMethod-container"><span class="select2-selection__rendered" id="select2-selectedPaymentMethod-container" role="textbox" aria-readonly="true" title="  *** 4242 - visa"><span><i class="far fa-credit-card"></i> *** 4242 - visa</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body kt-shape-bg-color-1">
+                                                <div id="loadingPropratedAmount" class="spinner spinner-dark spinner-right mr-15">Calculating pro-rated amount... </div>
+                                                <p id="displayPropratedAmount" class="mb-0 kt-hidden"><i class="fas fa-info-circle mr-2 my-0 kt-font-primary"></i>You will pay a pro-rated amount of <span class="kt-font-bold" id="calculatedAmount">$x</span> <span>for the upgrade and your new subscription will start today.</span></p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" id="dismissUpgradeModalButton">Close</button>
+                                        <button type="button" class="btn btn-primary" id="actionUpgradeSubscriptionConfirmation">Change my subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Upgrade Subscription  Modal: end -->
+                        <!--Reactivate Subscription Modal: start -->
+                        <!--Reactivate Subscription  Modal: end -->
+                        <!--change Subscription Confirmation Modal: start -->
+                        <div class="modal fade show" id="changeSubscriptionConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="changeSubscriptionConfirmationModalLabel" aria-modal="true" style="padding-right: 17px;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="changeSubscriptionConfirmationModalLabel">Change Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Subscription Changed!</p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--change Subscription Confirmation Modal: end -->
+                        <!--change Subscription Confirmation Modal: start -->
+                        <div class="modal fade show" id="subscribeConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="subscribeConfirmationModalLabel" aria-modal="true" style="padding-right: 17px;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="subscribeConfirmationModalLabel">Plan Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Subscribed to Plan!</p>
+                                        <p>You have successfully subscribed to plan.</p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--change Subscription Confirmation Modal: end -->
+                        <!-- Cancel Change Plan Modal: start-->
+                        <!--Cancel Change Plan Confirmation Modal: start -->
+                        <div class="modal fade show" id="cancelChangePlanConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="cancelChangePlanConfirmationModalLabel" aria-modal="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="cancelChangePlanConfirmationModalLabel">Cancel Change of Plan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="swal2-header">
+                                            <div class="swal2-icon swal2-success swal2-animate-success-icon mt-0" style="display: flex;">
+                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                <span class="swal2-success-line-tip"></span>
+                                                <span class="swal2-success-line-long"></span>
+                                                <div class="swal2-success-ring"></div>
+                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                            </div>
+                                        </div>
+                                        <p class="kt-font-bold mb-0 ">Cancelation Confirmed!</p>
+                                        <p>Pending Change of Plan has been cancelled.</p>
+                                        <button type="button" class="btn btn-primary fc-btn-cancel my-2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cancel Subscription Confirmation Modal: end -->
+                        <!-- Resume Subcription Modal-->
+                        <div class="modal fade" id="resumeSubscriptionBeforeChangePlanModal" tabindex="-1" role="dialog" aria-labelledby="resumeSubscriptionBeforeChangePlanModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="resumeSubscriptionBeforeChangePlanModalLabel">Change of Plan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <i aria-hidden="true" class="ki ki-close"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <p>You currently have a pending cancellation, to make any other changes you need to cancel the pending cancellation first..</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="actionResumeCustomerSubscription">Cancel Pending Cancellation</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- modal end -->
+                        <!-- Modal-->
+                        <div class="modal fade" id="CancelAddOnSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="CancelAddOnSubscriptionModal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="CancelAddOnSubscriptionTitle">Cancel Add-on Subscription</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <i aria-hidden="true" class="ki ki-close"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="hidden" id="cancelAddOnSubscriptionId">
+                                                <p>Are you sure you want to cancel?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger" id="actionCancelAddOnSubscription">Cancel Subscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- Modal-->
+                        <div class="modal fade" id="ReActivateAddOnSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="ReActivateAddOnSubscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ReActivateAddOnSubscriptionModalLabel">Re-Activate Cancellation of Add-On</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="ki ki-close"></i></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <input type="hidden" id="reActivateAddOnSubscriptionId">
+                                            <div class="col-lg-12">
+                                                <label class="kt-option">
+                                                    <span class="kt-option__control">
+                                                        <span class="kt-radio kt-radio-check-bold">
+                                                            <input type="radio" name="addOnPlan" value="" checked="">
+                                                            <span></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="kt-option__label">
+                                                        <span class="kt-option__head">
+                                                            <span class="kt-option__title kt-font-success kt-font-bold fc-add-on-product-name"></span>
+                                                            <span class="kt-option__focus">
+                                                                <span class="fc-add-on-price"></span>
+                                                                <small class="fc-add-on-billing-period"></small>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p>This will re-activate the Add-On from scheduled cancellation.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" id="actionReActivateAddOnSubscription">Re-Activate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <script>
+                        var subscriptionPlans = [
+                            [{ "billing": "month", "plan_id": "price_1MWPiIBR4WV6Mw81ne5ptOy1", "plan_category": "moAffiliate", "class": "kt-font-info", "product_id": "prod_NGxdLk3KWreq3G", "amount": 25, "interval": "month", "plan_active": true, "product_name": "Affiliate Plan", "name": "Affiliate Plan", "product_active": true }, { "disabled": 1, "billing": "year", "product_id": "prod_NGxdLk3KWreq3G", "plan_category": "yrAffiliate", "class": "kt-font-info", "product_name": "Affiliate Plan", "name": "Affiliate Plan", "product_active": true }],
+                            [{ "billing": "month", "plan_id": "moBasic247", "plan_category": "moBasic", "class": "kt-font-success", "default": 1, "product_id": "prod_JAhxrXeFUOM9M2", "amount": 247, "interval": "month", "plan_active": true, "product_name": "Basic Plan", "name": "Basic Plan", "product_active": true }, { "billing": "year", "plan_id": "yrBasic1997", "plan_category": "yrBasic", "class": "kt-font-success", "product_id": "prod_JAhxrXeFUOM9M2", "amount": 1997, "interval": "year", "plan_active": true, "product_name": "Basic Plan", "name": "Basic Plan", "product_active": true }],
+                            [{ "billing": "month", "plan_id": "moGrowth497", "plan_category": "moGrowth", "class": "kt-font-danger", "product_id": "prod_M7fjqgi0Ffi9gN", "amount": 497, "interval": "month", "plan_active": true, "product_name": "Growth Plan", "name": "Growth Plan", "product_active": true }, { "billing": "year", "plan_id": "price_1MJpq9BR4WV6Mw81XA2G34hw", "plan_category": "yrGrowth", "class": "kt-font-danger", "product_id": "prod_M7fjqgi0Ffi9gN", "amount": 3997, "interval": "year", "plan_active": true, "product_name": "Growth Plan", "name": "Growth Plan", "product_active": true }],
+                            [{ "billing": "month", "plan_id": "moPro997", "plan_category": "moWhiteLabel", "class": "kt-font-warning", "product_id": "prod_JKPe60cISBNCJm", "amount": 997, "interval": "month", "plan_active": true, "product_name": "White Label Plan", "name": "White Label Plan", "product_active": true }, { "disabled": 1, "billing": "year", "product_id": "", "plan_category": "yrAffiliate", "class": "kt-font-warning", "product_name": "White Label Pro Plan", "name": "White Label Pro Plan" }],
+                            [{ "billing": "month", "plan_id": "moPro1697", "plan_category": "moPro", "class": "kt-font-focus", "product_id": "prod_JKPe60cISBNCJm", "amount": 1697, "interval": "month", "plan_active": true, "product_name": "Pro Plan", "name": "Pro Plan", "product_active": true }, { "billing": "year", "plan_id": "yrPro17997", "plan_category": "yrPro", "class": "kt-font-focus", "product_id": "prod_JKPe60cISBNCJm", "amount": 17997, "interval": "year", "plan_active": true, "product_name": "Pro Plan", "name": "Pro Plan", "product_active": true }]
+                        ];
+                        var defaultPlanOption = { "product_id": "prod_JAhxrXeFUOM9M2", "plan_id": "moBasic247", "interval": "month" };
+                        var changePlanDefaultOption = { "plan_id": "moPro997", "billing": "month", "product_id": "prod_JKPe60cISBNCJm", "plan_category": "moWhiteLabel" };
+
+                        var oldPlan = 0;
+                        var customerSubscribeInfo = { "id": "sub_1NepwGBR4WV6Mw81p5uoGuxL", "object": "subscription", "application": null, "application_fee_percent": null, "automatic_tax": { "enabled": false }, "billing_cycle_anchor": 1691977884, "billing_thresholds": null, "cancel_at": null, "cancel_at_period_end": false, "canceled_at": null, "cancellation_details": { "comment": null, "feedback": null, "reason": null }, "collection_method": "charge_automatically", "created": 1691977884, "currency": "usd", "current_period_end": 1694656284, "current_period_start": 1691977884, "customer": "cus_MJJGTERMWhNfmO", "days_until_due": null, "default_payment_method": "card_1Lagf0BR4WV6Mw81Mhc2JAUa", "default_source": null, "default_tax_rates": [], "description": "White Label", "discount": null, "ended_at": null, "items": { "object": "list", "data": [{ "id": "si_ORjP6JHd1KWBgG", "object": "subscription_item", "billing_thresholds": null, "created": 1691977885, "metadata": [], "plan": { "id": "moPro997", "object": "plan", "active": true, "aggregate_usage": null, "amount": 99700, "amount_decimal": "99700", "billing_scheme": "per_unit", "created": 1658752199, "currency": "usd", "interval": "month", "interval_count": 1, "livemode": false, "metadata": [], "nickname": null, "product": "prod_JKPe60cISBNCJm", "tiers_mode": null, "transform_usage": null, "trial_period_days": null, "usage_type": "licensed" }, "price": { "id": "moPro997", "object": "price", "active": true, "billing_scheme": "per_unit", "created": 1658752199, "currency": "usd", "custom_unit_amount": null, "livemode": false, "lookup_key": null, "metadata": [], "nickname": null, "product": "prod_JKPe60cISBNCJm", "recurring": { "aggregate_usage": null, "interval": "month", "interval_count": 1, "trial_period_days": null, "usage_type": "licensed" }, "tax_behavior": "unspecified", "tiers_mode": null, "transform_quantity": null, "type": "recurring", "unit_amount": 99700, "unit_amount_decimal": "99700" }, "quantity": 1, "subscription": "sub_1NepwGBR4WV6Mw81p5uoGuxL", "tax_rates": [] }], "has_more": false, "total_count": 1, "url": "\/v1\/subscription_items?subscription=sub_1NepwGBR4WV6Mw81p5uoGuxL" }, "latest_invoice": "in_1NepwGBR4WV6Mw81qyKjFr11", "livemode": false, "metadata": { "white_label_plan": "1" }, "next_pending_invoice_item_invoice": null, "on_behalf_of": null, "pause_collection": null, "payment_settings": { "payment_method_options": null, "payment_method_types": null, "save_default_payment_method": "off" }, "pending_invoice_item_interval": null, "pending_setup_intent": null, "pending_update": null, "plan": { "id": "moPro997", "object": "plan", "active": true, "aggregate_usage": null, "amount": 99700, "amount_decimal": "99700", "billing_scheme": "per_unit", "created": 1658752199, "currency": "usd", "interval": "month", "interval_count": 1, "livemode": false, "metadata": [], "nickname": null, "product": "prod_JKPe60cISBNCJm", "tiers_mode": null, "transform_usage": null, "trial_period_days": null, "usage_type": "licensed" }, "quantity": 1, "schedule": null, "start_date": 1691977884, "status": "active", "test_clock": null, "transfer_data": null, "trial_end": null, "trial_settings": { "end_behavior": { "missing_payment_method": "create_invoice" } }, "trial_start": null };
+                        var memberTimezone = "America/Los_Angeles";
+                        </script>
+                    </div>
+                    <!-- end:: Content -->
+                </div>
+            </div>
+            <!-- end:: Page -->
+        </div>
+        <!-- end:: Root -->
+        <!-- begin:: Scrolltop -->
+        <div id="kt_scrolltop" class="kt-scrolltop">
+            <i class="la la-arrow-up"></i>
+        </div>
+        <!-- end:: Scrolltop -->
+        <!-- begin::Global Config(global config for global JS sciprts) -->
+        <script>
+        var KTAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#5d78ff",
+                    "metal": "#c4c5d6",
+                    "light": "#ffffff",
+                    "accent": "#00c5dc",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995",
+                    "focus": "#9816f4"
+                },
+                "base": {
+                    "label": [
+                        "#c5cbe3",
+                        "#a1a8c3",
+                        "#3d4465",
+                        "#3e4466"
+                    ],
+                    "shape": [
+                        "#f0f3ff",
+                        "#d9dffa",
+                        "#afb4d4",
+                        "#646c9a"
+                    ]
+                }
+            }
+        };
+        </script>
+        <!-- end::Global Config -->
+        <!--begin::Global Theme Bundle(used by all pages) -->
+        <script src="https://www.flowchat.com/members/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+        <script src="https://www.flowchat.com/members/assets/js/scripts.bundle.js" type="text/javascript"></script>
+        <script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+        <!--end::Global Theme Bundle -->
+        <!--begin::Page Scripts(used by this page) -->
+        <script src="assets/js/pages/components/base/popovers.js" type="text/javascript"></script>
+        <!--end::Page Scripts -->
+</body>
+<!-- end::Body -->
+
+</html>

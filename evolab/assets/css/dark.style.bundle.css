@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*!
+ * Dark-Theme
+ */
+
+body { color:#fff; background-color: #1e272e; }
+
+.form-control, .form-control[readonly] { background-color:#333; color:#fff; }
+.form-control { border-color: #555 !important; }
+.modal-content,
+.table-hover tbody tr:hover { color: #fff; background-color: #333; }
+
+h1, h2, h3, h4, h5, h6, p, span,
+.table,
+.modal .modal-content .modal-header .modal-title,
+.kt-subheader .kt-subheader__main .kt-subheader__title,
+.kt-input-icon > .kt-input-icon__icon > span i,
+.kt-notification .kt-notification__item .kt-notification__item-details .kt-notification__item-title,
+.kt-widget-11 .kt-widget-11__item .kt-widget-11__wrapper .kt-widget-11__value,
+.kt-datatable > .kt-datatable__table > .kt-datatable__head .kt-datatable__row > .kt-datatable__cell > span, .kt-datatable > .kt-datatable__table > .kt-datatable__foot .kt-datatable__row > .kt-datatable__cell > span,
+.kt-datatable.kt-datatable--default > .kt-datatable__table > .kt-datatable__body .kt-datatable__row > .kt-datatable__cell > span,
+.kt-datatable__pager-detail,
+.kt-nav .kt-nav__item > .kt-nav__link .kt-nav__link-text,
+.kt-section .kt-section__title,
+.bootstrap-select .dropdown-menu.inner > li > a .text,
+.kt-heading,
+.kt-notes .kt-notes__items .kt-notes__item .kt-notes__content .kt-notes__section .kt-notes__info .kt-notes__title
+{
+  color:#fff;
+}
+
+.text-primary, .text-info, .text-dark {
+  color:#fff !important;
+}
+
+.card, .modal-content, .modal-header, .modal-footer { border-color: #555 !important; }
+
+.kt-shape-bg-color-1 { background-color: #212529 !important; }
+.kt-shape-bg-color-2 { background-color: #36373a !important; }
+.kt-font-dark        { color: #a099d5; }
+
+.alert-secondary {background-color: #272c30 !important; border-color: transparent !important;}
+
+
+/* begin:: Pipeline screen */
+#funnel .funnel-item {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+a:hover,
+a:hover i,
+.bootstrap-select .dropdown-menu.inner > li > a:hover .text,
+.kt-nav__link-text:hover
+{ color:Red; }
+.dropdown-divider {border-color: #555 !important;}
+
+.kt-footer {background: #2b2b2b;}
+
+.kt-portlet,
+.nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item .nav-link:active
+{ background-color: #2b343b; }
+
+.nav-tabs {border-color:#555 !important;}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link { border-color: #555 #555 #555 !important; }
+
+.btn.btn-label,
+.kt-slider .kt-slider__head .kt-slider__nav .kt-slider__nav-next,
+.kt-slider .kt-slider__head .kt-slider__nav .kt-slider__nav-prev,
+.show > .btn.btn-clean,
+.btn.btn-clean.active,
+.btn.btn-clean:active,
+.btn.btn-clean:hover,
+.kt-widget-14 .kt-widget-14__info,
+.kt-notes .kt-notes__items .kt-notes__item .kt-notes__content
+{ background-color: #2b2b2b; }
+
+.btn.btn-default       { border: 1px solid #555; color:#ffffff;}
+.btn.btn-label-primary { background-color: #101010;}
+.btn-outline-brand     { color: #adb0c3; border-color: #adb0c3; }
+
+.kt-widget-19 .kt-widget-19__data .kt-widget-19__chart .kt-widget-19__bar,
+.kt-widget-1 .kt-widget-1__item .kt-widget-1__item-stats .kt-widget-1__item-progress .progress,
+.progress {background-color: #333;}
+
+.kt-widget-15 .kt-widget-15__body .kt-widget-15__wrapper .kt-widget-15__info {border-left: 1px solid #333;}
+
+.kt-profile .kt-profile__content .kt-profile__main,
+.kt-profile .kt-profile__content .kt-profile__contact,
+.kt-profile .kt-profile__content {border-color: #555;}
+
+.kt-profile .kt-profile__content .kt-profile__main .kt-profile__main-info .kt-profile__main-info-name { color: #ffffff; }
+
+.kt-datatable > .kt-datatable__table {
+    background-color:  #2b343b;
+}
+
+.kt-portlet .kt-portlet__head,
+.kt-nav .kt-nav__separator,
+.kt-notification .kt-notification__item,
+.kt-quick-search.kt-quick-search--dropdown.kt-quick-search--has-result .kt-quick-search__form,
+.kt-offcanvas-panel .kt-offcanvas-panel__nav,
+.kt-datatable > .kt-datatable__table > .kt-datatable__head .kt-datatable__row,
+.kt-datatable > .kt-datatable__table > .kt-datatable__body .kt-datatable__row,
+.kt-datatable > .kt-datatable__table > .kt-datatable__foot .kt-datatable__row {
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+.kt-datatable.kt-datatable--default > .kt-datatable__table > .kt-datatable__body .kt-datatable__row.kt-datatable__row--active > .kt-datatable__cell {
+    background: #333;
+}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--disabled,
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--disabled:hover {
+    background: #000;
+}
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--first, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--prev, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--next, .kt-datatable > .kt-datatable__pager > .kt-datatable__pager-nav > li > .kt-datatable__pager-link.kt-datatable__pager-link--last {
+    background: #2b2b2b; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #2b2b2b; }
+
+.kt-portlet .kt-portlet__head .kt-portlet__head-label .kt-portlet__head-title {
+    color: #ffffff;
+}
+
+.kt-widget-13 .kt-widget-13__body .kt-widget-13__title,
+.kt-widget-1 .kt-widget-1__item .kt-widget-1__item-info .kt-widget-1__item-title,
+.kt-widget-5 .kt-widget-5__item .kt-widget-5__item-info .kt-widget-5__item-title,
+.kt-widget-7 .kt-widget-7__items .kt-widget-7__item .kt-widget-7__item-info .kt-widget-7__item-title,
+.kt-widget-19 .kt-widget-19__title .kt-widget-19__label,
+.kt-widget-21 .kt-widget-21__title .kt-widget-21__label,
+.kt-widget-20 .kt-widget-20__title .kt-widget-20__label,
+.kt-widget-14 .kt-widget-14__title,
+.carousel-item h3,
+.kt-widget-15 .kt-widget-15__body .kt-widget-15__author .kt-widget-15__detail .kt-widget-15__name,
+.kt-widget-15 .kt-widget-15__body .kt-widget-15__wrapper .kt-widget-15__info .kt-widget-15__info--item,
+.kt-widget-14 .kt-widget-14__info .kt-widget-14__info-title {
+    color: #fff;
+}
+
+.daterangepicker,
+.dropdown-menu,
+.kt-offcanvas-panel {
+    background-color: #2b2b2b;
+}
+
+.daterangepicker .ranges li:hover,
+.daterangepicker .ranges li.active,
+.kt-nav .kt-nav__item.active > .kt-nav__link,
+.kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub) > .kt-nav__link,
+.kt-notification .kt-notification__item:hover,
+.bootstrap-select .dropdown-menu.inner > li.selected > a, .bootstrap-select .dropdown-menu.inner > li:hover > a  {
+    background-color: #222;
+}
+
+
+.bootstrap-select > .dropdown-toggle.btn-light, .bootstrap-select > .dropdown-toggle.btn-secondary,
+.kt-offcanvas-panel .kt-offcanvas-panel__nav .nav .nav-link,
+.kt-offcanvas-panel .kt-offcanvas-panel__close {
+    background: #333;}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light {
+    color: #ccc;
+    border: 1px solid #555;
+}
+
+
+.kt-datatable > .kt-datatable__pager > .kt-datatable__pager-info .kt-datatable__pager-size .btn.dropdown-toggle {
+    color: #ccc;
+    border: 1px solid #555;
+    background: #2b2b2b;
+}
+
+.kt-datatable > .kt-datatable__table > .kt-datatable__head .kt-datatable__row > .kt-datatable__cell .kt-checkbox.kt-checkbox--solid > span,
+.kt-datatable > .kt-datatable__table > .kt-datatable__body .kt-datatable__row > .kt-datatable__cell .kt-checkbox.kt-checkbox--solid > span,
+.kt-datatable > .kt-datatable__table > .kt-datatable__foot .kt-datatable__row > .kt-datatable__cell .kt-checkbox.kt-checkbox--solid > span {
+    background: #555;
+}
+
+.dropdown-menu {color: #ccc;}
+
+.kt-timeline .kt-timeline__item::before {
+    background: #333;
+}
+
+.kt-timeline__item-section-border {
+    background-color: transparent !important;
+    border-top: 8px solid transparent !important;
+	border-bottom: 8px solid transparent !important;
+}
+
+
+/* begin:: Manager Box */
+#fc-customer-sucess-box .card-body {background-color:#2b343b !important}
+#fc-customer-sucess-box .card-subtitle {color:#fff !important}
+#fc-customer-sucess-box > .kt-portlet__body > div > span {border-bottom: 12px solid #2b343b !important;}
+/*end:: Manager Box */
+
+
+/* begin:: Community and Support */
+
+#Community-Messages .message .message-content {background-color: #1e272e}
+#Community-Messages .message .message-content::before {border-right: 15px solid #1e272e}
+#kt_inbox_reply_editor, #toolbar {border-color: #444 !important; background-color:#000}
+#toolbar button {/* color: #fff !important; */}
+#toolbar .ql-snow .ql-stroke {stroke: #999;}
+
+.kt-label-font-color-4 {color:#fff !important}
+
+a {color: #ddd}
+
+a:hover i, a:hover  {color:  inherit;}
+
+#Community-Messages .message .message-reply .community-editor {background: #000;}
+
+.community-editor .ql-editor,
+.community-editor .ql-toolbar,
+#Community-Editor .ql-editor,
+#Community-Editor .ql-toolbar {background-color:#000; border-color: #444 !important;}
+
+.ql-editor.ql-blank::before {color: #aaa !important;}
+.ql-container.ql-snow {border: 1px solid #000 !important;}

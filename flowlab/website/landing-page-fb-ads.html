@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--begin::Head-->
+	<head>
+		<meta charset="utf-8" />
+		<title>FlowChat</title>
+		<meta name="description" content="Test Environment for FlowChat CRM Website" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Theme Styles(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Theme Styles-->
+		<!--begin::Layout Themes(used by all pages)-->
+		<!--end::Layout Themes-->
+		<!--begin::FlowChat Styles(used by all pages)-->
+		<link href="assets/css/fc.css" rel="stylesheet" type="text/css" />
+		<!--end::FlowChat Styles-->
+		<link rel="shortcut icon" href="assets/media/logos/favicon-16x16.png" />
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="fc-content-page header-fixed header-mobile-fixed subheader-enabled page-loading">
+
+		<!--BEGIN:: FLOWCHAT - TOP SECTION -->
+		<section class="top-section no-bg">
+			<!--begin::Main-->
+			<!--begin::Header Mobile-->
+			<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
+				<!--begin::Logo-->
+				<a href="index.html">
+					<div class="mobile-brand-logo"></div>
+				</a>
+				<!--end::Logo-->
+				<!--begin::Toolbar-->
+				<div class="d-flex align-items-center">
+					<button class="btn p-0 rounded-0 ml-4" id="kt_header_mobile_toggle">
+						<span class="svg-icon svg-icon-xl">
+							<!--begin::Svg Icon | path:assets/media/svg/icons/Text/Toggle-Left.svg-->
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<rect x="0" y="0" width="24" height="24" />
+									<path d="M2 11.5C2 12.3284 2.67157 13 3.5 13H20.5C21.3284 13 22 12.3284 22 11.5V11.5C22 10.6716 21.3284 10 20.5 10H3.5C2.67157 10 2 10.6716 2 11.5V11.5Z" fill="black" />
+									<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 20C8.67157 20 8 19.3284 8 18.5C8 17.6716 8.67157 17 9.5 17H20.5C21.3284 17 22 17.6716 22 18.5C22 19.3284 21.3284 20 20.5 20H9.5ZM15.5 6C14.6716 6 14 5.32843 14 4.5C14 3.67157 14.6716 3 15.5 3H20.5C21.3284 3 22 3.67157 22 4.5C22 5.32843 21.3284 6 20.5 6H15.5Z" fill="black" />
+								</g>
+							</svg>
+							<!--end::Svg Icon-->
+						</span>
+					</button>
+					<button class="btn rounded-0 p-0 ml-2" id="kt_header_mobile_topbar_toggle">
+						<span class="svg-icon svg-icon-xxl">
+							<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<rect x="0" y="0" width="24" height="24" />
+									<rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5" />
+									<path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" fill="#000000" opacity="0.3" />
+								</g>
+							</svg>
+							<!--end::Svg Icon-->
+						</span>
+					</button>
+				</div>
+				<!--end::Toolbar-->
+			</div>
+			<!--end::Header Mobile-->
+			<div class="d-flex flex-column flex-root">
+				<!--begin::Page-->
+				<div id="header" class="d-flex flex-row flex-column-fluid page">
+					<!--begin::Wrapper-->
+					<div class="d-flex flex-column flex-row-fluid wrapper container" id="kt_wrapper">
+						<!--begin::Header-->
+						<div id="kt_header" class="header header-fixed">
+							<!--begin::Container-->
+							<div class="container px-0">
+								<!--begin::Header Menu Wrapper-->
+								<div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+									<!--begin::Logo-->
+									<div class="header-logo mr-10 d-none d-lg-flex">
+										<a href="index.html">
+											<div class="brand-logo"></div>
+										</a>
+									</div>
+									<!--end::Logo-->
+									<!--begin::Header Menu-->
+									<div id="kt_header_menu" class="header-menu header-menu-left header-menu-mobile header-menu-layout-default">
+										<!--begin::Header Nav-->
+										<ul class="menu-nav">
+											<li class="menu-item" aria-haspopup="true">
+												<a href="./why-flowchat.html" class="menu-link">
+													<span class="menu-text">Why FlowChat?</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="./resources.html" class="menu-link">
+													<span class="menu-text">Resources</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="./pricing.html" class="menu-link">
+													<span class="menu-text">Pricing</span>
+												</a>
+											</li>
+										</ul>
+										<!--end::Header Nav-->
+									</div>
+									<!--end::Header Menu-->
+								</div>
+								<!--end::Header Menu Wrapper-->
+								<!--begin::Topbar-->
+								<div class="topbar">
+									<div class="topbar-item">
+										<a href="./login.html" class="btn btn-dark-danger font-weight-bold mr-2"><strong>Login</strong></a>
+									</div>
+									<div class="topbar-item">
+										<a href="https://call.flowchat.com/connectionexpert" target="_blank" class="btn btn-danger text-bold ml-2 font-weight-bold"><strong>Get Leads Here!</strong></a>
+									</div>
+								</div>
+								<!--end::Topbar-->
+							</div>
+							<!--end::Container-->
+						</div>
+						<!--end::Header-->
+					</div>
+					<!--end::Wrapper-->
+				</div>
+				<!--end::Page-->
+			</div>
+			<!--end::Main-->
+		</section>
+		<!--end:: TOP SECTION -->
+
+		
+		<!--begin:: CONTENT SECTION-->
+
+		<section class="content-section white-bg mt-0 hp-content">
+			<div class="d-flex flex-column flex-root">
+
+				<!--begin::  CONTENT -->
+				<div class="d-flex flex-row flex-column-fluid">
+					<!--begin::Wrapper-->
+					<div class="wrapper container mb-0" style="max-width: 1200px;">
+						<div class="row flex-row-fluid">
+							<div class="col-lg-7 text-center text-sm-left">
+								<div class="mb-5">
+									<h2 class="text-danger text-uppercase h5">Free Master Class</h2>
+									<p>
+										<span class="mr-4 h6">
+											<i class="fas fa-calendar-day text-danger mr-2"></i>
+											<span class="date" id="SpanDate1">Monday, January 1</span>
+										</span>
+										<span class="mr-2 h6">
+											<i class="fas fa-clock text-danger mr-2"></i>
+											<span class="hour" id="SpanTime1">00:00</span>
+										</span>
+									</p>
+								</div>
+								<div class="row flex-row-fluid">
+									<div class="col-sm-4 mb-5">
+							            <a href="javasript:;" class="bg-light" data-toggle="modal" data-target="#registerModal"><img class="rounded img-fluid" style="max-width:200px;" src="assets/media/landings/fc-organic-sales.jpg" width="100%" height="auto" alt="Watch Webinar"></a>
+							        </div>
+									<div class="col-sm-8">
+										<h2 class="fc-title mb-2">Organic Sales from Facebook Ads</h2>
+										<p>(without PITCHING or advertising!)</p>
+										<a href="javascript:;" target="_blank" class="btn btn-danger btn-lg fc-cta mb-5" data-toggle="modal" data-target="#registerModal">Claim My Spot Now</a>
+									</div>
+									
+								</div>
+		 					</div>
+		 					<div class="col-lg-5 text-center text-sm-left">
+
+		 						<!--begin::Profile Card-->
+		 						<div class="card card-custom mt-10">
+									<div class="card-body">
+										<div class="symbol symbol-60 symbol-circle symbol-xl-90 mt-n20">
+											<div class="symbol-label" style="background-image:url('assets/media/landings/FC-Bruno-profile.jpg')"></div>
+										</div>
+										<h4 class="text-primary h6 mb-0">Bruno Domingues</h4>
+										<p class="mt-0 mb-2"><small class="text-uppercase">Co-Founder of FlowChat</small></p>
+										<p class="description">He's been helping coaches &amp; consultants all over the world grow their businesses to 5 and 6-figures per month, while serving with total transparency.</p>
+									</div>
+								</div>
+								<!--end::Profile Card-->
+
+		 					</div>
+	 					</div>
+					</div>
+					<!--end: begin::Wrapper-->
+				</div>
+				<div class="d-flex flex-row flex-column-fluid fc-event-details">
+					<!--begin::Wrapper-->
+					<div class="wrapper container" style="max-width: 1200px;">
+						<div class="row flex-row-fluid">
+							
+							<div class="col-lg-8">
+
+								<!--begin::Countdown Card-->
+								<div class="card card-custom my-10">
+									<div class="card-body">
+						           		<h5 class="text-danger text-uppercase h5">Free Master Class</h5>
+						            	<div class="row course-alert ">
+						            		<div class="col-xs-1 mr-4 my-auto display-5">
+						            			<span class="fa-stack fa-2x">
+												    <i class="fas fa-circle fa-stack-2x text-danger"></i>
+												    <i class="fas fa-hourglass-end fa-stack-1x fa-inverse"></i>
+												 </span>
+						            		</div>
+						             		<div class="col-xs-6 my-auto">
+						               			<div class="row course-countdown text-center">
+								                	<div class="col-xs-3 countdown-item contdown-days mx-3"><div id="DivDays1" class="display-4 font-weight-boldest mb-n2">0</div><small>Days</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-hours mx-3"><div id="DivHours1" class="display-4 font-weight-boldest mb-n2">0</div><small>Hours</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-minutes mx-3"><div id="DivMinutes1" class="display-4 font-weight-boldest mb-n2">14</div><small>Minutes</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-seconds mx-3"><div id="DivSeconds1" class="display-4 font-weight-boldest mb-n2">59</div><small>Seconds</small></div>
+						                		</div>
+						              		</div>
+						              		<div class="col-xs-5 my-auto course-date ml-7">
+						               			<div class="my-1"><i class="fas fa-calendar-day text-danger mr-2"></i><span class="date" id="SpanDate2">Monday, January 1</span></div>
+						                		<div class="my-1"><i class="fas fa-clock text-danger mr-2"></i><span class="hour" id="SpanTime2">00:00</span></div>
+						              		</div>
+						            	</div>
+									</div>
+								</div>
+								<!--end::Countdown Card-->
+
+
+								<h3 class="font-weight-boldest h2 mb-5 text-center text-sm-left"><span class="text-danger">Let's Get You More Clients Fast!</span><br>In This Masterclass, You'll Discover...</h3>
+						        <ul  class="list-unstyled fc-list-icon">
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>How our students generate a steady flow of High-Ticket LEADS and CLIENTS into their businesses every single day...
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>Why Facebook doesn't work for most people and the common mistakes that can get you BANNED or BLOCKED...
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>A PROVEN formula we show our students, to consistently generate leads and new clients every week...
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>How we position our customers as an AUTHORITY and turn them into a GO-TO PERSON for their ideal clients on Facebook...
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>Why starting conversations to pitch your services is OBSOLETE in 2022...and how to do it right to get from first conversation to call in a very short time while disarming objections, then enroll them...
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>How we transform a post into a High-Ticket Client in less than 48 hours.
+						            </li>
+						            <li>
+						              <i class="fas fa-check-circle mr-2 text-success"></i>AND...how we do ALL of this without Pitching, Advertising, Chasing, or trying to convince people to buy, which leaves you completely drained and feels bad. Instead get people to ask to buy from you! ;)
+						            </li>
+						         </ul>
+
+						         <div class="text-center">
+						         	<a href="javascript:;" target="_blank" class="btn btn-danger btn-lg fc-cta mx-auto my-5 text-center" data-toggle="modal" data-target="#registerModal">Claim My Spot Now</a>
+						         </div>
+
+								<!--begin::Countdown Card-->
+								<div class="card card-custom my-10">
+									<div class="card-body">
+						           		<h5 class="text-danger text-uppercase h5">Free Master Class</h5>
+						            	<div class="row course-alert ">
+						            		<div class="col-xs-1 mr-4 my-auto display-5">
+						            			<span class="fa-stack fa-2x">
+												    <i class="fas fa-circle fa-stack-2x text-danger"></i>
+												    <i class="fas fa-hourglass-end fa-stack-1x fa-inverse"></i>
+												 </span>
+						            		</div>
+						             		<div class="col-xs-6 my-auto">
+						               			<div class="row course-countdown text-center">
+								                	<div class="col-xs-3 countdown-item contdown-days mx-3"><div id="DivDays2" class="display-4 font-weight-boldest mb-n2">0</div><small>Days</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-hours mx-3"><div id="DivHours2" class="display-4 font-weight-boldest mb-n2">0</div><small>Hours</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-minutes mx-3"><div id="DivMinutes2" class="display-4 font-weight-boldest mb-n2">14</div><small>Minutes</small></div>
+								                	<div class="col-xs-3 countdown-item contdown-seconds mx-3"><div id="DivSeconds2" class="display-4 font-weight-boldest mb-n2">59</div><small>Seconds</small></div>
+						                		</div>
+						              		</div>
+						              		<div class="col-xs-5 my-auto course-date ml-7">
+						               			<div class="my-1"><i class="fas fa-calendar-day text-danger mr-2"></i><span class="date" id="SpanDate3">Monday, January 1</span></div>
+						                		<div class="my-1"><i class="fas fa-clock text-danger mr-2"></i><span class="hour" id="SpanTime3">00:00</span></div>
+						              		</div>
+						            	</div>
+									</div>
+								</div>
+								<!--end::Countdown Card-->
+
+								<!-- begin:: Modal-->
+								<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								    <div class="modal-dialog" role="document">
+								        <div class="modal-content">
+									    	<form name="FormRegister" id="FormRegister" method="post" action="webinar-watch?offerid=1&amp;standalone=1">
+										      	<div class="modal-header">
+									                <h5 class="modal-title" id="exampleModalLabel">Reserve your seat...</h5>
+									                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                    <i aria-hidden="true" class="ki ki-close"></i>
+									                </button>
+									            </div>
+										      	<div class="modal-body text-center text-sm-left">
+										        	<div class="row">
+										          		<div class="col-sm-5">
+										          			<img class="rounded img-fluid mb-3" style="max-width:200px;" src="assets/media/landings/fc-organic-sales.jpg" width="100%" height="auto" alt="Watch Webinar">
+										          			<div id="DivModalDate">
+											          			<div class="my-1"><i class="fas fa-calendar-day text-danger mr-2"></i><span class="date" id="SpanDate4">Monday, January 1</span></div>
+							                					<div class="my-1"><i class="fas fa-clock text-danger mr-2"></i><span class="hour" id="SpanTime4">00:00</span></div>
+							                				</div>
+										          		</div>
+										          		<div class="col-sm-7">
+										            		<p>Enter your email address below and reserve your seat... It's 100% free!</p>
+										            		<div class="form-group is-empty"><input type="text" name="leadname" class="form-control" placeholder="First + Last Name" required=""><span class="material-input"></span></div>
+										            		<div class="form-group is-empty"><input type="email" name="leademail" class="form-control" placeholder="Email" required=""><span class="material-input"></span></div>
+										            		<input type="submit" class="btn btn-danger btn-lg font-weight-boldest" value="Claim My Spot Now"><br>
+											            	<p class="text-muted mt-3">We value your privacy.</p>
+											          	</div>
+										        	</div>
+										    	</div>
+									    	</form>
+									    </div>
+								    </div>
+								</div>
+								<!-- end:: Modal-->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end::  CONTENT -->
+
+
+<script>
+var iSecondsLeft = 900;
+var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+function ChangeDiv(ParamType, ParamNumber)
+{
+  if (ParamType.indexOf('Span') !== -1)
+  {
+    $('#' + ParamType + '1').text(ParamNumber);
+    $('#' + ParamType + '2').text(ParamNumber);
+    $('#' + ParamType + '3').text(ParamNumber);
+    $('#' + ParamType + '4').text(ParamNumber);
+  }
+  else
+  {
+    $('#Div' + ParamType + '1').html(ParamNumber);
+    $('#Div' + ParamType + '2').html(ParamNumber);
+  }
+}
+
+function UpdateClock()
+{
+  iMinutes = Math.floor(iSecondsLeft / 60);
+  iHours  = Math.floor(iSecondsLeft / 60 / 60);
+  iDays   = Math.floor(iSecondsLeft / 60 / 60 / 60);
+  ChangeDiv('Days', Math.floor(iDays));
+  ChangeDiv('Hours', Math.floor(iHours));
+  ChangeDiv('Minutes', Math.floor(iMinutes));
+  ChangeDiv('Seconds', iSecondsLeft - (iMinutes * 60));
+  
+  objDate = new Date();
+  sDate = weekday[objDate.getDay()] + ', ' + monthNames[objDate.getMonth()] + ' ' + objDate.getDate() + ' ';
+  ChangeDiv('SpanDate', sDate);
+  ChangeDiv('SpanTime', roundHours());
+  //$('#DivModalDate').html(sDate + ' at ' + roundHours());
+}
+
+function CountDown()
+{
+  iSecondsLeft--;
+  UpdateClock();
+  if (iSecondsLeft == 0) document.location.reload();
+  console.log('iSecondsLeft');
+}
+
+
+function roundTo(num, interval) {
+    return Math.round(num / interval) * interval;
+}
+
+function roundHours() {
+    var newDate = new Date();
+    var h = newDate.getHours() + newDate.getMinutes() / 60 + newDate.getSeconds() / 3600 + newDate.getMilliseconds() / 3600000;
+    newDate.setMinutes(0);
+    newDate.setSeconds(0);
+    newDate.setMilliseconds(0);
+    newDate.setHours(Math.ceil(h));
+
+    sMinutes = newDate.getMinutes();
+    if (sMinutes < 10) sMinutes = '0' + sMinutes;
+    return newDate.getHours() + ':' + sMinutes;
+}
+
+
+window.addEventListener('load', () => {
+    UpdateClock();
+	setInterval('CountDown();', 1000);
+});
+
+</script>
+
+			</div>
+		</section>
+		<!--end:: CONTENT SECTION-->
+
+
+			<!--begin::Footer-->
+			<div class="footer py-4 d-flex flex-lg-column pb-7" id="kt_footer">
+				<!--begin::Container-->
+				<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+					<div>
+						<a href="index.html">
+							<div class="footer-brand-logo"></div>
+						</a>
+
+						<!--begin::Copyright-->
+						<div class="text-dark order-2 order-md-1 mt-2">
+							<span class="font-weight-bold mr-2">&copy; 2021 C.O.R.E. Enterprises LLC <br>4730 S. Fort Apache Rd Ste 300, NV 89147, USA</span>
+						</div>
+						<!--end::Copyright-->
+					</div>
+					<!--begin::Nav-->
+					<div class="nav order-1 order-md-2">
+						<div class="my-2 w-100 text-right">
+							<a title="Facebook Group" href="https://www.facebook.com/groups/FlowChat" target="_blank" class="text-dark px-1"><i class="fab fa-facebook text-dark icon-2x"></i></a>
+							<a title="LinkedIn" href="https://www.linkedin.com/company/flow-chat/" target="_blank" class="text-dark px-1"><i class="fab fa-linkedin text-dark icon-2x"></i></a>
+							<a title="Youtube" href="https://www.youtube.com/channel/UCvILv5OAjHZN9ncUAZMHXjw" target="_blank" class="text-dark px-1"><i class="fab fa-youtube text-dark icon-2x"></i></a>
+						</div>
+						<div class="my-2 w-100 text-right">
+							<a href="mailto:support@flowchat.com" target="_self" class="text-dark px-2 pl-0">support@flowchat.com</a><br>
+							<a href="./privacy-policy.html" target="_self" class="text-dark px-2 pl-0">Privacy Policy</a>
+							<a href="./terms-and-conditions.html" target="_self" class="text-dark px-2">Terms & Conditions</a>
+							<a href="https://call.flowchat.com/connectionexpert" target="_blank" class="text-dark px-2">Contact</a>
+						</div>
+					</div>
+					<!--end::Nav-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Footer-->
+
+			<!--begin::Scrolltop-->
+			<div id="kt_scrolltop" class="scrolltop">
+				<span class="svg-icon">
+					<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<polygon points="0 0 24 0 24 24 0 24" />
+							<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+							<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+						</g>
+					</svg>
+					<!--end::Svg Icon-->
+				</span>
+			</div>
+			<!--end::Scrolltop-->
+
+			<!--begin:: Global Config(global config for global JS scripts)-->
+			<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#7401B8", "secondary": "#E5EAEE", "success": "#80FEDB", "info": "#0C90E7", "warning": "#FFC300", "danger": "#F72586", "light": "#F3F6F9", "dark": "#240046" }, "light": { "white": "#ffffff", "primary": "#ecd2fb", "secondary": "#ECF0F3", "success": "#d5fdf2", "info": "#cdebfe", "warning": "#faefcd", "danger": "#fdd9ea", "light": "#F3F6F9", "dark": "#e2d6ee" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+			<!--end:: Global Config-->
+			<!--begin::Global Theme Bundle(used by all pages)-->
+			<script src="assets/plugins/global/plugins.bundle.js"></script>
+			<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+			<script src="assets/js/scripts.bundle.js"></script>
+			<!--end::Global Theme Bundle-->
+
+			<!--begin::FlowChat JS(used by all pages)-->
+			<script src="assets/js/flowchat.js"></script>
+			<!--end::FlowChat JS(used by all pages)-->
+
+			<!--begin:: CUSTOM JS -->
+
+<script type="text/javascript">
+
+
+// START: Set the default texts
+function setDefaults(){
+
+}
+// END: Set the default texts
+
+
+// When the page loads, show the default contents and pricing plan
+$(document).ready(function() { setDefaults(); });
+
+// FIX TOL ELEMENTS
+
+</script>
+<!--end:: - CUSTOM JS -->
+
+
+	</body>
+	<!--end::Body-->
+</html>

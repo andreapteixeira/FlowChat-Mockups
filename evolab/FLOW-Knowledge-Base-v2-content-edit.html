@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="">
+		<meta charset="utf-8" />
+    <title>FlowChat - Knowledge Base</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/flowchat.css?v=1622482278" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/brand/navy.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/aside/navy.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="https://www.multiuniversal.com/evolution2/assets/media/logos/favicon.ico" />
+	</head>
+
+	<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading kt-brand--minimize kt-aside--minimize"  >
+
+
+<!-- begin:: Header Mobile -->
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
+	<div class="kt-header-mobile__logo">
+		<a href="./">
+			<img alt="Logo" src="../assets/media/logos/logo-6.png"/>
+		</a>
+	</div>
+	<div class="kt-header-mobile__toolbar">
+			
+		<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+			
+		<!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+				
+		<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+	</div>
+</div>
+<!-- end:: Header Mobile -->
+<!-- begin:: Root -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <!-- begin:: Page -->
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <!-- begin:: Aside -->
+    <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+    <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+      <!-- begin::Aside Brand -->
+      <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+        <div class="kt-aside__brand-logo">
+          <a href="./">
+            <img alt="Logo" src="https://www.multiuniversal.com/evolution2/assets/media/logos/logo-6.png"/>
+          </a>
+        </div>
+	
+        <div class="kt-aside__brand-tools">
+          <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+        </div>
+      </div>
+      <!-- end:: Aside Brand -->
+
+      <!-- begin:: Aside Menu -->
+      <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+        <div id="kt_aside_menu"	class="kt-aside-menu" data-ktmenu-vertical="1"	 data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+
+          <ul class="kt-menu__nav ">
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+<li class="kt-menu__item " aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+<li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a><div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>  <ul class="kt-menu__subnav">
+<li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+  </ul>
+</div></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+<li class="kt-menu__section "><h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i></li>
+<li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-open-text-book"></i><span class="kt-menu__link-text">Knowledge Base</span></a></li>
+<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+  <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+    <i class="kt-menu__link-icon flaticon2-cup"></i>
+    <span class="kt-menu__link-text">Product Guide</span>
+    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+  </a>
+  <div class="kt-menu__submenu ">
+    <span class="kt-menu__arrow"></span>
+    <ul class="kt-menu__subnav">
+      <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+        <span class="kt-menu__link">
+          <span class="kt-menu__link-text">Product Guide</span>
+        </span>
+      </li>
+      
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Facebook Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">LinkedIn Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Instagram Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Organizing Pipelines</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Useful Flows</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+      </div>
+      <!-- end:: Aside Menu -->
+      <!-- begin:: Aside Footer -->
+      <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+        <div class="kt-aside__footer-nav">
+          <div class="kt-aside__footer-item">
+            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                        <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Aside Footer -->
+    </div>
+    <!-- end:: Aside -->
+
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+        <!-- begin:: Header Menu -->
+        <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+        <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+
+          <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+            <ul class="kt-menu__nav  "><!-- Remove kt-hidden to show the drop down menus-->
+
+              <!-- begin:: Menu Pipelines -->
+              <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                  <ul class="kt-menu__subnav">
+<li class="kt-menu__item bg-light">
+  <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+</li>
+<div class="dropdown-divider m-0"></div>
+<li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>                  </ul>
+                </div>
+              </li>
+              <!-- end:: Menu Pipelines-->
+
+
+              <!-- begin:: Menu Reports -->
+              <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                <ul class="kt-menu__subnav">
+
+                  <ul class="kt-menu__content">
+
+                    <li class="kt-menu__item ">
+                      <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                      <ul class="kt-menu__inner">
+                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+                </ul>
+              </div></li>
+              <!-- end:: Menu Reports -->
+
+
+              <!-- begin:: Menu Import / Export -->
+              <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                      <div class="kt-menu__subnav">
+                        <ul class="kt-menu__content">
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                             <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                  <ul class="kt-menu__subnav">
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- end:: Import/Export -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- end:: Header Menu -->
+
+        <!-- begin:: Header Topbar -->
+        <div class="kt-header__topbar">
+
+          <!--begin: Leads -->
+          <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Leads -->
+          <!--begin: Pending helpdesk tickets -->
+          <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-help" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Pending helpdesk tickets -->
+          <!--begin: Search -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+              <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+              <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                <form method="get" class="kt-quick-search__form">
+                <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                  <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                  <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                </div>
+                </form>
+                <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <!--end: Search -->
+
+          <!--begin: Notifications -->
+          <div class="kt-header__topbar-item dropdown">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+              <span class="kt-header__topbar-icon">
+                <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+              <form>
+              <div class="kt-head" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                <h3 class="kt-head__title">User Notifications</h3>
+                <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+              </div>
+              <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+              <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </form>
+            </div>
+          </div>
+          <!--end: Notifications -->
+
+
+          <!--begin: User Bar -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                <!--use "kt-rounded" class for rounded avatar style-->
+            <div class="kt-header__topbar-user kt-rounded-">
+              <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+              <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+              <img id="MemberPictureUserBar" alt="Pic" src="../assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+              <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+              <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+            <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+              <div class="kt-user-card__wrapper">
+                <div class="kt-user-card__pic">
+                <!--use "kt-rounded" class for rounded avatar style-->
+                  <img id="MemberPictureUserBarDropdown" alt="Pic" src="../assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+                </div>
+                <div class="kt-user-card__details">
+                    <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                    <div class="kt-user-card__position"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="kt-nav kt-margin-b-10">
+              <li class="kt-nav__item">
+                <a href="./my-profile-personal-information" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                  <span class="kt-nav__link-text">My Profile</span>
+                </a>
+              </li>
+              <li class="kt-nav__item">
+                <a href="./my-profile-change-password" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                  <span class="kt-nav__link-text">Change Password</span>
+                </a>
+              </li>
+                            <li class="kt-nav__separator kt-nav__separator--fit"></li>
+
+              <li class="kt-nav__custom kt-space-between">
+                <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end: User Bar -->
+      </div>
+      <!-- end:: Header Topbar -->
+    </div>
+    <!-- end:: Header -->
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+      <!-- begin:: Subheader -->
+      <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+        <div class="kt-container  kt-container--fluid ">
+          <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">Knowledge Base</h3>
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+            </div>
+          </div>
+          <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+
+              <span id="SubHeaderButtons"></span>
+
+              <div class="dropdown dropdown-inline" data-placement="top">
+                <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                  <ul class="kt-nav kt-nav--active-bg" role="tablist">
+
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">FB Group</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./flowcharts-edit" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Flowchart</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Friends</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-group" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Group</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Likes</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Lead</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Product</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Podcast</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Task</span>
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Subheader -->          
+
+      <!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+              <div class="row">
+                <div class="col-lg-3">
+
+                  <!--begin::Portlet-->
+                  <div class="kt-portlet">
+                    <div class="kt-portlet__body kt-portlet__body--fit-x">
+                      <div class="input-group px-4">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">Go!</button>
+                        </div>
+                      </div>
+                      <ul class="kt-nav kt-nav--active-bg kt-nav--bold" id="m_nav" role="tablist">
+                            <li class="kt-nav__item active">
+                              <a class="kt-nav__link" role="tab" href="#" >
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Overview</span>
+                              </a>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_2" data-toggle="collapse" href="#m_nav_sub_2" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Browser Extension</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_2" role="tabpanel" aria-labelledby="m_nav_link_2" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Install the Browser Extension</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Use the Extension to Import Facebook Friends</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Use the Extension to Import Facebook Group Members</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Use the Extension to Import Facebook Likes</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_3" data-toggle="collapse" href="#m_nav_sub_3" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Setting Up Your Pipeline</span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_3" role="tabpanel" aria-labelledby="m_nav_link_3" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Create a New Pipeline</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Set Up More Pipeline Stages</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Add Leads Initially into your 1st Pipeline Stage</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Create and Assign Message Templates</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_4" data-toggle="collapse" href="#m_nav_sub_4" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Facebook Import</span>
+                                <span class="kt-nav__link-badge">
+                                  <span class="kt-badge kt-badge--danger kt-badge--inline kt-badge--rounded">new</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_4" role="tabpanel" aria-labelledby="m_nav_link_4" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Facebook Group Members</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Facebook Friends Lists</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import from a List of Likes</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_5" data-toggle="collapse" href="#m_nav_sub_5" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">LinkedIn Import</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_5" role="tabpanel" aria-labelledby="m_nav_link_5" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from Your LinkedIn Messages</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from LinkedIn Connections</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from LinkedIn Likes</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from LinkedIn Group Members</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_6" data-toggle="collapse" href="#m_nav_sub_6" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Instagram Import</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_6" role="tabpanel" aria-labelledby="m_nav_link_6" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from Your Instagram Messages</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Instagram Followers</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Instagram Post Likers</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_7" data-toggle="collapse" href="#m_nav_sub_7" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Sheet Import</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_7" role="tabpanel" aria-labelledby="m_nav_link_7" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from A Sheet into the CRM</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="kt-nav__item">
+                              <a class="kt-nav__link" role="tab" href="#" >
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Organizing Your Pipelines</span>
+                              </a>
+                            </li>
+                            <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_8" data-toggle="collapse" href="#m_nav_sub_8" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Automations & Integrations</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_8" role="tabpanel" aria-labelledby="m_nav_link_8" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">Setting Up Your Zapier Connection</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Import Leads from Google Sheet to a Specific Pipeline Stage</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How To Import Leads from A Sheet into the CRM</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Export an Email Address entered onto a New or Existing Lead to a Google Sheet via Zapier</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="kt-nav__item kt-nav__item--sub">
+                              <a class="kt-nav__link collapsed" role="tab" id="m_nav_link_8" data-toggle="collapse" href="#m_nav_sub_8" aria-expanded="false">
+                                <i class="kt-nav__link-icon flaticon2-crisp-icons"></i>
+                                <span class="kt-nav__link-text">Useful Flows</span>
+                                </span>
+                                <span class="kt-nav__link-arrow"></span>
+                              </a>
+                              <ul class="kt-nav__sub collapse" id="m_nav_sub_8" role="tabpanel" aria-labelledby="m_nav_link_8" data-parent="#m_nav" style="">
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">Quick Way to Build Friends List up to 5000 Targeted Friends</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Build LinkedIn Connections</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Generate Leads on Instagram</span>
+                                  </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                  <a href="" class="kt-nav__link">
+                                    <span class="kt-nav__link-bullet kt-nav__link-bullet--line"><span></span></span>
+                                    <span class="kt-nav__link-text">How to Add Leads From the Prospecting Database into a Pipeline</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                    </div>
+                    <button type="button" class="btn btn-metal"><i class="fa fa-sort"></i> Reorder pages</button>
+                  </div>
+
+                  <!--end::Portlet-->
+                </div>
+                <div class="col-lg-9">
+
+                  <!--begin::Portlet-->
+                  <div class="kt-portlet">
+                    <div class="kt-portlet__head">
+                      <div class="kt-portlet__head-label">
+                        <h1 class="kt-portlet__head-title"></h1>
+                      </div>
+                      <div class="kt-portlet__head-toolbar">
+                        <div class="kt-portlet__head-toolbar-wrapper">
+                          <button type="button" class="btn btn-metal"><i class="fa fa-plus"></i> Add Page</button>
+
+                          <button type="button" class="btn btn-metal"><i class="fa fa-eye"></i> Preview page</button>
+                          <button type="button" class="btn btn-danger btn-icon"><i class="fa fa-trash-alt"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-portlet__body">
+
+                      <!--begin:: Tutorial Content-->
+
+                      <form class="kt-form">
+                      <div class="kt-portlet__body">
+                        <div class="form-group">
+                          <label>Page Title</label>
+                          <input type="email" class="form-control form-control-lg" aria-describedby="pageTitle" placeholder="Type page title...">
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                            <div class="form-group">
+                              <label>Content Type</label>
+                              <div class="kt-radio-inline mt-3">
+                                <label class="kt-radio">
+                                  <input type="radio" checked="checked" name="radio2"> Tutorial <span></span>
+                                </label>
+                                <label class="kt-radio">
+                                  <input type="radio" name="radio2"> FAQ <span></span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                            <div class="form-group">
+                              <label for="exampleSelect1">Parent Page</label>
+                              <select class="form-control" id="exampleSelect1">
+                                <option>Root</option>
+                                <option value="overview">Overview</option>
+                                <option value="1">Browser Extension</option>
+                                <option value="1">Setting Up Your Pipeline</option>
+                                <option value="1">Facebook Import</option>
+                                <option value="1">LinkedIn Import</option>
+                                <option value="1">Instagram Import</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kt-tinymce">
+                          <textarea id="kt-tinymce-4" name="kt-tinymce-4" class="tox-target" style="display: none;" aria-hidden="true">                        &lt;h1&gt;Quick and Simple TinyMCE 5 Integration&lt;/h1&gt;
+                          &lt;p&gt;Here goes the&nbsp;&lt;a href="#"&gt;Minitial content of the editor&lt;/a&gt;. Lorem Ipsum is simply dummy text of the&nbsp;&lt;em&gt;printing and typesetting&lt;/em&gt;&nbsp;industry.&lt;/p&gt;
+                          &lt;blockquote&gt;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/blockquote&gt;
+                          &lt;h3 style="text-align: right;"&gt;Flexible &amp; Powerful&lt;/h3&gt;
+                          &lt;p style="text-align: right;"&gt;&lt;strong&gt;Lorem Ipsum has been the industry's&lt;/strong&gt;&nbsp;standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.&lt;/p&gt;
+                          &lt;ul&gt;
+                              &lt;li&gt;List item 1&lt;/li&gt;
+                              &lt;li&gt;List item 2&lt;/li&gt;
+                              &lt;li&gt;List item 3&lt;/li&gt;
+                              &lt;li&gt;List item 4&lt;/li&gt;
+                          &lt;/ul&gt;
+                      </textarea><div role="application" class="tox tox-tinymce" style="visibility: hidden; height: 500px;"><div class="tox-editor-container"><div class="tox-editor-header"><div class="tox-toolbar-overlord"><div role="group" class="tox-toolbar"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Formats" aria-label="Formats" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" aria-expanded="false" style="user-select: none;"><span class="tox-tbtn__select-label">Paragraph</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button title="Fonts" aria-label="Fonts" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" aria-expanded="false" style="user-select: none;"><span class="tox-tbtn__select-label">System Font</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button title="Font sizes" aria-label="Font sizes" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" aria-expanded="false" style="user-select: none;"><span class="tox-tbtn__select-label">24pt</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div></div><div role="group" class="tox-toolbar"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Undo" title="Undo" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 0 1-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 1 1-1.4 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 1.4L6.4 8z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Redo" title="Redo" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 1 1-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 1 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4l3.3-3.3z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Cut" title="Cut" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M18 15c.6.7 1 1.4 1 2.3 0 .8-.2 1.5-.7 2l-.8.5-1 .2c-.4 0-.8 0-1.2-.3a3.9 3.9 0 0 1-2.1-2.2c-.2-.5-.3-1-.2-1.5l-1-1-1 1c0 .5 0 1-.2 1.5-.1.5-.4 1-.9 1.4-.3.4-.7.6-1.2.8l-1.2.3c-.4 0-.7 0-1-.2-.3 0-.6-.3-.8-.5-.5-.5-.8-1.2-.7-2 0-.9.4-1.6 1-2.2A3.7 3.7 0 0 1 8.6 14H9l1-1-4-4-.5-1a3.3 3.3 0 0 1 0-2c0-.4.3-.7.5-1l6 6 6-6 .5 1a3.3 3.3 0 0 1 0 2c0 .4-.3.7-.5 1l-4 4 1 1h.5c.4 0 .8 0 1.2.3.5.2.9.4 1.2.8zm-8.5 2.2l.1-.4v-.3-.4a1 1 0 0 0-.2-.5 1 1 0 0 0-.4-.2 1.6 1.6 0 0 0-.8 0 2.6 2.6 0 0 0-.8.3 2.5 2.5 0 0 0-.9 1.1l-.1.4v.7l.2.5.5.2h.7a2.5 2.5 0 0 0 .8-.3 2.8 2.8 0 0 0 1-1zm2.5-2.8c.4 0 .7-.1 1-.4.3-.3.4-.6.4-1s-.1-.7-.4-1c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-.3.3-.4.6-.4 1s.1.7.4 1c.3.3.6.4 1 .4zm5.4 4l.2-.5v-.4-.3a2.6 2.6 0 0 0-.3-.8 2.4 2.4 0 0 0-.7-.7 2.5 2.5 0 0 0-.8-.3 1.5 1.5 0 0 0-.8 0 1 1 0 0 0-.4.2 1 1 0 0 0-.2.5 1.5 1.5 0 0 0 0 .7v.4l.3.4.3.4a2.8 2.8 0 0 0 .8.5l.4.1h.7l.5-.2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Copy" title="Copy" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M16 3H6a2 2 0 0 0-2 2v11h2V5h10V3zm1 4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9c0-1.2.9-2 2-2h7zm0 12V9h-7v10h7z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Paste" title="Paste" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M18 9V5h-2v1c0 .6-.4 1-1 1H9a1 1 0 0 1-1-1V5H6v13h3V9h9zM9 20H6a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.2A3 3 0 0 1 12 1a3 3 0 0 1 2.8 2H18a2 2 0 0 1 2 2v4h1v12H9v-1zm1.5-9.5v9h9v-9h-9zM12 3a1 1 0 0 0-1 1c0 .5.4 1 1 1s1-.5 1-1-.4-1-1-1z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Bold" title="Bold" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 0 1-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Italic" title="Italic" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Insert/edit link" title="Insert/edit link" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M6.2 12.3a1 1 0 0 1 1.4 1.4l-2.1 2a2 2 0 1 0 2.7 2.8l4.8-4.8a1 1 0 0 0 0-1.4 1 1 0 1 1 1.4-1.3 2.9 2.9 0 0 1 0 4L9.6 20a3.9 3.9 0 0 1-5.5-5.5l2-2zm11.6-.6a1 1 0 0 1-1.4-1.4l2-2a2 2 0 1 0-2.6-2.8L11 10.3a1 1 0 0 0 0 1.4A1 1 0 1 1 9.6 13a2.9 2.9 0 0 1 0-4L14.4 4a3.9 3.9 0 0 1 5.5 5.5l-2 2z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Insert/edit image" title="Insert/edit image" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 15.7l3.3-3.2c.3-.3.7-.3 1 0L12 15l4.1-4c.3-.4.8-.4 1 0l2 1.9V5H5v10.7zM5 18V19h3l2.8-2.9-2-2L5 17.9zm14-3l-2.5-2.4-6.4 6.5H19v-4zM4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1V4c0-.6.4-1 1-1zm6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Align left" title="Align left" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Align center" title="Align center" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 1 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 0 1 0-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Align right" title="Align right" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Justify" title="Justify" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button></div></div><div role="group" class="tox-toolbar"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><div aria-pressed="false" aria-label="Bullet list" title="Bullet list" role="button" aria-haspopup="true" unselectable="on" tabindex="-1" class="tox-split-button" aria-expanded="false" aria-describedby="aria_1959381733221633561150676" style="user-select: none;"><span role="presentation" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M11 5h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zM4.5 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1z" fill-rule="evenodd"></path></svg></span></span><span role="presentation" tabindex="-1" class="tox-tbtn tox-split-button__chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_1959381733221633561150676" style="display: none;">To open the popup, press Shift+Enter</span></div><div aria-pressed="false" aria-label="Numbered list" title="Numbered list" role="button" aria-haspopup="true" unselectable="on" tabindex="-1" class="tox-split-button" aria-expanded="false" aria-describedby="aria_8062882473241633561150679" style="user-select: none;"><span role="presentation" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M10 17h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 1 1 0-2zM6 4v3.5c0 .3-.2.5-.5.5a.5.5 0 0 1-.5-.5V5h-.5a.5.5 0 0 1 0-1H6zm-1 8.8l.2.2h1.3c.3 0 .5.2.5.5s-.2.5-.5.5H4.9a1 1 0 0 1-.9-1V13c0-.4.3-.8.6-1l1.2-.4.2-.3a.2.2 0 0 0-.2-.2H4.5a.5.5 0 0 1-.5-.5c0-.3.2-.5.5-.5h1.6c.5 0 .9.4.9 1v.1c0 .4-.3.8-.6 1l-1.2.4-.2.3zM7 17v2c0 .6-.4 1-1 1H4.5a.5.5 0 0 1 0-1h1.2c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.4a.4.4 0 1 1 0-.8h1.3c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.5a.5.5 0 1 1 0-1H6c.6 0 1 .4 1 1z" fill-rule="evenodd"></path></svg></span></span><span role="presentation" tabindex="-1" class="tox-tbtn tox-split-button__chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_8062882473241633561150679" style="display: none;">To open the popup, press Shift+Enter</span></div></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Decrease indent" title="Decrease indent" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 1 1 0-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm-5 4h12a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm1.6-3.8a1 1 0 0 1-1.2 1.6l-3-2a1 1 0 0 1 0-1.6l3-2a1 1 0 0 1 1.2 1.6L6.8 12l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Increase indent" title="Increase indent" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 1 1 0-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm-5 4h12a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 0 1 1.2-1.6l3 2a1 1 0 0 1 0 1.6l-3 2a1 1 0 1 1-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Blockquote" title="Blockquote" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7.5 17h.9c.4 0 .7-.2.9-.6L11 13V8c0-.6-.4-1-1-1H6a1 1 0 0 0-1 1v4c0 .6.4 1 1 1h2l-1.3 2.7a1 1 0 0 0 .8 1.3zm8 0h.9c.4 0 .7-.2.9-.6L19 13V8c0-.6-.4-1-1-1h-4a1 1 0 0 0-1 1v4c0 .6.4 1 1 1h2l-1.3 2.7a1 1 0 0 0 .8 1.3z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Subscript" title="Subscript" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M10.4 10l4.6 4.6-1.4 1.4L9 11.4 4.4 16 3 14.6 7.6 10 3 5.4 4.4 4 9 8.6 13.6 4 15 5.4 10.4 10zM21 19h-5v-1l1-.8 1.7-1.6c.3-.4.5-.8.5-1.2 0-.3 0-.6-.2-.7-.2-.2-.5-.3-.9-.3a2 2 0 0 0-.8.2l-.7.3-.4-1.1 1-.6 1.2-.2c.8 0 1.4.3 1.8.7.4.4.6.9.6 1.5s-.2 1.1-.5 1.6a8 8 0 0 1-1.3 1.3l-.6.6h2.6V19z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Superscript" title="Superscript" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M15 9.4L10.4 14l4.6 4.6-1.4 1.4L9 15.4 4.4 20 3 18.6 7.6 14 3 9.4 4.4 8 9 12.6 13.6 8 15 9.4zm5.9 1.6h-5v-1l1-.8 1.7-1.6c.3-.5.5-.9.5-1.3 0-.3 0-.5-.2-.7-.2-.2-.5-.3-.9-.3l-.8.2-.7.4-.4-1.2c.2-.2.5-.4 1-.5.3-.2.8-.2 1.2-.2.8 0 1.4.2 1.8.6.4.4.6 1 .6 1.6 0 .5-.2 1-.5 1.5l-1.3 1.4-.6.5h2.6V11z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Special character" title="Special character" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M15 18h4l1-2v4h-6v-3.3l1.4-1a6 6 0 0 0 1.8-2.9 6.3 6.3 0 0 0-.1-4.1 5.8 5.8 0 0 0-3-3.2c-.6-.3-1.3-.5-2.1-.5a5.1 5.1 0 0 0-3.9 1.8 6.3 6.3 0 0 0-1.3 6 6.2 6.2 0 0 0 1.8 3l1.4.9V20H4v-4l1 2h4v-.5l-2-1L5.4 15A6.5 6.5 0 0 1 4 11c0-1 .2-1.9.6-2.7A7 7 0 0 1 6.3 6C7.1 5.4 8 5 9 4.5c1-.3 2-.5 3.1-.5a8.8 8.8 0 0 1 5.7 2 7 7 0 0 1 1.7 2.3 6 6 0 0 1 .2 4.8c-.2.7-.6 1.3-1 1.9a7.6 7.6 0 0 1-3.6 2.5v.5z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Print" title="Print" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M18 8H6a3 3 0 0 0-3 3v6h2v3h14v-3h2v-6a3 3 0 0 0-3-3zm-1 10H7v-4h10v4zm.5-5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm.5-8H6v2h12V5z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Preview" title="Preview" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M3.5 12.5c.5.8 1.1 1.6 1.8 2.3 2 2 4.2 3.2 6.7 3.2s4.7-1.2 6.7-3.2a16.2 16.2 0 0 0 2.1-2.8 15.7 15.7 0 0 0-2.1-2.8c-2-2-4.2-3.2-6.7-3.2a9.3 9.3 0 0 0-6.7 3.2A16.2 16.2 0 0 0 3.2 12c0 .2.2.3.3.5zm-2.4-1l.7-1.2L4 7.8C6.2 5.4 8.9 4 12 4c3 0 5.8 1.4 8.1 3.8a18.2 18.2 0 0 1 2.8 3.7v1l-.7 1.2-2.1 2.5c-2.3 2.4-5 3.8-8.1 3.8-3 0-5.8-1.4-8.1-3.8a18.2 18.2 0 0 1-2.8-3.7 1 1 0 0 1 0-1zm12-3.3a2 2 0 1 0 2.7 2.6 4 4 0 1 1-2.6-2.6z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Source code" title="Source code" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><g fill-rule="nonzero"><path d="M9.8 15.7c.3.3.3.8 0 1-.3.4-.9.4-1.2 0l-4.4-4.1a.8.8 0 0 1 0-1.2l4.4-4.2c.3-.3.9-.3 1.2 0 .3.3.3.8 0 1.1L6 12l3.8 3.7zM14.2 15.7c-.3.3-.3.8 0 1 .4.4.9.4 1.2 0l4.4-4.1c.3-.3.3-.9 0-1.2l-4.4-4.2a.8.8 0 0 0-1.2 0c-.3.3-.3.8 0 1.1L18 12l-3.8 3.7z"></path></g></svg></span></button></div></div></div><div class="tox-anchorbar"></div></div><div class="tox-sidebar-wrap"><div class="tox-edit-area"><iframe id="kt-tinymce-4_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-0 for help." class="tox-edit-area__iframe"></iframe></div><div role="complementary" class="tox-sidebar"><div data-alloy-tabstop="true" tabindex="-1" class="tox-sidebar__slider tox-sidebar--sliding-closed" style="width: 0px;"><div class="tox-sidebar__pane-container"></div></div></div></div></div><div class="tox-statusbar"><div class="tox-statusbar__text-container"><div role="navigation" data-alloy-tabstop="true" class="tox-statusbar__path"></div><span class="tox-statusbar__branding"><a href="https://www.tiny.cloud/?utm_campaign=editor_referral&amp;utm_medium=poweredby&amp;utm_source=tinymce&amp;utm_content=v5" rel="noopener" target="_blank" tabindex="-1" aria-label="Powered by Tiny">Powered by Tiny</a></span></div><div title="Resize" class="tox-statusbar__resize-handle"><svg width="10" height="10"><g fill-rule="nonzero"><path d="M8.1 1.1A.5.5 0 1 1 9 2l-7 7A.5.5 0 1 1 1 8l7-7zM8.1 5.1A.5.5 0 1 1 9 6l-3 3A.5.5 0 1 1 5 8l3-3z"></path></g></svg></div></div><div aria-hidden="true" class="tox-throbber" style="display: none;"></div></div>
+                        </div>
+
+                      </div>
+                      <div class="kt-portlet__foot">
+                        <div class="kt-form__actions">
+                          <button type="reset" class="btn btn-primary">Update Page</button>
+                          <button type="reset" class="btn btn-secondary">Cancel</button>
+                        </div>
+                      </div>
+                    </form>
+
+
+                      <!--end:: Tutorial Content-->
+
+                      <!--end::Section-->
+                    </div>
+                  </div>
+
+                  <!--end::Portlet-->
+                </div>
+              </div>
+            </div>
+       <!-- end:: Content -->
+      </div>
+        
+    </div>
+	</div>
+	<!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+	
+     
+<!-- begin:: Scrolltop -->
+<div id="kt_scrolltop" class="kt-scrolltop">
+	<i class="la la-arrow-up"></i>
+</div>
+<!-- end:: Scrolltop -->
+					
+										
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#5d78ff",
+						"metal": "#c4c5d6",
+						"light": "#ffffff",
+						"accent": "#00c5dc",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995",
+						"focus": "#9816f4"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+		<script src="https://www.multiuniversal.com/evolution2/assets/js/flowchat.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Vendors(used by this page) -->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+		<!--end::Page Vendors -->
+
+		<!--begin::Page Scripts(used by this page) -->
+		<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
+
+    <script src="assets/plugins/custom/tinymce/tinymce.bundle.js" type="text/javascript"></script>
+    <script src="assets/js/pages/components/forms/editors/tinymce.js" type="text/javascript"></script>
+
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
+</html>

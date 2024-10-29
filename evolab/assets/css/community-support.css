@@ -1,0 +1,145 @@
+/***** Community & Support CSS ******/
+
+#Community-Channel-Members {position: relative; top: 10px;}
+#Community-Channel-Members .member-pic {margin-right: -10px;}
+
+#Community-Messages-wrapper { overflow-y:scroll; }
+
+#Community-Messages {}
+
+
+#Community-Messages .message {clear: both; display: block;}
+
+#Community-Messages .message .message-content {
+    width: calc(100% - 45px);
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-right: 0px;
+    background-color: #f5f6fb;
+    max-width: 700px;
+}
+
+#Community-Messages .message .message-content::before {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #f5f6fb;
+    border-bottom: 15px solid transparent;
+    display: block;
+    content: '';
+    position: relative;
+    margin-top: -5px;
+    margin-left: -33px;
+    float: left;
+}
+
+/**** start:: My MESSAGES ****/
+#Community-Messages .my-message .member-pic {float: right !important}
+#Community-Messages .my-message .message-content {background-color:#e8ecfa;margin-left: 0px;margin-right: 15px; float: right !important}
+#Community-Messages .my-message .message-content::before {
+    float: right;
+    margin-right: -33px;
+    transform: rotate(180deg);
+    border-right: 15px solid #e8ecfa;
+}
+/**** end:: My MESSAGES ****/
+
+
+/**** start:: Replies ****/
+#Community-Messages .message .message-reply .member-pic {float: left !important}
+#Community-Messages .message .message-reply .message-content {background-color:#fff; margin-right: 0px; margin-left: 15px; float: left !important;}
+#Community-Messages .message .message-reply .message-content::before {
+    margin-left: -33px;
+    margin-right: 0px;
+    transform: rotate(00deg);
+    border-right: 15px solid #fff;
+    float: left !important;
+}
+/**** end:: Replies ****/
+
+
+/**** start:: Replies of Replies ****/
+
+#Community-Messages .message .message-reply .message-reply .member-pic {margin-top: 5px !important;}
+#Community-Messages .message .message-reply .message-reply .message-content {padding:0 !important;}
+#Community-Messages .message .message-reply .message-reply .message-content::before {display: none;}
+/**** end:: Replies of Replies ****/
+
+
+#Community-Messages .message .message-text img {max-width:100%}
+
+
+#Community-Editor {
+    min-height: 50px;
+    max-height: 300px;
+    margin-bottom: 35px;
+}
+
+#CommunityMessagePanel {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 320px);
+}
+
+
+#kt_inbox_list .kt-portlet__head-title .truncate {width: 600px}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.ql-container.ql-snow, .ql-toolbar.ql-snow {border-color:#bbbdcb !important}
+.kt-inbox .kt-inbox__aside {padding: 10px 0px !important;}
+#kt_inbox_list .kt-portlet__head {min-height: 50px !important;}
+
+#kt_inbox_aside {
+  max-height: calc(100vh - 220px);
+  overflow:auto;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 400px}
+}
+
+@media only screen and (max-width: 1400px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 200px}
+}
+
+@media only screen and (max-width: 1200px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 50px}
+}
+
+@media only screen and (max-width: 1024px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 600px}
+}
+
+@media only screen and (max-width: 992px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 400px}
+}
+
+@media only screen and (min-width: 768px) {.hide-desktop {display: none !important}}
+@media only screen and (max-width: 767px) {
+    .hide-mobile {display: none !important}
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 300px}
+}
+
+@media only screen and (max-width: 576px) {
+    #kt_inbox_list .kt-portlet__head-title .truncate {width: 150px}
+    #kt_inbox_list .kt-portlet__body{padding-left: 0 !important; padding-right: 0 !important;}
+    #kt_inbox {margin:  auto -15px;}
+    #Community-Messages .message .message-content {width: calc(100% - 40px); padding: 10px !important; margin-left: 10px;}
+    #Community-Messages .message .message-content::before {margin-top: 3px; margin-left: -20px;}
+    #Community-Messages .my-message .message-content {margin-right: 10px; margin-left: 0;}
+    #Community-Messages .my-message .message-content::before {margin-right: -20px;}
+
+    #Community-Messages .message-reply .message-content::before {display: none}
+    #Community-Messages .message-reply .message-content {width: calc(100% - 35px); margin-left: 5px !important;}
+}
+
+
+
+

@@ -1,0 +1,2223 @@
+/*
+Theme Name: Live On The Net
+Theme URI: http://transglobal.pt
+Description: Tema para o website Live on the Net
+Author: Transglobal
+Author URI: http://themeforest.net/user/edge-themes
+Version: 1.0.0
+Template: shuffle
+*/
+
+/* Shop Page */
+
+.edgtf-shopping-cart-dropdown{
+	top: 65% !important;
+}
+
+.woo-shop .edgtf-menu-area {
+    border: 0 !important;
+}
+
+.woo-shop form.woocommerce-ordering, 
+.woo-shop .woocommerce-result-count {
+    display: none !important;
+}
+
+h2.shop_page_titulo {
+    margin-bottom: 1em;
+}
+
+/* Página dos Resultados de Pesquisa */
+
+.search-results .edgtf-menu-area{
+	border: 0;
+}
+
+.search-results .search-page-title{
+	margin-bottom: 4rem;
+}
+
+/* Página dos Resultados de Pesquisa - FIM */
+
+.edgtf-woocommerce-page .woocommerce-error, .edgtf-woocommerce-page .woocommerce-info, .edgtf-woocommerce-page .woocommerce-message{
+	background-color: transparent !important;
+    color: white !important;
+}
+
+.edgtf-woocommerce-page .woocommerce-error li, .edgtf-woocommerce-page .woocommerce-info li, .edgtf-woocommerce-page .woocommerce-message li{
+	list-style: none;
+}
+
+.edgtf-woocommerce-page .woocommerce-error li a.button.wc-forward, .edgtf-woocommerce-page .woocommerce-info li a.button.wc-forward, .edgtf-woocommerce-page .woocommerce-message li a.button.wc-forward{
+	float: right;
+}
+
+.countdown-details{
+	display: grid;
+}
+
+.countdown-details.upcoming * {
+    color: black;
+}
+
+.countdown-details.upcoming{
+	padding-bottom: 0;
+}
+
+.countdown-details.upcoming h4{
+	font-size: 14px;
+}
+
+.countdown-details.upcoming .sp_countdown_ycd{
+	margin-bottom: 0;
+	margin-right: auto;
+}
+
+/* Single Página Concerto / Produto */
+
+img.top-single-product-badge {
+    width: 80px !important;
+    height: auto;
+	border: 0 !important;
+}
+
+.single-product .sp_live_stream{
+	text-align: left;
+	color: white;
+	display: grid;
+}
+
+.single-product .sp_live_stream h5.data_live_stream_gmt {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.single-product .sp_live_stream span{
+	/*text-align: left;
+	color: white;*/
+	font-size: 14.31px;
+	font-weight: bold;
+	line-height: 1.781;
+	margin-bottom: 1.5em;
+}
+
+
+.single-product .ycd-simple-current-unite-wrapper {
+    /*border: 2px solid green;*/
+    display: inline-block;
+}
+
+/*.single-product .imagem_artista_info{
+	max-width: 160px;
+	height: auto;
+}
+
+.single-product .imagem_artista_info img{
+	max-height: 107px;
+	width: 160px !important;
+}*/
+
+.single-product .imagem_artista_info{
+	width: 160px;
+	/*height: auto;*/
+	height: 107px;
+}
+
+.single-product .imagem_artista_info img{
+	/*max-height: 107px;
+	width: 160px !important;*/
+	/*width: unset !important;
+	height: unset !important;*/
+	object-fit: cover !important;
+	max-height: 100% !important;
+    max-width: 100% !important;
+}
+
+.single-product .images .imagem_galeria{
+	margin-right: 10px !important;
+	width: 25%;
+    order: -10;
+    margin-top: 0 !important;
+}
+
+.single-product .edgtf-single-product-summary .cart, .single-product .edgtf-single-product-summary .out-of-stock{
+	border-bottom: 0px;
+	margin-top: 0;
+    padding-bottom: 25px;
+}
+
+.single-product .summary.entry-summary .countdown-details {
+    text-align: left;
+    padding-left: 0;
+}
+
+/*.single-product .sp_countdown_ycd{*/
+.sp_countdown_ycd{
+	margin-bottom: 1.5em;
+	display: flex;
+	/*margin-left: -0.5em;*/
+	margin-left: auto;
+}
+
+.entry-summary .sp_countdown_ycd{
+	margin-left: -0.5em !important;
+}
+
+/*.single-product .sp_countdown_ycd div {*/
+.sp_countdown_ycd div {
+    margin-right: 0.5em;
+	text-align: center;
+}
+
+/*.single-product .sp_countdown_ycd .sp_days,
+.single-product .sp_countdown_ycd .sp_hours,
+.single-product .sp_countdown_ycd .sp_minutes,
+.single-product .sp_countdown_ycd .sp_seconds{*/
+.sp_countdown_ycd .sp_days,
+.sp_countdown_ycd .sp_hours,
+.sp_countdown_ycd .sp_minutes,
+.sp_countdown_ycd .sp_seconds{
+	font-family: 'Poppins';
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+	width: 100%;
+}
+
+/*.single-product .sp_countdown_ycd .label_sp_days,
+.single-product .sp_countdown_ycd .label_sp_hours,
+.single-product .sp_countdown_ycd .label_sp_minutes,
+.single-product .sp_countdown_ycd .label_sp_seconds{*/
+.sp_countdown_ycd .label_sp_days,
+.sp_countdown_ycd .label_sp_hours,
+.sp_countdown_ycd .label_sp_minutes,
+.sp_countdown_ycd .label_sp_seconds{
+	font-family: 'Poppins';
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	padding-top: 0 !important;
+}
+
+/* Fora do Entry Summary da Página do Produto */
+.countdown-details.upcoming .sp_countdown_ycd .sp_days,
+.countdown-details.upcoming .sp_countdown_ycd .sp_hours,
+.countdown-details.upcoming .sp_countdown_ycd .sp_minutes,
+.countdown-details.upcoming .sp_countdown_ycd .sp_seconds{
+	font-size: 20px;
+}
+
+.countdown-details.upcoming .sp_countdown_ycd .label_sp_days,
+.countdown-details.upcoming .sp_countdown_ycd .label_sp_hours,
+.countdown-details.upcoming .sp_countdown_ycd .label_sp_minutes,
+.countdown-details.upcoming .sp_countdown_ycd .label_sp_seconds{
+	margin-top: -5px;
+}
+
+/* */
+
+.single-product .sp_descricao_concerto{
+	font-family: 'Poppins';
+	font-size: 16px;
+	font-weight: regular;
+	margin-bottom: 1em;
+}
+
+.single-product .sp_preco_concerto{
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+
+.edgtf-btn.single_add_to_cart_button{
+	background-color: transparent !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    border-color: #ffffff !important;
+    font-family: 'Poppins' !important;
+    border-radius: 52px !important;
+    vertical-align: baseline !important;
+    min-height: unset !important;
+}
+
+.single-product .edgtf-tabs{
+	text-align: center;
+	border-bottom: 0;
+}
+
+.single-product *{
+	color: white;
+}
+
+.single-product .edgtf-container-inner.clearfix {
+    padding-bottom: 0px !important;
+}
+
+.info_artista_full{
+	display: inline-grid;
+	margin-right: 1em
+}
+
+.single-product .info_artista_full{
+    max-width: 160px;
+}
+
+.info_artista_full > * {
+  grid-column: 1 / 1;
+}
+
+.title_artistas_section_sp{
+	margin-bottom: 1em;
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 18px;
+}
+
+.single-product .nome_artista_produto{
+	font-weight: 700;
+	font-family: 'Poppins';
+	font-size: 38px;
+	line-height: 1.2;
+	margin-top: 0.2em;
+}
+
+.single-product .nome_concerto_produto{
+	font-weight: 600;
+	font-family: 'Poppins';
+	font-size: 32px;
+	line-height: 1.2;
+	margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.single-product .nome_artista_info{
+	font-weight: 400;
+	font-family: 'Poppins';
+	font-size: 14px;
+	text-align: left;
+    margin-top: 1em;
+}
+
+.single-product .summary form .edgtf-quantity-buttons.quantity.hidden {
+    display: block;
+}
+
+/* ------------ */
+
+a{
+	font-family: 'Poppins';
+}
+
+.edgtf-main-menu span.edgtf-item-text {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.edgtf-smooth-transition-loader{
+	display: none !important;
+}
+
+.single-artista .concertos-relacionados-complete-section{
+	/*width: 75%;*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ORIGINAL */
+
+/*.single-artista .edgtf-woocommerce-page .products, .woocommerce .products {
+    list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.single-artista .woocommerce.columns-4 .products li.product{
+	position: relative;
+    float: left;
+    text-align: left;
+    border-style: solid;
+    border-color: #e1e2e5;
+	width: calc(25% - 30px);
+    margin-right: 30px;
+	margin-bottom: 100px;
+}*/
+
+/* TESTE */
+
+.single-artista .products, 
+.single-product .upsells .products {
+    list-style: none;
+    /*margin: 0 0 26px;
+    padding: 0;
+    display: inline-block;*/
+    /*width: 100%;*/
+    vertical-align: middle;
+	/*border: 1px solid red;*/
+	margin: 0 auto !important;
+    display: table !important;
+	width: auto !important;
+}
+
+.single-artista .products.columns-4 li.product,
+.single-product .upsells .products.columns-4 li.product{
+	position: relative;
+    float: left !important;
+    text-align: left;
+    border-style: solid;
+    border-color: #e1e2e5;
+	width: calc(25% - 30px);
+    /*margin-right: 30px;*/
+	margin-bottom: 100px;
+	/*border: 1px solid green;*/
+	/*min-width: 332px;*/
+	/*min-width: 302px;*/
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.single-product .upsells .products.columns-4 li.product{
+	min-width: 302px;
+}
+
+.single-artista .products.columns-4 li.product{
+	min-width: 302px;
+	/*min-width: 260px;*/
+}
+
+
+/* TESTE - FIM */
+
+
+/*.single-artista h6.edgtf-product-list-product-title{*/
+h6.edgtf-product-list-product-title{
+	display: none !important;
+}
+
+/*
+.concertos-relacionados-section{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.concertos-relacionados-h2{
+	margin-bottom: 1em;
+}
+
+.concertos-relacionados-ul{
+	display: inline-block;
+	list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.concertos-relacionados-ul li{
+	position: relative;
+    float: left;
+    text-align: left;
+    border-style: solid;
+    border-color: #e1e2e5;
+	width: calc(25% - 30px);
+    margin-right: 30px;
+	margin-bottom: 4rem;
+}*/
+
+/*
+.single-artista .info_produto{
+	text-align: center;
+	padding: 15px;
+}
+
+.single-artista .info_produto .data_concerto{
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.single-artista .info_produto .tipo_concerto a{
+	display: inline-block;
+}*/
+
+#tg_loop_countdown .edgtf-btn-text,
+li .price,
+li .price .woocommerce-Price-amount{
+	font-size: 12px !important;
+}
+
+.single-artista span.price{
+	margin-top: 12px;
+    display: block;
+}
+
+.tipo_concerto > img {
+    width: 48px!important;
+    position: absolute;
+    z-index: 9;
+    top: -24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h2.concertos-relacionados-h2 {
+    color: white;
+	margin-bottom: 2em;
+	margin-top: 2em;
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 600;
+	text-align: center;
+}
+
+/* Página Individual Concertos */
+
+
+.imagem_categoria_produto,
+.imagem_categoria_produto_novidade{
+    width: 152px !important;
+    height: 24px;
+    border-radius: 5px;
+    /*background-color: #001bef;*/
+    font-family: 'Poppins';
+    text-align: center;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.imagem_categoria_produto_novidade .top-single-product-badge{
+	color: black;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.imagem_categoria_produto_live{
+	width: 104px !important;
+    height: 95px;
+}
+
+.imagem_categoria_produto_live img{
+	border: 0 !important;
+}
+
+.top-single-product-badge_ovr {
+    width: 48px!important;
+    position: absolute;
+    z-index: 9;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px !important;
+    background-color: purple;
+    width: 152px !important;
+    text-align: center;
+    height: 24px;
+    color: white;
+	display: table;
+}
+
+.top-single-product-badge_ovr .badge_text{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Poppins';
+	letter-spacing: 1px;
+}
+
+.tipo_concerto_ovr > img {
+    height: 95px;
+    width: 104px !important;
+    top: -47px;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    margin: auto;
+	border: 0 !important;
+}
+
+/* Imagens Página Individual Concerto */
+
+	
+.single-product.edgtf-woocommerce-page .product{
+	float: unset !important;
+}
+
+.edgtf-quantity-buttons.quantity {
+    display: none !important;
+}
+
+.single-product .edgtf-single-product-images .images{
+	display: flex;
+}
+
+.single-product .edgtf-content {
+    margin-top: 0 !important;
+}
+
+.single-product .images .imagem_destaque {
+    /*width: 75%;*/
+    /*margin-left: 0.5em;*/
+	max-width: 449px !important;
+    max-height: 656px !important;
+	width: 449px !important;
+    height: 656px !important;
+}
+
+
+.images .imagem_galeria a{
+    width: 100% !important;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.imagem_galeria a img,
+.images .imagem_destaque img{
+	border: 1px solid #54505c;
+}
+
+.single-product .imagem_destaque img{
+	max-width: 449px !important;
+    max-height: 656px !important;
+	width: 449px !important;
+    height: 656px !important;
+	object-fit: cover;
+}
+
+.edgtf-single-product-images .images a:not(.woocommerce-main-image){
+	/*margin-bottom: 1em !important;*/
+	margin-bottom: 11.4px !important;
+	margin-top: 0px !important;
+}
+
+.single-product h2.related_products_heading {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+	font-size: 28px;
+	font-weight: 700;
+	font-family: 'Poppins';
+	text-align: center;
+}
+
+.single-product .products{
+	margin-top: 2em;
+	margin-bottom: 0;
+}
+
+/* Página Single Notícia */
+
+.single-post article {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.single-post .edgtf-post-info-date{
+    font-size: 14px;
+	font-weight: #9a9a9a;
+}
+
+.single-post h4{
+    font-size: 24px;
+	font-weight: bold;
+}
+
+.single-post p{
+	font-size: 14px;
+	/*font-family: 'Open Sans',sans-serif;*/
+	font-family: 'Poppins';
+	color: #b7b7b7;
+	font-weight: 400;
+}
+
+/*.single-post *{
+	font-family: 'Poppins';
+}*/
+
+/* Página Single Artista */
+
+.single-artista * {
+    color: white;
+}
+
+.single_artista_wrapper{
+	position: relative;
+    float: left;
+    text-align: left;
+    /*border-style: solid;
+    border-color: #e1e2e5;*/
+	background: 0 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+	display: flex;
+}
+
+/*.single-artista .edgtf-page-header {
+    display: inherit !important;
+}*/
+
+.single-artista .edgtf-container-inner.clearfix {
+    display: grid;
+	width: 90%;
+}
+
+.single-artista .edgtf-single-product-images{
+    width: 45%;
+	/*padding-left: 1em;*/
+	padding-left: 0;
+}
+
+.single-artista .images .imagem_destaque{
+	max-width: unset !important;
+    max-height: unset !important;
+    /*width: 100% !important;*/
+	width: 98.2% !important;
+    text-align: right;
+    height: auto !important;
+	float: right;
+	margin-bottom: 1em;
+}
+
+
+.single-artista .images .imagem_galeria {
+		/*display: block;*/
+		/*display: table;*/
+		display: flex;
+		margin-top: 1em !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+		text-align: right;
+}
+
+.single-artista .images .imagem_galeria img{
+	/*max-width: 160px;*/
+    height: auto;
+    /*width: 160px;*/
+	width: 100%;
+}
+
+.single-artista .edgtf-single-product-images .images a:not(.woocommerce-main-image){
+		/* width: 20% !important; */
+		/*float: unset !important;*/
+		float: right;
+		/*width: 163px !important;*/
+		width: 25% !important;
+		margin-right: 0;
+		/*margin-left: 10px;*/
+		margin-left: 0.5rem;
+		max-width: 25%;
+		display: flex;
+}
+
+.edgtf-single-product-summary.biografia_artista{
+    width: 40%;
+}
+
+.single-artista .edgtf-single-product-summary.biografia_artista {
+    /*padding-left: 3.5em;*/
+    padding-left: 0;
+}
+
+
+.single-artista .imagem_destaque_produto img {
+    height: 400px !important;
+    width: 100%;
+}
+
+.single-artista .edgtf-tabs {
+    clear: both;
+    padding-bottom: 15px;
+    padding-top: 54px;
+	text-align: center;
+}
+
+.edgtf-tabs-nav li {
+    float: none !important;
+    display: inline-block;
+}
+
+.single-artista .edgtf-menu-area,
+.single-product .edgtf-menu-area,
+.single-post .edgtf-menu-area,
+.page .edgtf-menu-area,
+.blog .edgtf-menu-area{
+    /*background-color: rgba(20, 15, 32, 1);*/
+    background-image: url(https://www.liveonthenet.pt/wp-content/uploads/2016/09/header_background_single_artista.png) !important;
+    background-size: 100% 100%;
+	border-bottom: none;
+}
+
+.home .edgtf-menu-area{
+	background-image: unset !important;
+}
+
+.biografia_artista_nome{
+	margin-bottom: 1em;
+}
+
+.biografia_artista_nome h3{
+	font-weight: bold;
+	font-size: 38px;
+}
+
+.biografia_artista_texto {
+    font-weight: 400;
+    font-size: 12pt;
+    font-family: 'Poppins';
+}
+
+/* Sticky Header */
+
+.edgtf-shopping-cart-outer .edgtf-shopping-cart-header .edgtf-header-cart i{
+	color: white !important;
+}
+
+
+.edgtf-sticky-header a.edgtf-side-menu-button-opener.normal,
+.edgtf-sticky-header span.edgtf-icon-ico-moon.icomoon-icon-search{
+    color: white;
+}
+
+
+/* Home Page */
+
+.home .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+    background-color: #00b1ef;
+    border-color: #00b1ef;
+}
+
+/*Custom CSS no Bakery */
+
+.hp_header_concertos_destaque h4{
+    margin-bottom: 1em !important;
+}
+
+.home .concertos_destaque_section_home,
+.blog_artistas_featured_section{
+    transform: skewY(3deg);
+	background-position-y: 0% !important;
+}
+
+.home .concertos_destaque_section_home .edgtf-section-inner,
+.blog_artistas_featured_section .edgtf-section-inner{
+    transform: skewY(-3deg);
+}
+
+
+.blog_artistas_featured_section .edgtf-image-with-text .edgtf-image-with-text-image-inner:hover .edgtf-image-with-text-image-overlay{
+    opacity: 0;
+}
+
+
+.blog_artistas_featured_section	.linha_4_artistas *{
+    text-align: center;
+    font-size: 16px;
+}
+
+.rs-module{
+transform: skewY(3deg) !important;
+}
+
+.rs-slide{
+transform: skewY(-3deg) !important;
+}
+
+
+
+
+.events_home_section,
+.home footer,
+.newsletter_home_section{
+    transform: skewY(3deg);
+}
+
+.home footer .edgtf-footer-inner,
+.events_home_section .edgtf-section-inner,
+.newsletter_home_section .edgtf-section-inner{
+    transform: skewY(-3deg);
+}
+
+.before_footer_section{
+	background-color: #140f20;
+	border: 2px solid red;
+}
+
+.rs-slide{
+transform: skewY(-3deg) !important;
+}
+
+h3, h4{
+ color: white;   
+}
+
+.btn_show_all_artistas,
+.btn_show_all_concertos,
+.btn_todas_noticias{
+    background-color: transparent !important;
+}
+
+.div_btn_all_concertos {
+	margin-top: -2em;
+}
+
+.edgtf-blog-list-holder{
+    margin-bottom: 5%;
+}
+
+.edgtf-blog-list-holder, .div_btn_all_artistas {
+    margin-top: 5%;
+}
+
+.newsletter_home_section{
+    min-height: 500px;
+    background-position-y: center;
+}
+
+.newsletter_header_text{
+    margin-top: 10%;
+}
+
+.wpcf7{
+    /*width: 75%;*/
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    text-transform: inherit;
+    text-align: center;
+    font-weight: 200;
+	font-size: 16px;
+	max-width: 700px;
+}
+
+ul.edgtf-blog-list {
+    width: 60%;
+	max-width: 650px;
+}
+
+.home .blog_home_section li.edgtf-blog-list-item:not(:first-child) {
+    margin-top: 1em;
+}
+
+p.edgtf-excerpt,
+h4.edgtf-item-title{
+    text-align: left;
+}
+
+p.edgtf-excerpt {
+    color: white;
+    font-family: 'Poppins';
+}
+
+.edgtf-events-list-load-more a.edgtf-btn{
+    background-color: transparent;
+    border-color: white;
+}
+
+/* FIM Custom CSS Bakery */
+
+
+.home .blog_artistas_featured_section img {
+    border: 1px solid #434349;
+}
+
+.home .concertos_destaque_section_home{
+	
+}
+
+/* Blog Section - Últimas Notícias */
+
+.home .blog_home_section .edgtf-item-title{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.home .blog_home_section .edgtf-excerpt{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.home .blog_home_section li.edgtf-blog-list-item{
+	padding-bottom: 2em !important;
+    border-bottom: 1px solid #54505c;
+}
+
+/* Countdown Timers */
+
+.ycd-simple-mode-textUnderCountdown {
+    font-family: 'Poppins';
+}
+
+.ycd-simple-countdown-time {
+    font-size: 45px !important;
+    font-weight: 600 !important;
+	font-family: 'Poppins' !important;
+	text-align: center;
+	margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
+
+.ycd-simple-countdown-label {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+	font-family: 'Poppins' !important;
+	text-align: center;
+	margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
+
+/* Rodapé */
+
+footer{
+	background-color: #140f20;
+}
+
+footer .edgtf-footer-inner {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 5em;
+}
+
+footer .edgtf-three-columns-inner .edgtf-column:nth-child(2n) {
+    width: 100%;
+}
+
+footer .edgtf-footer-bottom-holder-inner a {
+    color: #636363;
+}
+
+.footer_redes_sociais {
+    display: flex;
+}
+
+.footer_redes_sociais div {
+    margin-left: 0px;
+    margin-right: 8px;
+}
+
+footer .widget .menu {
+    display: inline-flex;
+}
+
+footer .edgtf-footer-top-holder,
+footer .edgtf-footer-bottom-holder{
+	background-color: #140f20;
+}
+
+footer .edgtf-three-columns-inner {
+    display: flex;
+}
+
+footer .edgtf-three-columns .edgtf-column{
+	align-self: flex-end;
+}
+
+footer .widget .menu{
+	margin-bottom: 0;
+	font-family: 'Poppins';
+}
+
+footer .widget .menu li{
+    margin-right: 10px;
+}
+
+footer .edgtf-three-columns .edgtf-column{
+	width: 50%;
+}
+
+footer .edgtf-column:first-child,
+footer .edgtf-column:last-child{
+    width: 25%;
+}
+
+/* estava a "descentrar" o botão da newsletter */
+.wpcf7 .ajax-loader{
+	display: block;
+}
+
+/* Vírgula Pós-Data e Categoria na parte de cima dos artigos [ESCONDER] */
+
+.edgtf-post-info-date::after {
+    display: none;
+}
+
+.edgtf-post-info-category {
+    display: none !important;
+}
+
+.edgtf-post-info-date{
+	font-family: 'Poppins';
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.edgtf-excerpt{
+	color: #757575;
+	font-weight: 400;
+}
+
+/* Ajustes Logo Sticky Bar 124-166px 210-284px */
+
+.edgtf-sticky-header .edgtf-position-left-inner {
+    height: 100%;
+    /*width: 300px;*/
+    width: 166px;
+}
+
+.edgtf-sticky-header .edgtf-logo-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.edgtf-sticky-header .edgtf-logo-wrapper a{
+	/*max-height: 124px;*/
+    width: 100%;
+    height: 100% !important;
+	max-height: unset !important;
+}
+
+.edgtf-sticky-header .edgtf-logo-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajustes Logo Header Bar 160-214px 210-284px */
+
+.edgtf-menu-area .edgtf-position-left-inner {
+    height: 100%;
+    /*width: 300px;*/
+    width: 214px;
+}
+
+.edgtf-menu-area .edgtf-logo-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.edgtf-menu-area .edgtf-logo-wrapper a{
+	/*max-height: 124px;*/
+    width: 100%;
+    height: 100% !important;
+	max-height: unset !important;
+}
+
+.edgtf-menu-area .edgtf-logo-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Essential Grid Notícias */
+
+.titulo_noticias{
+    margin-bottom: 2em !important;
+}
+
+a.eg-lista-noticias-element-2 {
+    /*font-family: 'Open Sans';*/
+	font-family: 'Poppins';
+}
+
+.esg-cc.eec {
+    /*font-family: 'Poppins';*/
+	top: 1em !important;
+}
+
+.esg-grid li{
+	height: 250px;
+}
+
+.esg-overlay.esg-transition.eg-lista-noticias-container {
+    border-bottom: 1px solid #54505c;
+    height: 260px;
+    width: 90%;
+}
+
+
+.esg-navigationbutton.esg-loadmore {
+    background-color: transparent !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    border-color: #ffffff !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins' !important;
+    padding: 12px 47px !important;
+    font-size: 13px !important;
+    line-height: 1.7em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 52px !important;
+    outline: 0 !important;
+    vertical-align: baseline !important;
+    display: inline-block !important;
+    position: relative !important;
+    min-height: unset !important;
+}
+
+span.edgtf-icon-ico-moon.icomoon-icon-search,
+.edgtf-icon-font-elegant::before {
+    color: white;
+}
+
+html{
+	background-color: #140f20;
+}
+
+.edgtf-wrapper-inner {
+    background-color: #140f20;
+}
+
+/* Lista Artistas */
+
+.titulo_artistas h2,
+.titulo_concertos h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.titulo_artistas,
+.titulo_concertos{
+    margin-bottom: 4em !important;
+}
+
+/*#css_egartistas li{*/
+#esg-grid-2-1 ul li{
+	/*margin-top: 4em;*/
+    /*padding-right: 1.5em !important;
+    padding-left: 1.5em !important;*/
+    /*padding-right: 1em !important;
+    padding-left: 1em !important;*/
+	margin-right: 13px;
+    margin-left: 13px;
+	height: auto !important;
+}
+
+li.eg-skin-artistas-wrapper .esg-media-poster{
+	max-width: 306px;
+	margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+#esg-grid-2-1 ul li{
+    /*width: 306px !important;*/
+    width: 306px !important;
+}
+
+#esg-grid-2-1 .esg-entry-media-wrapper {
+	height: 202px;
+	border: 1px solid #434349;
+}
+
+#esg-grid-2-1 .esg-entry-media {
+    /*padding-bottom: 50% !important;*/
+    padding-bottom: 0% !important;
+	margin-right: auto !important;
+    margin-left: auto !important;
+	/*width: 280px;*/
+	height: 202px;
+	width: 304px;
+	/*border: 1px solid #434349;*/
+}
+
+
+.edgtf-tabs.edgtf-horizontal-tab .edgtf-tab-container {
+    padding: 25px 10px 25px 0;
+    max-width: 970px;
+    margin: auto;
+    text-align: left;
+}
+
+/*.eg-skin-lista-artistas-element-1{*/
+/*.eg-skin-artistas-content .esg-content:last-child{
+    background-color: transparent !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    border-color: #ffffff !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins' !important;
+    padding: 6px 20px !important;
+    font-size: 13px !important;
+    line-height: 1.7em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 52px !important;
+    outline: 0 !important;
+    vertical-align: baseline !important;
+    display: inline-block !important;
+    position: relative !important;
+    min-height: unset !important;
+	width: 35%;
+	margin-top: 1.5em;
+}*/
+
+.esg-entry-content.eg-skin-artistas-content.esg-notalone {
+    /*height: 200px;
+    max-height: 200px;*/
+	height: 100px;
+    max-height: 100px;
+}
+
+#css_egartistas .esg-loadmore-wrapper {
+    margin-top: 1rem;
+}
+
+#css_egartistas .esg-container {
+    /*width: 80%;*/
+    /*width: 66%;*/
+	width: 1328px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.edgtf-onsale {display: none !important;}
+
+span.woocommerce-Price-amount.amount {
+    color: white !important;
+}
+
+/* Contact Page */
+
+.contact_page_right_section h3,
+.contact_page_left_section h3{
+	font-family: 'Poppins';
+	font-size: 24px;
+	font-weight: 600;
+	color: black;
+}
+
+.contact_page_right_section input.wpcf7-form-control.wpcf7-submit{
+	float: right;
+}
+
+
+.contact_page_right_section form.wpcf7-form p {
+    margin: 0;
+}
+
+.contact_page_right_section .wpcf7-form-control.wpcf7-textarea,
+.contact_page_right_section .your-name .wpcf7-text,
+.contact_page_right_section input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{
+	/*margin-bottom: 0;*/
+	border: 1px solid #f4f4f4;
+	background-color: #1a142a !important;
+}
+
+.contact_page_right_section input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{
+	max-width: unset !important;
+}
+
+.contact_page_right_section .wpcf7-form-control.wpcf7-textarea::placeholder,
+.contact_page_right_section .your-name .wpcf7-text::placeholder,
+.contact_page_right_section input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email::placeholder{
+	color: white !important;
+}
+
+.contact_page_right_section input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email::placeholder{
+	text-align: left;
+	font-size: 14px;
+    font-weight: 400;
+}
+
+.contact_page_left_section h5{
+	font-family: 'Poppins';
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+}
+
+.contact_page_left_section p{
+	/*font-family: 'Open Sans';*/
+	font-family: 'Poppins';
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+	color: white;
+}
+
+.contact_page_right_section form.wpcf7-form{
+    margin-top: 2em;
+}
+
+.contact_page_main_section{
+	padding-top: 100px;
+	padding-bottom: 128px;
+	background-color: #1a142a !important;
+}
+
+.page_contacts_title{
+	margin-bottom: 2em !important;
+}	
+	
+.page_contacts_title h2{
+	font-family: 'Poppins';
+	font-size: 48px;
+	font-weight: 700;
+}
+
+/* Página Lista Concertos */
+
+.pagina_concertos_container .price,
+.pagina_concertos_container .price .woocommerce-Price-amount{
+	font-family: 'Poppins';
+	font-size: 12px;
+	font-weight: 600;
+}
+
+
+/*.pagina_concertos_container .local_concerto_lista{*/
+.local_concerto_lista{
+	font-size: 16px;
+    line-height: 20px;
+	font-weight: 600;
+}
+
+/*.pagina_concertos_container .data_concerto_lista{*/
+.data_concerto_lista{
+	font-size: 16px;
+    line-height: 20px;
+	font-weight: 400;
+	padding-top: 0 !important;
+}
+
+/*.pagina_concertos_container a.ajax_add_to_cart {*/
+a.ajax_add_to_cart {
+    display: none !important;
+}
+
+/*.pagina_concertos_container .countdown-details span{*/
+.countdown-details span:first-child{
+	padding-bottom: 6px;
+    padding-top: 6px;
+	display: block;
+}
+
+body:not(.home) .edgtf-content{
+    margin-top: 0 !important;
+}
+
+.edgtf-wrapper {
+	background-color: #140f20 !important;
+}
+
+/* Páginas Woocommerce: Carrinho (Cart), Checkout, Finalizar Compra */
+
+.wc-proceed-to-checkout a {
+    background-color: #00b1ef!important;
+    border: #00b1ef!important;
+}
+
+.edgtf-woocommerce-page .woocommerce-cart-form .coupon input[type="text"]{
+	background-color: #1a142a;
+}
+
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table tr {
+    background-color: #1a142a !important;
+}
+
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table h4{
+	font-size: 20px;
+}
+
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table th.product-quantity,
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table td.product-quantity{
+    display: none !important;
+}
+
+.woocommerce-cart.woocommerce-page td.actions .edgtf-cart-proceed-update{
+	width: 100%;
+}
+
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table .cart-subtotal th,
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table .order-total th {
+    color: white;
+	font-size: 18px;
+}
+
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table .order-total bdi{
+	font-weight: 400;
+}
+
+/*.woocommerce-cart.woocommerce-page .woocommerce table.shop_table thead,
+.woocommerce-cart.woocommerce-page .woocommerce table.shop_table tbody{
+	border: 0;
+}*/
+
+.woocommerce-checkout.woocommerce-page input[type=email],
+.woocommerce-checkout.woocommerce-page input[type=password], 
+.woocommerce-checkout.woocommerce-page input[type=tel], 
+.woocommerce-checkout.woocommerce-page input[type=text], 
+.woocommerce-checkout.woocommerce-page textarea{
+	background-color: transparent !important;
+	color: white;
+}
+
+.woocommerce-checkout.woocommerce-page .select2-container--open .select2-dropdown,
+.woocommerce-checkout.woocommerce-page .select2-container--open .select2-results{
+	background-color: #1a142a !important;
+	color: white !important;
+}
+
+.woocommerce-checkout.woocommerce-page #select2-billing_country-container,
+.woocommerce-checkout.woocommerce-page table.shop_table.woocommerce-checkout-review-order-table tr {
+    background-color: #1a142a !important;
+}
+
+.woocommerce-checkout.woocommerce-page table.shop_table.woocommerce-checkout-review-order-table th,
+.woocommerce-checkout .shop_table .order-total th, .woocommerce-checkout .shop_table .product-name, .woocommerce-checkout .shop_table thead .product-total{
+	color: white !important;
+}
+
+.woocommerce-checkout input::placeholder,
+.woocommerce-checkout input[type=email]::placeholder,
+.woocommerce-checkout textarea::placeholder,
+.woocommerce-checkout ul.wc_payment_methods.payment_methods.methods *,
+.woocommerce-checkout span#select2-billing_country-container {
+    color: white;
+}
+
+.woocommerce-checkout ul.wc_payment_methods.payment_methods.methods .payment_method_hipaymbway{
+	max-width: 500px;
+}
+
+.woocommerce-checkout h3.checkout_meios_pag_title {
+    margin-top: 48px;
+    margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 23.4px;
+}
+
+.woocommerce-checkout  ul.wc_payment_methods.payment_methods.methods li {
+    margin-bottom: 2em;
+}
+
+.payment_box.payment_method_hipaymbway {
+    margin-top: 1em;
+}
+
+input#payment_method_hipayprofessional,
+input#payment_method_hipaymultibanco,
+input#payment_method_hipaymbway{
+    margin-bottom: 1.5em;
+}
+
+.edgtf-woocommerce-page .woocommerce-checkout-payment{
+	margin-top: 0 !important;
+}
+
+.woocommerce-checkout .form-row.place-order input[type=submit]{
+	background-color: #00b1ef!important;
+    border: #00b1ef!important;
+}
+
+.woocommerce-order-received .woocommerce-thankyou-order-received,
+.woocommerce-order-received .woocommerce-order-details__title,
+.woocommerce-order-received .woocommerce-column__title{
+	font-size: 18px;
+	font-weight: 600;
+    line-height: 23.4px;
+}
+
+.woocommerce-order-received .woocommerce-order-details__title,
+.woocommerce-order-received .woocommerce-column__title{
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+}
+
+.woocommerce-order-received {
+    color: white !important;
+}
+
+.woocommerce-order-received a{
+	color: white !important;
+}
+
+.woocommerce-order-received .shop_table tfoot{
+	background-color: transparent !important;
+}
+
+h3#order_review_heading {
+    width: 50%;
+}
+
+.woocommerce-checkout form.checkout.woocommerce-checkout .col-2 {
+    margin-left: 0 !important;
+	margin-right: 1% !important;
+}
+
+/* Barra de Pesquisa na Página Checkout */
+
+.woocommerce-checkout input.edgtf-search-submit {
+    position: absolute !important;
+    bottom: 10px !important;
+    right: 0 !important;
+    border: none !important;
+    background: 0 0 !important;
+    outline: 0 !important;
+    width: auto !important;
+    cursor: pointer !important;
+    font-family: ElegantIcons !important;
+    font-size: 20px !important;
+    line-height: 1.5em !important;
+    transition: color .2s ease !important;
+    float: right !important;
+    display: block !important;
+    padding: 1px 6px 1px 6px !important;
+}
+
+.woocommerce-order-received table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
+    margin-bottom: 1.5em;
+}
+
+/* My Account Page */
+
+.woocommerce-account .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link.is-active a, 
+.woocommerce-account .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link:hover a {
+    border-bottom-color: #00b1ef !important;
+    color: white !important;
+}
+
+table.woocommerce-orders-table.woocommerce-MyAccount-orders.shop_table.shop_table_responsive.my_account_orders.account-orders-table {
+    border-color: white !important;
+}
+
+table.woocommerce-orders-table.woocommerce-MyAccount-orders th.woocommerce-orders-table__header {
+    color: white;
+}
+
+table.woocommerce-orders-table.woocommerce-MyAccount-orders td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-date,
+table.woocommerce-orders-table.woocommerce-MyAccount-orders td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-status,
+table.woocommerce-orders-table.woocommerce-MyAccount-orders td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-total{
+    color: white;
+}
+
+.woocommerce-account h2,
+.woocommerce-account h3{
+    text-transform: none;
+    font-size: 18px;
+    margin-bottom: 28px;
+    margin-top: 40px;
+}
+
+.woocommerce-account table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
+    color: white;
+}
+
+.woocommerce-account address {
+    color: white;
+}
+
+.woocommerce-account.woocommerce-page input[type=email],
+.woocommerce-account.woocommerce-page input[type=password], 
+.woocommerce-account.woocommerce-page input[type=tel], 
+.woocommerce-account.woocommerce-page input[type=text], 
+.woocommerce-account.woocommerce-page textarea{
+	background-color: transparent !important;
+	color: white;
+}
+
+.woocommerce-account.woocommerce-page input::placeholder,
+.woocommerce-account.woocommerce-page input[type=email]::placeholder,
+.woocommerce-account.woocommerce-page textarea::placeholder,
+.woocommerce-account.woocommerce-page ul.wc_payment_methods.payment_methods.methods *,
+.woocommerce-account.woocommerce-page span#select2-billing_country-container {
+    color: white;
+}
+
+.woocommerce-account.woocommerce-page span#select2-billing_country-container,
+.woocommerce-account.woocommerce-page span#select2-shipping_country-container,
+.woocommerce-account.woocommerce-page span.select2-selection__placeholder,
+.woocommerce-account.woocommerce-page .select2-container--open .select2-dropdown,
+.woocommerce-account.woocommerce-page .select2-container--open .select2-results{
+	background-color: #1a142a !important;
+	color: white !important;
+}
+
+.woocommerce-account.woocommerce-page legend{
+	color: white;
+}
+
+/* My Account Page - Register & Login Form */
+
+.edgtf-my-account-login #customer_login {
+    display: flex;
+}
+
+.edgtf-my-account-login #customer_login .u-column1.col-1,
+.edgtf-my-account-login #customer_login .u-column2.col-2 {
+    width: 50%;
+    padding: 50px;
+}
+
+/* Coupon Code Popup when user not logged in */
+
+.checkout_coupon.woocommerce-form-coupon #coupon_code {
+    max-width: 450px;
+}
+
+
+
+.woocommerce-orders-table__cell-order-actions .woocommerce-button {margin: 0 5px;}
+
+
+.wpml-ls ul{
+	margin: 0;
+    list-style: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.wpml-ls ul a{
+	color: #fff;
+}
+
+
+.postbox-container #side-sortables div img, .interface-interface-skeleton__sidebar div img, .block-editor-editor-skeleton__sidebar div img {width: auto !important;}
+
+
+#wpcf7-f354-p91-o1 .wpcf7-submit,
+#wpcf7-f6456-p6418-o1 .wpcf7-submit {margin-left: 70px;}
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 1400px) {
+		
+	/* Produtos Relacionados */	
+
+	.single-product .upsells .products.columns-4 li.product{
+		/*min-width: 22% !important;*/
+		min-width: 217px !important;
+		width: 217px !important;
+	}
+
+	.single-artista .products.columns-4 li.product{
+		/*min-width: 22% !important;*/
+		min-width: 217px; !important;
+		/*min-width: 190px !important;*/
+		width: 190px !important;
+	}
+	
+}	
+
+@media only screen and (max-width: 1024px) {
+	
+	/*.single-product .upsells .products {
+		width: 100% !important;
+	}*/
+	
+	.woocommerce.columns-4 .products li{
+		width: 45% !important;
+		/*margin-right: 2% !important;
+		margin-left: 2% !important;*/
+		/*margin-right: 1rem !important;
+		margin-left: 1rem !important;*/
+	}
+	
+	.woocommerce.columns-4 .btn.loadMoreBtn{
+		width: auto !important;
+	}
+	
+	/* Página Individual Concerto */
+	
+	.single-product .edgtf-container > .edgtf-container-inner{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		/*border: 2px solid yellow;*/
+		padding-bottom: 1em !important;
+		padding-top: 1em !important;
+	}
+	
+	.edgtf-container-inner.clearfix > .edgtf-container-inner {
+		width: 100%;
+	}
+	
+	.single-product .edgtf-single-product-images .images{
+	/*.edgtf-single-product-images .images {*/
+		display: block;
+		/*display: table;*/
+	}
+
+	.single-product .images .imagem_destaque{
+	/*.images .imagem_destaque{ */
+		/*display: inline-block;
+		display: table-row;*/
+		display: block;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+
+	.single-product .images .imagem_galeria {
+		display: block;
+		margin-top: 1em !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+		text-align: center;
+	}
+	
+	.single-product .imagem_destaque img{
+	/*.imagem_destaque img{*/
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+	
+	.single-product .edgtf-single-product-images .images a:not(.woocommerce-main-image){
+		display: inline-block;
+		/*width: 40% !important;
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 4px;*/
+		/*float: unset !important;*/
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 22% !important;
+		margin: 0 auto;
+	}
+	
+	.single-product .sp_preco_concerto,
+	.single-product .artistas_do_produto{
+		text-align: center;
+	}
+	
+	.single-product .imagem_categoria_produto{
+		display: block;
+		/*margin-right: auto;
+		margin-left: auto;*/
+	}
+	
+	.single-product .cart{
+		text-align: center;
+	}
+	
+	/* Página Lista Artistas */
+	
+	/*#css_egartistas #esg-grid-2-1 ul li{
+		margin-right: auto !important;
+		margin-left: auto !important;
+		width: 33vw !important;
+	}*/
+	
+	.esg-entry-media-wrapper {
+		width: 306px !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.esg-entry-media-wrapper .esg-entry-media{
+		width: 306px !important;
+	}
+	
+	#css_egartistas #esg-grid-2-1 ul li .esg-media-poster{
+		transform: unset !important;
+	}
+	
+	
+	/* Rodapé */
+	
+	footer .edgtf-three-columns-inner {
+		display: block;
+		width: 100vw;
+	}
+
+	footer .edgtf-three-columns .edgtf-column {
+		width: 100vw !important;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	footer .footer_redes_sociais {
+		display: inline-flex;
+	}
+
+	footer .widget .menu {
+		display: inline-block;
+	}
+	
+	footer .textwidget.custom-html-widget {
+		width: 100vw;
+		margin-right: 0;
+		margin-left: 0;
+		display: inherit;
+		height: auto;
+	}
+	
+	/* Produtos Relacionados (Artistas + Concertos) */	
+
+	.single-product .upsells .products.columns-4 li.product{
+		/*min-width: 202px !important;
+		width: 202px !important;*/	
+		min-width: 320px !important;
+		width: 46% !important;
+		/* margin-right: 0 !important; */
+		/*border: 1px solid pink;*/
+		clear: unset !important;
+	}
+
+	.single-artista .products.columns-4 li.product{
+		/*min-width: 22% !important;*/
+		/*min-width: 217px; !important;*/
+		min-width: 275px !important;
+		width: 275px !important;
+		margin-right: 0% !important;
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	
+	#css_egartistas .mainul {
+		max-width: 95% !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+	
+	/* Página Lista Artistas */
+	
+	/*#css_egartistas #esg-grid-2-1 ul li{
+		margin-right: auto !important;
+		margin-left: auto !important;
+		width: 50vw !important;
+	}*/
+	
+	/*Concertos Relacionados */
+	.single-product .upsells .products.columns-4 li.product{
+		/*min-width: 240px !important;*/
+		min-width: 290px !important;
+		width: 48% !important;
+		margin-right: 0 !important;
+	}
+
+	.single-artista .products.columns-4 li.product{
+		min-width: 290px !important;
+		/*min-width: 275px !important;*/
+		/*width: 275px !important;*/
+		width: 48% !important;
+		margin-right: 0% !important;
+	}
+	
+	/* My Account Page - Register & Login Form */
+
+	.edgtf-my-account-login #customer_login {
+		display: inherit;
+	}
+
+	.edgtf-my-account-login #customer_login .u-column1.col-1,
+	.edgtf-my-account-login #customer_login .u-column2.col-2 {
+		width: inherit;
+		padding: inherit;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 667px) {
+	
+	/* My Account */
+	
+	.woocommerce-account .woocommerce-MyAccount-content,
+	.woocommerce-MyAccount-navigation{
+		width: 100% !important;
+	}
+	
+	/*Concertos Relacionados */
+	.single-product .upsells .products.columns-4 li.product{
+		/*min-width: 240px !important;*/
+		min-width: 95% !important;
+		width: auto !important;
+		margin-right: 0 !important;
+	}
+
+	.single-artista .products.columns-4 li.product{
+		/*min-width: 240px !important;*/
+		min-width: 100% !important;
+		width: auto !important;
+		margin-right: 0% !important;
+	}
+	
+	/* Home, Reader e Rodapé */
+
+	.home .edgtf-image-with-text-info {
+		margin-bottom: 2em;
+	}
+	
+	.home .wpcf7{
+		width: 100%;
+	}
+	
+	.edgtf-position-right .edgtf-search-opener{
+		display: initial;
+	}
+	
+	footer .edgtf-three-columns-inner {
+		display: block;
+		width: 100vw;
+	}
+
+	footer .edgtf-three-columns .edgtf-column {
+		width: 100vw !important;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	footer .footer_redes_sociais {
+		display: inline-flex;
+	}
+
+	footer .widget .menu {
+		display: inline-block;
+	}
+	
+	
+	footer .textwidget.custom-html-widget {
+		width: 100vw;
+		margin-right: 0;
+		margin-left: 0;
+		display: inherit;
+		height: auto;
+	}
+	
+	/* Página Concertos */
+	
+	.woocommerce.columns-4 .products li{
+		width: 100% !important;
+		margin-bottom: 100px !important;
+	}
+	
+	.woocommerce.columns-4 .btn.loadMoreBtn{
+		width: 50%;
+	}
+	
+	/* Página Individual Concerto */
+	
+	.single-product .edgtf-container > .edgtf-container-inner{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		/*border: 2px solid yellow;*/
+		padding-bottom: 1em !important;
+		padding-top: 1em !important;
+	}
+	
+	.edgtf-container-inner.clearfix > .edgtf-container-inner {
+		width: 100%;
+	}
+	
+	.single-product .edgtf-single-product-images .images{
+	/*.edgtf-single-product-images .images {*/
+		display: block;
+		/*display: table;*/
+	}
+
+	.single-product .images .imagem_destaque{
+	/*.images .imagem_destaque{ */
+		/*display: inline-block;
+		display: table-row;*/
+		display: block;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+
+	.single-product .images .imagem_galeria {
+		display: block;
+		margin-top: 1em !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+		text-align: center;
+	}
+	
+	.single-product .imagem_destaque img{
+	/*.imagem_destaque img{*/
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+	
+	.single-product .edgtf-single-product-images .images a:not(.woocommerce-main-image){
+		display: inline-block;
+		/*width: 40% !important;
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 4px;*/
+		/*float: unset !important;*/
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 22% !important;
+		margin: 0 auto;
+	}
+	
+	.single-product .sp_preco_concerto,
+	.single-product .artistas_do_produto{
+		text-align: left;
+	}
+	
+	.single-product .imagem_categoria_produto{
+		display: block;
+		/*margin-right: auto;
+		margin-left: auto;*/
+	}
+	
+	.single-product .cart{
+		text-align: left;
+	}
+	
+	/* Página Lista Artistas */
+	
+	/*#css_egartistas #esg-grid-2-1 ul li{
+		margin-right: auto !important;
+		margin-left: auto !important;
+		width: 100vw !important;
+	}*/
+	
+	.esg-entry-media-wrapper {
+		width: 306px !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.esg-entry-media-wrapper .esg-entry-media{
+		width: 306px !important;
+	}
+	
+	#css_egartistas #esg-grid-2-1 ul li .esg-media-poster{
+		transform: unset !important;
+	}
+	
+	/* Página Individual Artista */
+	
+	.single-artista .edgtf-container-inner.clearfix{
+		display: block;
+	}
+	
+	.single-artista .edgtf-container > .edgtf-container-inner{
+		width: 90%;
+		/*width: 100%;*/
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		/*border: 2px solid yellow;*/
+		padding-bottom: 1em !important;
+		padding-top: 1em !important;
+	}
+	
+	.single-artista .edgtf-single-product-images .images {
+		/*display: table;*/
+		display: block;
+	}
+	
+	.single-artista .images .imagem_destaque{
+		display: block;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+	
+	.single-artista .imagem_destaque img{
+	/*.imagem_destaque img{*/
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		max-height: unset !important;
+	}
+
+	.single-artista .images .imagem_galeria {
+		display: block;
+		/*display: table;*/
+		/*display: flex;*/
+		margin-top: 1em !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+		text-align: center;
+	}
+	
+	.single-artista .edgtf-single-product-images .images a:not(.woocommerce-main-image){
+		display: inline-block;
+		/*width: 40% !important;
+		margin-right: 1em !important;
+		margin-left: 1em;	
+		padding-left: 4px;
+		max-width: unset !important;*/
+		/*float: unset !important;*/
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 22% !important;
+		margin: 0 auto;
+	}
+	
+	.single-artista .single_artista_wrapper{
+		display: grid;
+	}
+	
+	.single-artista .edgtf-single-product-images {
+		width: 100%;
+		display: grid;
+	}
+	
+	.single-artista .biografia_artista {
+		display: grid;
+		order: -10;
+		width: 100%;
+	}
+	
+	.single-artista .products.columns-4 {
+		width: 100% !important;
+	}
+	
+	.single-artista .products.columns-4 li{
+		min-width: unset !important;
+		width: 100% !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	
+	/* Página Lista de Notícias */
+	
+	.page-id-4922 .esg-loadmore-wrapper {
+		margin-top: 2em;
+	}
+	
+	/* Página Contactos */
+	
+	.contact_page_left_section {
+		margin-bottom: 3rem;
+	}
+	
+	/* Página Checkout */
+	
+	.checkout.woocommerce-checkout #customer_details .col-1, 
+	.checkout.woocommerce-checkout .col-2{
+		width: 100% !important;
+	}
+	
+}

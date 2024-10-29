@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="">
+		<meta charset="utf-8" />
+    <title>FlowChat Prospecting Database Filters and Credit Balance</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/flowchat.css?v=1622482278" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/brand/navy.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/skins/aside/navy.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="https://www.multiuniversal.com/evolution2/assets/media/logos/favicon.ico" />
+	</head>
+
+	<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading kt-brand--minimize kt-aside--minimize"  >
+
+
+<!-- begin:: Header Mobile -->
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
+	<div class="kt-header-mobile__logo">
+		<a href="./">
+			<img alt="Logo" src="../assets/media/logos/logo-6.png"/>
+		</a>
+	</div>
+	<div class="kt-header-mobile__toolbar">
+			
+		<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+			
+		<!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+				
+		<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+	</div>
+</div>
+<!-- end:: Header Mobile -->
+<!-- begin:: Root -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <!-- begin:: Page -->
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <!-- begin:: Aside -->
+    <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+    <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+      <!-- begin::Aside Brand -->
+      <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+        <div class="kt-aside__brand-logo">
+          <a href="./">
+            <img alt="Logo" src="https://www.multiuniversal.com/evolution2/assets/media/logos/logo-6.png"/>
+          </a>
+        </div>
+	
+        <div class="kt-aside__brand-tools">
+          <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+        </div>
+      </div>
+      <!-- end:: Aside Brand -->
+
+      <!-- begin:: Aside Menu -->
+      <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+        <div id="kt_aside_menu"	class="kt-aside-menu" data-ktmenu-vertical="1"	 data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+
+          <ul class="kt-menu__nav ">
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+<li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+<li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a><div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>  <ul class="kt-menu__subnav">
+<li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+  </ul>
+</div></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+<li class="kt-menu__section "><h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i></li>
+<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+  <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+    <i class="kt-menu__link-icon flaticon2-cup"></i>
+    <span class="kt-menu__link-text">Product Guide</span>
+    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+  </a>
+  <div class="kt-menu__submenu ">
+    <span class="kt-menu__arrow"></span>
+    <ul class="kt-menu__subnav">
+      <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+        <span class="kt-menu__link">
+          <span class="kt-menu__link-text">Product Guide</span>
+        </span>
+      </li>
+      
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Facebook Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">LinkedIn Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Instagram Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Organizing Pipelines</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Useful Flows</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+      </div>
+      <!-- end:: Aside Menu -->
+      <!-- begin:: Aside Footer -->
+      <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+        <div class="kt-aside__footer-nav">
+          <div class="kt-aside__footer-item">
+            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                        <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Aside Footer -->
+    </div>
+    <!-- end:: Aside -->
+
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+        <!-- begin:: Header Menu -->
+        <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+        <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+
+          <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+            <ul class="kt-menu__nav  "><!-- Remove kt-hidden to show the drop down menus-->
+
+              <!-- begin:: Menu Pipelines -->
+              <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                  <ul class="kt-menu__subnav">
+<li class="kt-menu__item bg-light">
+  <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+</li>
+<div class="dropdown-divider m-0"></div>
+<li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>                  </ul>
+                </div>
+              </li>
+              <!-- end:: Menu Pipelines-->
+
+
+              <!-- begin:: Menu Reports -->
+              <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                <ul class="kt-menu__subnav">
+
+                  <ul class="kt-menu__content">
+
+                    <li class="kt-menu__item ">
+                      <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                      <ul class="kt-menu__inner">
+                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+                </ul>
+              </div></li>
+              <!-- end:: Menu Reports -->
+
+
+              <!-- begin:: Menu Import / Export -->
+              <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                      <div class="kt-menu__subnav">
+                        <ul class="kt-menu__content">
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                             <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                  <ul class="kt-menu__subnav">
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- end:: Import/Export -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- end:: Header Menu -->
+
+        <!-- begin:: Header Topbar -->
+        <div class="kt-header__topbar">
+
+          <!--begin: Leads -->
+          <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Leads -->
+          <!--begin: Pending helpdesk tickets -->
+          <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-help" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Pending helpdesk tickets -->
+          <!--begin: Search -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+              <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+              <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                <form method="get" class="kt-quick-search__form">
+                <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                  <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                  <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                </div>
+                </form>
+                <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <!--end: Search -->
+
+          <!--begin: Notifications -->
+          <div class="kt-header__topbar-item dropdown">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+              <span class="kt-header__topbar-icon">
+                <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+              <form>
+              <div class="kt-head" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                <h3 class="kt-head__title">User Notifications</h3>
+                <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+              </div>
+              <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+              <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </form>
+            </div>
+          </div>
+          <!--end: Notifications -->
+
+
+          <!--begin: User Bar -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                <!--use "kt-rounded" class for rounded avatar style-->
+            <div class="kt-header__topbar-user kt-rounded-">
+              <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+              <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+              <img id="MemberPictureUserBar" alt="Pic" src="../assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+              <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+              <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+            <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+              <div class="kt-user-card__wrapper">
+                <div class="kt-user-card__pic">
+                <!--use "kt-rounded" class for rounded avatar style-->
+                  <img id="MemberPictureUserBarDropdown" alt="Pic" src="../assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+                </div>
+                <div class="kt-user-card__details">
+                    <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                    <div class="kt-user-card__position"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="kt-nav kt-margin-b-10">
+              <li class="kt-nav__item">
+                <a href="./my-profile-personal-information" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                  <span class="kt-nav__link-text">My Profile</span>
+                </a>
+              </li>
+              <li class="kt-nav__item">
+                <a href="./my-profile-change-password" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                  <span class="kt-nav__link-text">Change Password</span>
+                </a>
+              </li>
+                            <li class="kt-nav__separator kt-nav__separator--fit"></li>
+
+              <li class="kt-nav__custom kt-space-between">
+                <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end: User Bar -->
+      </div>
+      <!-- end:: Header Topbar -->
+    </div>
+    <!-- end:: Header -->
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+      <!-- begin:: Subheader -->
+      <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+        <div class="kt-container  kt-container--fluid ">
+          <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">FLOWCHAT TEMPLATE</h3>
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+            </div>
+          </div>
+          <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+
+              <span id="SubHeaderButtons"></span>
+
+              <div class="dropdown dropdown-inline" data-placement="top">
+                <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                  <ul class="kt-nav kt-nav--active-bg" role="tablist">
+
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">FB Group</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./flowcharts-edit" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Flowchart</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Friends</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-group" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Group</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Likes</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Lead</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Product</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Podcast</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Task</span>
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Subheader -->          
+
+      <!-- begin:: Content -->
+      <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid">
+        <ul class="nav nav-tabs m-0" role="tablist">
+          <li class="nav-item"><a class="nav-link active" href="?tab=1&amp;member_pipeline_id=&amp;cardcolor=&amp;period=This Month"><i class="fa fa-chart-bar"></i> <span class="m--visible-desktop-inline-block">Template</span></a></li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-plus"></i>
+            </a>
+          </li>
+        </ul>
+
+          <div class="kt-portlet kt-portlet--mobile">
+            <div class="kt-portlet__body">
+
+
+
+              <div class="row">
+                <!--begin: Search Form -->
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <div class="kt-portlet__body kt-shape-bg-color-1 mb-3 pb-1 pt-3">
+                  <div class="kt-form row mx-0">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <h5>Filters</h5>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-6 mb-3">
+                      <div class="kt-input-icon kt-input-icon--left">
+                        <input type="text" class="form-control" placeholder="Search..." id="generalSearch">
+                        <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                          <span><i class="la la-search"></i></span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-6 mb-3">
+                      <div class="kt-form__control">
+                        <div class="dropdown bootstrap-select form-control kt_"><select class="form-control kt_selectpicker" title="Popular searches..." onchange="document.location.href='?search=' + this.value;" data-size="7" id="kt_form_facebookmember_search_popular" tabindex="-98"><option class="bs-title-option" value=""></option>
+                          <option value=""></option>
+        <option value="accountant">accountant</option><option value="author">author</option><option value="bookkeep">bookkeep</option><option value="CEO">CEO</option><option value="coach">coach</option><option value="entrepreneur">entrepreneur</option><option value="estate">estate</option><option value="executive">executive</option><option value="human resource">human resource</option><option value="insurance">insurance</option><option value="marketing">marketing</option><option value="moms">moms</option><option value="parent">parent</option><option value="podcast">podcast</option><option value="saas">saas</option><option value="speaker">speaker</option>                </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="kt_form_facebookmember_search_popular" title="Popular searches..."><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Popular searches...</div></div> </div></button><div class="dropdown-menu" style="max-height: 299px; overflow: hidden; min-width: 413px;"><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1" style="max-height: 273px; overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li><a role="option" class="dropdown-item" id="bs-select-2-0" tabindex="0" aria-setsize="17" aria-posinset="1"><span class="text"></span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-1" tabindex="0" aria-setsize="17" aria-posinset="2"><span class="text">accountant</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-2" tabindex="0" aria-setsize="17" aria-posinset="3"><span class="text">author</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-3" tabindex="0" aria-setsize="17" aria-posinset="4"><span class="text">bookkeep</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-4" tabindex="0" aria-setsize="17" aria-posinset="5"><span class="text">CEO</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-5" tabindex="0" aria-setsize="17" aria-posinset="6"><span class="text">coach</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-6" tabindex="0" aria-setsize="17" aria-posinset="7"><span class="text">entrepreneur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-7" tabindex="0" aria-setsize="17" aria-posinset="8"><span class="text">estate</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-8" tabindex="0" aria-setsize="17" aria-posinset="9"><span class="text">executive</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-9" tabindex="0" aria-setsize="17" aria-posinset="10"><span class="text">human resource</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-10" tabindex="0" aria-setsize="17" aria-posinset="11"><span class="text">insurance</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-11" tabindex="0" aria-setsize="17" aria-posinset="12"><span class="text">marketing</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-12" tabindex="0"><span class="text">moms</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-13" tabindex="0"><span class="text">parent</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-14" tabindex="0"><span class="text">podcast</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-15" tabindex="0" aria-setsize="17" aria-posinset="16"><span class="text">saas</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-16" tabindex="0" aria-setsize="17" aria-posinset="17"><span class="text">speaker</span></a></li></ul></div></div></div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-md-3 col-lg-3 col-xl-8 mb-3" id="div_kt_form_facebookmember_facebookgroup_id">
+                        <div class="kt-form__control">
+                          <div class="dropdown bootstrap-select form-control kt_"><select class="form-control kt_selectpicker" data-size="7" data-live-search="true" title="All" id="kt_form_facebookmember_facebookgroup_id" tabindex="-98"><option class="bs-title-option" value=""></option>
+                            <option value="">All</option>
+                            <option value="492" fbg_id="" disabled=""> Female coaches getting getting clients using social media marketing organically </option><option value="493" fbg_id="" disabled=""> Organic high ticket sales for coaches and experts </option><option value="73" fbg_id="2480517908839537">#SheMeansBusiness</option><option value="874" fbg_id="" disabled="">*West palm beach realtors</option><option value="54" fbg_id="395238797598752">1 Step Away Group</option><option value="304" fbg_id="2469437073348337">10X Growth Challenge: Official Grant Cardone Community</option><option value="452" fbg_id="1494498597523736">10xTravel Insiders</option><option value="656" fbg_id="728620924726337">14 Day High Ticket Course Launch Formula!</option><option value="419" fbg_id="" disabled="">2. ODONTOLOGIA ESPAÑOLA v2</option><option value="832" fbg_id="" disabled="">2021 YOM Members</option><option value="604" fbg_id="563714110986560">22apps Official - Mobile App Marketing Members Circle</option><option value="567" fbg_id="" disabled="">5D High Vibe Tribe</option><option value="354" fbg_id="529858711035652">6-Figure Coaching Biz: Niching, Marketing &amp; Sales (Rachel Bell)</option><option value="495" fbg_id="" disabled="">7 Figure Cashflow Creators</option><option value="181" fbg_id="528594697731332">7 Figure Service Business: Scale With Sales Systems &amp; Staffing Solutions</option><option value="162" fbg_id="137167366914231">7-Figure CEOs: Ops, Delivery, Sales, &amp; Marketing Systems for Online Coaches</option><option value="680" fbg_id="137167366914231">7-Figure CEOs: Ops, Delivery, Sales, &amp; Marketing Systems for Online Coaches</option><option value="583" fbg_id="" disabled="">7-Figure Mindset Secrets for Entrepreneurs</option><option value="179" fbg_id="735269420245203">7-Figure Selling Secrets</option><option value="31" fbg_id="160513014376575">A Bunch of Dads</option><option value="959" fbg_id="" disabled="">A Bunch Of Dads Business</option><option value="26" fbg_id="361847060817076">A Moment for Mindfulness</option><option value="699" fbg_id="795237527892648">A Social Media Managers Guide</option><option value="935" fbg_id="" disabled="">Affiliate Marketing ☑️</option><option value="1031" fbg_id="" disabled="">Agency Owners</option><option value="1034" fbg_id="" disabled="">Amazing Women Entrepreneurs Network</option><option value="315" fbg_id="267844194095188">Amazon Ads University</option><option value="457" fbg_id="268021993545926">Amazon FBA (Retail Arbitrage,Wholesale) Mastermind Group</option><option value="701" fbg_id="" disabled="">Amazon FBA - Freedom Builders</option><option value="192" fbg_id="1260229020753608">Amazon FBA Experience Group</option><option value="431" fbg_id="320102121786645">Amazon FBA Heroes</option><option value="184" fbg_id="589754234445426">Amazon FBA Private Label Sellers</option><option value="187" fbg_id="203677853341476">AMAZON FBA SELLERS - AMAZON FBA TITANS</option><option value="185" fbg_id="1885088548483880">Amazon FBA Service Providers &amp; Virtual Assistants (AMZ One Step)</option><option value="186" fbg_id="1994939164095243">Amazon FBA U.K. Sellers Group</option><option value="279" fbg_id="268021993545926">Amazon FBA, Arbitrage,Wholesale, Dropshipping Mastermind Group</option><option value="427" fbg_id="638390533003177">Amazon Seller Performance (suspensions). Rights Owner / Legal Issues ASGTG</option><option value="429" fbg_id="17941709976">Amazon sellers</option><option value="644" fbg_id="" disabled="">Ambitious Female Coaches, Find Clients - the High Value Connection Method</option><option value="314" fbg_id="1106629493072196">Ambitious Women Entrepreneurs and Coaches</option><option value="557" fbg_id="50609200255">Anthony Robbins Life Mastery</option><option value="18" fbg_id="1611863342453145">Anxiety and Depression Support</option><option value="19" fbg_id="180213835696468">Anxiety And Depression..We Care</option><option value="30" fbg_id="427182010723134">ANXIETY/PANIC ATTACKS LETS FIND A CURE!!!</option><option value="955" fbg_id="" disabled="">Archived - 5 Days to Understanding Frequencies, Vibration &amp; LOA</option><option value="621" fbg_id="2603561053062570">Attract &amp; Scale: Building Your Appointment Setting Machine</option><option value="931" fbg_id="" disabled="">AUTOIMMUNE HEALTH SECRETS</option><option value="732" fbg_id="674715112632668">Automation Nation - Marketing Automation Simplified :: ActiveCampaign</option><option value="295" fbg_id="803614252987794">AwardTravel 101</option><option value="1035" fbg_id="" disabled="">B.O.B Black Owned Businesses</option><option value="934" fbg_id="" disabled="">Ballroom Details: Success Secrets For Women Only</option><option value="345" fbg_id="319722684756468">Baltimore Entrepreneurs</option><option value="971" fbg_id="" disabled="">Be the Best Chiropractor a Practice Enhancement Group</option><option value="82" fbg_id="842145719195875">Belly, Baby &amp; Beyond ♡</option><option value="1036" fbg_id="" disabled="">Black Entrepreneurs</option><option value="556" fbg_id="475727722598496">Bob Proctor</option><option value="232" fbg_id="2430701577246945">Book Yourself Solid</option><option value="169" fbg_id="318403206038579">Boss Women Entrepreneurs</option><option value="947" fbg_id="" disabled="">Breakthrough Emotional Eating💥Stop Overeating For Good</option><option value="348" fbg_id="" disabled="">Brunching Boss Ladies</option><option value="355" fbg_id="229229247489713">Bucketlist Bombshells Community</option><option value="896" fbg_id="" disabled="">Build Your Perfect Offer [5 Day Sprint]</option><option value="905" fbg_id="" disabled="">Build Your Perfect Offer [5 Day Sprint]</option><option value="685" fbg_id="" disabled="">Business and Life Strategies For Entrepreneurs</option><option value="397" fbg_id="488408191540709">Business Besties + Creative Bosses For Online Entrepreneurs + Coaches</option><option value="160" fbg_id="" disabled="">Business Lounge for Women Entrepreneurs</option><option value="657" fbg_id="373258899902965">Business Owner to CEO Growth</option><option value="157" fbg_id="" disabled="">Business Owners &amp; Entrepreneurs Marketing &amp; WordPress Website Support Grou</option><option value="608" fbg_id="1367223893410619">Business Owners Who Scale &amp; Generate More Revenue w/ Live Events &amp; Launches</option><option value="267" fbg_id="805537279520727">Business Owners Who Think BIG: Monetize Your Ideas</option><option value="365" fbg_id="1990390481182682">Business Talk With Fitness Professionals</option><option value="733" fbg_id="1320174144729709">Business, Startup and Franchise Connect</option><option value="892" fbg_id="" disabled="">Businesses &amp; Entrepreneurs Networking Together</option><option value="484" fbg_id="" disabled="">BusiWomen Entrepreneur Community</option><option value="584" fbg_id="" disabled="">Camp GLP</option><option value="618" fbg_id="313326536330816">Captive Conversations That Convert</option><option value="49" fbg_id="265736397105642">Career/Individual Development</option><option value="311" fbg_id="2021261788096238">Cashflow Tactics: Financial Freedom In 10 Years Or Less</option><option value="244" fbg_id="135623626448235">CCTV and Security Business</option><option value="611" fbg_id="181912098893846">Champion Entrepreneurs Community</option><option value="879" fbg_id="" disabled="">Changemaker Collaboration Circle</option><option value="406" fbg_id="1447704718843579">Changemakers Thriving Online Resources and Networking for Online Coaches</option><option value="303" fbg_id="130302618244453">Charfen Community: Predictably Grow Your Business, In Any Market</option><option value="824" fbg_id="" disabled="">Chiropractic</option><option value="1042" fbg_id="" disabled="">Chiropractic business club</option><option value="895" fbg_id="" disabled="">Chiropractors</option><option value="1012" fbg_id="" disabled="">Christian Entrepreneurs: Building Your Business With Purpose</option><option value="795" fbg_id="" disabled="">Christian Women Entrepreneurs</option><option value="734" fbg_id="144874998879425">Christian Women's Business Networking Association</option><option value="913" fbg_id="" disabled="">CleanFoodCrush Clean Eating Challenge</option><option value="249" fbg_id="155930144836289">ClickFunnels &amp; Facebook Ads Mastermind</option><option value="152" fbg_id="510495802383466">ClickFunnels (Official)</option><option value="591" fbg_id="1207703062646822">ClickFunnels Avengers (Affiliates)</option><option value="254" fbg_id="" disabled="">ClickUppers: Official ClickUp Group</option><option value="410" fbg_id="259481221709320">Client Attraction for High Performance Coaches</option><option value="137" fbg_id="782292072290590">Clients &amp; Community™ | Daily Client Acquisition For High Ticket Coaches</option><option value="639" fbg_id="237421760837424">Coach &amp; Grow R.I.C.H. (Rewarded. Inspired. Confident. Happy.) Community</option><option value="384" fbg_id="1926859817366255">Coaches and Holistic Practitioners Who Change the World</option><option value="392" fbg_id="1712450402127145">Coaches Helping Coaches! [Sponsored by The Coaching Tools Company]</option><option value="444" fbg_id="1395652677346893">Coaches, Change Makers: Step into the Spotlight!</option><option value="393" fbg_id="1423429417929625">Coaches, Consultants &amp; Course Creators</option><option value="683" fbg_id="" disabled="">Coaches, Consultants &amp; Course Creators</option><option value="478" fbg_id="" disabled="">Coaches, Consultants &amp; Course Creators 2</option><option value="496" fbg_id="" disabled="">Coaches, Consultants and Course Creators</option><option value="407" fbg_id="347454315671690">Coaching Business Builders</option><option value="155" fbg_id="" disabled="">Coffee With Dan</option><option value="1028" fbg_id="" disabled="">Conquer Fatigue Alliance</option><option value="161" fbg_id="925745647474698">Consultants, Experts &amp; Thought Leaders #Brainstrust</option><option value="638" fbg_id="" disabled="">Content Machine Live (Sep) 20</option><option value="339" fbg_id="782915338839875">Conversions. For Coaches ⚡️ Organic Client Acquisition</option><option value="813" fbg_id="" disabled="">Cosmetic Laser Clinic and Med Spa Owners Group</option><option value="819" fbg_id="" disabled="">Cosmetic Laser Clinic and Med Spa Owners Group</option><option value="703" fbg_id="368861866845198">Dadventure - Dads Only</option><option value="825" fbg_id="" disabled="">Daily Weight Loss Tips</option><option value="735" fbg_id="729243273940412">David Bayer's Invincible Mindset &amp; Unshakeable Business</option><option value="17" fbg_id="654168214682820">Depression And Anxiety Safe Haven Support Group</option><option value="220" fbg_id="620399698086920">Digital Marketing Agency Owners</option><option value="432" fbg_id="806576609494934">Digital Marketing Agency Sidekicks</option><option value="306" fbg_id="487676388073070">Digital Marketing for Agencies, Business Owners, Coaches, &amp; Entrepreneurs</option><option value="658" fbg_id="189061355021010">Digital Marketing Mentorship with Dave Gambrill</option><option value="480" fbg_id="476783139062716">Digital Marketing Question &amp; Answers</option><option value="248" fbg_id="679416735522074">Digital Mavericks | helping digital marketing agencies &amp; freelancers grow</option><option value="13" fbg_id="825159627535799">Digital Nomad Entrepreneurs</option><option value="592" fbg_id="1260063160725901">Digital Nomad Jobs: Remote Job Opportunities</option><option value="275" fbg_id="239207996504834">Digital Nomads Around The World</option><option value="322" fbg_id="756306204446638">Digital Nomads Hub</option><option value="228" fbg_id="" disabled="">Direct Response Mktg Partners</option><option value="34" fbg_id="1615314378719147">Directioners' Anti-Depression Community</option><option value="256" fbg_id="117035838447401">Dream Catchers: LIVE RICHER w/ The Budgetnista</option><option value="870" fbg_id="" disabled="">Dynamic Essentials ChiropracTIC Philosophy Experience</option><option value="320" fbg_id="311861629796381">Earning a Remote Income | Van Life</option><option value="436" fbg_id="143017969549059">eCommerce Elites Mastermind</option><option value="435" fbg_id="357973051014970">Ecommerce Entrepreneurs</option><option value="316" fbg_id="2866098180382313">eCommerce Masterminds Worldwide</option><option value="446" fbg_id="1906169616310712">EcommerceMindset</option><option value="212" fbg_id="" disabled="">Editor Alliance</option><option value="607" fbg_id="1918887651565825">Elite CEOs</option><option value="199" fbg_id="276857369408331">Embrace The Lion</option><option value="317" fbg_id="324946237597261">Entrepreneur Exchange</option><option value="7" fbg_id="1273486686030294">Entrepreneur Hustle</option><option value="312" fbg_id="1422062664520246">Entrepreneur Hustle</option><option value="2" fbg_id="201482230208828">Entrepreneur Kingdom</option><option value="1" fbg_id="581370775343455">Entrepreneur Lifestyle Group</option><option value="85" fbg_id="1978065445747472">Entrepreneur Mindset Group</option><option value="927" fbg_id="" disabled="">Entrepreneur Moms Club</option><option value="399" fbg_id="431868707005148">Entrepreneur to EDUpreneur - Course Creators, Coaches, Consultants</option><option value="307" fbg_id="1953301628133730">Entrepreneur's Challenge</option><option value="542" fbg_id="" disabled="">Entrepreneur's Challenge</option><option value="11" fbg_id="375174677781">Entrepreneurs</option><option value="12" fbg_id="158429346286">Entrepreneurs</option><option value="283" fbg_id="100010557601800">Entrepreneurs and Start-Ups</option><option value="369" fbg_id="1711385102350903">Entrepreneurs Networking Group</option><option value="77" fbg_id="271343662971879">Entrepreneurs Only</option><option value="458" fbg_id="786099768138810">Entrepreneurs, Startup &amp; Business Association of New York</option><option value="454" fbg_id="174888789522108">ETSY - Advertise Your Etsy shop and Etsy items Items and Etsy Shop</option><option value="290" fbg_id="1761267034143309">ETSY SELLERS ONLY</option><option value="515" fbg_id="523135394735372">Etsy Sellers Support Group</option><option value="287" fbg_id="469593896531076">Etsy Sellers, Makers &amp; More.</option><option value="325" fbg_id="202993464299489">Everlign Social Community 💻-Marketing Tips For Small Businesses</option><option value="521" fbg_id="173470906135946">Extraordinary Business Women's Network</option><option value="565" fbg_id="132299360259652">Facebook Ad Buyers</option><option value="293" fbg_id="557604277731548">Facebook Ad Hacks</option><option value="564" fbg_id="542314903206706">Facebook Ads &amp; Funnels</option><option value="434" fbg_id="268302516969681">Facebook Ads Agency Hacks</option><option value="424" fbg_id="2016376418637725">Facebook Ads Agency Scaling Secrets</option><option value="595" fbg_id="284038145424618">Facebook Ads Experts Academy</option><option value="379" fbg_id="483271052092516">Facebook Ads Mastermind Group</option><option value="425" fbg_id="385240885169090">Facebook Ads Rockstars</option><option value="395" fbg_id="949016168494127">Facebook Ads Strategies For Entrepreneurs, Coaches And Consultants</option><option value="1045" fbg_id="" disabled="">FARMERS FORUM NIGERIA</option><option value="936" fbg_id="" disabled="">FasciaBlasters for Women</option><option value="954" fbg_id="" disabled="">FasciaBlasters for Women</option><option value="453" fbg_id="1602517593368959">FBA Tactical Arbitrage</option><option value="736" fbg_id="111626966038362">Female Christian Entrepreneur Community</option><option value="388" fbg_id="332111797585348">Female Coaches Getting Clients Using Social Media Marketing Organically</option><option value="361" fbg_id="1607248466232418">Female Digital Nomads</option><option value="88" fbg_id="352230318481623">Fi Pros Unite - theptdc.com</option><option value="22" fbg_id="222104134795550">Fighting Anxiety/Depression&amp; Mental Illness Together.</option><option value="221" fbg_id="" disabled="">Finding Love and Success After a Toxic Relationship</option><option value="83" fbg_id="1268275939949938">Fit In Your 40's And 50's (and beyond)</option><option value="23" fbg_id="248748078869016">Fitness Enthusiasts</option><option value="826" fbg_id="" disabled="">Fitness. Real Estate. Entrepreneur. Foodies Group</option><option value="908" fbg_id="" disabled="">Florida Business Networking</option><option value="868" fbg_id="" disabled="">Florida Realtors</option><option value="893" fbg_id="" disabled="">Florida Realtors</option><option value="894" fbg_id="" disabled="">Florida Realtors</option><option value="1004" fbg_id="" disabled="">Florida Realtors</option><option value="686" fbg_id="1667761763537965">Focused &amp; Leveraged Female Entrepreneurs</option><option value="726" fbg_id="" disabled="">Forbes Riley's Inner Circle</option><option value="334" fbg_id="1247695335365052">Ford Transit Vanlife For Females</option><option value="264" fbg_id="1600204983591652">Foundr Insiders</option><option value="738" fbg_id="1624442394504196">Franchise</option><option value="761" fbg_id="" disabled="">Franchise Business opportunity</option><option value="762" fbg_id="" disabled="">Franchise Experts</option><option value="737" fbg_id="386972454716025">Franchise Network</option><option value="763" fbg_id="" disabled="">Franchise Secrets</option><option value="764" fbg_id="" disabled="">Franchising</option><option value="739" fbg_id="" disabled="">Franchisor Support Group</option><option value="765" fbg_id="" disabled="">Franchisor's Hub</option><option value="164" fbg_id="" disabled="">Freaking Amazing Women</option><option value="827" fbg_id="" disabled="">Free Weight Loss and Nutrition Advice</option><option value="298" fbg_id="" disabled="">Freedom Family Elite: 6 Figure Workshop</option><option value="257" fbg_id="528228113934924">Freelancers</option><option value="918" fbg_id="" disabled="">Fulvic &amp; Humic Solution for Candida•Mold•Leaky Gut•Fatigue•Parasites</option><option value="625" fbg_id="501796653521090">Funnel Momentum - by Funnelytics™</option><option value="149" fbg_id="147795642258181">FunnelDash - Facebook Ad Agency Partners</option><option value="898" fbg_id="" disabled="">FVA: Social Media Management and Marketing Course Grads and Students</option><option value="489" fbg_id="" disabled="">Gamification For Authentic Boss Entrepreneurs</option><option value="408" fbg_id="" disabled="">GB</option><option value="640" fbg_id="1696387223952070">Get Corporate Clients</option><option value="37" fbg_id="693027560884097">Get High-Ticket Clients 🔥 A Group for Coaches &amp; Consultants</option><option value="252" fbg_id="" disabled="">Get Visible- Organic Marketing Strategies For Service-Based Entrepreneurs</option><option value="78" fbg_id="1551762011786279">Getting Closer Everyday - Accountability Healthy Living Group</option><option value="363" fbg_id="240874146400772">Girls LOVE Getting Paid While They Travel!</option><option value="560" fbg_id="1428340887415620">Global Digital Nomad Network</option><option value="944" fbg_id="" disabled="">GN SPORTS AGENCY</option><option value="850" fbg_id="" disabled="">Goal Digger Creatives</option><option value="360" fbg_id="225312107884086">Goal Digger Podcast Insiders</option><option value="178" fbg_id="299803747834419">Gold Mind - Mindset For Success Community</option><option value="281" fbg_id="144656506145630">Graphics Designers (Adobe Illustrator, Adobe Photoshop, CorelDraw)</option><option value="319" fbg_id="781448478599430">GrooveLearning-an Entrepreneur Community</option><option value="380" fbg_id="1551143451596432">Group by Workew Remote Work &amp; Jobs for Digital Nomads</option><option value="742" fbg_id="721759431293489">Group Coaching Mastery</option><option value="687" fbg_id="745137085629953">Grow Your Audience: Facebook Pages &amp; Groups</option><option value="405" fbg_id="1123834994335734">Grow Your Coaching and Consulting Business Human-to-Human H2H</option><option value="1009" fbg_id="" disabled="">Growing your acupuncture practice </option><option value="148" fbg_id="376853703259540">Guest Expert Profit Lab</option><option value="922" fbg_id="" disabled="">Gym Workout Fitness</option><option value="923" fbg_id="" disabled="">Gym Workout Fitness</option><option value="924" fbg_id="" disabled="">Gym Workout Fitness</option><option value="977" fbg_id="" disabled="">Gym Workout Fitness</option><option value="336" fbg_id="2454160784833221">Health &amp; Wealth Freedom Movement 💧 #HWFM</option><option value="981" fbg_id="" disabled="">Health and Wellness</option><option value="555" fbg_id="1454997141382287">Health and Wellness Global Business Group</option><option value="884" fbg_id="" disabled="">Health Seekers of the Future</option><option value="796" fbg_id="" disabled="">Health tips for weight loss</option><option value="80" fbg_id="124632584263821">Healthy Living-Mind, Body and Spirit</option><option value="156" fbg_id="714631208567627">Heart-centred, soul-driven entrepreneurs</option><option value="353" fbg_id="1638805952967613">Herroadlesstraveled</option><option value="810" fbg_id="" disabled="">High Ticket - High Volume - Fitness Sales Secrets</option><option value="637" fbg_id="1695849560645878">High Ticket Client Attraction Insider's Circle</option><option value="494" fbg_id="" disabled="">High ticket clients for female entrepreneurs </option><option value="926" fbg_id="" disabled="">High Ticket Community ⚡ Client-Signing Strategies For Coaches &amp; Consultants</option><option value="208" fbg_id="" disabled="">High Ticket Sales and Facebook Groups for Coaches and Consultants</option><option value="655" fbg_id="249433666697257">High Vibe Tribe</option><option value="136" fbg_id="735447479997571">High-Ticket Clients</option><option value="197" fbg_id="594608437665362">HighLevel</option><option value="1021" fbg_id="" disabled="">Holistic Health &amp; Wellness Practitioners: Growth Through Community</option><option value="941" fbg_id="" disabled="">HOLISTIC HEALTH AND NUTRITION PRACTITIONERS</option><option value="943" fbg_id="" disabled="">Holistic Health Circle | A Naturopathic Doctor's Perspective</option><option value="939" fbg_id="" disabled="">Holistic Health Practitioners of Greater Cincinnati</option><option value="942" fbg_id="" disabled="">Holistic lifestyle health and Nutrition</option><option value="801" fbg_id="" disabled="">Home Buddies</option><option value="213" fbg_id="" disabled="">Home Studio Perfection</option><option value="590" fbg_id="" disabled="">Hour of Champions</option><option value="645" fbg_id="748907221849138">HPX Motivation Group</option><option value="202" fbg_id="198304094271019">Human Resources California</option><option value="191" fbg_id="2104832092957820">Human Resources Discussion Group USA</option><option value="828" fbg_id="" disabled="">I am a Dentist</option><option value="522" fbg_id="352563058502753">I Want To Start A Business, Where Do I Start?</option><option value="25" fbg_id="389981381023134">IIFYM (Official Community for IIFYM.com)</option><option value="508" fbg_id="" disabled="">Infinite Video Impact ALUMN</option><option value="628" fbg_id="" disabled="">Infinite Video Impact ALUMN</option><option value="629" fbg_id="" disabled="">Infinite video impact challenge may</option><option value="523" fbg_id="489868421221642">Inspirational Entrepreneurs</option><option value="324" fbg_id="866486757175809">Instagram training with The Anywheregirls</option><option value="255" fbg_id="203412093115743">International Development Jobs for Young Professionals</option><option value="451" fbg_id="384524235004425">Investing and Personal Finance Club</option><option value="147" fbg_id="2318808471717855">Irresistible Agency</option><option value="956" fbg_id="" disabled="">IT &amp; MSP Business Owners Group</option><option value="282" fbg_id="" disabled="">It's Better Handmade Group</option><option value="326" fbg_id="1525556794289106">ItWorks!</option><option value="511" fbg_id="1077887932731308">Jamie Kern Lima: Becoming Unstoppable</option><option value="35" fbg_id="147158028999129">Janx Tank</option><option value="582" fbg_id="" disabled="">Join the New Group</option><option value="614" fbg_id="649362671892507">JT Foxx Group</option><option value="620" fbg_id="370659376475459">Kartra, WebinarJamStudio, EverWebinar Discussion Group (unofficial)</option><option value="56" fbg_id="1896215663989375">Keto Diet, Weight Loss, And Fitness!</option><option value="962" fbg_id="" disabled="">Keto For Emotional Eaters</option><option value="713" fbg_id="" disabled="">Kingdom Calling for Christian Women Coaches &amp; ONLINE Service Entrepreneurs</option><option value="327" fbg_id="391536052218640">Kristin’s It Works Distributor Group!!!</option><option value="79" fbg_id="1752551568315636">Ladies Destined For Change</option><option value="383" fbg_id="" disabled="">Ladies who Scale</option><option value="342" fbg_id="" disabled="">Las Vegas Fitness Events</option><option value="915" fbg_id="" disabled="">Latinos en Beauce</option><option value="902" fbg_id="" disabled="">Latinos en Toronto</option><option value="903" fbg_id="" disabled="">Latinos en Toronto GTA</option><option value="237" fbg_id="691344237740293">Leading Ladies with AliceAnne Loftus</option><option value="277" fbg_id="608111902665009">Learn Digital Marketing</option><option value="387" fbg_id="2547686416">Life Coaches</option><option value="382" fbg_id="426145051402778">Life Coaching and Empowerment</option><option value="672" fbg_id="" disabled="">Life Insurance &amp; Financial Advisor Leads, Marketing &amp; Wins</option><option value="797" fbg_id="" disabled="">Life on Fire Movement</option><option value="754" fbg_id="" disabled="">Lifestyle Family &amp; Newborn Photographers</option><option value="412" fbg_id="" disabled="">Lightbeamers Symposium</option><option value="766" fbg_id="" disabled="">LinkedIn Sales Funnels for Entrepreneurs</option><option value="89" fbg_id="933267120089964">Living the Laptop Life: A Group For Online Service Providers + Marketers</option><option value="979" fbg_id="" disabled="">Local plumber</option><option value="798" fbg_id="" disabled="">Macros Inc.</option><option value="398" fbg_id="606671086198695">Make More, Give More: A Group To Help Coaches Scale</option><option value="599" fbg_id="" disabled="">Manifest a Life you Love</option><option value="605" fbg_id="464281084110683">Marketer's Heart - Rise of Integrity &amp; Purpose in Marketing</option><option value="609" fbg_id="1545554722411966">Marketing and Selling for Coaches &amp; Consultants</option><option value="154" fbg_id="833133610188770">Marketing Ninjas!</option><option value="280" fbg_id="833133610188770">Marketing Ninjas!</option><option value="174" fbg_id="530584870606180">Marketing with Messenger Bots</option><option value="33" fbg_id="290308134506592">MARRIAGE LIFE</option><option value="59" fbg_id="194887113978726">Martin Chiropractic Health &amp; Nutrition</option><option value="150" fbg_id="353885258596101">Master The Art of High Ticket Sales</option><option value="782" fbg_id="" disabled="">Master Visual Storytelling</option><option value="702" fbg_id="780676019345095">mastermind.com</option><option value="871" fbg_id="" disabled="">Mastermind.com</option><option value="14" fbg_id="478990472241651">Meant for Millions</option><option value="849" fbg_id="" disabled="">Meant For Millions</option><option value="250" fbg_id="1805697889716800">Membership &amp; Subscription Site Community by Stu McLaren</option><option value="285" fbg_id="265052600635736">Merch By Amazon Mastermind</option><option value="390" fbg_id="158597344865370">Messaging That Makes Money For Coaches And Course Creators</option><option value="972" fbg_id="" disabled="">Military, Veterans, First Responders, Motorcycles, &amp; USA Patriotic issues</option><option value="63" fbg_id="218962715164499">Millennial Entrepreneur Community #Builders</option><option value="634" fbg_id="197845838230590">Million Dollar Course Marketers</option><option value="166" fbg_id="401544257172206">Millionaire Mindset | Entrepreneurs Club</option><option value="524" fbg_id="695863064155863">Mindset for Success</option><option value="503" fbg_id="" disabled="">Minimalist Method </option><option value="323" fbg_id="353118088247">Missouri Hiking and Backpacking</option><option value="945" fbg_id="" disabled="">MNG Sports Agency</option><option value="547" fbg_id="" disabled="">Mom Life</option><option value="276" fbg_id="1415378172105101">Mompreneur Circle</option><option value="659" fbg_id="2003045676576939">Money Attraction Community</option><option value="554" fbg_id="100471483571">MOTIVATED ENTREPRENEURS</option><option value="660" fbg_id="1502670043356349">Motivational Speaker Group</option><option value="60" fbg_id="2062622557352364">Musculoskeletal Diagnostic Imaging — Evidence-Based Chiropractic Network</option><option value="998" fbg_id="" disabled="">National Personal Injury Lawyers Association</option><option value="1025" fbg_id="" disabled="">National Personal Injury Lawyers Association</option><option value="980" fbg_id="" disabled="">natural remedies and green living</option><option value="829" fbg_id="" disabled="">Naturopathic Exchange</option><option value="888" fbg_id="" disabled="">Naturopathic/Functional Medicine and Nutrition</option><option value="525" fbg_id="562745313763173">New Business Ideas</option><option value="852" fbg_id="" disabled="">New REALTORS Las Vegas</option><option value="553" fbg_id="513982769285161">New World New You Official Tony Robbins Community</option><option value="661" fbg_id="344910175958427">Next Level Consultants, Coaches &amp; Experts Scaling to 7-Figures</option><option value="92" fbg_id="415595912119563">No Finish Line Nation</option><option value="606" fbg_id="737492133268683">No Fluff Marketing for Today's Awakened Businesses</option><option value="812" fbg_id="" disabled="">Not Wasting My Twenties</option><option value="476" fbg_id="" disabled="">Nothing Held Back </option><option value="270" fbg_id="" disabled="">Nurses of Australia</option><option value="428" fbg_id="204086654260177">ODONTOLOGIA ESPAÑOLA UNIDA O.E.U</option><option value="195" fbg_id="539289429805223">OFFICIAL Dr. Joe Dispenza Students</option><option value="142" fbg_id="656950938025964">Online Coaches Uprising</option><option value="151" fbg_id="502060786924890">Online Course Secrets 🌎 The Course Creators Community</option><option value="450" fbg_id="290659858060707">Online Publishers and Entrepreneurs Network</option><option value="165" fbg_id="458379410993384">Online SuperCoach</option><option value="624" fbg_id="" disabled="">Online Trainers Federation 🏋️ Helping Fit Pros Get Clients &amp; Make Impact</option><option value="1002" fbg_id="" disabled="">Organic High Ticket Sales for Coaches &amp; Experts</option><option value="988" fbg_id="" disabled="">organic high ticket sales for coaches and experts</option><option value="64" fbg_id="1561559587456954">Over 40 Fitness</option><option value="946" fbg_id="" disabled="">Overeaters HOW Support Group</option><option value="57" fbg_id="467046366657633">Overeaters Support Group</option><option value="485" fbg_id="" disabled="">Own Your Future </option><option value="263" fbg_id="1696309914032718">Own Your Future Challenge</option><option value="867" fbg_id="" disabled="">parkville md . 21234</option><option value="889" fbg_id="" disabled="">Pathetic Triathletes Group</option><option value="869" fbg_id="" disabled="">Pediatric Chiropractic Today</option><option value="65" fbg_id="239629333099503">Personal Development for Women</option><option value="545" fbg_id="823990420972805">Personal Development Nerds</option><option value="978" fbg_id="" disabled="">Personal Trainers &amp; Fitness Instructors</option><option value="665" fbg_id="423570015248660">Philippine Ecommerce Virtual Assistants</option><option value="308" fbg_id="" disabled="">Pikes Peak Assoc. of REALTORS YPN</option><option value="743" fbg_id="" disabled="">Podcast Nation</option><option value="1000" fbg_id="" disabled="">Podcast Profit Accelerator for Entrepreneurs to Increase Income and Impact</option><option value="227" fbg_id="" disabled="">Podcasting For Entrepreneurs: Start, Scale, Monetize</option><option value="704" fbg_id="" disabled="">Podcasts!</option><option value="91" fbg_id="1645117122370267">Positive Change</option><option value="66" fbg_id="1068273683216469">Positive Energy</option><option value="1037" fbg_id="" disabled="">Power Up Your Presence</option><option value="180" fbg_id="237686580005639">Practical Metaphysics</option><option value="593" fbg_id="503037203103557">Professional Photographers</option><option value="767" fbg_id="" disabled="">Promote your business online</option><option value="649" fbg_id="1798242390427839">PT Distinction and The Online Trainer University</option><option value="641" fbg_id="1778346188905637">Publish for Prosperity with Alice Seba</option><option value="616" fbg_id="2619189301735441">QUIZ Funnel Community</option><option value="188" fbg_id="389453024798506">Reach your $10k Months</option><option value="36" fbg_id="264040013931538">Real Estate Agents That REALLY Work ☆☆Referrals wanted☆☆</option><option value="449" fbg_id="173702813271728">Real Estate Investing Tips For Beginners</option><option value="371" fbg_id="" disabled="">Real Estate Investors Group</option><option value="4" fbg_id="749601898505349">Real Estate Marketing: Out-of-the-Box-Owl</option><option value="299" fbg_id="360578765341889">REAL Success Summits</option><option value="1030" fbg_id="" disabled="">Realtors of Florida</option><option value="309" fbg_id="270583300442745">Relationships Beat Algorithms</option><option value="292" fbg_id="1551143451596432">Remote Work &amp; Jobs for Digital Nomads</option><option value="333" fbg_id="195365321738984">Remote Work and RV Women</option><option value="861" fbg_id="" disabled="">Rene Estes, The Video Mentor</option><option value="55" fbg_id="172661553372208">Resolve &amp; Dissolve the Roots from Bingeing, Craving &amp; Overeating</option><option value="344" fbg_id="" disabled="">Rhino Gym Community</option><option value="570" fbg_id="" disabled="">Rhino Julie's Fitness Launch Pad: Support and Accountability</option><option value="552" fbg_id="169864771053331">Rich Dad, Poor Dad!</option><option value="239" fbg_id="2700407153565063">Run Like Clockwork Free Community</option><option value="182" fbg_id="965673390154514">SaaS Growth Hacks</option><option value="568" fbg_id="" disabled="">SaaS Marketer</option><option value="996" fbg_id="" disabled="">SAILORS</option><option value="134" fbg_id="2626945357426391">Sales Ascenders Inner Circle</option><option value="158" fbg_id="303677449970741">Sales Copywriting and Content Marketing Hacks with Jim Edwards</option><option value="632" fbg_id="2401401749889972">Sales Funnel Mastery: 5 Ways to Monetize ClickFunnels™</option><option value="610" fbg_id="1256559517839037">Sales is NOT a Dirty Word</option><option value="633" fbg_id="799530747171981">SALES MASTERY Inner Circle</option><option value="479" fbg_id="922238847800786">Sales Professional Group</option><option value="38" fbg_id="736069323115127">Sales Talk With Sales Pros</option><option value="173" fbg_id="216228449497609">Scale Hacks - Agency Growth</option><option value="507" fbg_id="2044902829088090">Scaling SaaS Founders</option><option value="799" fbg_id="" disabled="">Self Education Revo.ution</option><option value="808" fbg_id="" disabled="">SELF-EDUCATION REVOLUTION</option><option value="437" fbg_id="381067052051677">Shopify Ecommerce Group</option><option value="8" fbg_id="873980009331087">Shopify Entrepreneurs</option><option value="559" fbg_id="2349239935162183">Shopify Expert</option><option value="617" fbg_id="1866013293710722">Side Hustle Community - Mastermind For Hobby Hustler Entrepreneurs</option><option value="788" fbg_id="" disabled="">Small Business Networking</option><option value="76" fbg_id="562325057194703">Small Business Owners</option><option value="899" fbg_id="" disabled="">Smartest Business Strategies for 7-figure growth</option><option value="296" fbg_id="1867902203494141">Smartest Passive Income Model</option><option value="768" fbg_id="" disabled="">SmartFem Entrepreneur Network for Speakers &amp; Coaches</option><option value="294" fbg_id="958625174320983">Social Entrepreneurship and Sustainable Development</option><option value="32" fbg_id="1529696874000681">Social Media For Entrepreneurs</option><option value="346" fbg_id="376666159518551">Social Media Influencers</option><option value="904" fbg_id="" disabled="">Social Media tips for realtors</option><option value="635" fbg_id="272093973272855">Social Selling Success</option><option value="358" fbg_id="1945793432299508">Solo Female Vanlife</option><option value="340" fbg_id="" disabled="">Spartan Race - Las Vegas</option><option value="708" fbg_id="" disabled="">Speak for Ultimate Impact &amp; Profit</option><option value="409" fbg_id="142242432509979">Speakers and Coaches Networking Society</option><option value="541" fbg_id="" disabled="">speakers and Coaches Networking Society</option><option value="411" fbg_id="1940591476222931">Speakers, Authors, and Coaches Network</option><option value="551" fbg_id="167039439975651">Spirituality and Business</option><option value="289" fbg_id="1386052068132248">Start A Blogging Business</option><option value="288" fbg_id="2476145349277674">Stash Investors</option><option value="512" fbg_id="736160126979549">Stock Market Investing</option><option value="690" fbg_id="263804607094399">Stop Working For Free</option><option value="47" fbg_id="174258676267146">Stress Free Zone</option><option value="67" fbg_id="189680258404294">Strong Women</option><option value="200" fbg_id="2320358498239185">Success Center</option><option value="921" fbg_id="" disabled="">Success Secrets For Purpose Driven Entrepreneurs</option><option value="982" fbg_id="" disabled="">Success Sports Management Agency</option><option value="843" fbg_id="" disabled="">Successful 6&amp;7 Figure⚡ Fitness Professionals</option><option value="385" fbg_id="1343672482500404">Successful Female Coaches</option><option value="170" fbg_id="1786407431584081">Successful Female Entrepreneurs</option><option value="663" fbg_id="264436130895965">Successful Online Sales Pros</option><option value="1038" fbg_id="" disabled="">Successful Women Entrepreneurs</option><option value="769" fbg_id="" disabled="">SuperHuman Wholesalers</option><option value="1039" fbg_id="" disabled="">Supporting Black Owned Businesses</option><option value="337" fbg_id="1228715913998849">SUV/Car Living &amp; Camping Women Only </option><option value="539" fbg_id="1959206247448531">The 5 AM Club</option><option value="301" fbg_id="" disabled="">The Amos Team-The Cutting Edge, Realtors</option><option value="15" fbg_id="835382583221548">The Art of High-Ticket Selling</option><option value="504" fbg_id="" disabled="">The Billion Dollar Brotherhood</option><option value="176" fbg_id="371197349917640">The Business Coach Dojo</option><option value="44" fbg_id="127516984515985">The Climb: Career Advice &amp; Support - from Ladders</option><option value="87" fbg_id="138136276849074">The Coach Launcher Group</option><option value="391" fbg_id="414530636159285">The Coaching Community</option><option value="477" fbg_id="414530636159285">The Coaching Community</option><option value="135" fbg_id="919866651401254">The Coaching Jungle</option><option value="90" fbg_id="303127960144450">The Coaching Lifestyle</option><option value="381" fbg_id="511654479199930">The Connection HUB - for Speakers, Authors &amp; Coaches</option><option value="1006" fbg_id="" disabled="">The Cook's Cook Community Forum</option><option value="146" fbg_id="665993643916150">The Course Creator Launchpad</option><option value="16" fbg_id="345582012198954">The Cult of Copy</option><option value="445" fbg_id="498160730852208">The Email Marketing Show Community for Course Creators and Coaches</option><option value="50" fbg_id="198824624091475">The Fear Process</option><option value="442" fbg_id="601375676575708">The Female Coaches Society: Community | Collaboration | Connections</option><option value="362" fbg_id="553011055646358">The Freelancing Creative: Women in the Works</option><option value="759" fbg_id="" disabled="">The Future of Ballroom Dancing</option><option value="594" fbg_id="278163009000489">The Game of Networking 🔥🔥🔥</option><option value="171" fbg_id="1754831591420374">The Heart-Centered Entrepreneur</option><option value="93" fbg_id="209617206226617">The Humble Warrior - Fashion &amp; Lifestyle for Women</option><option value="313" fbg_id="" disabled="">The Impact Entrepreneurs Club</option><option value="401" fbg_id="" disabled="">The Inspired Female Entrepreneur</option><option value="159" fbg_id="1824489447790788">The Intentional Entrepreneur with Sabrina Philipp</option><option value="404" fbg_id="1687668341509440">The Land of New Coaches</option><option value="901" fbg_id="" disabled="">The Latinista Group</option><option value="691" fbg_id="1003364649686372">The Launch Express</option><option value="847" fbg_id="" disabled="">The Limitless Woman</option><option value="664" fbg_id="1467796093543857">The Lit Up &amp; Loaded Entrepreneur</option><option value="744" fbg_id="2071120143183903">The Most Powerful Women in Network Marketing</option><option value="671" fbg_id="477075842959008">The One Percent</option><option value="238" fbg_id="2020937927936969">The Part-Time CEO</option><option value="561" fbg_id="1697083010514123">The Poor Travelers: Support Group</option><option value="674" fbg_id="266013500262492">The Replaceable Founder</option><option value="370" fbg_id="116253535383883">The RV Entrepreneur</option><option value="229" fbg_id="256704244873735">The Science Of Selling Online (Offers Or Die)</option><option value="386" fbg_id="380681229418250">The Six Figure Success Society For Coaches, Consultants + Course Creators</option><option value="540" fbg_id="" disabled="">The Six Figure Success Society For Coaches, Consultants + Course Creators</option><option value="359" fbg_id="236926393345632">The Solo Female Traveler Network</option><option value="692" fbg_id="849668548485535">The Speaker Lab Community Group</option><option value="510" fbg_id="" disabled="">The Startup Chat Mastermind Group</option><option value="745" fbg_id="" disabled="">The Success Corps Academy</option><option value="241" fbg_id="1077600912625396">The Tarmac Life UK</option><option value="302" fbg_id="284711266280169">The Unleashed Family</option><option value="543" fbg_id="" disabled="">The VIP Code</option><option value="168" fbg_id="906246076379133">Thriving Female Entrepreneurs</option><option value="447" fbg_id="1639973556280967">Thriving on Etsy and Beyond</option><option value="46" fbg_id="1715051442118667">Time Management &amp; Life Balance with Amelia</option><option value="203" fbg_id="2409017169425569">Top Women in Real Estate</option><option value="468" fbg_id="" disabled="">Total Mastery</option><option value="456" fbg_id="" disabled="">Total Mastery - Life &amp; Business Growth with Brodie Kern</option><option value="145" fbg_id="973233349386359">Traffic &amp; Funnels</option><option value="636" fbg_id="1263442537130832">Transformation 2021</option><option value="526" fbg_id="143523692409890">Transforming Entrepreneurs</option><option value="459" fbg_id="932198583491976">Travel &amp; Lifestyle</option><option value="473" fbg_id="1627950287220564">Travel Bloggers</option><option value="338" fbg_id="306098183664461">Travel Obsessed</option><option value="878" fbg_id="" disabled="">Tribe Of COURAGEOUS COACHES</option><option value="217" fbg_id="2080754075505322">Tribe of Unstoppables</option><option value="857" fbg_id="" disabled="">TRX- ATM Influencers Group</option><option value="711" fbg_id="" disabled="">Turnkey Playbook for Amazon Growth</option><option value="172" fbg_id="" disabled="">Two Comma Club X</option><option value="240" fbg_id="1570509952999047">UK Landscaping Community</option><option value="802" fbg_id="" disabled="">Unconditional Happiness</option><option value="550" fbg_id="645500432309046">Unconventional Leaders</option><option value="694" fbg_id="109089713132028">Unhackable: Get Your Dream Done 5 Day Challenge</option><option value="455" fbg_id="" disabled="">UPGRD</option><option value="815" fbg_id="" disabled="">USA Ballroom Dance </option><option value="297" fbg_id="53286054621">Value Investing</option><option value="28" fbg_id="1803438706610385">Vegan on a Budget</option><option value="514" fbg_id="1971215539789394">Veteran Entrepreneur Startup Solutions Community</option><option value="627" fbg_id="" disabled="">Video Scaling System</option><option value="626" fbg_id="" disabled="">VIP Code</option><option value="619" fbg_id="179299003356317">VISIBILITY by Speakers Need to Speak</option><option value="830" fbg_id="" disabled="">Vitalistic Chiropractic Awareness</option><option value="403" fbg_id="1925227917763138">WBECS Coaches Community</option><option value="153" fbg_id="747591151923914">We Build Tribes - Purpose Driven Communities Increasing Impact &amp; Income</option><option value="163" fbg_id="563394360951667">Wealthy Female Coaches</option><option value="175" fbg_id="637481376317557">WebinarJam (Official)</option><option value="343" fbg_id="553548241323435">Weekend Rhinos</option><option value="630" fbg_id="" disabled="">Weight Loss for Beginners</option><option value="957" fbg_id="" disabled="">Weight Loss Motivation</option><option value="948" fbg_id="" disabled="">Weight Loss Through Habit Change</option><option value="62" fbg_id="241696262621605">Weight loss tips and support</option><option value="68" fbg_id="1904148652949055">Wellness Based Group</option><option value="987" fbg_id="" disabled="">West Palm Beach Realtors</option><option value="990" fbg_id="" disabled="">West Palm Beach Realtors</option><option value="991" fbg_id="" disabled="">West Palm Beach Realtors</option><option value="992" fbg_id="" disabled="">West Palm Beach Realtors</option><option value="1005" fbg_id="" disabled="">West Palm Beach Realtors</option><option value="58" fbg_id="218438308326373">Whole-Food-Plant-Based-Diet.com</option><option value="907" fbg_id="" disabled="">Women Business Owners Supporting Women Business Owners</option><option value="681" fbg_id="101414676590988">Women Executives &amp; Entrepreneurs</option><option value="72" fbg_id="2125964544295641">Women Helping Women Entrepreneurs</option><option value="909" fbg_id="" disabled="">Women Helping Women Entrepreneurs</option><option value="71" fbg_id="854906531317035">WOMEN ROCKING BUSINESS Sisterhood</option><option value="746" fbg_id="203001383101994">Women Speakers Association</option><option value="1022" fbg_id="" disabled="">Women Starting Business - Doing What We Love</option><option value="1023" fbg_id="" disabled="">Women Starting Businesses - Doing What We Love♥︎ by Kimberly Brock</option><option value="84" fbg_id="346567862391192">Women suffering incontinence and over active bladder support group dublin.</option><option value="357" fbg_id="1590745641219262">Women Who Hike Colorado</option><option value="527" fbg_id="489595677733744">Women Who Mean Business</option><option value="42" fbg_id="1025050584188927">Women's Entrepreneur Network</option><option value="286" fbg_id="1025050584188927">Women's Entrepreneur Network Women's Entrepreneur Network</option><option value="513" fbg_id="2033452303610531">Work And Travel USA</option><option value="335" fbg_id="517476311960319">Workationing: Support for Aspiring Digital Nomads and Remote Workers</option><option value="622" fbg_id="312159660994">WORLD FASHION BLOGGERS</option><option value="396" fbg_id="165879560437340">Yes Supply Society  Coaches, Entrepreneurs + Influencers with Purpose</option><option value="963" fbg_id="" disabled="">Your House Cleaning Business</option><option value="52" fbg_id="451668658206458">Your Personal Growth Pathway</option><option value="695" fbg_id="763109230519420">YouTube Ads for Entrepreneurs - Advanced Scaling Strategies w/ Aleric Heck</option><option value="577" fbg_id="" disabled="">✨MISS CEO MINDSET✨ Empowered Female Entrepreneurs</option><option value="143" fbg_id="1987007258251520">⭐️Online Coaches &amp; Consultants!</option><option value="613" fbg_id="552523162043146">🔥The Fiery Phoenix🔥 Client Attraction Strategies For Women Ready To Rise</option>                  </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="kt_form_facebookmember_facebookgroup_id" title="Facebook Groups"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All Facebook Groups</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                        </div>
+                      </div>
+                      <div class="col text-right">
+                        <button class="btn btn-primary mr-2" id="kt_form_button_apply_filters"><i class="fa fa-filter"></i>Apply Filters</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end: Search Form -->
+
+              <!---- begin: CREDIT BALANCE ------>
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <div class="alert alert-secondary EVO-credit-balance pt-5 pb-4 px-2 text-center float-right mb-0 w-100" role="alert">
+                  <div class="alert-text" >
+                    <strong class="kt-font-dark">Credit Balance:</strong>
+                    <button type="button" class="btn btn-dark btn-sm mx-0 my-1"><i class="fas fa-coins"></i><span id="EVO-creditsBalance" class="ml-2">100,000</span></button>
+                    <button type="button" class="btn btn-danger btn-sm mx-0 my-1"><i class="fas fa-plus-circle"></i> Buy More Credits</button>
+                    <button type="button" class="btn btn-label-info btn-sm mx-0 my-1"><i class="fas fa-search"></i> View Transations</button>
+                    <div class="alert alert-secondary mt-1 mb-0 p-0 mx-auto" role="alert">
+                      <div class="alert-text"><i class="fas fa-info-circle"></i> Credits will be deducted from your balance  when you add leads from this screen to a pipeline. You can buy more credits if you need. </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!---- end: CREDIT BALANCE ------>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+       <!-- end:: Content -->
+      </div>
+        
+    </div>
+	</div>
+	<!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+	
+     
+<!-- begin:: Scrolltop -->
+<div id="kt_scrolltop" class="kt-scrolltop">
+	<i class="la la-arrow-up"></i>
+</div>
+<!-- end:: Scrolltop -->
+					
+										
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#5d78ff",
+						"metal": "#c4c5d6",
+						"light": "#ffffff",
+						"accent": "#00c5dc",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995",
+						"focus": "#9816f4"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+		<script src="https://www.multiuniversal.com/evolution2/assets/js/flowchat.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Vendors(used by this page) -->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+    <!--begin:: ANDRE JS DATE RANGE -->
+    <script src="assets/js/pages/components/forms/widgets/bootstrap-daterangepicker.js" type="text/javascript"></script>
+
+    <!--end:: ANDRE JS DATE RANGE -->
+
+
+		<!--end::Page Vendors -->
+
+		<!--begin::Page Scripts(used by this page) -->
+		<script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
+
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
+</html>

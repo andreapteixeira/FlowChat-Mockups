@@ -1,0 +1,51 @@
+#funnel-title {
+    border-bottom: 1px solid #bbb;
+    background-color: #e2e2e7;
+}
+
+#funnel-title h2{
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+#fc-pipeline-builder .fc-stage-container {background: url(../media/misc/line-gray.png) repeat-y center center;}
+
+#fc-pipeline-builder .fc-stage-container:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 15px solid #aaa;
+    margin-top:50px;
+}
+
+#fc-pipeline-builder .fc-stage-container .fc-tools {
+    bottom: 5px;
+    right: 10px;
+    opacity: 0.1;
+    font-size: 1.2em;
+}
+
+#fc-pipeline-builder .fc-stage-container .fc-message-tools {
+    left: 10px;
+}
+
+#fc-pipeline-builder .fc-stage-container .fc-default-message .fc-message-tools {
+    opacity: 1;
+}
+
+#fc-pipeline-builder .fc-stage-container .card:hover .fc-tools{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#fc-pipeline-builder .fc-builder-toolbox {
+    width: 215px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}

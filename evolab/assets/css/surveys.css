@@ -1,0 +1,42 @@
+/**** CSS FOR NPS SURVEY  ****/
+#fc-nps-survey .nps-btn {font-weight: bold; border: none; color: #fff; transition: all 0.2s;}
+#fc-nps-survey .nps-btn:hover {opacity: 0.5;}
+#fc-nps-survey .answered .nps-btn {background-color:#c1c1c1;}
+#fc-nps-survey .answered .nps-btn.active, #fc-nps-survey .answered .nps-btn:hover {opacity: 1}
+#fc-nps-survey .nps-btn-0, #fc-nps-survey .answered .nps-btn-0.active, #fc-nps-survey .answered .nps-btn-0:hover {background-color:#dd1b25;}
+#fc-nps-survey .nps-btn-1, #fc-nps-survey .answered .nps-btn-1.active, #fc-nps-survey .answered .nps-btn-1:hover {background-color:#ec2935;}
+#fc-nps-survey .nps-btn-2, #fc-nps-survey .answered .nps-btn-2.active, #fc-nps-survey .answered .nps-btn-2:hover {background-color:#f74a32;}
+#fc-nps-survey .nps-btn-3, #fc-nps-survey .answered .nps-btn-3.active, #fc-nps-survey .answered .nps-btn-3:hover {background-color:#f86e26;}
+#fc-nps-survey .nps-btn-4, #fc-nps-survey .answered .nps-btn-4.active, #fc-nps-survey .answered .nps-btn-4:hover {background-color:#fa9315;}
+#fc-nps-survey .nps-btn-5, #fc-nps-survey .answered .nps-btn-5.active, #fc-nps-survey .answered .nps-btn-5:hover {background-color:#fbb300;}
+#fc-nps-survey .nps-btn-6, #fc-nps-survey .answered .nps-btn-6.active, #fc-nps-survey .answered .nps-btn-6:hover {background-color:#dbb800;}
+#fc-nps-survey .nps-btn-7, #fc-nps-survey .answered .nps-btn-7.active, #fc-nps-survey .answered .nps-btn-7:hover {background-color:#b5bf00;}
+#fc-nps-survey .nps-btn-8, #fc-nps-survey .answered .nps-btn-8.active, #fc-nps-survey .answered .nps-btn-8:hover {background-color:#91c200;}
+#fc-nps-survey .nps-btn-9, #fc-nps-survey .answered .nps-btn-9.active, #fc-nps-survey .answered .nps-btn-9:hover {background-color:#6fc200;}
+#fc-nps-survey .nps-btn-10, #fc-nps-survey .answered .nps-btn-10.active, #fc-nps-survey .answered .nps-btn-10:hover {background-color:#37a300;}
+
+
+/**** CSS FOR CSAT SURVEY  ****/
+#fc-csat-survey .csat-btn {font-weight: bold; border: none; background-color: transparent; transition: all 0.2s;}
+#fc-csat-survey .csat-btn i {font-size: 40px;}
+#fc-csat-survey .csat-btn:hover {opacity: 0.5;}
+#fc-csat-survey .answered .csat-btn {color:#c1c1c1;}
+#fc-csat-survey .answered .csat-btn.active, #fc-csat-survey .answered .csat-btn:hover {opacity: 1}
+#fc-csat-survey .csat-btn-1, #fc-csat-survey .answered .csat-btn-1.active, #fc-csat-survey .answered .csat-btn-1:hover {color:#dd1b25;}
+#fc-csat-survey .csat-btn-2, #fc-csat-survey .answered .csat-btn-2.active, #fc-csat-survey .answered .csat-btn-2:hover {color:#fa9315;}
+#fc-csat-survey .csat-btn-3, #fc-csat-survey .answered .csat-btn-3.active, #fc-csat-survey .answered .csat-btn-3:hover {color:#fbb300;}
+#fc-csat-survey .csat-btn-4, #fc-csat-survey .answered .csat-btn-4.active, #fc-csat-survey .answered .csat-btn-4:hover {color:#91c200;}
+#fc-csat-survey .csat-btn-5, #fc-csat-survey .answered .csat-btn-5.active, #fc-csat-survey .answered .csat-btn-5:hover {color:#37a300;}
+
+
+/**** CSS FOR CES SURVEY  ****/
+#fc-ces-survey .ces-btn { font-weight: bold; border: none; color: #fff;transition: all 0.2s; width: 60px;font-size: 11px;height: 45px;padding: 0 5px;}
+#fc-ces-survey .ces-btn:hover {opacity: 0.5;}
+#fc-ces-survey .answered .ces-btn {background-color:#c1c1c1;}
+#fc-ces-survey .answered .ces-btn.active, #fc-ces-survey .answered .ces-btn:hover {opacity: 1}
+#fc-ces-survey .ces-btn-1, #fc-ces-survey .answered .ces-btn-1.active, #fc-ces-survey .answered .ces-btn-1:hover {background-color:#dd1b25;}
+#fc-ces-survey .ces-btn-2, #fc-ces-survey .answered .ces-btn-2.active, #fc-ces-survey .answered .ces-btn-2:hover {background-color:#fa9315;}
+#fc-ces-survey .ces-btn-3, #fc-ces-survey .answered .ces-btn-3.active, #fc-ces-survey .answered .ces-btn-3:hover {background-color:#fbb300;}
+#fc-ces-survey .ces-btn-4, #fc-ces-survey .answered .ces-btn-4.active, #fc-ces-survey .answered .ces-btn-4:hover {background-color:#91c200;}
+#fc-ces-survey .ces-btn-5, #fc-ces-survey .answered .ces-btn-5.active, #fc-ces-survey .answered .ces-btn-5:hover {background-color:#37a300;}
+

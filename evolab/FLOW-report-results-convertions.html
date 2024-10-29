@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- begin::Head -->
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>FlowChat - Results & Conversions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--begin::Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <!--end::Fonts -->
+    <!--begin::Page Custom Styles(used by this page) -->
+    <!--end::Page Custom Styles -->
+    <!--begin::Page Plugins Styles(used by this page) -->
+    <!--end::Page Plugins Styles -->
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <link id="css_style_bundle" href="" rel="stylesheet" type="text/css">
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <link id="css_header_base" href="https://www.flowchat.com/members/assets/css/skins/header/base/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_header_menu" href="https://www.flowchat.com/members/assets/css/skins/header/menu/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_brand" href="assets/css/skins/brand/fc-brand.css?v=1646659109" rel="stylesheet" type="text/css">
+    <link id="css_aside" href="assets/css/skins/aside/fc-aside.css?v=1646665747" rel="stylesheet" type="text/css">
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/assets/media/logos/favicon-16x16.png?v=1641890934">
+</head>
+<!-- end::Head -->
+<!-- begin::Body -->
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-aside--minimize">
+    <!-- begin:: Header Mobile -->
+    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+        <div class="kt-header-mobile__logo">
+            <a href="./">
+                <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v=1641898431" height="30" width="auto" onerror="this.src='assets/media/logos/fc-white.svg';">
+            </a>
+        </div>
+        <div class="kt-header-mobile__toolbar">
+            <button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+            <!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        </div>
+    </div>
+    <!-- end:: Header Mobile -->
+    <!-- begin:: Root -->
+    <div class="kt-grid kt-grid--hor kt-grid--root">
+        <!-- begin:: Page -->
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+            <!-- begin:: Aside -->
+            <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+                <!-- begin::Aside Brand -->
+                <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+                    <div class="kt-aside__brand-logo">
+                        <a href="./">
+                            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png" />
+                        </a>
+                    </div>
+                    <div class="kt-aside__brand-tools">
+                        <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+                    </div>
+                </div>
+                <!-- end:: Aside Brand -->
+                <!-- begin:: Aside Menu -->
+                <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+                    <div id="kt_aside_menu" class="kt-aside-menu" data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+                        <ul class="kt-menu__nav ">
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+                            <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+                            <li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                <div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Product Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="kt-menu__submenu ">
+                                    <span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+                                            <span class="kt-menu__link">
+                                                <span class="kt-menu__link-text">Product Guide</span>
+                                            </span>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Facebook Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">LinkedIn Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Instagram Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Organizing Pipelines</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Useful Flows</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end:: Aside Menu -->
+                <!-- begin:: Aside Footer -->
+                <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+                    <div class="kt-aside__footer-nav">
+                        <div class="kt-aside__footer-item">
+                            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+                            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                            <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end:: Aside Footer -->
+            </div>
+            <!-- end:: Aside -->
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+                <!-- begin:: Header -->
+                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+                    <!-- begin:: Header Menu -->
+                    <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+                    <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+                        <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+                            <ul class="kt-menu__nav  ">
+                                <!-- Remove kt-hidden to show the drop down menus-->
+                                <!-- begin:: Menu Pipelines -->
+                                <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item bg-light">
+                                                <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Pipelines-->
+                                <!-- begin:: Menu Reports -->
+                                <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                                    <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                                        <ul class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Reports -->
+                                <!-- begin:: Menu Import / Export -->
+                                <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                                        <div class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Import/Export -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end:: Header Menu -->
+                    <!-- begin:: Header Topbar -->
+                    <div class="kt-header__topbar">
+                        <!--begin: Leads -->
+                        <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Leads -->
+                        <!--begin: Pending helpdesk tickets -->
+                        <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-help" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Pending helpdesk tickets -->
+                        <!--begin: Search -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+                                <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+                                <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                                    <form method="get" class="kt-quick-search__form">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                                            <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                                            <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                                        </div>
+                                    </form>
+                                    <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Search -->
+                        <!--begin: Notifications -->
+                        <div class="kt-header__topbar-item dropdown">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+                                <span class="kt-header__topbar-icon">
+                                    <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+                                </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+                                <form>
+                                    <div class="kt-head" style="background-image: url(https://www.flowchat.com/members/assets/media/misc/head_bg_sm.jpg)">
+                                        <h3 class="kt-head__title">User Notifications</h3>
+                                        <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+                                    </div>
+                                    <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--end: Notifications -->
+                        <!--begin: User Bar -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--user">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                                <!--use "kt-rounded" class for rounded avatar style-->
+                                <div class="kt-header__topbar-user kt-rounded-">
+                                    <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+                                    <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+                                    <img id="MemberPictureUserBar" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                    <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                    <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+                                <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                                    <div class="kt-user-card__wrapper">
+                                        <div class="kt-user-card__pic">
+                                            <!--use "kt-rounded" class for rounded avatar style-->
+                                            <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                        </div>
+                                        <div class="kt-user-card__details">
+                                            <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                                            <div class="kt-user-card__position"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="kt-nav kt-margin-b-10">
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-personal-information" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                                            <span class="kt-nav__link-text">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-change-password" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                                            <span class="kt-nav__link-text">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__separator kt-nav__separator--fit"></li>
+                                    <li class="kt-nav__custom kt-space-between">
+                                        <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end: User Bar -->
+                    </div>
+                    <!-- end:: Header Topbar -->
+                </div>
+                <!-- end:: Header -->
+                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+                    <!-- begin:: Subheader -->
+                    <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+                        <div class="kt-container  kt-container--fluid ">
+                            <div class="kt-subheader__main">
+                                <h3 class="kt-subheader__title">Results & Conversions</h3>
+                                <span class="kt-subheader__separator kt-hidden"></span>
+                                <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+                                </div>
+                            </div>
+                            <div class="kt-subheader__toolbar">
+                                <div class="kt-subheader__wrapper">
+                                    <span id="SubHeaderButtons"></span>
+                                    <div class="dropdown dropdown-inline" data-placement="top">
+                                        <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                                            <ul class="kt-nav kt-nav--active-bg" role="tablist">
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">FB Group</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./flowcharts-edit" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Flowchart</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Friends</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-group" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Group</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Import FB Likes</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Lead</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Product</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Podcast</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Task</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:: Subheader -->
+                    <!-- begin:: Content -->
+                    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid" id="page-content">
+                        <div class="kt-portlet kt-portlet--mobile">
+                            <div class="kt-portlet__body">
+                                <div class="alert alert-primary" role="alert">
+                                    <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                                    <div class="alert-text">Right now this report is only showing the totals for your entire account. The number in Total Messages is based on the number of clicks on the message button in the lead card. Total Calls and Number of Sales are based on how many leads are moved to a pipeline stage with the stage type set to "Call Booked" or "Sale".</div>
+                                </div>
+                                <!-- begin:: FILTERS -->
+                                <div class="kt-portlet__body kt-shape-bg-color-1 mb-0 pt-3 pb-2 mb-3">
+                                    <div class="kt-form row mx-0">
+                                        <!-- start: FILTER - notes -->
+                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
+                                            <div class="kt-form__group w-100">
+                                                <div class="kt-form__label">
+                                                    <h5>Filters</h5>
+                                                </div>
+                                                <div class="kt-input-icon kt-input-icon--left">
+                                                    <input type="text" class="form-control" placeholder="Search notes / hashtags..." id="reports-filter-notes" value="">
+                                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                                        <span><i class="fas fa-sticky-note"></i></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end: FILTER - notes -->
+                                        <!-- begin:: FILTER - date -->
+                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
+                                            <div class="kt-form__label"><label>Date Range</label></div>
+                                            <div class="input-group pull-left" id="kt_daterangepicker_6">
+                                                <input class="form-control" style="cursor:pointer;" readonly="" placeholder="Select date range" id="reports-filter-date" type="text">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end:: FILTER - date -->
+                                        <!-- start: FILTER - card color -->
+                                        <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
+                                            <div class="kt-form__group">
+                                                <div class="kt-form__label"><label>Card&nbsp;Color</label></div>
+                                                <div class="kt-form__control fc-color-filter">
+                                                    <div class="dropdown bootstrap-select show-tick form-control kt_"><select class="form-control kt_selectpicker" multiple="" title="All" id="reports-filter-card-color" tabindex="-98">
+                                                            <option data-content="<i class='kt-nav__link-icon far fa-circle card-color none'></i>">none</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color gray'></i>">gray</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color green'></i>">green</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color blue'></i>">blue</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color yellow'></i>">yellow</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color red'></i>">red</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color1'></i>">color1</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color2'></i>">color2</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color3'></i>">color3</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color4'></i>">color4</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color5'></i>">color5</option>
+                                                            <option data-content="<i class='kt-nav__link-icon fa fa-circle card-color color6'></i>">color6</option>
+                                                        </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="reports-filter-card-color" title="All">
+                                                            <div class="filter-option">
+                                                                <div class="filter-option-inner">
+                                                                    <div class="filter-option-inner-inner">All</div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <div class="dropdown-menu" style="max-height: 215px; overflow: hidden; min-height: 147px; min-width: 425px;">
+                                                            <div class="inner show" role="listbox" id="bs-select-1" tabindex="-1" aria-multiselectable="true" style="max-height: 189px; overflow-y: auto; min-height: 121px;">
+                                                                <ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;">
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-0" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon far fa-circle card-color none"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-1" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-2" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-3" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-4" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-5" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color red"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-6" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-7" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-8" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-9" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-10" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></span></a></li>
+                                                                    <li><a role="option" class="dropdown-item" id="bs-select-1-11" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"><i class="kt-nav__link-icon fa fa-circle card-color color6"></i></span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end: FILTER - card color -->
+                                        <!-- start: FILTER - pipeline -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                                            <div class="kt-form__group">
+                                                <div class="kt-form__label">
+                                                    <label>Pipeline:</label>
+                                                </div>
+                                                <div class="kt-form__control">
+                                                    <div class="dropdown bootstrap-select show-tick form-control">
+                                                        <div class="dropdown bootstrap-select form-control kt_"><select class="form-control kt_selectpicker" data-size="7" title="Select a Pipeline..." id="kt_form_member_pipeline_id" tabindex="-98">
+                                                                <option class="bs-title-option" value=""></option>
+                                                            </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="kt_form_member_pipeline_id" title="Select a Pipeline...">
+                                                                <div class="filter-option">
+                                                                    <div class="filter-option-inner">
+                                                                        <div class="filter-option-inner-inner">Select a Pipeline...</div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <div class="dropdown-menu ">
+                                                                <div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
+                                                                    <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end: FILTER - pipeline -->
+                                        <!-- start: FILTER - button Apply Filters -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                                            <button class="btn btn-primary mr-2" id="kt_form_button_apply_filters" style="margin-top: 25px" onclick="document.location.href='?tab=<br />
+<b>Notice</b>:  Undefined variable: Query_tab in <b>C:\sites\test.flowchat.com\members\reports-conversions.php</b> on line <b>116</b><br />
+&amp;member_pipeline_id=' + $('#kt_form_member_pipeline_id').val() + '&amp;cardcolor=' + $('#reports-filter-card-color').val() + '&amp;period=' + $('#reports-filter-date').val() + '&amp;notes=' + encodeURIComponent($('#reports-filter-notes').val());"><i class="fa fa-filter"></i>Apply Filters</button>
+                                            <button class="btn btn-danger float-right kt-hidden" style="margin-top:25px" onclick="MUUtils.copyElementContentsToClipboard(document.getElementById('Table-Report'));"><i class="fa fa-copy"></i>Copy Report to Clipboard</button>
+                                        </div>
+                                        <!-- end: FILTER - button Apply Filters -->
+                                    </div>
+                                </div>
+                                <!-- end:: FILTERS -->
+                            </div>
+                        </div>
+                        <script>
+                            var KTBootstrapDaterangepicker = function() {
+
+                            var demos = function() {
+
+                                var start = moment('April 1, 2022', 'MMMM D, YYYY');
+                                if (start == '') start = moment().startOf('month');
+                                var end = moment('April 22, 2022', 'MMMM D, YYYY');
+                                if (end == '') end = moment();
+
+                                $('#kt_daterangepicker_6').daterangepicker({
+                                    buttonClasses: 'btn btn-sm',
+                                    applyClass: 'btn-primary',
+                                    cancelClass: 'btn-secondary',
+
+                                    alwaysShowCalendars: true,
+                                    autoApply: true,
+                                    minYear: 2021,
+                                    startDate: start,
+                                    endDate: end,
+                                    ranges: {
+                                        'All Time': ['01-01-2021', moment()],
+                                        'Today': [moment(), moment()],
+                                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                                        '<nobr>This Week (Sun - Today)</nobr>': [moment().startOf('week'), moment()],
+                                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                                        'Last Week (Sun - Sat)': [moment().subtract(1, 'week').startOf('week'), moment().subtract(1, 'week').endOf('week')],
+                                        'Last 14 Days': [moment().subtract(13, 'days'), moment()],
+                                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                                    }
+                                }, function(start, end, label) {
+                                    $('#kt_daterangepicker_6 .form-control').val(start.format('MMMM D, YYYY') + ' / ' + end.format('MMMM D, YYYY'));
+                                });
+                                $('#reports-filter-date').val('April 1, 2022 / April 22, 2022');
+                            }
+
+                            return {
+                                init: function() {
+                                    demos();
+                                    $('#kt_form_member_pipeline_id').val('');
+                                    var QueryString = new URLSearchParams(window.location.search);
+                                    if (QueryString.has('cardcolor') && QueryString.get('cardcolor') != '') {
+                                        $('#reports-filter-card-color').val(QueryString.get('cardcolor').split(','));
+                                        $('#reports-filter-card-color').selectpicker('refresh');
+                                    }
+                                }
+                            };
+                        }();
+                        </script>
+
+                   </div>
+
+
+                    <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+                      <!--begin::Row-->
+                      <div class="row">
+
+                        <!--begin::Total Messages-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Total Messages</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">139,152</div>
+                                </div>
+
+                                <div class="kt-widget-20__data">
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartTotalMessages" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Total Messages-->
+
+
+
+                        <!--begin::Message to Call (%)-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Message to Call (%)</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">2.96%</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartMessageToCall" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Message to Call (%)-->
+
+
+
+
+                        <!--begin::Total Calls-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Total Calls</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">4,114</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartTotalCalls" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Total Calls-->
+
+
+
+
+                        <!--begin::Call to Sale (%)-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Call to Sale (%)</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">12,65%</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartCallToSale" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Call to Sale (%)-->
+
+
+                        <!--begin::Number of Sales-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Number of Sales</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">42</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartTotalSales" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Number of Sales-->
+
+
+                        <!--begin::Total Sales Value-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Total Sales Value</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">$736,75</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartTotalSalesValue" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Number of Sales-->
+
+
+
+                        <!--begin::Average Sale Value (%)-->
+                        <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+                          <!--begin::Portlet-->
+                          <div class="kt-portlet kt-portlet--height-fluid kpi-portlet kpi-total-tickets">
+                            <div class="kt-portlet__head kt-portlet__head--noborder">
+                              <div class="kt-portlet__head-label">
+                                <h3 class="kt-portlet__head-title">Average Sale Value</h3>
+                              </div>
+                              <div class="kt-portlet__head-toolbar">
+                                <div class="kt-portlet__head-toolbar-wrapper">
+                                  <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <ul class="kt-nav">
+                                        <li class="kt-nav__section kt-nav__section--first">
+                                          <span class="kt-nav__section-text">Export Tools</span>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-print"></i>
+                                            <span class="kt-nav__link-text">Print</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-copy"></i>
+                                            <span class="kt-nav__link-text">Copy</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
+                                            <span class="kt-nav__link-text">Excel</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
+                                            <span class="kt-nav__link-text">CSV</span>
+                                          </a>
+                                        </li>
+                                        <li class="kt-nav__item">
+                                          <a href="#" class="kt-nav__link">
+                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
+                                            <span class="kt-nav__link-text">PDF</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kt-portlet__body kt-portlet__body--fluid">
+                              <div class="kt-widget-19">
+                                <div class="kt-widget-19__title text-center">
+                                  <div class="kt-widget-19__label">$17,69</div>
+                                </div>
+                                <div class="kt-widget-19__data">
+
+                                    <div class="kt-widget-20__chart">
+                                        <canvas id="chartAverageSaleValue" width="160" height="100" style="display: block; width: 160px; height: 80px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                     
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Portlet-->
+                        </div>
+                        <!--end::Average Sale Value (%)-->
+
+                      </div>
+                    </div>
+
+
+                    <!-- begin Table -->
+                    <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+                        <div class="kt-portlet kt-portlet--mobile">
+                            <div class="kt-portlet__body table-responsive-lg">
+                                <table id="pipelineResultsConversions" class="table table-striped m-table table-bordered dataTable">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th class="sorting align-middle">Pipeline</th>
+                                            <th class="sorting align-middle text-center">Messages<br><small>Message to Call (%)</small></th>
+                                            <th class="sorting align-middle text-center">Calls<br><small>Call to Sale (%)</small></th>
+                                            <th class="sorting align-middle text-center">Sales</th>
+                                            <th class="sorting align-middle text-center">Total Sales Value</th>
+                                            <th class="sorting align-middle text-center">Avg. Sale Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <!-- end:: Content -->
+                </div>
+            </div>
+        </div>
+        <!-- end:: Page -->
+    </div>
+    <!-- end:: Root -->
+    <!-- begin:: Scrolltop -->
+    <div id="kt_scrolltop" class="kt-scrolltop">
+        <i class="la la-arrow-up"></i>
+    </div>
+    <!-- end:: Scrolltop -->
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    <script>
+    var KTAppOptions = {
+        "colors": {
+            "state": {
+                "brand": "#5d78ff",
+                "metal": "#c4c5d6",
+                "light": "#ffffff",
+                "accent": "#00c5dc",
+                "primary": "#5867dd",
+                "success": "#34bfa3",
+                "info": "#36a3f7",
+                "warning": "#ffb822",
+                "danger": "#fd3995",
+                "focus": "#9816f4"
+            },
+            "base": {
+                "label": [
+                    "#c5cbe3",
+                    "#a1a8c3",
+                    "#3d4465",
+                    "#3e4466"
+                ],
+                "shape": [
+                    "#f0f3ff",
+                    "#d9dffa",
+                    "#afb4d4",
+                    "#646c9a"
+                ]
+            }
+        }
+    };
+    </script>
+    <!-- end::Global Config -->
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="https://www.flowchat.com/members/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+    <script src="https://www.flowchat.com/members/assets/js/scripts.bundle.js" type="text/javascript"></script>
+    <script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+    <!--end::Global Theme Bundle -->
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="https://www.flowchat.com/members/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+    <script src="assets/js/pages/reports-results-conversions.js" type="text/javascript"></script>
+    <!--begin:: ANDRE JS DATE RANGE -->
+    <script src="https://www.flowchat.com/members/assets/js/pages/components/forms/widgets/bootstrap-daterangepicker.js" type="text/javascript"></script>
+    <!--end:: ANDRE JS DATE RANGE -->
+    <!--end::Page Vendors -->
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="https://www.flowchat.com/members/assets/js/pages/dashboard.js" type="text/javascript"></script>
+    <!--end::Page Scripts -->
+</body>
+<!-- end::Body -->
+
+</html>

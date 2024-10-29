@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="">
+		<meta charset="utf-8" />
+    <title>FlowChat - Lead Modal</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="https://www.multiuniversal.com/evolution2/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/flowchat.css?v=1622482278" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/skins/brand/navy.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.multiuniversal.com/evolution2/assets/css/skins/aside/navy.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="https://www.multiuniversal.com/evolution2/assets/media/logos/favicon.ico" />
+	</head>
+
+	<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading kt-brand--minimize kt-aside--minimize"  >
+
+
+<!-- begin:: Header Mobile -->
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
+	<div class="kt-header-mobile__logo">
+		<a href="./">
+			<img alt="Logo" src="https://www.multiuniversal.com/evolution2/assets/media/logos/logo-6.png"/>
+		</a>
+	</div>
+	<div class="kt-header-mobile__toolbar">
+			
+		<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+			
+		<!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+				
+		<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+	</div>
+</div>
+<!-- end:: Header Mobile -->
+<!-- begin:: Root -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <!-- begin:: Page -->
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <!-- begin:: Aside -->
+    <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+    <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+      <!-- begin::Aside Brand -->
+      <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+        <div class="kt-aside__brand-logo">
+          <a href="./">
+            <img alt="Logo" src="https://www.multiuniversal.com/evolution2/assets/media/logos/logo-6.png"/>
+          </a>
+        </div>
+	
+        <div class="kt-aside__brand-tools">
+          <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+        </div>
+      </div>
+      <!-- end:: Aside Brand -->
+
+      <!-- begin:: Aside Menu -->
+      <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+        <div id="kt_aside_menu"	class="kt-aside-menu" data-ktmenu-vertical="1"	 data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+
+          <ul class="kt-menu__nav ">
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+<li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+<li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a><div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>  <ul class="kt-menu__subnav">
+<li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+  </ul>
+</div></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+<li class="kt-menu__section "><h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i></li>
+<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+  <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+    <i class="kt-menu__link-icon flaticon2-cup"></i>
+    <span class="kt-menu__link-text">Product Guide</span>
+    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+  </a>
+  <div class="kt-menu__submenu ">
+    <span class="kt-menu__arrow"></span>
+    <ul class="kt-menu__subnav">
+      <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+        <span class="kt-menu__link">
+          <span class="kt-menu__link-text">Product Guide</span>
+        </span>
+      </li>
+      
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Facebook Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">LinkedIn Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Instagram Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Organizing Pipelines</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Useful Flows</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+      </div>
+      <!-- end:: Aside Menu -->
+      <!-- begin:: Aside Footer -->
+      <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+        <div class="kt-aside__footer-nav">
+          <div class="kt-aside__footer-item">
+            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                        <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Aside Footer -->
+    </div>
+    <!-- end:: Aside -->
+
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+        <!-- begin:: Header Menu -->
+        <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+        <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+
+          <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+            <ul class="kt-menu__nav  "><!-- Remove kt-hidden to show the drop down menus-->
+
+              <!-- begin:: Menu Pipelines -->
+              <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                  <ul class="kt-menu__subnav">
+<li class="kt-menu__item bg-light">
+  <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+</li>
+<div class="dropdown-divider m-0"></div>
+<li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>                  </ul>
+                </div>
+              </li>
+              <!-- end:: Menu Pipelines-->
+
+
+              <!-- begin:: Menu Reports -->
+              <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                <ul class="kt-menu__subnav">
+
+                  <ul class="kt-menu__content">
+
+                    <li class="kt-menu__item ">
+                      <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                      <ul class="kt-menu__inner">
+                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+                </ul>
+              </div></li>
+              <!-- end:: Menu Reports -->
+
+
+              <!-- begin:: Menu Import / Export -->
+              <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                      <div class="kt-menu__subnav">
+                        <ul class="kt-menu__content">
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                             <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                  <ul class="kt-menu__subnav">
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- end:: Import/Export -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- end:: Header Menu -->
+
+        <!-- begin:: Header Topbar -->
+        <div class="kt-header__topbar">
+
+          <!--begin: Leads -->
+          <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Leads -->
+          <!--begin: Pending helpdesk tickets -->
+          <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-help" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Pending helpdesk tickets -->
+          <!--begin: Search -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+              <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+              <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                <form method="get" class="kt-quick-search__form">
+                <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                  <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                  <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                </div>
+                </form>
+                <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <!--end: Search -->
+
+          <!--begin: Notifications -->
+          <div class="kt-header__topbar-item dropdown">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+              <span class="kt-header__topbar-icon">
+                <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+              <form>
+              <div class="kt-head" style="background-image: url(https://www.multiuniversal.com/evolution2/assets/media/misc/head_bg_sm.jpg)">
+                <h3 class="kt-head__title">User Notifications</h3>
+                <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+              </div>
+              <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+              <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </form>
+            </div>
+          </div>
+          <!--end: Notifications -->
+
+
+          <!--begin: User Bar -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                <!--use "kt-rounded" class for rounded avatar style-->
+            <div class="kt-header__topbar-user kt-rounded-">
+              <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+              <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+              <img id="MemberPictureUserBar" alt="Pic" src="https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+              <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+              <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+            <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(https://www.multiuniversal.com/evolution2/assets/media/misc/head_bg_sm.jpg)">
+              <div class="kt-user-card__wrapper">
+                <div class="kt-user-card__pic">
+                <!--use "kt-rounded" class for rounded avatar style-->
+                  <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.multiuniversal.com/evolution2/assets/media/users/default.jpg';">
+                </div>
+                <div class="kt-user-card__details">
+                    <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                    <div class="kt-user-card__position"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="kt-nav kt-margin-b-10">
+              <li class="kt-nav__item">
+                <a href="./my-profile-personal-information" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                  <span class="kt-nav__link-text">My Profile</span>
+                </a>
+              </li>
+              <li class="kt-nav__item">
+                <a href="./my-profile-change-password" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                  <span class="kt-nav__link-text">Change Password</span>
+                </a>
+              </li>
+                            <li class="kt-nav__separator kt-nav__separator--fit"></li>
+
+              <li class="kt-nav__custom kt-space-between">
+                <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end: User Bar -->
+      </div>
+      <!-- end:: Header Topbar -->
+    </div>
+    <!-- end:: Header -->
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+      <!-- begin:: Subheader -->
+      <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+        <div class="kt-container  kt-container--fluid ">
+          <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">FLOWCHAT LEAD MODAL</h3>
+
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+            </div>
+          </div>
+          <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+
+              <span id="SubHeaderButtons"></span>
+
+              <div class="dropdown dropdown-inline" data-placement="top">
+                <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                  <ul class="kt-nav kt-nav--active-bg" role="tablist">
+
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">FB Group</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./flowcharts-edit" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Flowchart</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-friends" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Friends</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-group" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Group</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="./leads-import-facebook-likes" class="kt-nav__link">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Import FB Likes</span>
+                      </a>
+                    </li>
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Lead</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Product</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Podcast</span>
+                      </a>
+                    </li>
+  
+                    <li class="kt-nav__item">
+                      <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                        <span class="kt-nav__link-text">Task</span>
+                      </a>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Subheader -->          
+
+      <!-- begin:: Content -->
+      <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-brand" data-toggle="modal" data-target="#modalLeadEditor">Open Lead Modal</button>
+
+
+        <!-- begin:: ANDRE - LEAD MODAL -->
+        <div class="modal fade lead-modal" id="modalLeadEditor" tabindex="-1" role="dialog" aria-labelledby="Lead-Editor" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Lead Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body" >
+                <form class="kt-form" id="Form-lead" style="height:600px;">
+                  <input type="hidden" id="Form-lead-lead-id" name="Form-lead-lead-id" value="000000">
+                  <div class="row">
+                    <!-- START: Left Column with Form -->
+                    <div class="col-lg-6 col-md-12">
+                      <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand" role="tablist">
+                        <li class="nav-item mr-4">
+                          <a class="nav-link pt-0 active" data-toggle="tab" href="#lead-basic" role="tab" aria-selected="true"><i class="far fa-address-card"></i>Basic</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                          <a class="nav-link pt-0" data-toggle="tab" href="#lead-links" role="tab" aria-selected="false"><i class="fas fa-link"></i>Links</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                          <a class="nav-link pt-0" data-toggle="tab" href="#lead-deal" role="tab" aria-selected="false"><i class="far fa-handshake"></i>Deal Details</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                          <a class="nav-link pt-0" data-toggle="tab" href="#lead-others" role="tab" aria-selected="false"><i class="fas fa-list"></i>Other</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+
+                        <!-- begin:: Lead Basic -->
+                        <div class="tab-pane active" id="lead-basic" role="tabpanel">
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-name" class="kt-font-danger kt-font-boldest">Name *</label>
+                            <input type="text" maxlength="200" class="form-control" placeholder="Enter name" id="Form-lead-name" name="Form-lead-name" required="">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-lead-status-id" class="kt-font-danger kt-font-boldest">Status *</label>
+                            <select class="form-control" id="Form-lead-lead-status-id" name="Form-lead-lead-status-id" required="">
+                              <option value="1">Lead In</option><option value="2">Contacted</option><option value="3">Needs Follow Up</option><option value="4">Call Booked</option><option value="5">Payment Received</option><option value="6">Closed/Lost</option><option value="7">Not Qualified</option><option value="8">Waiting for Payment</option><option value="9">Unresponsive</option><option value="10">Do Not Contact</option>  </select>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-email" class="kt-font-boldest">Email</label>
+                            <input type="text" maxlength="200" class="form-control" placeholder="Enter email" id="Form-lead-email" name="Form-lead-email">
+                          </div>
+
+                          <div class="form-group row mb-3">
+                            <div class="col-lg-12"><label class="kt-font-boldest" for="Form-lead-date-followup">Follow Up Date</label></div>
+                            <div class="col-lg-4">
+                              <input class="form-control text-center" type="date" value="" id="Form-lead-date-followup" name="Form-lead-date-followup">
+                            </div>
+                            <div class="col-lg-4">
+                              <input class="form-control text-center" type="time" value="" id="Form-lead-date-followup-time" name="Form-lead-date-followup-time">
+                            </div>
+                            <div class="col-lg-4">
+                              <a href="#" target="_blank" class="btn btn-label-primary" onclick="$('#Form-lead-date-followup').val(''); $('#Form-lead-date-followup-time').val(''); return false;">Clear Date</a>
+                            </div>
+                            <div class="ml-3 mt-3">
+                              <span class="mr-3">Add to:</span>
+                              <a href="#" target="_blank" class="" onclick="MUModals.actionLeadAddFollowUpToGoogleCalendar({ element: this }); return true;" class="mx-2"><i class="far fa-calendar"></i> Google Calendar</a>
+                              <span class="mx-3"> or </span>
+                              <a href="#" target="_blank" class="" onclick="MUModals.actionLeadAddFollowUpToOutlookCalendar({ element: this }); return true;" class="mx-2"><i class="far fa-calendar"></i> Outlook Calendar</a>
+                            </div>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label class="kt-font-boldest" for="Form-lead-map-lead-member-pipeline-stage">Pipeline Stages</label>
+                            <div class="dropdown bootstrap-select show-tick form-control kt_" style=""><select class="form-control kt_selectpicker" data-width="600" data-size="7" data-live-search="true" multiple="" id="Form-lead-map-lead-member-pipeline-stage" name="Form-lead-map-lead-member-pipeline-stage[]" tabindex="-98">
+                              <optgroup label="FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)"><option value="6779">Stage 1</option></optgroup><optgroup label="FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale"><option value="10442">Lead In</option><option value="10443">Friend Request Sent</option><option value="10444">Initial Icebreaker Sent</option><option value="10445">If No Reply, Bump Message #1 Sent (24 hrs later) </option><option value="10446">Invite To Group Request Sent</option><option value="10447">If They Say "No Thanks" Message Sent</option><option value="10448">Welcome Post / Comment Completed</option><option value="10449">Relationship Builder #1 Sent</option><option value="10450">Invited To Call (24 hrs later)</option><option value="10451">24 Hr Follow Up To Book Call Sent</option><option value="10452">Booking Link Sent</option><option value="10453">Purchase Complete</option></optgroup><optgroup label="FBG - High Ticket Sellers (Sales Ascenders Group)"><option value=""></option></optgroup><optgroup label="FBG - The Art of High Ticket Selling"><option value="6782">Stage 1</option></optgroup><optgroup label="FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event"><option value=""></option></optgroup><optgroup label="LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale"><option value=""></option></optgroup><optgroup label="LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo"><option value=""></option></optgroup><optgroup label="Mastermind Buyers - COD"><option value="6783">Stage 1</option></optgroup><optgroup label="Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest"><option value=""></option></optgroup><optgroup label="Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest"><option value=""></option></optgroup><optgroup label="SAIC PROSPECTS"><option value="1643">Lead In</option><option value="1644">Friend Request Sent</option><option value="1645">Invite To Grp</option><option value="1646">Invite To Grp 48 hr Follow Up (48hr)</option><option value="1647">Last Invite to grp (7 Day)</option><option value="1648">FB Grp Link Sent</option><option value="1649">FB Grp Link Sent Follow Up (48 hr) if needed</option><option value="1650">Last FB Grp Link Sent Follow Up (7 Day)</option><option value="1651">Added to FB Group</option><option value="1652">Welcome New Member Into FB Grp</option><option value="1653">Relationship Builder #1  (24hrs)</option><option value="1654">Relationship Builder #2  (24hrs)</option><option value="1655">Invite to Call - 1st Attempt (48hrs)</option><option value="1656">Invite to Call - 2nd Attempt (48hrs) if needed</option><option value="1657">CTA (Call-To-Action) Video Sent (7 Days) if needed</option><option value="1658">CTA Video Sent  Follow up (48hrs) if needed</option><option value="1659">Sent Scheduling Link</option><option value="1660">Sent Scheduling Link Follow Up (48hrs) if needed</option><option value="1661">Last Sent Scheduling Link Follow Up (10 days)</option><option value="1662">Call Scheduled</option><option value="1663">Sent Call Booked Confirmation MSG</option><option value="1664">Sent Day Before Call Reminder</option><option value="1665">Call Canceled by Prospect</option><option value="1666">Request to Reschedule</option><option value="1667">Reschedule Link F/U (7 days)</option><option value="1668">Completed Call &amp; Follow Up Message</option><option value="1669">Purchased Software</option><option value="1670">Purchased Course + Software</option><option value="1671">Purchased Mastermind + Software</option><option value="1672">Chris Daily F/U</option><option value="1673">Sean Daily F/U</option></optgroup><optgroup label="test 12"><option value=""></option></optgroup><optgroup label="test 13"><option value=""></option></optgroup><optgroup label="test 14"><option value=""></option></optgroup><optgroup label="test 15"><option value=""></option></optgroup><optgroup label="test 16"><option value=""></option></optgroup><optgroup label="test 17"><option value=""></option></optgroup><optgroup label="test 18"><option value=""></option></optgroup><optgroup label="test 19"><option value=""></option></optgroup><optgroup label="test 20"><option value=""></option></optgroup><optgroup label="test 21"><option value="9015">Pipleine Stage 1</option><option value="9016">Pipeline Stage 2</option><option value="9017">Pipeline Stage 3</option><option value="9018">Pipeline Stage 4</option><option value="9019">Pipeline Stage 5</option><option value="9020">Pipeline Stage 6</option><option value="9021">Pipeline Stage 7</option><option value="9022">Pipleine Stage 8</option><option value="9023">Pipeline Stage 9</option><option value="9024">Pipeline Stage 10</option></optgroup><optgroup label="Unleash CEO FB Group - CTA: Software Demo Calls "><option value="6781">Stage 1</option></optgroup><optgroup label="YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request"><option value="6780">Stage 1</option></optgroup>  </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="Form-lead-map-lead-member-pipeline-stage" title="Initial Icebreaker Sent"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Initial Icebreaker Sent</div></div> </div></button><div class="dropdown-menu " style="max-height: 371px; overflow: hidden; min-width: 0px;"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1" aria-multiselectable="true" style="max-height: 287px; overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="dropdown-header optgroup-1"><span class="text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></li><li class="optgroup-1"><a role="option" class="opt dropdown-item" id="bs-select-1-1" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Stage 1</span></a></li><li class="dropdown-divider optgroup-1div"></li><li class="dropdown-header optgroup-2"><span class="text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-4" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Lead In</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-5" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Friend Request Sent</span></a></li><li class="optgroup-2 selected"><a role="option" class="opt dropdown-item selected" id="bs-select-1-6" tabindex="0" aria-selected="true"><span class=" bs-ok-default check-mark"></span><span class="text">Initial Icebreaker Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-7" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">If No Reply, Bump Message #1 Sent (24 hrs later) </span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-8" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invite To Group Request Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-9" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">If They Say "No Thanks" Message Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-10" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Welcome Post / Comment Completed</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-11" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Relationship Builder #1 Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-12" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invited To Call (24 hrs later)</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-13" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">24 Hr Follow Up To Book Call Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-14" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Booking Link Sent</span></a></li><li class="optgroup-2"><a role="option" class="opt dropdown-item" id="bs-select-1-15" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Purchase Complete</span></a></li><li class="dropdown-divider optgroup-2div"></li><li class="dropdown-header optgroup-3"><span class="text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></li><li class="optgroup-3"><a role="option" class="opt dropdown-item" id="bs-select-1-18" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-3div"></li><li class="dropdown-header optgroup-4"><span class="text">FBG - The Art of High Ticket Selling</span></li><li class="optgroup-4"><a role="option" class="opt dropdown-item" id="bs-select-1-21" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Stage 1</span></a></li><li class="dropdown-divider optgroup-4div"></li><li class="dropdown-header optgroup-5"><span class="text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></li><li class="optgroup-5"><a role="option" class="opt dropdown-item" id="bs-select-1-24" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-5div"></li><li class="dropdown-header optgroup-6"><span class="text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></li><li class="optgroup-6"><a role="option" class="opt dropdown-item" id="bs-select-1-27" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-6div"></li><li class="dropdown-header optgroup-7"><span class="text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></li><li class="optgroup-7"><a role="option" class="opt dropdown-item" id="bs-select-1-30" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-7div"></li><li class="dropdown-header optgroup-8"><span class="text">Mastermind Buyers - COD</span></li><li class="optgroup-8"><a role="option" class="opt dropdown-item" id="bs-select-1-33" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Stage 1</span></a></li><li class="dropdown-divider optgroup-8div"></li><li class="dropdown-header optgroup-9"><span class="text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></li><li class="optgroup-9"><a role="option" class="opt dropdown-item" id="bs-select-1-36" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-9div"></li><li class="dropdown-header optgroup-10"><span class="text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></li><li class="optgroup-10"><a role="option" class="opt dropdown-item" id="bs-select-1-39" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-10div"></li><li class="dropdown-header optgroup-11"><span class="text">SAIC PROSPECTS</span></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-42" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Lead In</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-43" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Friend Request Sent</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-44" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invite To Grp</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-45" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invite To Grp 48 hr Follow Up (48hr)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-46" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Last Invite to grp (7 Day)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-47" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">FB Grp Link Sent</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-48" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">FB Grp Link Sent Follow Up (48 hr) if needed</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-49" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Last FB Grp Link Sent Follow Up (7 Day)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-50" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Added to FB Group</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-51" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Welcome New Member Into FB Grp</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-52" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Relationship Builder #1  (24hrs)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-53" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Relationship Builder #2  (24hrs)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-54" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invite to Call - 1st Attempt (48hrs)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-55" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Invite to Call - 2nd Attempt (48hrs) if needed</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-56" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">CTA (Call-To-Action) Video Sent (7 Days) if needed</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-57" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">CTA Video Sent  Follow up (48hrs) if needed</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-58" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Sent Scheduling Link</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-59" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Sent Scheduling Link Follow Up (48hrs) if needed</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-60" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Last Sent Scheduling Link Follow Up (10 days)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-61" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Call Scheduled</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-62" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Sent Call Booked Confirmation MSG</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-63" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Sent Day Before Call Reminder</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-64" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Call Canceled by Prospect</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-65" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Request to Reschedule</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-66" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Reschedule Link F/U (7 days)</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-67" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Completed Call &amp; Follow Up Message</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-68" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Purchased Software</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-69" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Purchased Course + Software</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-70" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Purchased Mastermind + Software</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-71" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Chris Daily F/U</span></a></li><li class="optgroup-11"><a role="option" class="opt dropdown-item" id="bs-select-1-72" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Sean Daily F/U</span></a></li><li class="dropdown-divider optgroup-11div"></li><li class="dropdown-header optgroup-12"><span class="text">test 12</span></li><li class="optgroup-12"><a role="option" class="opt dropdown-item" id="bs-select-1-75" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-12div"></li><li class="dropdown-header optgroup-13"><span class="text">test 13</span></li><li class="optgroup-13"><a role="option" class="opt dropdown-item" id="bs-select-1-78" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-13div"></li><li class="dropdown-header optgroup-14"><span class="text">test 14</span></li><li class="optgroup-14"><a role="option" class="opt dropdown-item" id="bs-select-1-81" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-14div"></li><li class="dropdown-header optgroup-15"><span class="text">test 15</span></li><li class="optgroup-15"><a role="option" class="opt dropdown-item" id="bs-select-1-84" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-15div"></li><li class="dropdown-header optgroup-16"><span class="text">test 16</span></li><li class="optgroup-16"><a role="option" class="opt dropdown-item" id="bs-select-1-87" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-16div"></li><li class="dropdown-header optgroup-17"><span class="text">test 17</span></li><li class="optgroup-17"><a role="option" class="opt dropdown-item" id="bs-select-1-90" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-17div"></li><li class="dropdown-header optgroup-18"><span class="text">test 18</span></li><li class="optgroup-18"><a role="option" class="opt dropdown-item" id="bs-select-1-93" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-18div"></li><li class="dropdown-header optgroup-19"><span class="text">test 19</span></li><li class="optgroup-19"><a role="option" class="opt dropdown-item" id="bs-select-1-96" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-19div"></li><li class="dropdown-header optgroup-20"><span class="text">test 20</span></li><li class="optgroup-20"><a role="option" class="opt dropdown-item" id="bs-select-1-99" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text"></span></a></li><li class="dropdown-divider optgroup-20div"></li><li class="dropdown-header optgroup-21"><span class="text">test 21</span></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-102" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipleine Stage 1</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-103" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 2</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-104" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 3</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-105" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 4</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-106" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 5</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-107" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 6</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-108" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 7</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-109" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipleine Stage 8</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-110" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 9</span></a></li><li class="optgroup-21"><a role="option" class="opt dropdown-item" id="bs-select-1-111" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Pipeline Stage 10</span></a></li><li class="dropdown-divider optgroup-21div"></li><li class="dropdown-header optgroup-22"><span class="text">Unleash CEO FB Group - CTA: Software Demo Calls </span></li><li class="optgroup-22"><a role="option" class="opt dropdown-item" id="bs-select-1-114" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Stage 1</span></a></li><li class="dropdown-divider optgroup-22div"></li><li class="dropdown-header optgroup-23"><span class="text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></li><li class="optgroup-23"><a role="option" class="opt dropdown-item" id="bs-select-1-117" tabindex="0" aria-selected="false"><span class=" bs-ok-default check-mark"></span><span class="text">Stage 1</span></a></li></ul></div></div></div>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label class="kt-font-boldest" for="Form-lead-lead-source-id">Source</label>
+                            <select class="form-control" id="Form-lead-lead-source-id" name="Form-lead-lead-source-id" onchange="if ($(this).val() == 19) { $('#DivSelectFacebookgroup').removeClass('kt-hidden'); } else { $('#DivSelectFacebookgroup').addClass('kt-hidden'); }">
+                              <option value="">Select a source...</option>
+                              <option value="1">Ads - Facebook</option><option value="2">Ads - Google</option><option value="7">Ads - LinkedIn</option><option value="4">Ads - Multiple Sources</option><option value="3">Ads - Twitter</option><option value="18">Affiliate</option><option value="12">Event</option><option value="5">Facebook</option><option value="27">Facebook Friends - My List</option><option value="28">Facebook Friends - Other Lists</option><option value="19">Facebook Group</option><option value="29">Facebook Likes</option><option value="26">Facebook Meme</option><option value="35">Facebook Messages</option><option value="25">Facebook Page</option><option value="15">Forum</option><option value="23">Inc.com</option><option value="22">Instagram</option><option value="30">Instagram Followers</option><option value="31">Instagram Likes</option><option value="11">JV</option><option value="6">LinkedIn</option><option value="33">LinkedIn Connections</option><option value="32">LinkedIn Group</option><option value="34">LinkedIn Likes</option><option value="14">Mailing List</option><option value="16">Other Source</option><option value="21">Podcast</option><option value="20">PR Article</option><option value="13">Purchased List</option><option value="8">Referral - from Client</option><option value="10">Referral - from Existing Contacts</option><option value="9">Referral - from Staff</option><option value="17">Twitter</option><option value="37">Twitter Followers</option><option value="40">Twitter Following</option><option value="38">Twitter Likes</option><option value="36">Twitter Messages</option><option value="39">Twitter ReTweets</option><option value="24">YouTube</option>  </select>
+                          </div>
+
+
+                        </div>
+                        <!-- end:: Lead Basic -->
+
+                        <!-- begin:: Lead Links -->
+                        <div class="tab-pane" id="lead-links" role="tabpanel">
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-facebook" class="kt-font-boldest"><i class="fab fa-facebook color-facebook"></i> Link to Facebook Profile</label>
+                            <input type="url" class="form-control" placeholder="Enter link to Facebook profile" id="Form-lead-profile-facebook" name="Form-lead-profile-facebook">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-linkedin" class="kt-font-boldest"><i class="fab fa-linkedin color-linkedin"></i> Link to LinkedIn Profile</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to LinkedIn profile" id="Form-lead-profile-linkedin" name="Form-lead-profile-linkedin">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-chat-linkedin" class="kt-font-boldest"><i class="fab fa-linkedin color-linkedin"></i> Link to LinkedIn Chat</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to LinkedIn chat" id="Form-lead-chat-linkedin" name="Form-lead-chat-linkedin">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-instagram" class="kt-font-boldest"><i class="fab fa-instagram color-instagram"></i> Instagram Username <span style="font-weight: normal;">(only the username, not the URL)</span></label>
+                            <input type="text" maxlength="200" class="form-control" placeholder="Enter Instagram profile username" id="Form-lead-profile-instagram" name="Form-lead-profile-instagram">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-twitter" class="kt-font-boldest"><i class="fab fa-twitter color-twitter"></i> Link to Twitter Profile</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to Twitter profile" id="Form-lead-profile-twitter" name="Form-lead-profile-twitter">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-stripe" class="kt-font-boldest"><i class="fas fa-link kt-font-brand"></i> Link to Stripe Profile</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to Stripe profile" id="Form-lead-profile-stripe" name="Form-lead-profile-stripe">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-profile-linkedin" class="kt-font-boldest"><i class="fas fa-link kt-font-brand"></i> Link to ActiveCampaign Profile</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to ActiveCampaign Profile" id="Form-lead-profile-activecampaign" name="Form-lead-profile-activecampaign">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-chat-linkedin" class="kt-font-boldest"><i class="fas fa-link kt-font-brand"></i> Link to JustCall Chat</label>
+                            <input type="url" maxlength="200" class="form-control" placeholder="Enter link to JustCall chat" id="Form-lead-chat-justcall" name="Form-lead-chat-justcall">
+                          </div>
+
+                        </div>
+                        <!-- end:: Lead Links -->
+
+                        <!-- begin:: Lead Deal Details -->
+                        <div class="tab-pane" id="lead-deal" role="tabpanel">
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-company-name" class="kt-font-boldest">Company Name</label>
+                            <input type="text" maxlength="100" class="form-control" placeholder="Enter name of the company" id="Form-lead-company-name" name="Form-lead-company-name">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-job-title" class="kt-font-boldest">Job Title</label>
+                            <input type="text" maxlength="100" class="form-control" placeholder="Enter the job title" id="Form-lead-job-title" name="Form-lead-job-title">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-product-id" class="kt-font-boldest">Product</label>
+                            <select class="form-control" id="Form-lead-product-id" name="Form-lead-product-id" onchange="$('#Form-lead-proposal-price').val($('#Form-lead-product-id :selected').attr('price')); if ($('#Form-lead-proposal-price').val() == '') $('#Form-lead-proposal-price').val('0');">
+                              <option value="">Select a product...</option>
+                              <option value="118" price="1">Test Product</option>  </select>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-proposal-price" class="kt-font-boldest">Proposal Price</label>
+                            <input type="number" step="0.01" value="0" class="form-control" placeholder="Enter the value of the proposal" id="Form-lead-proposal-price" name="Form-lead-proposal-price" required="">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-currency-id" class="kt-font-boldest">Currency</label>
+                            <select class="form-control" id="Form-lead-currency-id" name="Form-lead-currency-id">
+                              <option value="">Select a currency...</option>
+                              <option value="3">British Pound</option><option value="4">Canadian Dollar</option><option value="2">Euro</option><option value="1">US Dollar</option>  </select>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-map-lead-segment" class="kt-font-boldest">Segments</label>
+                            <div class="dropdown bootstrap-select show-tick form-control kt_ dropup"><select class="form-control kt_selectpicker" multiple="" id="Form-lead-map-lead-segment" name="Form-lead-map-lead-segment[]" tabindex="-98">
+                                </select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="Form-lead-map-lead-segment" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu " style="max-height: 1666.98px; overflow: hidden; min-height: 0px;"><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1" aria-multiselectable="true" style="max-height: 1640.98px; overflow-y: auto; min-height: 0px;"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-sales-commission" class="kt-font-boldest">Sales Commission (flat amount or percentage)</label>
+                            <input type="number" step="0.01" value="0" class="form-control" placeholder="Enter the value of the sales commission" id="Form-lead-sales-commission" name="Form-lead-sales-commission" required="">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-date-acquired" class="kt-font-boldest">Acquired Date</label>
+                            <div class="input-group date">
+                              <input type="text" class="form-control" readonly="" value="" id="Form-lead-date-acquired" name="Form-lead-date-acquired">
+                              <div class="input-group-append">
+                                <label class="input-group-text" for="Form-lead-date-acquired">
+                                  <i class="la la-calendar glyphicon-th"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <!-- end:: Lead Deal Details-->
+
+                        <!-- begin:: Lead Others -->
+                        <div class="tab-pane" id="lead-others" role="tabpanel">
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-priority" class="kt-font-boldest">Priority</label>
+                            <select class="form-control" id="Form-lead-priority" name="Form-lead-priority" required="">
+                              <option value="0"></option>
+                              <option value="1">Low</option><option value="2">Normal</option><option value="3">High</option><option value="4">Urgent</option>  </select>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-telephone" class="kt-font-boldest">Phone</label>
+                            <input type="text" maxlength="100" class="form-control" placeholder="Enter phone" id="Form-lead-telephone" name="Form-lead-telephone">
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label for="Form-lead-gender-id" class="kt-font-boldest">Gender</label>
+                            <select class="form-control" id="Form-lead-gender-id" name="Form-lead-gender-id">
+                              <option value="">Select a gender...</option>
+                              <option value="2">Female</option><option value="1">Male</option>  </select>
+                          </div>
+
+                          <div class="form-group  mb-3">
+                        <label for="Form-lead-contry-id" class="kt-font-boldest">Country</label>
+                        <div class="dropdown bootstrap-select form-control kt_ dropup"><select class="form-control kt_selectpicker" data-size="7" data-live-search="true" name="Form-lead-country-id" id="Form-lead-country-id" tabindex="-98">  <option value="">Select a Country...</option><option value="4">Afghanistan</option><option value="7">Albania</option><option value="5">Algeria</option><option value="11">American Samoa</option><option value="9">Andorra</option><option value="10">Angola</option><option value="16">Anguilla</option><option value="17">Antarctica</option><option value="2">Antigua and Barbuda</option><option value="12">Argentina</option><option value="8">Armenia</option><option value="1">Aruba</option><option value="14">Ashmore and Cartier Islands</option><option value="13">Australia</option><option value="15">Austria</option><option value="6">Azerbaijan</option><option value="23">Bahamas, The</option><option value="18">Bahrain</option><option value="83">Baker Island</option><option value="24">Bangladesh</option><option value="19">Barbados</option><option value="34">Bassas da India</option><option value="30">Belarus</option><option value="22">Belgium</option><option value="25">Belize</option><option value="29">Benin</option><option value="21">Bermuda</option><option value="35">Bhutan</option><option value="27">Bolivia</option><option value="26">Bosnia and Herzegovina</option><option value="20">Botswana</option><option value="37">Bouvet Island</option><option value="33">Brazil</option><option value="114">British Indian Ocean Territory</option><option value="249">British Virgin Islands</option><option value="38">Brunei</option><option value="36">Bulgaria</option><option value="244">Burkina Faso</option><option value="28">Burma</option><option value="39">Burundi</option><option value="41">Cambodia</option><option value="50">Cameroon</option><option value="40">Canada</option><option value="58">Cape Verde</option><option value="48">Cayman Islands</option><option value="56">Central African Republic</option><option value="42">Chad</option><option value="47">Chile</option><option value="46">China</option><option value="134">Christmas Island</option><option value="115">Clipperton Island</option><option value="49">Cocos (Keeling) Islands</option><option value="52">Colombia</option><option value="51">Comoros</option><option value="45">Congo, Democratic Republic of the</option><option value="44">Congo, Republic of the</option><option value="59">Cook Islands</option><option value="54">Coral Sea Islands</option><option value="55">Costa Rica</option><option value="119">Cote d'Ivoire</option><option value="108">Croatia</option><option value="57">Cuba</option><option value="60">Cyprus</option><option value="75">Czech Republic</option><option value="61">Denmark</option><option value="62">Djibouti</option><option value="63">Dominica</option><option value="65">Dominican Republic</option><option value="234">East Timor</option><option value="66">Ecuador</option><option value="67">Egypt</option><option value="72">El Salvador</option><option value="69">Equatorial Guinea</option><option value="71">Eritrea</option><option value="70">Estonia</option><option value="73">Ethiopia</option><option value="74">Europa Island</option><option value="79">Falkland Islands (Islas Malvinas)</option><option value="81">Faroe Islands</option><option value="78">Fiji</option><option value="77">Finland</option><option value="84">France</option><option value="76">French Guiana</option><option value="82">French Polynesia</option><option value="85">French Southern and Antarctic Lands</option><option value="87">Gabon</option><option value="86">Gambia, The</option><option value="102">Gaza Strip</option><option value="88">Georgia</option><option value="94">Germany</option><option value="89">Ghana</option><option value="90">Gibraltar</option><option value="95">Glorioso Islands</option><option value="98">Greece</option><option value="93">Greenland</option><option value="91">Grenada</option><option value="96">Guadeloupe</option><option value="97">Guam</option><option value="99">Guatemala</option><option value="92">Guernsey</option><option value="100">Guinea</option><option value="195">Guinea-Bissau</option><option value="101">Guyana</option><option value="103">Haiti</option><option value="105">Heard Island and McDonald Islands</option><option value="252">Holy See (Vatican City)</option><option value="106">Honduras</option><option value="104">Hong Kong</option><option value="107">Howland Island</option><option value="109">Hungary</option><option value="110">Iceland</option><option value="113">India</option><option value="111">Indonesia</option><option value="116">Iran</option><option value="120">Iraq</option><option value="68">Ireland</option><option value="117">Israel</option><option value="118">Italy</option><option value="123">Jamaica</option><option value="124">Jan Mayen</option><option value="121">Japan</option><option value="64">Jarvis Island</option><option value="122">Jersey</option><option value="126">Johnston Atoll</option><option value="125">Jordan</option><option value="127">Juan de Nova Island</option><option value="136">Kazakhstan</option><option value="128">Kenya</option><option value="131">Kingman Reef</option><option value="132">Kiribati</option><option value="130">Korea, North</option><option value="133">Korea, South</option><option value="135">Kuwait</option><option value="129">Kyrgyzstan</option><option value="137">Laos</option><option value="139">Latvia</option><option value="138">Lebanon</option><option value="145">Lesotho</option><option value="141">Liberia</option><option value="147">Libyan Arab</option><option value="144">Liechtenstein</option><option value="140">Lithuania</option><option value="146">Luxembourg</option><option value="150">Macau</option><option value="156">Macedonia</option><option value="148">Madagascar</option><option value="155">Malawi</option><option value="167">Malaysia</option><option value="165">Maldives</option><option value="157">Mali</option><option value="163">Malta</option><option value="112">Man, Isle of</option><option value="198">Marshall Islands</option><option value="149">Martinique</option><option value="162">Mauritania</option><option value="160">Mauritius</option><option value="152">Mayotte</option><option value="166">Mexico</option><option value="80">Micronesia, Federated States of</option><option value="161">Midway Islands</option><option value="151">Moldova, Republic of</option><option value="158">Monaco</option><option value="153">Mongolia</option><option value="154">Montserrat</option><option value="159">Morocco</option><option value="168">Mozambique</option><option value="253">Namibia</option><option value="179">Nauru</option><option value="32">Navassa Island</option><option value="178">Nepal</option><option value="175">Netherlands</option><option value="181">Netherlands Antilles</option><option value="169">New Caledonia</option><option value="183">New Zealand</option><option value="182">Nicaragua</option><option value="172">Niger</option><option value="174">Nigeria</option><option value="170">Niue</option><option value="176">No Man's Land</option><option value="171">Norfolk Island</option><option value="53">Northern Mariana Islands</option><option value="177">Norway</option><option value="164">Oman</option><option value="189">Pakistan</option><option value="194">Palau</option><option value="143">Palmyra Atoll</option><option value="191">Panama</option><option value="193">Papua New Guinea</option><option value="187">Paracel Islands</option><option value="184">Paraguay</option><option value="186">Peru</option><option value="200">Philippines</option><option value="185">Pitcairn Islands</option><option value="190">Poland</option><option value="192">Portugal</option><option value="201">Puerto Rico</option><option value="196">Qatar</option><option value="197">Reunion</option><option value="199">Romania</option><option value="202">Russia</option><option value="203">Rwanda</option><option value="210">Saint Helena</option><option value="206">Saint Kitts and Nevis</option><option value="217">Saint Lucia</option><option value="205">Saint Pierre and Miquelon</option><option value="247">Saint Vincent and the Grenadines</option><option value="258">Samoa</option><option value="213">San Marino</option><option value="232">Sao Tome and Principe</option><option value="204">Saudi Arabia</option><option value="209">Senegal</option><option value="260">Serbia and Montenegro</option><option value="207">Seychelles</option><option value="212">Sierra Leone</option><option value="214">Singapore</option><option value="142">Slovakia</option><option value="211">Slovenia</option><option value="31">Solomon Islands</option><option value="215">Somalia</option><option value="208">South Africa</option><option value="221">South Georgia and the Islands</option><option value="216">Spain</option><option value="188">Spratly Islands</option><option value="43">Sri Lanka</option><option value="218">Sudan</option><option value="180">Suriname</option><option value="219">Svalbard and Jan Mayen Islands</option><option value="259">Swaziland</option><option value="220">Sweden</option><option value="223">Switzerland</option><option value="222">Syrian Arab Republic</option><option value="237">Taiwan</option><option value="227">Tajikistan</option><option value="239">Tanzania, United Republic of</option><option value="226">Thailand</option><option value="231">Togo</option><option value="229">Tokelau</option><option value="230">Tonga</option><option value="224">Trinidad and Tobago</option><option value="225">Tromelin Island</option><option value="233">Tunisia</option><option value="235">Turkey</option><option value="238">Turkmenistan</option><option value="228">Turks and Caicos Islands</option><option value="236">Tuvalu</option><option value="240">Uganda</option><option value="242">Ukraine</option><option value="3">United Arab Emirates</option><option value="241">United Kingdom</option><option value="243">United States</option><option value="245">Uruguay</option><option value="246">Uzbekistan</option><option value="173">Vanuatu</option><option value="248">Venezuela</option><option value="250">Vietnam</option><option value="251">Virgin Islands (US)</option><option value="257">Wake Island</option><option value="255">Wallis and Futuna</option><option value="254">West Bank</option><option value="256">Western Sahara</option><option value="261">Yemen</option><option value="262">Zambia</option><option value="263">Zimbabwe</option></select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" data-id="Form-lead-country-id" title="Select a Country..."><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Select a Country...</div></div> </div></button><div class="dropdown-menu" style="max-height: 357px; overflow: hidden; min-width: 0px;" x-out-of-boundaries=""><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-3" aria-autocomplete="list" aria-activedescendant="bs-select-3-0"></div><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1" style="max-height: 273px; overflow-y: auto;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-3-0" tabindex="0" aria-setsize="264" aria-posinset="1" aria-selected="true"><span class=" bs-ok-default check-mark"></span><span class="text">Select a Country...</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-1" tabindex="0" aria-setsize="264" aria-posinset="2"><span class=" bs-ok-default check-mark"></span><span class="text">Afghanistan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-2" tabindex="0" aria-setsize="264" aria-posinset="3"><span class=" bs-ok-default check-mark"></span><span class="text">Albania</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-3" tabindex="0" aria-setsize="264" aria-posinset="4"><span class=" bs-ok-default check-mark"></span><span class="text">Algeria</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-4" tabindex="0" aria-setsize="264" aria-posinset="5"><span class=" bs-ok-default check-mark"></span><span class="text">American Samoa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-5" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Andorra</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-6" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Angola</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-7" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Anguilla</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-8" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Antarctica</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-9" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Antigua and Barbuda</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-10" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Argentina</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-11" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Armenia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-12" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Aruba</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-13" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Ashmore and Cartier Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-14" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Australia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-15" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Austria</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-16" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Azerbaijan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-17" tabindex="0" aria-setsize="264" aria-posinset="18"><span class=" bs-ok-default check-mark"></span><span class="text">Bahamas, The</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-18" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bahrain</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-19" tabindex="0" aria-setsize="264" aria-posinset="20"><span class=" bs-ok-default check-mark"></span><span class="text">Baker Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-20" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bangladesh</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-21" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Barbados</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-22" tabindex="0" aria-setsize="264" aria-posinset="23"><span class=" bs-ok-default check-mark"></span><span class="text">Bassas da India</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-23" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Belarus</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-24" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Belgium</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-25" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Belize</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-26" tabindex="0" aria-setsize="264" aria-posinset="27"><span class=" bs-ok-default check-mark"></span><span class="text">Benin</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-27" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bermuda</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-28" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bhutan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-29" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bolivia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-30" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bosnia and Herzegovina</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-31" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Botswana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-32" tabindex="0" aria-setsize="264" aria-posinset="33"><span class=" bs-ok-default check-mark"></span><span class="text">Bouvet Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-33" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Brazil</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-34" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">British Indian Ocean Territory</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-35" tabindex="0" aria-setsize="264" aria-posinset="36"><span class=" bs-ok-default check-mark"></span><span class="text">British Virgin Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-36" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Brunei</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-37" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Bulgaria</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-38" tabindex="0" aria-setsize="264" aria-posinset="39"><span class=" bs-ok-default check-mark"></span><span class="text">Burkina Faso</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-39" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Burma</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-40" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Burundi</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-41" tabindex="0" aria-setsize="264" aria-posinset="42"><span class=" bs-ok-default check-mark"></span><span class="text">Cambodia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-42" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cameroon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-43" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Canada</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-44" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cape Verde</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-45" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cayman Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-46" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Central African Republic</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-47" tabindex="0" aria-setsize="264" aria-posinset="48"><span class=" bs-ok-default check-mark"></span><span class="text">Chad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-48" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Chile</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-49" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">China</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-50" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Christmas Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-51" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Clipperton Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-52" tabindex="0" aria-setsize="264" aria-posinset="53"><span class=" bs-ok-default check-mark"></span><span class="text">Cocos (Keeling) Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-53" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Colombia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-54" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Comoros</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-55" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Congo, Democratic Republic of the</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-56" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Congo, Republic of the</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-57" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cook Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-58" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Coral Sea Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-59" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Costa Rica</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-60" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cote d'Ivoire</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-61" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Croatia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-62" tabindex="0" aria-setsize="264" aria-posinset="63"><span class=" bs-ok-default check-mark"></span><span class="text">Cuba</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-63" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Cyprus</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-64" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Czech Republic</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-65" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Denmark</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-66" tabindex="0" aria-setsize="264" aria-posinset="67"><span class=" bs-ok-default check-mark"></span><span class="text">Djibouti</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-67" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Dominica</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-68" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Dominican Republic</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-69" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">East Timor</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-70" tabindex="0" aria-setsize="264" aria-posinset="71"><span class=" bs-ok-default check-mark"></span><span class="text">Ecuador</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-71" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Egypt</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-72" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">El Salvador</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-73" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Equatorial Guinea</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-74" tabindex="0" aria-setsize="264" aria-posinset="75"><span class=" bs-ok-default check-mark"></span><span class="text">Eritrea</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-75" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Estonia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-76" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Ethiopia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-77" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Europa Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-78" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Falkland Islands (Islas Malvinas)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-79" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Faroe Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-80" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Fiji</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-81" tabindex="0" aria-setsize="264" aria-posinset="82"><span class=" bs-ok-default check-mark"></span><span class="text">Finland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-82" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">France</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-83" tabindex="0" aria-setsize="264" aria-posinset="84"><span class=" bs-ok-default check-mark"></span><span class="text">French Guiana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-84" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">French Polynesia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-85" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">French Southern and Antarctic Lands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-86" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Gabon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-87" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Gambia, The</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-88" tabindex="0" aria-setsize="264" aria-posinset="89"><span class=" bs-ok-default check-mark"></span><span class="text">Gaza Strip</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-89" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Georgia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-90" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Germany</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-91" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Ghana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-92" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Gibraltar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-93" tabindex="0" aria-setsize="264" aria-posinset="94"><span class=" bs-ok-default check-mark"></span><span class="text">Glorioso Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-94" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Greece</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-95" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Greenland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-96" tabindex="0" aria-setsize="264" aria-posinset="97"><span class=" bs-ok-default check-mark"></span><span class="text">Grenada</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-97" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guadeloupe</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-98" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guam</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-99" tabindex="0" aria-setsize="264" aria-posinset="100"><span class=" bs-ok-default check-mark"></span><span class="text">Guatemala</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-100" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guernsey</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-101" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guinea</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-102" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guinea-Bissau</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-103" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Guyana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-104" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Haiti</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-105" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Heard Island and McDonald Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-106" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Holy See (Vatican City)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-107" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Honduras</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-108" tabindex="0" aria-setsize="264" aria-posinset="109"><span class=" bs-ok-default check-mark"></span><span class="text">Hong Kong</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-109" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Howland Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-110" tabindex="0" aria-setsize="264" aria-posinset="111"><span class=" bs-ok-default check-mark"></span><span class="text">Hungary</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-111" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Iceland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-112" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">India</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-113" tabindex="0" aria-setsize="264" aria-posinset="114"><span class=" bs-ok-default check-mark"></span><span class="text">Indonesia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-114" tabindex="0" aria-setsize="264" aria-posinset="115"><span class=" bs-ok-default check-mark"></span><span class="text">Iran</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-115" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Iraq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-116" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Ireland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-117" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Israel</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-118" tabindex="0" aria-setsize="264" aria-posinset="119"><span class=" bs-ok-default check-mark"></span><span class="text">Italy</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-119" tabindex="0" aria-setsize="264" aria-posinset="120"><span class=" bs-ok-default check-mark"></span><span class="text">Jamaica</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-120" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Jan Mayen</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-121" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Japan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-122" tabindex="0" aria-setsize="264" aria-posinset="123"><span class=" bs-ok-default check-mark"></span><span class="text">Jarvis Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-123" tabindex="0" aria-setsize="264" aria-posinset="124"><span class=" bs-ok-default check-mark"></span><span class="text">Jersey</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-124" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Johnston Atoll</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-125" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Jordan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-126" tabindex="0" aria-setsize="264" aria-posinset="127"><span class=" bs-ok-default check-mark"></span><span class="text">Juan de Nova Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-127" tabindex="0" aria-setsize="264" aria-posinset="128"><span class=" bs-ok-default check-mark"></span><span class="text">Kazakhstan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-128" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Kenya</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-129" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Kingman Reef</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-130" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Kiribati</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-131" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Korea, North</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-132" tabindex="0" aria-setsize="264" aria-posinset="133"><span class=" bs-ok-default check-mark"></span><span class="text">Korea, South</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-133" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Kuwait</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-134" tabindex="0" aria-setsize="264" aria-posinset="135"><span class=" bs-ok-default check-mark"></span><span class="text">Kyrgyzstan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-135" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Laos</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-136" tabindex="0" aria-setsize="264" aria-posinset="137"><span class=" bs-ok-default check-mark"></span><span class="text">Latvia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-137" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Lebanon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-138" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Lesotho</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-139" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Liberia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-140" tabindex="0" aria-setsize="264" aria-posinset="141"><span class=" bs-ok-default check-mark"></span><span class="text">Libyan Arab</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-141" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Liechtenstein</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-142" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Lithuania</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-143" tabindex="0" aria-setsize="264" aria-posinset="144"><span class=" bs-ok-default check-mark"></span><span class="text">Luxembourg</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-144" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Macau</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-145" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Macedonia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-146" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Madagascar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-147" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Malawi</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-148" tabindex="0" aria-setsize="264" aria-posinset="149"><span class=" bs-ok-default check-mark"></span><span class="text">Malaysia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-149" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Maldives</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-150" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mali</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-151" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Malta</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-152" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Man, Isle of</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-153" tabindex="0" aria-setsize="264" aria-posinset="154"><span class=" bs-ok-default check-mark"></span><span class="text">Marshall Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-154" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Martinique</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-155" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mauritania</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-156" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mauritius</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-157" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mayotte</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-158" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mexico</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-159" tabindex="0" aria-setsize="264" aria-posinset="160"><span class=" bs-ok-default check-mark"></span><span class="text">Micronesia, Federated States of</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-160" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Midway Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-161" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Moldova, Republic of</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-162" tabindex="0" aria-setsize="264" aria-posinset="163"><span class=" bs-ok-default check-mark"></span><span class="text">Monaco</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-163" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mongolia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-164" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Montserrat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-165" tabindex="0" aria-setsize="264" aria-posinset="166"><span class=" bs-ok-default check-mark"></span><span class="text">Morocco</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-166" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Mozambique</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-167" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Namibia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-168" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Nauru</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-169" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Navassa Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-170" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Nepal</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-171" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Netherlands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-172" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Netherlands Antilles</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-173" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">New Caledonia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-174" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">New Zealand</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-175" tabindex="0" aria-setsize="264" aria-posinset="176"><span class=" bs-ok-default check-mark"></span><span class="text">Nicaragua</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-176" tabindex="0" aria-setsize="264" aria-posinset="177"><span class=" bs-ok-default check-mark"></span><span class="text">Niger</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-177" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Nigeria</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-178" tabindex="0" aria-setsize="264" aria-posinset="179"><span class=" bs-ok-default check-mark"></span><span class="text">Niue</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-179" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">No Man's Land</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-180" tabindex="0" aria-setsize="264" aria-posinset="181"><span class=" bs-ok-default check-mark"></span><span class="text">Norfolk Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-181" tabindex="0" aria-setsize="264" aria-posinset="182"><span class=" bs-ok-default check-mark"></span><span class="text">Northern Mariana Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-182" tabindex="0" aria-setsize="264" aria-posinset="183"><span class=" bs-ok-default check-mark"></span><span class="text">Norway</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-183" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Oman</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-184" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Pakistan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-185" tabindex="0" aria-setsize="264" aria-posinset="186"><span class=" bs-ok-default check-mark"></span><span class="text">Palau</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-186" tabindex="0" aria-setsize="264" aria-posinset="187"><span class=" bs-ok-default check-mark"></span><span class="text">Palmyra Atoll</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-187" tabindex="0" aria-setsize="264" aria-posinset="188"><span class=" bs-ok-default check-mark"></span><span class="text">Panama</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-188" tabindex="0" aria-setsize="264" aria-posinset="189"><span class=" bs-ok-default check-mark"></span><span class="text">Papua New Guinea</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-189" tabindex="0" aria-setsize="264" aria-posinset="190"><span class=" bs-ok-default check-mark"></span><span class="text">Paracel Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-190" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Paraguay</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-191" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Peru</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-192" tabindex="0" aria-setsize="264" aria-posinset="193"><span class=" bs-ok-default check-mark"></span><span class="text">Philippines</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-193" tabindex="0" aria-setsize="264" aria-posinset="194"><span class=" bs-ok-default check-mark"></span><span class="text">Pitcairn Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-194" tabindex="0" aria-setsize="264" aria-posinset="195"><span class=" bs-ok-default check-mark"></span><span class="text">Poland</span></a></li><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-3-195" tabindex="0" aria-setsize="264" aria-posinset="196" aria-selected="true"><span class=" bs-ok-default check-mark"></span><span class="text">Portugal</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-196" tabindex="0" aria-setsize="264" aria-posinset="197"><span class=" bs-ok-default check-mark"></span><span class="text">Puerto Rico</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-197" tabindex="0" aria-setsize="264" aria-posinset="198"><span class=" bs-ok-default check-mark"></span><span class="text">Qatar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-198" tabindex="0" aria-setsize="264" aria-posinset="199"><span class=" bs-ok-default check-mark"></span><span class="text">Reunion</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-199" tabindex="0" aria-setsize="264" aria-posinset="200"><span class=" bs-ok-default check-mark"></span><span class="text">Romania</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-200" tabindex="0" aria-setsize="264" aria-posinset="201"><span class=" bs-ok-default check-mark"></span><span class="text">Russia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-201" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Rwanda</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-202" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saint Helena</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-203" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saint Kitts and Nevis</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-204" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saint Lucia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-205" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saint Pierre and Miquelon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-206" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saint Vincent and the Grenadines</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-207" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Samoa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-208" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">San Marino</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-209" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Sao Tome and Principe</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-210" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Saudi Arabia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-211" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Senegal</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-212" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Serbia and Montenegro</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-213" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Seychelles</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-214" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Sierra Leone</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-215" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Singapore</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-216" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Slovakia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-217" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Slovenia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-218" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Solomon Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-219" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Somalia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-220" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">South Africa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-221" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">South Georgia and the Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-222" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Spain</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-223" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Spratly Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-224" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Sri Lanka</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-225" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Sudan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-226" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Suriname</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-227" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Svalbard and Jan Mayen Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-228" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Swaziland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-229" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Sweden</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-230" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Switzerland</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-231" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Syrian Arab Republic</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-232" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Taiwan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-233" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tajikistan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-234" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tanzania, United Republic of</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-235" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Thailand</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-236" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Togo</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-237" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tokelau</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-238" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tonga</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-239" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Trinidad and Tobago</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-240" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tromelin Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-241" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tunisia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-242" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Turkey</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-243" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Turkmenistan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-244" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Turks and Caicos Islands</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-245" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Tuvalu</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-246" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Uganda</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-247" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Ukraine</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-248" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">United Arab Emirates</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-249" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">United Kingdom</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-250" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">United States</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-251" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Uruguay</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-252" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Uzbekistan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-253" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Vanuatu</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-254" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Venezuela</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-255" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Vietnam</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-256" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Virgin Islands (US)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-257" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Wake Island</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-258" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Wallis and Futuna</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-259" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">West Bank</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-260" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Western Sahara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-261" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Yemen</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-262" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Zambia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-263" tabindex="0"><span class=" bs-ok-default check-mark"></span><span class="text">Zimbabwe</span></a></li></ul></div></div></div></div>
+                        </div>
+                        <!-- end:: Lead Others -->
+
+                      </div>
+                    </div>
+                    <!-- END: Left Column with Form -->
+                    <!-- START: Right Column with Timeline -->
+                    <div class="col-lg-6 col-md-12">
+                      <!-- begin:: Lead Notes -->
+                      <div class="form-group">
+                        <label for="Form-lead-notes"><h6 class="kt-portlet__head-title">Notes</h6></label>
+                        <textarea class="form-control" id="Form-lead-notes" name="Form-lead-notes" rows="10"></textarea>
+                      </div>
+                      <!-- end:: Lead Notes -->
+                      <!-- begin:: Lead Timeline -->
+                      <div class="kt-scroll ps" data-scroll="true">
+                        <h6 class="kt-portlet__head-title">Timeline</h6>
+                        <div class="kt-timeline" id="Form-lead-log-timeline">
+                      <div class="kt-timeline__item kt-timeline__item--success" id="log-transaction-id-5997602">
+                        <div class="kt-timeline__item-section">
+                          <div class="kt-timeline__item-section-border">
+                            <div class="kt-timeline__item-section-icon">
+                              <i class="fa fa-long-arrow-alt-right kt-font-success"></i>
+                            </div>
+                          </div>
+                          <span class="kt-timeline__item-datetime">2021-11-05 23:12 | André Teixeira (TEST ACCOUNT)</span>
+                        </div>
+                        <span class="kt-timeline__item-text">Moved to Pipeline Stage <b>FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale - Initial Icebreaker Sent</b></span>
+                      </div>
+                            
+                      <div class="kt-timeline__item kt-timeline__item--success" id="log-transaction-id-5997598">
+                        <div class="kt-timeline__item-section">
+                          <div class="kt-timeline__item-section-border">
+                            <div class="kt-timeline__item-section-icon">
+                              <i class="fa fa-long-arrow-alt-right kt-font-success"></i>
+                            </div>
+                          </div>
+                          <span class="kt-timeline__item-datetime">2021-11-05 23:11 | André Teixeira (TEST ACCOUNT)</span>
+                        </div>
+                        <span class="kt-timeline__item-text">Moved to Pipeline Stage <b>FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale - Lead In</b></span>
+                      </div>
+                            
+                      <div class="kt-timeline__item kt-timeline__item--success" id="log-transaction-id-1960152">
+                        <div class="kt-timeline__item-section">
+                          <div class="kt-timeline__item-section-border">
+                            <div class="kt-timeline__item-section-icon">
+                              <i class="fa fa-exchange-alt kt-font-success"></i>
+                            </div>
+                          </div>
+                          <span class="kt-timeline__item-datetime">2021-06-21 20:29 | André Teixeira (TEST ACCOUNT)</span>
+                        </div>
+                        <span class="kt-timeline__item-text">Added to pipeline stage <b>FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale - Friend Request Sent</b></span>
+                      </div>
+                            
+                      <div class="kt-timeline__item kt-timeline__item--success" id="log-transaction-id-1958542">
+                        <div class="kt-timeline__item-section">
+                          <div class="kt-timeline__item-section-border">
+                            <div class="kt-timeline__item-section-icon">
+                              <i class="fa fa-user-plus kt-font-success"></i>
+                            </div>
+                          </div>
+                          <span class="kt-timeline__item-datetime">2021-06-21 20:20 | André Teixeira (TEST ACCOUNT)</span>
+                        </div>
+                        <span class="kt-timeline__item-text">Lead Added to CRM</span>
+                      </div>
+                            </div>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
+                        <div class="ps__rail-y" style="top: 0px; height: 945px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 300px;"></div></div>
+                      <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px; height: 945px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 300px;"></div></div></div>
+                      <!-- end:: Lead TImeline -->
+                    </div>
+                    <!-- END: Right Column with Timeline -->
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-brand" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-label-success" id="Btn-Form-lead-New-Customer" onclick="MUModals.actionLeadConvertToCustomer();">New Customer</button>
+                <button type="button" class="btn btn-label-primary" id="Btn-Form-lead-Share" onclick="MUModals.actionLeadUpdateAndShare('');">Share</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end:: ANDRE - LEAD MODAL -->
+
+      </div>
+       <!-- end:: Content -->
+      </div>
+        
+    </div>
+	</div>
+	<!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+	
+     
+<!-- begin:: Scrolltop -->
+<div id="kt_scrolltop" class="kt-scrolltop">
+	<i class="la la-arrow-up"></i>
+</div>
+<!-- end:: Scrolltop -->
+					
+										
+		<!-- begin::Global Config(global config for global JS sciprts) -->
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#5d78ff",
+						"metal": "#c4c5d6",
+						"light": "#ffffff",
+						"accent": "#00c5dc",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995",
+						"focus": "#9816f4"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="https://www.multiuniversal.com/evolution2/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="https://www.multiuniversal.com/evolution2/assets/js/scripts.bundle.js" type="text/javascript"></script>
+		<script src="https://www.multiuniversal.com/evolution2/assets/js/flowchat.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Vendors(used by this page) -->
+		<script src="https://www.multiuniversal.com/evolution2/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+    <script src="https://www.multiuniversal.com/evolution2/assets/plugins/custom/jquery-ui/jquery-ui.bundle.js" type="text/javascript"></script>
+    <script src="https://www.multiuniversal.com/evolution2/assets/js/pages/components/portlets/draggable.js" type="text/javascript"></script>
+    <script src="https://www.multiuniversal.com/evolution2/assets/js/pages/dashboard.js?v=1620896282" type="text/javascript"></script>
+		<!--end::Page Vendors -->
+
+		<!--begin::Page Scripts(used by this page) -->
+
+
+		<!--end::Page Scripts -->
+
+
+	</body>
+
+	<!-- end::Body -->
+</html>

@@ -1,0 +1,2110 @@
+
+<!DOCTYPE html>
+
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+  <!-- begin::Head -->
+  <head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>FlowChat - Community & Support</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+
+    <!--begin::Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+    <!--end::Fonts -->
+
+    <!--begin::Page Vendors Styles(used by this page) -->
+    <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/community-support-v2.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages/inbox/inbox.css" rel="stylesheet" type="text/css">
+
+    <!--end::Page Vendors Styles -->
+
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.flowchat.com/members/assets/css/fc.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Global Theme Styles -->
+
+    <!--begin::Layout Skins(used by all pages) -->
+    <link href="assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/skins/brand/navy.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/skins/aside/navy.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/members/assets/media/logos/favicon.ico" />
+  </head>
+
+  <!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-brand--minimize"  >
+
+
+<!-- begin:: Header Mobile -->
+<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
+  <div class="kt-header-mobile__logo">
+    <a href="./">
+      <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png"/>
+    </a>
+  </div>
+  <div class="kt-header-mobile__toolbar">
+      
+    <button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+      
+    <!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+        
+    <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+  </div>
+</div>
+<!-- end:: Header Mobile -->
+<!-- begin:: Root -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+  <!-- begin:: Page -->
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+    <!-- begin:: Aside -->
+    <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+    <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+      <!-- begin::Aside Brand -->
+      <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+        <div class="kt-aside__brand-logo">
+          <a href="./">
+            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png"/>
+          </a>
+        </div>
+  
+        <div class="kt-aside__brand-tools">
+          <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+        </div>
+      </div>
+      <!-- end:: Aside Brand -->
+
+      <!-- begin:: Aside Menu -->
+      <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+        <div id="kt_aside_menu" class="kt-aside-menu" data-ktmenu-vertical="1"   data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+
+          <ul class="kt-menu__nav ">
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+<li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a><div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>  <ul class="kt-menu__subnav">
+<li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+<li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+  </ul>
+</div></li>
+
+<li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+<li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="#"><i class="kt-menu__link-icon far fa-comment-dots"></i><span class="kt-menu__link-text">Community & Support</span></a></li>
+<li class="kt-menu__section "><h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i></li>
+<li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+  <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+    <i class="kt-menu__link-icon flaticon2-cup"></i>
+    <span class="kt-menu__link-text">Product Guide</span>
+    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+  </a>
+  <div class="kt-menu__submenu ">
+    <span class="kt-menu__arrow"></span>
+    <ul class="kt-menu__subnav">
+      <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+        <span class="kt-menu__link">
+          <span class="kt-menu__link-text">Product Guide</span>
+        </span>
+      </li>
+      
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Facebook Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">LinkedIn Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Instagram Import</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Organizing Pipelines</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+        </a>
+      </li>
+    
+      <li class="kt-menu__item" aria-haspopup="true">
+        <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+          <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+          <span class="kt-menu__link-text">Useful Flows</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+      </div>
+      <!-- end:: Aside Menu -->
+      <!-- begin:: Aside Footer -->
+      <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+        <div class="kt-aside__footer-nav">
+          <div class="kt-aside__footer-item">
+            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                        <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Aside Footer -->
+    </div>
+    <!-- end:: Aside -->
+
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+      <!-- begin:: Header -->
+      <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+        <!-- begin:: Header Menu -->
+        <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+        <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+
+          <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+            <ul class="kt-menu__nav  "><!-- Remove kt-hidden to show the drop down menus-->
+
+              <!-- begin:: Menu Pipelines -->
+              <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                  <ul class="kt-menu__subnav">
+<li class="kt-menu__item bg-light">
+  <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+</li>
+<div class="dropdown-divider m-0"></div>
+<li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li><div class="dropdown-divider m-0"></div><li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>                  </ul>
+                </div>
+              </li>
+              <!-- end:: Menu Pipelines-->
+
+
+              <!-- begin:: Menu Reports -->
+              <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                <ul class="kt-menu__subnav">
+
+                  <ul class="kt-menu__content">
+
+                    <li class="kt-menu__item ">
+                      <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                      <ul class="kt-menu__inner">
+                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+
+                </ul>
+              </div></li>
+              <!-- end:: Menu Reports -->
+
+
+              <!-- begin:: Menu Import / Export -->
+              <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                      <div class="kt-menu__subnav">
+                        <ul class="kt-menu__content">
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                             <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="kt-menu__item ">
+                            <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                            <ul class="kt-menu__inner">
+                              <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                  <ul class="kt-menu__subnav">
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                    </li>
+                    <li class="kt-menu__item ">
+                       <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- end:: Import/Export -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- end:: Header Menu -->
+
+        <!-- begin:: Header Topbar -->
+        <div class="kt-header__topbar">
+
+          <!--begin: Leads -->
+          <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Leads -->
+          <!--begin: Pending helpdesk tickets -->
+          <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+            <div class="form-group my-auto">
+              <div class="kt-input-icon kt-input-icon--left">
+                <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                  <span>
+                    <i class="flaticon2-help" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!--end: Pending helpdesk tickets -->
+          <!--begin: Search -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+              <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+              <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                <form method="get" class="kt-quick-search__form">
+                <div class="input-group">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                  <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                  <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                </div>
+                </form>
+                <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <!--end: Search -->
+
+          <!--begin: Notifications -->
+          <div class="kt-header__topbar-item dropdown">
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+              <span class="kt-header__topbar-icon">
+                <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+              </span>
+            </div>
+            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+              <form>
+              <div class="kt-head" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                <h3 class="kt-head__title">User Notifications</h3>
+                <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+              </div>
+              <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+              <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+              </form>
+            </div>
+          </div>
+          <!--end: Notifications -->
+
+
+          <!--begin: User Bar -->
+          <div class="kt-header__topbar-item kt-header__topbar-item--user">
+
+            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                <!--use "kt-rounded" class for rounded avatar style-->
+            <div class="kt-header__topbar-user kt-rounded-">
+              <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+              <span class="kt-header__topbar-username kt-hidden-mobile">Chris Baden</span>
+              <img id="MemberPictureUserBar" alt="Pic" src="assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='assets/media/users/100_1.jpg';">
+              <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+              <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+            <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+              <div class="kt-user-card__wrapper">
+                <div class="kt-user-card__pic">
+                <!--use "kt-rounded" class for rounded avatar style-->
+                  <img id="MemberPictureUserBarDropdown" alt="Pic" src="assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                </div>
+                <div class="kt-user-card__details">
+                    <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                    <div class="kt-user-card__position"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="kt-nav kt-margin-b-10">
+              <li class="kt-nav__item">
+                <a href="./my-profile-personal-information" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                  <span class="kt-nav__link-text">My Profile</span>
+                </a>
+              </li>
+              <li class="kt-nav__item">
+                <a href="./my-profile-change-password" class="kt-nav__link">
+                  <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                  <span class="kt-nav__link-text">Change Password</span>
+                </a>
+              </li>
+                            <li class="kt-nav__separator kt-nav__separator--fit"></li>
+
+              <li class="kt-nav__custom kt-space-between">
+                <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end: User Bar -->
+      </div>
+      <!-- end:: Header Topbar -->
+    </div>
+    <!-- end:: Header -->
+    <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+      <!-- begin:: Subheader -->
+      <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+        <div class="kt-container  kt-container--fluid ">
+          <div class="kt-subheader__main">
+            <button class="kt-subheader__mobile-toggle" id="kt_subheader_mobile_toggle"><span></span></button>
+            <h3 class="kt-subheader__title">Community & Support</h3>
+          </div>
+          <div class="kt-subheader__toolbar">
+            <div class="kt-subheader__wrapper">
+              <div class="kt-input-icon kt-input-icon--right">
+                <input type="text" class="form-control" placeholder="Search messages..." id="communitySearch">
+                <span class="kt-input-icon__icon kt-input-icon__icon--right">
+                  <span><i class="la la-search"></i></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Subheader -->          
+
+      <!-- begin:: Content -->
+
+        <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+          <!--Begin::Inbox-->
+          <div class="kt-grid kt-grid--desktop kt-grid--ver-desktop  kt-inbox" id="kt_inbox">
+
+            <!--Begin::Aside Mobile Toggle-->
+            <button class="kt-inbox__aside-close" id="kt_inbox_aside_close">
+              <i class="la la-close"></i>
+            </button>
+
+            <!--End:: Aside Mobile Toggle-->
+
+            <!--Begin:: Inbox Aside-->
+            <div class="kt-grid__item   kt-portlet  kt-inbox__aside" id="kt_inbox_aside">
+              
+
+
+                <ul class="kt-nav kt-nav--active-bg" id="channel_nav" role="tablist">
+                  <li class="kt-nav__item kt-nav__item--sub">
+                    <a class="kt-nav__link" role="tab" id="channel_nav_link_1" data-toggle="collapse" href="#channel_nav_sub_1" aria-expanded=" false">
+                      <i class="kt-nav__link-icon fas fa-hashtag"></i>
+                      <span class="kt-nav__link-text"><b>Channels</b></span>
+                      <span class="kt-nav__link-badge">
+                        <span class="kt-badge kt-badge--danger kt-badge--inline kt-badge--rounded">new</span>
+                      </span>
+                      <span class="kt-nav__link-arrow"></span>
+                    </a>
+                    <ul class="kt-nav__sub collapse show" id="channel_nav_sub_1" role="tabpanel" aria-labelledby="channel_nav_link_1" data-parent="#channel_nav">
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">#latest-change</span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item active">
+                        <a href="" class="kt-nav__link ">
+                          <span class="kt-nav__link-text">#feature-requests</span>
+                          <span class="kt-nav__link-badge">
+                            <span class="kt-badge kt-badge--unified-danger kt-badge--md kt-badge--rounded kt-badge--boldest">4</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">#bug-reports</span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">#affiliates</span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">#affiliates</span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">+ Add Channel</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+
+              
+                <ul class="kt-nav kt-nav--active-bg" id="chat_nav" role="tablist">
+                  <li class="kt-nav__item kt-nav__item--sub">
+                    <a class="kt-nav__link" role="tab" id="chat_nav_link_1" data-toggle="collapse" href="#chat_nav_sub_1" aria-expanded=" false">
+                      <i class="kt-nav__link-icon flaticon2-chat-1"></i>
+                      <span class="kt-nav__link-text"><b>Chat</b></span>
+                      <span class="kt-nav__link-badge">
+                        <span class="kt-badge kt-badge--danger kt-badge--inline kt-badge--rounded">new</span>
+                      </span>
+                      <span class="kt-nav__link-arrow"></span>
+                    </a>
+                    <ul class="kt-nav__sub collapse show" id="chat_nav_sub_1" role="tabpanel" aria-labelledby="chat_nav_link_1" data-parent="#chat_nav">
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_2.jpg')">
+                            <span></span>
+                          </span>
+                          <span class="kt-nav__link-text ml-2">Sean Malone</span>
+                          <span class="kt-badge kt-badge--unified-danger kt-badge--md kt-badge--rounded kt-badge--boldest">1</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link ">
+                          <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_3.jpg')">
+                            <span></span>
+                          </span>
+                          <span class="kt-nav__link-text ml-2">Bruno Domingues</span>
+                          <span class="kt-badge kt-badge--unified-danger kt-badge--md kt-badge--rounded kt-badge--boldest">2</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_4.jpg')">
+                            <span></span>
+                          </span>
+                          <span class="kt-nav__link-text ml-2">Andre Teixeira</span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_5.jpg')">
+                            <span></span>
+                          </span>
+                          <span class="kt-nav__link-text ml-2">Ashley Owens</span>
+                          <span class="kt-badge kt-badge--unified-danger kt-badge--md kt-badge--rounded kt-badge--boldest">1</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="kt-nav__item">
+                        <a href="" class="kt-nav__link">
+                          <span class="kt-nav__link-text">+ Add Contact</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+
+            </div>
+
+            <!--End::Aside-->
+
+            <!--Begin:: Inbox List-->
+            <div class="kt-grid__item kt-grid__item--fluid    kt-portlet    kt-inbox__list kt-inbox__list--shown" id="kt_inbox_list">
+              <div class="kt-portlet kt-portlet--mobile">
+                <div class="kt-portlet__head">
+                  <div class="kt-portlet__head-label">
+                    <h3 class="kt-portlet__head-title"><nobr class="truncate" >#feature-requests-long-channel-name-with-max-of-charaters-never-ending-names-yes</nobr></h3>
+                  </div>
+                  <div class="kt-portlet__head-toolbar">
+                    <div class="kt-portlet__head-toolbar-wrapper">
+
+                      <span class="badge badge-pill badge-danger px-4 mx-2 hide-mobile">4 New Messages</span>
+
+                      <span class="kt-badge kt-badge--unified-danger kt-badge--md kt-badge--rounded kt-badge--boldest hide-desktop">2</span>
+                          </span>
+
+                      <div id="Community-Channel-Members" class="d-inline-block">
+                        <span class="kt-media kt-media--circle kt-media--sm kt-media--brand member-pic" style="background-image: url('assets/media/users/100_2.jpg')">
+                          <span></span>
+                        </span>
+                        <span class="kt-media kt-media--circle kt-media--sm kt-media--brand member-pic" style="background-image: url('assets/media/users/100_3.jpg')">
+                          <span></span>
+                        </span>
+                        <span class="kt-media kt-media--circle kt-media--sm kt-media--brand member-pic" style="background-image: url('assets/media/users/100_5.jpg')">
+                          <span></span>
+                        </span>
+                      </div>
+                      <a href="#" class="badge badge-light mx-2" data-toggle="modal" data-target="#membersModal">+21</a>
+                      <div class="dropdown dropdown-inline">
+                        <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="flaticon-more-1"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <ul class="kt-nav">
+                            <li class="kt-nav__item">
+                              <a href="#" class="kt-nav__link" data-toggle="modal" data-target="#membersModal">
+                                <i class="kt-nav__link-icon fas fa-user-friends"></i>
+                                <span class="kt-nav__link-text">All Members</span>
+                              </a>
+                            </li>
+                            <li class="kt-nav__item">
+                              <a href="#" class="kt-nav__link">
+                                <i class="kt-nav__link-icon fas fa-sign-out-alt"></i>
+                                <span class="kt-nav__link-text">Leave Channel</span>
+                              </a>
+                            </li>
+                            <li class="kt-nav__item">
+                              <a href="#" class="kt-nav__link">
+                                <i class="kt-nav__link-icon fas fa-cog"></i>
+                                <span class="kt-nav__link-text">Settings</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-portlet__body px-2 pt-0 pb-0">
+                  <div id="CommunityMessagePanel" class="kt-portlet__body p-0">
+                    <div id="Community-Messages-wrapper" >
+                      <div id="Community-Messages">
+
+
+                        <!------------ begin:: Message-1 ------------>
+                        <div class="message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_2.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Sean Malone</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate semper dolor a gravida.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <div class="message-reactions float-right">
+                                  <a href="#">
+                                    <soan>🤟</soan>
+                                    <span>👍+2</span>
+                                  </a>
+                                </div>
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-1').removeClass('kt-hidden');$('#message-replies-number-1').addClass('kt-hidden');" class="mr-1">2 Replies</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-1" class="reply-wrapper kt-hidden">
+
+                              <!-- begin:: Reply Message -->
+                              <div class="message message-reply m-2">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_5.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-1">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Author Name -->
+                                      <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Ashley Owens</a></div>
+                                      <!-- end:: Author Name -->
+
+                                      <!-- begin:: Message Options -->
+                                      <div class="message-options dropdown dropdown-inline float-right">
+                                        <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="flaticon-more-1"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-left" style="">
+                                          <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Message Options -->
+
+                                      <!-- begin:: Message Text -->
+                                      <div class="message-text mb-1">Nunc in rhoncus risus, venenatis porta est. Nulla ac nibh eu enim mattis volutpat non non turpis.</div>
+                                      <!-- end:: Message Text -->
+
+                                      <!-- begin:: Message Reactions -->
+                                      <!-- end:: Message Reactions -->
+
+                                    </div>
+                                  </div>
+
+                                  <!-- begin:: Message Actions -->
+                                  <div class="message-actions mb-2">
+                                    <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                                    <a href="#ReplyEditorPannel-1" class="mr-1">Reply</a>
+                                    <small class="kt-font-bold ">9:24pm</small>
+                                  </div>
+                                  <!-- end:: Message Actions -->
+
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end: Reply Message -->
+
+                              <!-- begin:: My Reply Message -->
+                              <div class="message my-message message-reply m-2">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-1">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Author Name -->
+                                      <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Chris Baden</a></div>
+                                      <!-- end:: Author Name -->
+
+                                      <!-- begin:: Message Options -->
+                                      <div class="message-options dropdown dropdown-inline float-right">
+                                        <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="flaticon-more-1"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-left" style="">
+                                          <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Message Options -->
+
+                                      <!-- begin:: Message Text -->
+                                      <div class="message-text mb-1">That's Awsome!!! </div>
+                                      <!-- end:: Message Text -->
+
+                                      <!-- begin:: Message Reactions -->
+                                      <!-- end:: Message Reactions -->
+
+                                    </div>
+                                  </div>
+
+                                  <!-- begin:: Message Actions -->
+                                  <div class="message-actions mb-2">
+                                    <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                                    <a href="#ReplyEditorPannel-1" class="mr-1">Reply</a>
+                                    <small class="kt-font-bold ">9:24pm</small>
+                                  </div>
+                                  <!-- end:: Message Actions -->
+
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end: Reply Message -->
+
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-1" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+
+                                    </div>
+                                  </div>   
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-1 ------------>
+
+
+                        <!------------ begin:: Message-2 ------------>
+                        <div class="message my-message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Chris Baden</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate semper dolor a gravida. Nunc in rhoncus risus, venenatis porta est. Nulla ac nibh eu enim mattis volutpat non non turpis. Phasellus rutrum ligula turpis.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <div class="message-reactions float-right">
+                                  <a href="#">
+                                    <soan>🤟</soan>
+                                    <span>👍+2</span>
+                                  </a>
+                                </div>
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-2').removeClass('kt-hidden');$('#message-replies-number-2').addClass('kt-hidden');" class="mr-1">1 Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-2" class="reply-wrapper kt-hidden">
+
+                              <!-- begin:: Reply Message -->
+                              <div class="message message-reply m-2">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_5.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-1">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Author Name -->
+                                      <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Ashley Owens</a></div>
+                                      <!-- end:: Author Name -->
+
+                                      <!-- begin:: Message Options -->
+                                      <div class="message-options dropdown dropdown-inline float-right">
+                                        <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="flaticon-more-1"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-left" style="">
+                                          <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Message Options -->
+
+                                      <!-- begin:: Message Text -->
+                                      <div class="message-text mb-1">Nunc in rhoncus risus, venenatis porta est. Nulla ac nibh eu enim mattis volutpat non non turpis.</div>
+                                      <!-- end:: Message Text -->
+
+                                      <!-- begin:: Message Reactions -->
+                                      <div class="message-reactions float-right">
+                                        <a href="#">
+                                          <soan>🤟</soan>
+                                        </a>
+                                      </div>
+                                      <!-- end:: Message Reactions -->
+
+                                    </div>
+                                  </div>
+
+                                  <!-- begin:: Message Actions -->
+                                  <div class="message-actions mb-2">
+                                    <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                                    <a href="#ReplyEditorPannel-2" class="mr-1">Reply</a>
+                                    <small class="kt-font-bold ">9:24pm</small>
+                                  </div>
+                                  <!-- end:: Message Actions -->
+
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end: Reply Message -->
+
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-2" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+
+                                    </div>
+                                  </div>   
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-2 ------------>
+
+
+                        <!------------ begin:: Message-3 ------------>
+                        <div class="message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_5.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Ashley Owens</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Nunc in rhoncus risus, venenatis porta est. Nulla ac nibh eu enim mattis volutpat non non turpis.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-3').removeClass('kt-hidden');$('#message-replies-number-3').addClass('kt-hidden');" class="mr-1">Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-3" class="reply-wrapper kt-hidden">
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-3" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+                                    </div>
+                                  </div> 
+                                  <!-- end:: Message Content -->
+
+                                </div>
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-3 ------------>
+
+
+                        <!------------ begin:: Message-4 ------------>
+                        <div class="message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_3.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Bruno Domingues</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Love it!!! thats Nice!</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <div class="message-reactions float-right">
+                                  <a href="#">
+                                    <soan>😀</span>
+                                  </a>
+                                </div>
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions mb-2">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-4').removeClass('kt-hidden');$('#message-replies-number-4').addClass('kt-hidden');" class="mr-1">1 Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-4" class="reply-wrapper kt-hidden">
+
+                              <!-- begin:: Reply Message -->
+                              <div class="message message-reply m-2">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_2.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-1">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Author Name -->
+                                      <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Sean Malone</a></div>
+                                      <!-- end:: Author Name -->
+
+                                      <!-- begin:: Message Options -->
+                                      <div class="message-options dropdown dropdown-inline float-right">
+                                        <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="flaticon-more-1"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-left" style="">
+                                          <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Message Options -->
+
+                                      <!-- begin:: Message Text -->
+                                      <div class="message-text mb-1">Nice!</div>
+                                      <!-- end:: Message Text -->
+
+                                      <!-- begin:: Message Reactions -->
+                                      <div class="message-reactions float-right">
+                                        <a href="#">
+                                          <soan>🤟</soan>
+                                        </a>
+                                      </div>
+                                      <!-- end:: Message Reactions -->
+
+                                    </div>
+                                  </div>
+                                  <!-- end:: Message Content -->
+
+                                  <!-- begin:: Message Actions -->
+                                  <div class="message-actions mb-2">
+                                    <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                                    <a href="#ReplyEditorPannel-4" class="mr-1">Reply</a>
+                                    <small class="kt-font-bold ">9:24pm</small>
+                                  </div>
+                                  <!-- end:: Message Actions -->
+
+                                </div>
+
+                              </div>
+                              <!-- end: Reply Message -->
+
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-4" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+                                    </div>
+                                  </div> 
+                                  <!-- end:: Message Content -->
+
+                                </div>
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-4 ------------>
+
+
+                        <!------------ begin:: Message-5 ------------>
+                        <div class="message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_2.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Sean Malone</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Nunc in rhoncus risus, venenatis im mattis volutpat non non turpis.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-5').removeClass('kt-hidden');$('#message-replies-number-5').addClass('kt-hidden');" class="mr-1">Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-5" class="reply-wrapper kt-hidden">
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-5" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+                                    </div>
+                                  </div> 
+                                  <!-- end:: Message Content -->
+
+                                </div>
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-5 ------------>
+
+
+                        <!------------ begin:: Message-6 ------------>
+                        <div class="message my-message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Chris Baden</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate semper dolor a gravida. Nunc in rhoncus risus, venenatis porta est. Nulla ac nibh eu enim mattis volutpat non non turpis. Phasellus rutrum ligula turpis.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <div class="message-reactions float-right">
+                                  <a href="#">
+                                    <span>👍+2</span>
+                                  </a>
+                                </div>
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-8').removeClass('kt-hidden');$('#message-replies-number-8').addClass('kt-hidden');" class="mr-1">Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-8" class="reply-wrapper kt-hidden">
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-8" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <!-- begin:: Message Content -->
+                                <div class="message-content-wrapper">
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+
+                                    </div>
+                                  </div>   
+                                </div>
+                                <!-- end:: Message Content -->
+
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-2 ------------>
+
+                        
+
+                        <!------------ begin:: Message-7 ------------>
+                        <div class="message m-2">
+
+                          <!-- begin:: Author Avatar -->
+                          <div class="member-pic float-left mt-3">
+                            <a href="#" class="">
+                              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_3.jpg')">
+                                <span></span>
+                              </span>
+                            </a>
+                          </div>
+                          <!-- end:: Author Avatar -->
+
+                          <div class="message-content-wrapper">
+
+                            <!-- begin:: Message Content -->
+                            <div class="message-content p-4 float-left mb-1">
+                              <div class="message-wrap">
+
+                                <!-- begin:: Author Name -->
+                                <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Bruno Domingues</a></div>
+                                <!-- end:: Author Name -->
+
+                                <!-- begin:: Message Options -->
+                                <div class="message-options dropdown dropdown-inline float-right">
+                                  <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="flaticon-more-1"></i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left" style="">
+                                    <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                  </div>
+                                </div>
+                                <!-- end:: Message Options -->
+
+                                <!-- begin:: Message Text -->
+                                <div class="message-text mb-1">Phasellus rutrum ligula turpis.</div>
+                                <!-- end:: Message Text -->
+
+                                <!-- begin:: Message Reactions -->
+                                <!-- end:: Message Reactions -->
+
+                              </div>
+                            </div>
+                            <!-- end:: Message Content -->
+
+                            <!-- begin:: Message Actions -->
+                            <div class="message-actions">
+                              <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                              <a href="javascript:;" onclick="$('#message-replies-7').removeClass('kt-hidden');$('#message-replies-number-7').addClass('kt-hidden');" class="mr-1">1 Reply</a>
+                              <small class="kt-font-bold ">9:24pm</small>
+                            </div>
+                            <!-- end:: Message Actions -->
+
+                            <!-- start:: Replies Panel -->
+                            <div id="message-replies-7" class="reply-wrapper kt-hidden">
+
+                              <!-- begin:: Reply Message -->
+                              <div class="message message-reply m-2">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_2.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-1">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Author Name -->
+                                      <div class="member-name mb-1 float-left"><a href="#" class="kt-font-bold kt-label-font-color-4">Sean Malone</a></div>
+                                      <!-- end:: Author Name -->
+
+                                      <!-- begin:: Message Options -->
+                                      <div class="message-options dropdown dropdown-inline float-right">
+                                        <button type="button" class="btn btn-hover-light btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="flaticon-more-1"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-left" style="">
+                                          <a class="dropdown-item" href="#"><i class="la la-bell-slash"></i> Turn off alerts</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Message Options -->
+
+                                      <!-- begin:: Message Text -->
+                                      <div class="message-text mb-1">Nice!</div>
+                                      <!-- end:: Message Text -->
+
+                                      <!-- begin:: Message Reactions -->
+                                      <div class="message-reactions float-right">
+                                        <a href="#">
+                                          <soan>🤟</soan>
+                                        </a>
+                                      </div>
+                                      <!-- end:: Message Reactions -->
+
+                                    </div>
+                                  </div>
+                                  <!-- end:: Message Content -->
+
+                                  <!-- begin:: Message Actions -->
+                                  <div class="message-actions mb-2">
+                                    <div class="btn-group emoji-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false"><i class="far fa-grin"></i></a>
+                                <div class="dropdown-menu" style="">
+                                  <a class="dropdown-item" href="#">👍</a>
+                                  <a class="dropdown-item" href="#">❤️</a>
+                                  <a class="dropdown-item" href="#">😂</a>
+                                  <a class="dropdown-item" href="#">😎</a>
+                                  <a class="dropdown-item" href="#">😢</a>
+                                  <a class="dropdown-item" href="#">😡</a>
+                                </div>
+                              </div>
+                                    <a href="#ReplyEditorPannel-7" class="mr-1">Reply</a>
+                                    <small class="kt-font-bold ">9:24pm</small>
+                                  </div>
+                                  <!-- end:: Message Actions -->
+
+                                </div>
+
+                              </div>
+                              <!-- end: Reply Message -->
+
+
+                              <!-- start:: Compose Reply -->
+                              <div id="ReplyEditorPannel-7" class="message m-2 my-message message-reply compose">
+
+                                <!-- begin:: Author Avatar -->
+                                <div class="member-pic float-left mt-3">
+                                  <a href="#" class="">
+                                    <span class="kt-media kt-media--circle kt-media--sm kt-media--brand" style="background-image: url('assets/media/users/100_1.jpg')">
+                                      <span></span>
+                                    </span>
+                                  </a>
+                                </div>
+                                <!-- end:: Author Avatar -->
+
+                                <div class="message-content-wrapper">
+
+                                  <!-- begin:: Message Content -->
+                                  <div class="message-content p-4 float-left mb-3">
+                                    <div class="message-wrap">
+
+                                      <!-- begin:: Reply Editor -->
+                                      <div class="community-editor">
+                                        <div style="border-top:1px solid #eee;" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your reply..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                        <div id="toolbar" class="ql-toolbar ql-snow">
+                                          <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                          <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                          <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                          <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                          <button class="ql-blockquote" value="code-block" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                          <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                          <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                          <button id="Community-Button-New-Message-Send" type="button" class="btn btn-sm pt-0 btn-focus" style="float:right;" title="Send Message"><i class="la la-send text-primary" style="font-size:28px; line-height:0em;"></i></button>
+                                        </div>
+                                      </div>
+                                      <!-- end:: Reply Editor -->
+                                    </div>
+                                  </div> 
+                                  <!-- end:: Message Content -->
+
+                                </div>
+                              </div>
+                              <!-- end:: Compose  Reply -->
+
+                            </div>
+                            <!-- end:: Replies Panel -->
+
+                          </div>
+                          <!-- end:: Message Content -->
+
+                        </div>
+                        <!------------ end:: Message-7 ------------>
+
+
+                      </div>
+                    </div>
+                    <div id="Community-Editor-wrapper" class=" d-flex flex-column-reverse">
+                      <div id="Community-Editor" class="community-editor mt-0"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End:: Inbox Compose-->
+            </div>
+
+
+       <!-- end:: Content -->
+      </div>
+        
+    </div>
+  </div>
+  <!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+
+<!-- begin:: Select Members Modal -->
+<div class="modal fade" id="membersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Channel Members</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="channelMembersSearch" class="mb-3">
+          <label class="kt-font-bold kt-label-font-color-4">Search for members to add or remove from this channel</label>
+          <div class="kt-input-icon kt-input-icon--left">
+            <input type="text" class="form-control" id="modal-pipelineview-messagetemplate-search" placeholder="Search for members name or email...">
+              <span class="kt-input-icon__icon kt-input-icon__icon--left"><span><i class="la la-search"></i></span></span>
+          </div>
+        </div>
+        <div id="channelMembers" class="mb-3">
+          <label class="kt-font-bold kt-label-font-color-4">Members in this channel</label>
+          <ul class="fc-channel-member-list list-unstyled">
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_2.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Sean Malone</span>
+              <button type="button" class="btn btn-outline-danger btn-sm d-block float-right">Remove</button>
+            </li>
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_3.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Bruno Domingues</span>
+              <button type="button" class="btn btn-outline-danger btn-sm d-block float-right">Remove</button>
+            </li>
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_4.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Andre Teixeira</span>
+              <button type="button" class="btn btn-outline-danger btn-sm d-block float-right">Remove</button>
+            </li>
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_5.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Ashley Owens</span>
+              <button type="button" class="btn btn-outline-danger btn-sm d-block float-right">Remove</button>
+            </li>
+          </ul>
+        </div>
+        <div id="channelMembersAdd" class="mb-3">
+          <label class="kt-font-bold kt-label-font-color-4">Members not in this channel</label>
+          <ul class="fc-channel-member-list list-unstyled">
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_7.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Jessica Black</span>
+              <button type="button" class="btn btn-outline-info btn-sm d-block float-right">Add</button>
+            </li>
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_6.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">Anthony Smith</span>
+              <button type="button" class="btn btn-outline-info btn-sm d-block float-right">Add</button>
+            </li>
+            <li class="d-block w-100 overflow-hidden my-2">
+              <span class="kt-media kt-media--circle kt-media--sm kt-media--brand d-block float-left" style="background-image: url('assets/media/users/100_9.jpg')">
+                <span></span>
+              </span>
+              <span class="kt-nav__link-text ml-2 py-2 d-block float-left">David Perez</span>
+              <button type="button" class="btn btn-outline-info btn-sm d-block float-right">Add</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-brand" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end:: Select Members Modal -->
+  
+     
+<!-- begin:: Scrolltop -->
+<div id="kt_scrolltop" class="kt-scrolltop">
+  <i class="la la-arrow-up"></i>
+</div>
+<!-- end:: Scrolltop -->
+          
+                    
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    <script>
+      var KTAppOptions = {
+        "colors": {
+          "state": {
+            "brand": "#5d78ff",
+            "metal": "#c4c5d6",
+            "light": "#ffffff",
+            "accent": "#00c5dc",
+            "primary": "#5867dd",
+            "success": "#34bfa3",
+            "info": "#36a3f7",
+            "warning": "#ffb822",
+            "danger": "#fd3995",
+            "focus": "#9816f4"
+          },
+          "base": {
+            "label": [
+              "#c5cbe3",
+              "#a1a8c3",
+              "#3d4465",
+              "#3e4466"
+            ],
+            "shape": [
+              "#f0f3ff",
+              "#d9dffa",
+              "#afb4d4",
+              "#646c9a"
+            ]
+          }
+        }
+      };
+    </script>
+
+    <!-- end::Global Config -->
+
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.bundle.js" type="text/javascript"></script>
+    <script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+
+    <!--end::Global Theme Bundle -->
+
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+    <!--end:: ANDRE INBOX -->
+    <script src="assets/js/pages/custom/inbox/inbox.js" type="text/javascript"></script>
+    <!--<script src="https://www.flowchat.com/members/assets/js/pages/community.js" type="text/javascript"></script>-->
+    <script src="assets/js/quill-emoji-master/dist/quill-emoji.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="assets/js/quill-emoji-master/dist/quill-emoji.css">
+    <script type="text/javascript">
+      var toolbarOptions = {
+        container: [
+          ['bold', 'italic', 'underline', 'code-block', { 'list': 'ordered' }, { 'list': 'bullet' },'link', 'image', 'video', 'emoji']
+        ],
+        handlers: {
+          'emoji': function () {}
+        }
+      }
+
+      var quill = new Quill('#Community-Editor', {
+        modules: {
+          "toolbar": toolbarOptions,
+          "emoji-toolbar": true,
+          "emoji-shortname": true,
+          "emoji-textarea": false
+        },
+        placeholder: 'Compose an epic...',
+        theme: 'snow',
+      });
+    </script>
+
+
+    <!--end::Page Vendors -->
+
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="assets/js/pages/dashboard.js" type="text/javascript"></script>
+
+    <!--end::Page Scripts -->
+  </body>
+
+  <!-- end::Body -->
+</html>

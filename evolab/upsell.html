@@ -1,0 +1,1605 @@
+<html lang="en"><!-- begin::Head --><head>
+    <base href="">
+    <meta charset="utf-8">
+    <title>FlowChat LAB</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <!--<link href="https://www.flowchat.com/members/assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">-->
+    <link id="css_style_bundle" href="" rel="stylesheet" type="text/css">
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <link id="css_header_base" href="https://www.flowchat.com/members/assets/css/skins/header/base/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_header_menu" href="https://www.flowchat.com/members/assets/css/skins/header/menu/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_brand" href="assets/css/skins/brand/fc-brand.css?v=1646659109" rel="stylesheet" type="text/css">
+    <link id="css_aside" href="assets/css/skins/aside/fc-aside.css?v=1646665747" rel="stylesheet" type="text/css">
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/assets/media/logos/favicon-16x16.png?v=1641890934">
+</head>
+<!-- end::Head -->
+<!-- begin::Body -->
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-brand--minimize">
+    <!-- begin:: Header Mobile -->
+    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+        <div class="kt-header-mobile__logo">
+            <a href="./">
+                <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v=1641898431" height="30" width="auto" onerror="this.src='assets/media/logos/fc-white.svg';">
+            </a>
+        </div>
+        <div class="kt-header-mobile__toolbar">
+            <button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+            <!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        </div>
+    </div>
+    <!-- end:: Header Mobile -->
+    <!-- begin:: Root -->
+    <div class="kt-grid kt-grid--hor kt-grid--root">
+        <!-- begin:: Page -->
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+            <!-- begin:: Aside -->
+            <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside" style="">
+                <!-- begin::Aside Brand -->
+                <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand" kt-hidden-height="75" style="">
+                    <div class="kt-aside__brand-logo">
+                        <a href="./">
+                            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v1641898431" width="auto" height="30">
+                        </a>
+                    </div>
+                    <div class="kt-aside__brand-tools">
+                        <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+                    </div>
+                </div>
+                <!-- end:: Aside Brand -->
+                <!-- begin:: Aside Menu -->
+                <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+                    <div id="kt_aside_menu" class="kt-aside-menu kt-scroll ps ps--active-y" data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500" style="height: 433px; overflow: hidden;">
+                        <ul class="kt-menu__nav ">
+                            <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2 text-primary"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar text-warning"></i><span class="kt-menu__link-text">My Leads</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./posts"><i class="kt-menu__link-icon flaticon2-browser text-warning"></i><span class="kt-menu__link-text">My Posts</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./audiences"><i class="kt-menu__link-icon flaticon2-user-1 text-primary"></i><span class="kt-menu__link-text">Audiences</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./chat-inbox"><i class="kt-menu__link-icon flaticon2-chat"></i><span class="kt-menu__link-text">Chat Inbox</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./customers"><i class="kt-menu__link-icon flaticon2-group text-danger"></i><span class="kt-menu__link-text">Sub-Accounts</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon fas fa-share-alt text-success"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./marketplace"><i class="kt-menu__link-icon flaticon-price-tag text-success"></i><span class="kt-menu__link-text">Marketplace</span></a></li>
+                            <li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem9"><i class="kt-menu__link-icon flaticon2-plus text-success"></i><span class="kt-menu__link-text">Other Features</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                <div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./social-assets"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Social Assets </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./email-lists"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Email Campaigns </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./flowcharts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Flowcharts </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="./urlshortener"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">URL Shortener </span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle" onclick="MULessons.init({ product_id: 83 }); return false;">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Product Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle" data-toggle="modal" data-target="#upgradeModal">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">$0-$100K in 41 Days Blueprint <small><span class="badge badge-pill badge-warning"><i class="fas fa-crown"></i></span></small></span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle" onclick="MULessons.init({ product_id: 350 }); return false;">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Import Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle" onclick="MULessons.init({ product_id: 354 }); return false;">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Integrations Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle" data-toggle="modal" data-target="#upgradeModal">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Pipeline Strategy &amp; Vault <small><span class="badge badge-pill badge-warning"><i class="fas fa-crown"></i></span></small></span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="ps__rail-x" style="left: 0px; bottom: -138px;">
+                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 138px; height: 382px; right: 3px;">
+                            <div class="ps__thumb-y" tabindex="0" style="top: 64px; height: 177px;"></div>
+                        </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 433px; right: 3px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 256px;"></div></div></div>
+                </div>
+                <!-- end:: Aside Menu -->
+                <!-- begin:: Aside Footer -->
+                <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+                    <div class="kt-aside__footer-nav">
+                        <div class="kt-aside__footer-item">
+                            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title="" data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+                            <a href="./navigation" class="btn btn-icon kt-hidden" data-toggle="kt-tooltip" data-skin="dark" title="" data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                            <a href="./z-admin-log" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title="" data-original-title="Admin Dashboard"><i class="flaticon2-document"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end:: Aside Footer -->
+            </div>
+            <!-- end:: Aside -->
+            <!-- begin:: Wrapper -->
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+                <!-- begin:: Header -->
+                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+                    <!-- begin:: Header Menu -->
+                    <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+                    <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+                        <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+                            <ul class="kt-menu__nav  ">
+                                <!-- begin:: Menu Pipelines -->
+                                <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left py-0" style="width:620px;">
+                                        <div class="my-1 mx-2">
+                                            <button onclick="MUModals.loadPipelineManager();" class="btn btn-label-danger w-100 my-1" data-toggle="modal" style="flex: none;"><i class="fas fa-columns"></i> Pipeline Manager</button>
+                                            <button onclick="MUModals.actionMemberPipelineAdd({is_add:1,is_with_template: 1}); return false;" class="btn btn-label-primary w-100 my-1" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+                                        </div>
+                                        <ul class="kt-menu__subnav" style="max-height: calc(100vh - 250px); min-height: 150px; overflow-y: auto;">
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=28305" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">Empty Pipeline</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=19610" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">FB Test Automation</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=26760" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">IG Test Automation</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=26220" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">LI Test Automation</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=29968" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">Test Skool Automation</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=27829" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">TikTok Test</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=26287" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">Twitter Testing Pipeline</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=26222" class="kt-menu__link ">
+                                                    <i class="fas fa-star kt-font-warning mr-2"></i>
+                                                    <span class="kt-menu__link-text">WA Test</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32580" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">* ✅ Facebook ➡️ Grow Group Flow</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=25277" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">****FB28 - FCSF - Outreach &gt; FB Group &gt; Calendar &gt; Software Demo</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32782" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">*Intent Magnet Template ✅ Facebook ➡️ Connection Building</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32367" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">*TEMPLATE 3.0 ✅ Instagram ➡️ Book A Call Flow</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32894" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">✅ Facebook ➡️ Website Flow 💬 (OCI Ventures Inc.)</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=31763" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">1-Solar ✅ Facebook ➡️ Lead Magnet Opt-In to VSL Flow (Chase FB)</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=31163" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Eric Test</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=28663" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Extension Auto Testing Pipeline</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=31748" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Invite All Likes And Followers To Newsletter</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32733" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Linkedin - Business Owner</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32505" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Southern Tier Bookkeeping - LinkedIn Outreach</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=27705" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Test WebHook</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item">
+                                                <a href="./pipeline?member_pipeline_id=32565" class="kt-menu__link ">
+                                                    <span class="kt-menu__link-text">Youtube 🔴 (LinkedIn)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Pipelines-->
+                                <!-- begin:: Menu Reports -->
+                                <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                                    <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                                        <ul class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Pipeline Activity</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./report-pipelines" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">Custom Pipeline Reports <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success kt-badge--pill ml-1">new</span></span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./white-label-dashboard-outreach-team-manager" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Sub-Accounts Pipeline Activity</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./white-label-affiliates" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">White Label Affiliates</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Admin Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./z-admin-report-subscriptions-new" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Subscriptions</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./z-admin-report-kpi" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">Customer Success KPIs</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./z-admin-white-label-sales" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">White Label Sales</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./z-admin-affiliates-payouts" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">Affiliate Payouts</span></a></li>
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./z-admin-activation" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">Activation Dashboard</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Dashboards</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item" aria-haspopup="true"><a href="./dashboard-outreach-team-manager" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-graph"></i><span class="kt-menu__link-text">Outreach Team Manager</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Reports -->
+                                <!-- begin:: Menu Import / Export -->
+                                <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import/Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left py-2">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item" aria-haspopup="true">
+                                                <!-- <a href="https://chrome.google.com/webstore/detail/flowchat-multi-platform-c/eigpceijfgcoknincjhkomfodneifcnp" target="_blank" class="kt-menu__link"><i class="kt-menu__link-icon fa fa-download text-success"></i><span class="kt-menu__link-text">Install Browser Extension</span></a>
+                      -->
+                                                <a href="#" onclick="MUModals.populateUiModal({type:'ui_content', key:'install_browser_extension'}); return false;" class="kt-menu__link"><i class="kt-menu__link-icon fa fa-download text-success"></i><span class="kt-menu__link-text">Install Browser Extension</span></a>
+                                            </li>
+                                            <div class="dropdown-divider"></div>
+                                            <li class="kt-menu__item " aria-haspopup="true"><a href="./my-profile-webhooks" class="kt-menu__link"><i class="kt-menu__link-icon fas fa-exchange-alt text-success"></i><span class="kt-menu__link-text">WebHooks</span></a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link"><i class="kt-menu__link-icon fa fa-file-excel text-success"></i><span class="kt-menu__link-text">Import Leads from Sheets</span></a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon fa fa-upload mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Export</span><i class="kt-menu__hor-arrow la la-angle-right"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                                <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+                                                    <ul class="kt-menu__subnav">
+                                                        <li class="kt-menu__item ">
+                                                            <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                                                        </li>
+                                                        <li class="kt-menu__item ">
+                                                            <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                                                        </li>
+                                                        <li class="kt-menu__item ">
+                                                            <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Import/Export -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end:: Header Menu -->
+                    <!-- begin:: Header Topbar -->
+                    <div class="kt-header__topbar">
+                        <!--begin: Leads -->
+                        <div class="kt-header__topbar-item" title="Account Usage" style="cursor:pointer;">
+                            <div class="form-group my-auto w-auto">
+                                <button type="button" class="btn btn-secondary btn-sm px-2 dropdown-toggle" data-toggle="dropdown" data-offset="0px,10px" aria-expanded="true"><i class="flaticon2-avatar"></i><span class="d-inline-block" style="padding-top: 1px">62199 /999999</span></button>
+                                <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim">
+                                    <span class="dropdown-item-text mt-3">
+                                        <i class="fas fa-user-circle text-danger mr-2" style="font-size:1.3em"></i><span class="text-danger kt-font-bold" style="font-size:1.1em">Your Account Usage:</span>
+                                    </span>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item-text">
+                                        <div class="fc-lead-usage dropdown item my-2" usage="6.2199062199062">
+                                            <span><b>Leads</b></span> <span class="float-right"><span class="kt-font-danger font-weight-bold">62199</span> out of <span class="kt-font-danger font-weight-bold">999999</span></span>
+                                            <div class="progress mt-1" style="height: 4px;">
+                                                <div class="progress-bar " role="progressbar" style="width: 6.2199062199062%;" aria-valuenow="6.2199062199062" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item-text">
+                                        <div class="fc-pipeline-usage dropdown item my-2" usage="42">
+                                            <span><b>Pipelines</b></span> <span class="float-right"><span class="kt-font-danger font-weight-bold">21</span> out of <span class="kt-font-danger font-weight-bold">50</span></span>
+                                            <div class="progress mt-1" style="height: 4px;">
+                                                <div class="progress-bar " role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item-text">
+                                        <div class="fc-team-usage dropdown item my-2" usage="20">
+                                            <span><b>Team Members </b></span> <span class="float-right"><span class="kt-font-danger font-weight-bold">2</span> out of <span class="kt-font-danger font-weight-bold">10</span></span>
+                                            <div class="progress mt-1" style="height: 4px;">
+                                                <div class="progress-bar " role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item-text">
+                                        <div class="fc-team-usage dropdown item d-flex justify-content-between" usage="">
+                                            <span><b>Native AI Credits </b><br><a class="text-danger kt-hidden" href="#" id="show_usage-ai_credits"><u>Usage</u></a> | <a class="text-danger kt-hidden" href="#" id="buy_marketplace-ai_credits"><u>Add Credits</u></a></span>
+                                            <span class="font-weight-bold text-danger py-3">$ 0.00</span>
+                                        </div>
+                                    </span>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item-text">
+                                        <span>
+                                            <div class="mb-3">Increase your limits by going to our <a class="text-danger" href="./marketplace" target="_blank"><u>Marketplace</u></a>. </div>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Leads -->
+                        <!--begin: Search for Leads -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px" onclick="setTimeout(function(){ $('#input-text-top-bar-search-lead').focus(); }, 600);">
+                                <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+                                <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                                    <form class="kt-quick-search__form" onsubmit="return false;">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                                            <input type="text" class="form-control" id="input-text-top-bar-search-lead" onkeyup="if (event.key === 'Enter' || event.keyCode === 13) document.location.href= './leads-search?search=' + this.value;" placeholder="Search for name of lead...">
+                                            <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                                        </div>
+                                    </form>
+                                    <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Search for Leads -->
+                        <!--begin:: Quick Panel Toggler -->
+                        <div class="kt-header__topbar-item">
+                            <span class="kt-header__topbar-icon" id="open_right_sidebar_SupportAndKnowledgeBase">
+                                <i class="fa fa-question-circle text-danger"></i>
+                            </span>
+                        </div>
+                        <!--end:: Quick Panel Toggler -->
+                        <!--begin: Notifications -->
+                        <div class="kt-header__topbar-item dropdown">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+                                <span class="kt-header__topbar-icon">
+                                    <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+                                </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+                                <form>
+                                    <div class="kt-head" style="background-image: url(assets/media/misc/head_bg_sm.jpg)">
+                                        <h3 class="kt-head__title">User Notifications</h3>
+                                        <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+                                    </div>
+                                    <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--end: Notifications -->
+                        <!--begin: User Bar -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--user">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                                <!--use "kt-rounded" class for rounded avatar style-->
+                                <div class="kt-header__topbar-user kt-rounded-">
+                                    <img id="MemberPictureUserBar" alt="Pic" src="https://25412480912591194df8-0169dac72ee4fc1cf23cfd1ba8f0a79a.ssl.cf1.rackcdn.com/live/users/103.jpg?v=20241011214527" class="kt-rounded-" onerror="this.src='assets/media/users/default.jpg';">
+                                    <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                    <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+                                    <span class="kt-header__topbar-username kt-hidden-mobile">&nbsp;André</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+                                <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(assets/media/misc/head_bg_sm.jpg)">
+                                    <div class="kt-user-card__wrapper">
+                                        <div class="kt-user-card__pic">
+                                            <!--use "kt-rounded" class for rounded avatar style-->
+                                            <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://25412480912591194df8-0169dac72ee4fc1cf23cfd1ba8f0a79a.ssl.cf1.rackcdn.com/live/users/103.jpg?v=20241011214527" class="kt-rounded-" onerror="this.src='assets/media/users/default.jpg';">
+                                        </div>
+                                        <div class="kt-user-card__details">
+                                            <div class="kt-user-card__name">André Teixeira (Test)</div>
+                                            <div class="kt-user-card__position">UI / UX Designer, FlowChat</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="kt-nav kt-margin-b-10">
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-personal-information" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+                                            <span class="kt-nav__link-text">Personal Information</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-subscription" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="fa fa-redo"></i></span>
+                                            <span class="kt-nav__link-text">My Subscription</span>
+                                        </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-team" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon-users-1"></i></span>
+                                            <span class="kt-nav__link-text">Team</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-webhooks" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="la la-exchange"></i></span>
+                                            <span class="kt-nav__link-text">WebHooks</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-integrations" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-reload"></i></span>
+                                            <span class="kt-nav__link-text">3rd Party Integrations</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./white-label" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="fa fa-users-cog"></i></span>
+                                            <span class="kt-nav__link-text">White Label</span>
+                                        </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-change-password" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="fas fa-key"></i></span>
+                                            <span class="kt-nav__link-text">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__separator kt-nav__separator--fit"></li>
+                                    <li class="kt-nav__custom kt-space-between">
+                                        <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end: User Bar -->
+                    </div>
+                    <!-- end:: Header Topbar -->
+                </div>
+                <!-- end:: Header -->
+                <div class="alert alert-warning fade show py-2" role="alert">
+                            <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                            <div class="alert-text"><b>You're close to your lead limit: 98,034 of 100,000 slots used. Upgrade your plan or add more lead slots to keep growing!</b> <a href="javascript:;" class="call-btn btn btn-warning btn-sm text-nowrap ml-3 font-weight-bold" data-toggle="modal" data-target="#upgradeModal" style="border-color: #000">Upgrade Plan</a></div>
+                            <div class="alert-close">
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true"><i class="la la-close"></i></span>
+                              </button>
+                            </div>
+                          </div>
+                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+
+
+                    <!-- begin:: Subheader -->
+                    <div class="kt-subheader kt-grid__item" id="kt_subheader">
+                        <div class="kt-container kt-container--fluid ">
+                            <div class="kt-subheader__main">
+                                <button class="kt-subheader__mobile-toggle kt-hidden" id="kt_subheader_mobile_toggle"><span></span></button>
+                                <h3 class="kt-subheader__title">Dashboard</h3>
+                                <span class="kt-subheader__separator kt-hidden"></span>
+                                <div class="kt-subheader__breadcrumbs" id="NavSubTitle">
+                                </div>
+                            </div>
+                            <div class="kt-subheader__toolbar">
+                                <div class="kt-subheader__wrapper">
+                                    <span id="SubHeaderButtons">
+                                        <div class="dropdown dropdown-inline"> <button type="button" class="btn btn-clean" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon2-settings"></i></button>
+                                            <div class="dropdown-menu dropdown-menu-right" style="width:250px;">
+                                                <h6 class="dropdown-header">View Settings</h6>
+                                                <ul class="kt-nav">
+                                                    <li class="kt-nav__item"> <a href="javascript:;" class="kt-nav__link" id="Dashboard_Button_HideTrainings" title="Hide the Trainings"> <i class="kt-nav__link-icon flaticon2-check-mark " id="Dashboard_Button_HideTrainings_icon"></i> <span class="kt-nav__link-text">Hide Trainings</span> </a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <div class="dropdown dropdown-inline" data-placement="top">
+                                        <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(40px, 34px, 0px);">
+                                            <ul class="kt-nav kt-nav--active-bg" role="tablist">
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionFacebookgroupAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalFacebookgroupEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Facebook Group</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="./flowcharts-edit" class="kt-nav__link">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Flowchart</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item kt-hidden">
+                                                    <a href="javascript:;" onclick="MUModals.actionHelpdeskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalHelpdeskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Helpdesk Ticket</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionLeadAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalLeadEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Lead</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionMessagetemplateAdd({}); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalMessagetemplateEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Message Template</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionProductAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalProductEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Product</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionPodcastAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalPodcastEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Podcast</span>
+                                                    </a>
+                                                </li>
+                                                <li class="kt-nav__item">
+                                                    <a href="javascript:;" onclick="MUModals.actionTaskAdd(); return false;" class="kt-nav__link" data-toggle="modal" data-target="#modalTaskEditor">
+                                                        <i class="kt-nav__link-icon fa fa-plus"></i>
+                                                        <span class="kt-nav__link-text">Task</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:: Subheader -->
+                    <!-- begin:: Content -->
+                    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid" id="page-content">
+                        <div class="row ui-sortable" id="kt_sortable_portlets">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div id="fc-customer-sucess-box" class="kt-portlet kt-portlet--sortable" style="background:#250e47; background: linear-gradient(180deg, #250e47 75%, #f63878 100%);">
+                                    <div class="kt-portlet__body kt-portlet__body--fluid flex-column">
+                                        <div class="support-box-top-section">
+                                            <div class="card-body" style="border-radius: 5px; background:#fff;">
+                                                <p>⭐ <a href="https://www.facebook.com/groups/1652007931871517" rel="noopener noreferrer" target="_blank"><strong>Join our Members-Only Facebook Group</strong></a></p>
+                                                <p><br></p>
+                                                <p><strong>Support Email:</strong> <a href="mailto:support@flowchat.com" rel="noopener noreferrer" target="_blank">support@flowchat.com</a></p>
+                                                <p><br></p>
+                                                <p>💲 <a href="https://www.flowchat.com/members/my-profile-subscription" rel="noopener noreferrer" target="_blank"><strong>Update your Billing or Subscription info</strong></a></p>
+                                                <p><br></p>
+                                                <p>💻 <a href="https://call.flowchat.com/onboarding" rel="noopener noreferrer" target="_blank"><strong>Book your Group Onboarding call</strong></a></p>
+                                                <p><br></p>
+                                                <p>👇 Below you can find the schedules for our support calls 👇</p>
+                                            </div>
+                                            <span style="position: absolute; margin-top: -3px; margin-left: 65px; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 12px solid #fff; transform: rotate(-45deg);"></span>
+                                            <div class="row mt-4 d-flex align-items-center">
+                                                <div id="supportImage" class="member-pic px-3">
+                                                    <img class="rounded-circle border border-secondary w-100" id="userImage" src="assets/media/users/99-dashboard-photo.png" style="max-width:100px;">
+                                                </div>
+                                                <div class="ml-2">
+                                                    <h5 id="supportName" class="kt-font-bold kt-font-success mb-0" style="min-height: 1.2em;">See Support Schedules Below</h5>
+                                                    <p id="supportJob" class="kt-font-light mb-2" style="min-height: 1.2em;">FlowChat Support Team</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- support-box-top-section -->
+                                        <div class="text-white mt-2 support-box-bottom-section" id="callsList">
+                                            <div id="call1" class="d-flex justify-content-between mt-3 pt-3 h-100" style="border-top:1px solid rgba(255, 255, 255, 0.3);">
+                                                <div class="my-auto info-details">
+                                                    <span class="kt-font-bold call-title text-warning">Tech Support Call (8am PST)</span><br><span class="call-date"><i class="far fa-calendar-alt mr-1"></i> Tuesdays at 16:00 (local time) </span></div>
+                                                <div class="col my-auto text-right info-buttons pr-0">
+                                                    <div class="btn-group"><a href="https://us02web.zoom.us/j/86129454658" class="call-btn btn btn-outline-light btn-sm text-nowrap" target="_blank">Open Meeting</a></div><br>
+                                                    <div class="btn-group mt-1 text-center event-add-to-calendar" id="event-add-to-calendar-0">
+                                                        <a class="cursor-pointer text-white text-nowrap" data-toggle="dropdown" aria-expanded="false"><small><i class="far fa-calendar-plus mr-1"></i>Add to Calendar...</small></a>
+                                                        <div class="dropdown-menu mt-2" style="">
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Tech%20Support%20Call%20(8am%20PST)&amp;details=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;dates=20241015T160000%5BZ%5D%2F20241015T170000%5BZ%5D');"><i class="la la-calendar-plus-o"></i> Add to Google Calendar</a>
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://outlook.live.com/calendar/0/deeplink/compose?action=compose&amp;rru=addevent&amp;subject=Tech%20Support%20Call%20(8am%20PST)&amp;body=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;startdt=2024-10-15T16%3A00%3A00&amp;enddt=2024-10-15T17%3A00%3A00');"><i class="la la-calendar-plus-o"></i> Add to Outlook</a>
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://outlook.office.com/calendar/0/deeplink/compose?subject=Tech%20Support%20Call%20(8am%20PST)&amp;body=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;enddt=2024-10-15T17%3A00%3A00&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;startdt=2024-10-15T16%3A00%3A00');"><i class="la la-calendar-plus-o"></i> Add to Outlook 365</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="call1" class="d-flex justify-content-between mt-3 pt-3 h-100" style="border-top:1px solid rgba(255, 255, 255, 0.3);">
+                                                <div class="my-auto info-details">
+                                                    <span class="kt-font-bold call-title text-warning">Sales Strategy &amp; Copy Session + Q&amp;A (4pm PST) </span><br><span class="call-date"><i class="far fa-calendar-alt mr-1"></i> Wednesdays at 00:00 (local time) </span></div>
+                                                <div class="col my-auto text-right info-buttons pr-0">
+                                                    <div class="btn-group"><a href="javascript:;" class="call-btn btn btn-outline-warning btn-sm text-nowrap" data-toggle="modal" data-target="#upgradeModal">Upgrade Plan</a></div>
+                                                </div>
+                                            </div>
+                                            <div id="call1" class="d-flex justify-content-between mt-3 pt-3 h-100" style="border-top:1px solid rgba(255, 255, 255, 0.3);">
+                                                <div class="my-auto info-details">
+                                                    <span class="kt-font-bold call-title text-warning">Tech Support Call (8am PST)</span><br><span class="call-date"><i class="far fa-calendar-alt mr-1"></i> Thursdays at 16:00 (local time) </span></div>
+                                                <div class="col my-auto text-right info-buttons pr-0">
+                                                    <div class="btn-group"><a href="https://us02web.zoom.us/j/86129454658" class="call-btn btn btn-outline-light btn-sm text-nowrap" target="_blank">Open Meeting</a></div><br>
+                                                    <div class="btn-group mt-1 text-center event-add-to-calendar" id="event-add-to-calendar-2">
+                                                        <a class="cursor-pointer text-white text-nowrap" data-toggle="dropdown" aria-expanded="false"><small><i class="far fa-calendar-plus mr-1"></i>Add to Calendar...</small></a>
+                                                        <div class="dropdown-menu mt-2" style="">
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Tech%20Support%20Call%20(8am%20PST)&amp;details=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;dates=20241017T160000%5BZ%5D%2F20241017T170000%5BZ%5D');"><i class="la la-calendar-plus-o"></i> Add to Google Calendar</a>
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://outlook.live.com/calendar/0/deeplink/compose?action=compose&amp;rru=addevent&amp;subject=Tech%20Support%20Call%20(8am%20PST)&amp;body=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;startdt=2024-10-17T16%3A00%3A00&amp;enddt=2024-10-17T17%3A00%3A00');"><i class="la la-calendar-plus-o"></i> Add to Outlook</a>
+                                                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); window.open('https://outlook.office.com/calendar/0/deeplink/compose?subject=Tech%20Support%20Call%20(8am%20PST)&amp;body=Meeting%20URL%20%3A%20%3Ca%20href%3D%22https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%22%3Ehttps%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658%3C%2Fa%3E&amp;enddt=2024-10-17T17%3A00%3A00&amp;location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F86129454658&amp;path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;startdt=2024-10-17T16%3A00%3A00');"><i class="la la-calendar-plus-o"></i> Add to Outlook 365</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="call1" class="d-flex justify-content-between mt-3 pt-3 h-100" style="border-top:1px solid rgba(255, 255, 255, 0.3);">
+                                                <div class="my-auto info-details">
+                                                    <span class="kt-font-bold call-title text-warning">Sales Strategy &amp; Copy Session + Q&amp;A (11am PST)</span><br><span class="call-date"><i class="far fa-calendar-alt mr-1"></i> Thursdays at 19:00 (local time) </span></div>
+                                                <div class="col my-auto text-right info-buttons pr-0">
+                                                    <div class="btn-group"><a href="javascript:;" class="call-btn btn btn-outline-warning btn-sm text-nowrap" data-toggle="modal" data-target="#upgradeModal">Upgrade Plan</a></div>
+                                                </div>
+                                            </div>
+                                        </div><!-- support-box-bottom-section -->
+                                    </div><!-- kt-portlet__body kt-portlet__body--fluid flex-column -->
+                                </div><!-- fc-customer-sucess-box -->
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <!--begin::Portlet Tasks-->
+                                <div class="kt-portlet kt-portlet--sortable">
+                                    <div class="kt-portlet__head ui-sortable-handle">
+                                        <div class="kt-portlet__head-label">
+                                            <h3 class="kt-portlet__head-title">
+                                                Tasks&nbsp;
+                                                <button class="btn btn-icon btn-label btn-bold btn-sm" onclick="MUModals.actionTaskAdd();" data-toggle="modal" data-target="#modalTaskEditor" aria-selected="false"><i class="fa fa-plus"></i></button>
+                                            </h3>
+                                        </div>
+                                        <div class="kt-portlet__head-toolbar">
+                                            <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-brand nav-tabs-bold" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#kt_portlet_tabs_2_1_content" role="tab" aria-selected="false">This Week</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#kt_portlet_tabs_2_2_content" role="tab" aria-selected="false">Later</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="kt-portlet__body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active show" id="kt_portlet_tabs_2_1_content" role="tabpanel">
+                                                <div class="kt-widget-5">
+                                                    <div class="kt-widget-5__item kt-widget-5__item--success">
+                                                        <div class="kt-widget-5__item-info">
+                                                            <a href="javascript:;" onclick="if (typeof MUModals === 'undefined') return false; MUModals.actionTaskEdit(1297); return false;" class="kt-widget-5__item-title" data-toggle="modal" data-target="#modalTaskEditor">My First Task</a>
+                                                            <div class="form-inline kt-widget-5__item-datetime">
+                                                                <select class="form-control form-control-sm badge badge-pill badge-light kt-badge--inline" onchange="if (typeof MUModals === 'undefined') return false; MUModals.actionTaskChangeDateStart(1297, this.value);">
+                                                                    <option value="">Set start date</option>
+                                                                    <option value="1 DAY">+1 day</option>
+                                                                    <option value="2 DAY">+2 days</option>
+                                                                    <option value="3 DAY">+3 days</option>
+                                                                    <option value="4 DAY">+4 days</option>
+                                                                    <option value="5 DAY">+5 days</option>
+                                                                    <option value="7 DAY">+1 week</option>
+                                                                    <option value="14 DAY">+2 weeks</option>
+                                                                    <option value="1 MONTH">+1 month</option>
+                                                                    <option value="2 MONTH">+2 months</option>
+                                                                </select>
+                                                                &nbsp;|&nbsp;<a href="javascript:;" onclick="if (typeof MUModals === 'undefined') return false; MUModals.actionDeleteDialog(1297, 'taskid', 'task'); return false;" data-toggle="kt-tooltip" data-skin="dark" title="" data-original-title="Delete"><i class="flaticon2-trash kt-heading kt-heading-sm text-danger"></i></a></div>
+                                                        </div>
+                                                        <div class="kt-widget-5__item-check" data-toggle="kt-tooltip" data-skin="dark" title="" data-original-title="Set task completed">
+                                                            <label class="kt-checkbox kt-checkbox--single kt-checkbox--success">
+                                                                <input type="checkbox" onclick="if (typeof MUModals === 'undefined') return false; MUModals.actionToggleTaskCompleted(1297);">
+                                                                <span></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="kt_portlet_tabs_2_2_content" role="tabpanel">
+                                                <div class="kt-widget-5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Portlet Latest Tasks-->
+                            </div>
+                            <!-- begin:Empty Portlet: sortable porlet required for each column -->
+                            <div class="kt-portlet kt-portlet--sortable-empty">
+                            </div>
+                            <!--end::Empty Portlet-->
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <!--begin:: Trainings -->
+                                <div class="kt-portlet kt-portlet--sortable">
+                                    <div class="kt-portlet__head ui-sortable-handle">
+                                        <div class="kt-portlet__head-label">
+                                            <h3 class="kt-portlet__head-title">Trainings</h3>
+                                        </div>
+                                    </div>
+                                    <div class="kt-portlet__body py-0">
+                                        <!--begin::Accordion-->
+                                        <div class="accordion accordion-light" id="accordionTrainings">
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title px-0" data-toggle="collapse" data-target="#collapseTraining0" aria-expanded="true" aria-controls="collapseTraining0">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">Product Guide</div>
+                                                                <div class=""><small>9/55 Lessons</small><i class="collapse-icon fas ml-2 fa-chevron-circle-up"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 16%;" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining0" class="collapse-trainings collapse show" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-705" class="fc-product-83 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 83, current_parent_lesson_id: 705 }); return false;">
+                                                                    <i class="fas fa-tv mr-2"></i>Getting Started</a></div>
+                                                            <div class="ml-auto mr-2">3/14</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1947" class="fc-product-83 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 83, current_parent_lesson_id: 1947 }); return false;">
+                                                                    <i class="fas fa-tv mr-2"></i>Best Practices</a></div>
+                                                            <div class="ml-auto mr-2">5/5</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1500" class="fc-product-83 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 83, current_parent_lesson_id: 1500 }); return false;">
+                                                                    <i class="fas fa-tv mr-2"></i>Integrations </a></div>
+                                                            <div class="ml-auto mr-2">0/13</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1660" class="fc-product-83 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 83, current_parent_lesson_id: 1660 }); return false;">
+                                                                    <i class="fas fa-tv mr-2"></i>Features</a></div>
+                                                            <div class="ml-auto mr-2">0/14</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2087" class="fc-product-83 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 83, current_parent_lesson_id: 2087 }); return false;">
+                                                                    <i class="fas fa-tv mr-2"></i>Automations</a></div>
+                                                            <div class="ml-auto mr-2">0/9</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining1" aria-expanded="false" aria-controls="collapseTraining1">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">$0-$100K in 41 Days Blueprint</div>
+                                                                <div class=""><small>1/12 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining1" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-754" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 754 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Your Initial Message</a></div>
+                                                            <div class="ml-auto mr-2">1/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-778" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 778 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Your 1st Pipeline</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-789" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 789 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Your “Find &amp; Fill” </a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-798" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 798 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Response Coaching</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-805" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 805 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Your Daily Activity </a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-817" class="fc-product-182 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 182, current_parent_lesson_id: 817 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Your Sales Team</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining2" aria-expanded="false" aria-controls="collapseTraining2">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">Fast Start</div>
+                                                                <div class=""><small>0/7 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining2" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-1158" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1158 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Log Into Flow</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1159" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1159 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Use FlowCh</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1160" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1160 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Download T</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1161" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1161 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Send Lastp</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1162" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1162 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Find 3 Ide</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1163" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1163 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Send Authe</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1173" class="fc-product-312 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 312, current_parent_lesson_id: 1173 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>How To Fill In The C</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining3" aria-expanded="false" aria-controls="collapseTraining3">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">Import Guide</div>
+                                                                <div class=""><small>2/91 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining3" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-1642" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1642 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Getting Started</a></div>
+                                                            <div class="ml-auto mr-2">1/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1587" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1587 }); return false;">
+                                                                    <i class="fab fa-facebook color-facebook mr-2"></i>Facebook</a></div>
+                                                            <div class="ml-auto mr-2">0/15</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1614" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1614 }); return false;">
+                                                                    <i class="fab fa-linkedin color-linkedin mr-2"></i>LinkedIn</a></div>
+                                                            <div class="ml-auto mr-2">0/23</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1602" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1602 }); return false;">
+                                                                    <i class="fab fa-instagram color-instagram mr-2"></i>Instagram</a></div>
+                                                            <div class="ml-auto mr-2">0/9</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1631" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1631 }); return false;">
+                                                                    <i class="fab fa-x-twitter color-x-twitter mr-2"></i>X (Formerly Twitter)</a></div>
+                                                            <div class="ml-auto mr-2">0/9</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1834" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1834 }); return false;">
+                                                                    <i class="fab fa-tiktok color-tiktok mr-2"></i>TikTok</a></div>
+                                                            <div class="ml-auto mr-2">0/7</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1838" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1838 }); return false;">
+                                                                    <i class="fab fa-pinterest color-pinterest mr-2"></i>Pinterest</a></div>
+                                                            <div class="ml-auto mr-2">0/5</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1837" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1837 }); return false;">
+                                                                    <i class="fab fa-slack color-slack mr-2"></i>Slack</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1836" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1836 }); return false;">
+                                                                    <i class="fab fa-discord color-discord mr-2"></i>Discord</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2012" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 2012 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Skool</a></div>
+                                                            <div class="ml-auto mr-2">0/5</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1889" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1889 }); return false;">
+                                                                    <i class="far fa-file-excel color-facebook mr-2"></i>Sheets</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1835" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 1835 }); return false;">
+                                                                    <i class="fab fa-telegram color-telegram mr-2"></i>Telegram</a></div>
+                                                            <div class="ml-auto mr-2">0/3</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2058" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 2058 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Nextdoor</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2131" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 2131 }); return false;">
+                                                                    <i class="fab fa-whatsapp color-whatsapp mr-2"></i>WhatsApp</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2134" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 2134 }); return false;">
+                                                                    <i class="fab fa-youtube color-youtube mr-2"></i>YouTube</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2305" class="fc-product-350 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 350, current_parent_lesson_id: 2305 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Reddit</a></div>
+                                                            <div class="ml-auto mr-2">0/4</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining4" aria-expanded="false" aria-controls="collapseTraining4">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">Integrations Guide</div>
+                                                                <div class=""><small>0/12 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining4" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-1669" class="fc-product-354 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 354, current_parent_lesson_id: 1669 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>WebHooks</a></div>
+                                                            <div class="ml-auto mr-2">0/10</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2252" class="fc-product-354 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 354, current_parent_lesson_id: 2252 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Other Features</a></div>
+                                                            <div class="ml-auto mr-2">0/2</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining5" aria-expanded="false" aria-controls="collapseTraining5">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">Product Guide (Duplicate)</div>
+                                                                <div class=""><small>0/79 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining5" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-1492" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1492 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Getting Started</a></div>
+                                                            <div class="ml-auto mr-2">0/4</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1487" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1487 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Importing Leads</a></div>
+                                                            <div class="ml-auto mr-2">0/44</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1554" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1554 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Integrations</a></div>
+                                                            <div class="ml-auto mr-2">0/3</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1488" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1488 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Set Up Your Pipeline</a></div>
+                                                            <div class="ml-auto mr-2">0/8</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1564" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1564 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Zapier (Automation)</a></div>
+                                                            <div class="ml-auto mr-2">0/7</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1572" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1572 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Useful Flows</a></div>
+                                                            <div class="ml-auto mr-2">0/8</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-1581" class="fc-product-347 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 347, current_parent_lesson_id: 1581 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Add Course/Trainings</a></div>
+                                                            <div class="ml-auto mr-2">0/5</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne2">
+                                                    <div class="card-title collapsed px-0" data-toggle="collapse" data-target="#collapseTraining6" aria-expanded="false" aria-controls="collapseTraining6">
+                                                        <div class="w-100">
+                                                            <div class="d-flex d-flex justify-content-between w-100 mb-2">
+                                                                <div class="">White Label Guide</div>
+                                                                <div class=""><small>0/37 Lessons</small><i class="collapse-icon fas fa-chevron-circle-down ml-2"></i></div>
+                                                            </div>
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="collapseTraining6" class="collapse collapse-trainings" aria-labelledby="headingOne2" data-parent="#accordionTrainings" style="">
+                                                    <div class="card-body">
+                                                        <div id="fc-lesson-1452" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 1452 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Getting Started</a></div>
+                                                            <div class="ml-auto mr-2">0/9</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2048" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2048 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Resources </a></div>
+                                                            <div class="ml-auto mr-2">0/6</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2317" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2317 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Marketing Materials</a></div>
+                                                            <div class="ml-auto mr-2">0/7</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2322" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2322 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Sales Materials</a></div>
+                                                            <div class="ml-auto mr-2">0/4</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2323" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2323 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Onboarding Materials</a></div>
+                                                            <div class="ml-auto mr-2">0/3</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2324" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2324 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>Training Materials</a></div>
+                                                            <div class="ml-auto mr-2">0/1</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="fc-lesson-2076" class="fc-product-336 fc-lesson d-flex d-flex justify-content-between w-100 mb-2 border-top pt-2">
+                                                            <div class="kt-font-bold">
+                                                                <a href="javascript:;" onclick="MULessons.init({ product_id: 336, current_parent_lesson_id: 2076 }); return false;">
+                                                                    <i class="fas fa-file-alt mr-2"></i>FAQ</a></div>
+                                                            <div class="ml-auto mr-2">0/7</div>
+                                                            <div class="pt-2">
+                                                                <div class="progress" style="width:50px; height:6px">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Accordion-->
+                                    </div>
+                                </div>
+                                <!--end::Portlet Trainings-->
+                                <!-- begin:Empty Portlet: sortable porlet required for each column -->
+                                <div class="kt-portlet kt-portlet--sortable-empty">
+                                </div>
+                                <!--end::Empty Portlet-->
+                            </div>
+                        </div><!-- /row-->
+                    </div>
+                    <!-- end:: Content -->
+                </div>
+            </div>
+            <!-- end:: Wrapper -->
+        </div>
+        <!-- end:: Page -->
+    </div>
+    <!-- end:: Root -->
+    <div class="modal fade" id="upgradeModal" tabindex="-1" role="dialog" aria-labelledby="upgradeModal" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="upsellModal">Upgrade your Plan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Upgrade your plan for more features and higher limits! Power up your business with our limited-time offer!</p>
+            <ul class="list-unstyled px-4 mb-0">
+              <li class="pb-2"><i class="fas fa-check-circle text-success mr-2"></i><b>Store up to 25,000 Leads</b><br>Manage a larger database for better conversions.</li>
+              <li class="pb-2"><i class="fas fa-check-circle text-success mr-2"></i><b>Up to 20 Pipelines</b><br>Simplify your sales process with multiple pipelines.</li>
+              <li class="pb-2"><i class="fas fa-check-circle text-success mr-2"></i><b>2 Team Member Licenses</b><br>Boost collaboration with two team licenses.</li>
+              <li class="pb-2"><i class="fas fa-check-circle text-success mr-2"></i><b>Custom WebHooks</b><br>Seamlessly integrate with your favorite tools.</li>
+              <li class="pb-2"><i class="fas fa-check-circle text-success mr-2"></i><b>Strategy &amp; Copy Sessions (Tue/Thu)</b><br>Get expert insights to enhance your marketing.</li>
+              <li><i class="fas fa-check-circle text-success mr-2"></i><b>Access to Templates Vault</b><br>Use customizable templates to save time.</li>
+            </ul>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning font-weight-bold">Upgrade to Growth only for $349.00 /month </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- begin:: Scrolltop -->
+    <div id="kt_scrolltop" class="kt-scrolltop">
+        <i class="la la-arrow-up"></i>
+    </div>
+    <!-- end:: Scrolltop -->
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    <script>
+    var KTAppOptions = {
+        "colors": {
+            "state": {
+                "brand": "#5d78ff",
+                "metal": "#c4c5d6",
+                "light": "#ffffff",
+                "accent": "#00c5dc",
+                "primary": "#5867dd",
+                "success": "#34bfa3",
+                "info": "#36a3f7",
+                "warning": "#ffb822",
+                "danger": "#fd3995",
+                "focus": "#9816f4"
+            },
+            "base": {
+                "label": [
+                    "#c5cbe3",
+                    "#a1a8c3",
+                    "#3d4465",
+                    "#3e4466"
+                ],
+                "shape": [
+                    "#f0f3ff",
+                    "#d9dffa",
+                    "#afb4d4",
+                    "#646c9a"
+                ]
+            }
+        }
+    };
+    </script>
+    <!-- end::Global Config -->
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="https://www.flowchat.com/members/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+    <script src="https://www.flowchat.com/members/assets/js/scripts.bundle.js" type="text/javascript"></script>
+    <script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+    <!--end::Global Theme Bundle -->
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="https://www.flowchat.com/members/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+    <!--begin:: ANDRE JS DATE RANGE -->
+    <script src="https://www.flowchat.com/members/assets/js/pages/components/forms/widgets/bootstrap-daterangepicker.js" type="text/javascript"></script>
+    <!--end:: ANDRE JS DATE RANGE -->
+    <!--end::Page Vendors -->
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="https://www.flowchat.com/members/assets/js/pages/dashboard.js" type="text/javascript"></script>
+    <!--end::Page Scripts -->
+
+
+
+</body><!-- end::Body --></html>

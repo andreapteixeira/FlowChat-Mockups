@@ -1,0 +1,150 @@
+/* begin:: Pipeline Builder */
+
+
+
+#kt_subheader.pipeline-builder {
+    position: fixed;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    background: #dcdee7;
+    z-index: 1;
+}
+
+#page-content {padding-top: 60px !important;}
+
+#funnel-title {
+    border-bottom: 1px solid #bbb;
+    background-color: #e2e2e7;
+}
+
+#funnel-title h2{
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.fc-stage-container {
+    background: url(../../media/misc/line-gray.png) repeat-y center center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.fc-stage-container:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 15px solid #aaa;
+    margin-top:50px;
+}
+
+.fc-stage-container .fc-tools {
+    bottom: 5px;
+    right: 10px;
+    opacity: 0.1;
+    font-size: 1.2em;
+}
+
+.fc-stage-container .toggle-default-link{
+    opacity: 0.1;
+}
+
+.fc-stage-container .toggle-default-link.default-message{
+    opacity: 1;
+}
+
+.fc-stage-container .fc-message-tools {
+    left: 10px;
+}
+
+ .fc-stage-container .fc-default-message .fc-message-tools {
+    opacity: 1;
+}
+
+.fc-message-btns {
+    margin-bottom: -30px;
+}
+
+.fc-stage-container .card:hover .fc-tools{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.fc-stage-container .card:hover .toggle-default-link{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.fc-builder-toolbox {
+    width: 230px;
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    z-index: 1;
+}
+
+ .fc-stage-container .fc-message {
+   min-height: 160px;
+ }
+ 
+ .fc-stage-container .fc-message .message-image-wrapper {
+   text-align: center;
+ }
+
+ .fc-stage-container .fc-message .message-image-wrapper img {
+   max-height: 60px;
+ }
+ 
+.fc-stage  .card-header{
+    background-color:  #7e7e7e !important;
+}
+
+.fc-stage .card-body ul i {
+    min-width: 15px;
+    opacity: 0.7;
+}
+
+.fc-stage .card-body ul li .label-stage {min-width:110px}
+.fc-stage .card-body ul li .label-automation {min-width:170px}
+
+ 
+/***** Stages Color *****/
+
+.fc-stage[color="gray"] .card-header {background-color: #9c9c9c !important;}
+.fc-stage[color="gray"] .card-body {background-color: #9c9c9c30;}
+
+.fc-stage[color="green"] .card-header {background-color: #71bb5f !important;}
+.fc-stage[color="green"] .card-body {background-color: #71bb5f30;}
+
+.fc-stage[color="blue"] .card-header {background-color: #0C90E7 !important;}
+.fc-stage[color="blue"] .card-body {background-color: #0C90E730;}
+
+.fc-stage[color="yellow"] .card-header {background-color: #FFC300 !important;}
+.fc-stage[color="yellow"] .card-body {background-color: #ffc30030;}
+
+.fc-stage[color="red"] .card-header {background-color: #e7546a !important;}
+.fc-stage[color="red"] .card-body {background-color: #e7546a30;}
+
+.fc-stage[color="color1"] .card-header {background-color: #80FEDB !important; color:#343a40 !important;}
+.fc-stage[color="color1"] .card-body {background-color: #80FEDB30;}
+
+.fc-stage[color="color2"] .card-header {background-color: #2CB4DE !important;}
+.fc-stage[color="color2"] .card-body {background-color: #2CB4DE30;}
+
+.fc-stage[color="color3"] .card-header {background-color: #F0817B !important;}
+.fc-stage[color="color3"] .card-body {background-color: #F0817B30;}
+
+.fc-stage[color="color4"] .card-header {background-color: #F72586 !important;}
+.fc-stage[color="color4"] .card-body {background-color: #F7258630;}
+
+.fc-stage[color="color5"] .card-header {background-color: #7401B8 !important;}
+.fc-stage[color="color5"] .card-body {background-color: #7401B830;}
+
+.fc-stage[color="color6"] .card-header {background-color: #240046 !important;}
+.fc-stage[color="color6"] .card-body {background-color: #24004630;}
+ 
+/* end:: Pipeline Builder */

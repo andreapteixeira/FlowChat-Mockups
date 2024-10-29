@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test copy</title>
+</head>
+<body>
+
+<button onclick="Clipboard.copy('text to be copied');">Click to copy</button><br><br>
+<button onclick="copyToClipboardV2()">Click to copy V2</button>
+<script type="text/javascript">
+	window.Clipboard = (function(window, document, navigator) {
+    var textArea,
+        copy;
+
+    function isOS() {
+        return navigator.userAgent.match(/ipad|iphone/i);
+    }
+
+    function createTextArea(text) {
+        textArea = document.createElement('textArea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+    }
+
+    function selectText() {
+        var range,
+            selection;
+
+        if (isOS()) {
+            range = document.createRange();
+            range.selectNodeContents(textArea);
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            textArea.setSelectionRange(0, 999999);
+        } else {
+            textArea.select();
+        }
+    }
+
+    function copyToClipboard() {        
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+    }
+
+    copy = function(text) {
+        createTextArea(text);
+        selectText();
+        copyToClipboard();
+    };
+
+    return {
+        copy: copy
+    };
+})(window, document, navigator);
+
+// How to use
+Clipboard.copy('text to be copied');
+
+
+
+function copyToClipboardV2() {
+
+	navigator.clipboard.writeText(textToCopy).then(function() {
+
+	  alert('copy successful');
+
+	}, function() {
+
+	   alert('copy failed');
+
+	});
+};
+
+textToCopy = `Hi Miguel, reaching out to you because you've made it through our preliminary qualification to become part of our exclusive community called the Sales Ascenders Inner Circle.  
+
+It's a network (FB Grp) I share with people I believe to be 'movers & shakers' in their respective field.  
+
+We connect, network, and rally around the lost art of prospecting and sales with intense focus on how to fill the appointment book with qualified sales calls even in these crazy times. 
+
+I only add Owners with at least 1 year of experience. 
+
+Miguel is this something you’d like to be a part of?`
+
+</script>
+</body>
+</html>

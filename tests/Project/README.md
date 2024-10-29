@@ -1,0 +1,1 @@
+Readme:Copy Image to Clipboard

@@ -1,0 +1,228 @@
+
+/****** ANDRE - STYLE FOR NEW PIPELINE ******/
+
+#pipeline-view {background: transparent; box-shadow: none; margin-bottom: 0;}
+
+#pipeline-view #Div-Pipeline-Filters {padding: 0 15px; border-top: 1px solid #bbb; padding-top: 10px; background: #e9e9ed;}
+
+#pipeline-view .pipeline-name { max-width: 300px; float: right;}
+
+#pipeline-view .pipeline-wrap {padding: 0 15px; border-top: 1px solid #bbb; width: 100%;}
+
+#funnel .table-responsive {border-radius: 5px; background-color: #f1f1f3; cursor: grab; overflow: auto;}
+
+#funnel table {background-color: #f1f1f3; width: auto;}
+
+#funnel table thead th {border-bottom: 1px solid #bbb; height: 50px; padding: 0; background:url(../media/layout/arrow-pipeline-header.png) -7px center no-repeat transparent;}
+
+#funnel table thead th:last-child {width: 100%;}
+
+#funnel table thead th:first-child {background:none;}
+
+.popover.bs-popover-right {max-width:none;}
+
+#funnel table thead th.pipeline-stage-head.active{background: #d6d6d8; opacity: 0.5;}
+#funnel table thead th.pipeline-stage-head.active > div, #funnel table thead th.pipeline-stage-head.active > a  {display: none}
+
+#funnel .table th,
+#funnel .table td {width: 200px;}
+
+#funnel table thead th .pipeline-stage-name { padding: 0rem 0.3rem 0rem 1.7rem; width: 200px;height: 17px; margin-top: 15px;}
+
+#funnel table thead th .pipeline-stage-name h5 {font-size: 1rem; font-weight: bold;}
+
+#funnel table thead th .pipeline-stage-name h5 nobr {display:block; max-width: 100%; float: left;}
+
+#funnel table thead th .pipeline-stage-description {padding: 0; margin-top: 1.3rem; margin-right: 0.4rem; color: #777; float:right; }
+
+#funnel table thead th .pipeline-stage-values {padding: 0rem 0rem 0rem 0.1rem; font-size: 0.9rem; font-weight: normal; float: left;}
+
+#funnel table thead th .pipeline-stage-options {padding: 0.9rem 0rem 0rem 0.2rem;float: left;}
+
+#funnel table thead th .pipeline-stage-options .btn.btn-icon {height: 2rem; width: 1.5rem;}
+
+#funnel table thead th .pipeline-stage-add-middle {display: block; margin-left: 1px; height: 79px; padding: 30px 0 0; transition: all 0.2s; width: 10px; float: left; position: sticky;}
+
+#funnel table thead th .pipeline-stage-add-middle i {opacity: 0; transition: all 0.2s;}
+
+#funnel table thead th .pipeline-stage-add-middle:hover {background-color: rgba(255,255,255,1);}
+
+#funnel table thead th .pipeline-stage-add-middle:hover i {opacity: 1;}
+
+#funnel table thead th .column-handle {text-align: center; height: 10px; margin: 5px 10px -10px 20px; cursor: move !important; background: #e2e2e2; border-radius: 28px;  opacity: 0; transition: all 0.2s; line-height: 1rem;}
+
+#funnel table thead th:hover .column-handle {opacity: 1}
+
+#funnel table thead th .pipeline-stage-add {margin: 1rem 0 1rem 2rem !important;}
+
+#funnel table tbody td {padding: 0.3rem;}
+
+#funnel table tbody td > div {height:calc(100vh - 280px); min-width: 193px;}
+
+#funnel.open-filters table tbody td > div {height: calc(100vh - 280px);}
+
+#funnel .funnel-item,
+#funnel .pipeline-card {background-color: #fff; padding: 0; border:none !important; cursor: pointer !important; position: relative; overflow: initial;}
+
+#funnel .pipeline-card .card-top-info { height: 18px; padding: 10px 5px 0px 5px; }
+
+#funnel .pipeline-card .card-top-info .priority-flag,
+#funnel .pipeline-card .pipeline-card-color {font-size: 0.8rem; padding: 0 0.3rem 0 0; border: none; background: transparent;}
+
+#funnel .pipeline-card .card-top-info .pipeline-card-options {padding: 0; float: right; margin-top: -5px;}
+
+#funnel .pipeline-card .card-top-info .pipeline-card-options .btn.btn-icon { height: 2rem;  width: 1.5rem;}
+
+#funnel .pipeline-card .card-top-info a nobr {display:block; max-width: 145px; float: left;}
+
+#funnel .pipeline-card .card-top-info a {transition: all 0.2s;}
+
+#funnel .pipeline-card .card-top-info a:hover {opacity: 0.5;}
+
+#funnel .pipeline-card .pipeline-card-value {padding: 0 20px; height: 20px; clear: both;}
+
+#funnel .pipeline-card .pipeline-card-social {display: block; height: 25px; padding: 0px 18px;}
+
+#funnel .pipeline-card .pipeline-card-social .icon i {transition: all 0.2s;}
+
+#funnel .pipeline-card .pipeline-card-social .icon i:hover {color: #ccc !important;}
+
+#funnel .pipeline-card .pipeline-card-bottom {padding: 3px 5px 3px 15px; overflow: hidden; color: #fff}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-color i {color: #fff !important;}
+
+#funnel .pipeline-card[color="none"] .pipeline-card-bottom.card-bg-color {color: #aaa;}
+
+#funnel .pipeline-card[color="none"] .pipeline-card-bottom .pipeline-card-color i {color: #aaa !important;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-date {float: left;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-date .card-quick-date {width: 0; height: 0; position: absolute; opacity: 0;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes-btn,
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-color {float: right;}
+
+#funnel .pipeline-card .pipeline-card-bottom .icon i {transition: all 0.2s;}
+#funnel .pipeline-card .pipeline-card-bottom .icon i:hover {opacity: 0.5;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes.kt-hidden { display: block !important; height: 0; min-height: 0px; visibility: hidden; padding-top: 0; padding-bottom: 0; margin-top: 0;}
+
+#funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes {background: rgba(0, 0, 0, 0.5); font-size: 0.85rem; clear: both; margin: 26px 0px 0px -10px; border-radius: 5px; padding: 3px; min-height: 113px;transition: all 0.2s; line-height: 1,2rem; }
+
+#funnel .pipeline-card[color="none"] .pipeline-card-bottom.card-bg-color .pipeline-card-notes{background: transparent; color: #111}
+
+#funnel table tbody td .pipeline-card-add { background: transparent; text-align: center;  padding: 10px; margin: 0;  opacity: 0.2;  transition: all 0.2s;}
+#funnel table tbody td .pipeline-card-add:hover { opacity: 0.7;}
+
+#funnel .nav-pipeline {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 0px;
+    z-index: 1;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    top: 50%;
+    height: 120px;
+    padding-top: 35px;
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#funnel .nav-pipeline.show {opacity:1; width: 75px;}
+#funnel .nav-pipeline.show.active {background-color: #0C90E7;}
+#funnel .nav-pipeline.nav-right {right: 5px; border-top-left-radius: 50%; border-bottom-left-radius: 50%;}
+#funnel .nav-pipeline.nav-left {margin-left: 0px; border-top-right-radius: 50%; border-bottom-right-radius: 50%;}
+
+
+.toolbox-wrap { position: fixed;  width: 100%; bottom: -60px;  transition: all 0.5s; width: -moz-available; z-index: 10000;}
+
+.toolbox-wrap.show {bottom: 0;}
+
+#toolbox { width: 100%; text-align: center; background: #fff; height: 50px; font-weight: bold; text-transform: uppercase; color: #181b27;}
+
+#toolbox, #toolbox td {border: 2px dashed #bbb;} 
+
+#toolbox tr td {width: 33.3%;}
+
+#toolbox tr td.active {background-color: #242939; color: #fff;}
+    
+
+
+.dropdown-menu .priority-flag.none{color:#cecece !important;}
+.dropdown-menu .priority-flag.low {color:#8e9194 !important;}
+.dropdown-menu .priority-flag.normal {color:#0C90E7 !important;}
+.dropdown-menu .priority-flag.high {color:#FFC300 !important;}
+.dropdown-menu .priority-flag.urgent{color:#e7546a !important;}
+
+
+.pipeline-card[priority="none"] button.priority-flag {color:#cecece !important;}
+.pipeline-card[priority="low"] button.priority-flag {color:#8e9194 !important;}
+.pipeline-card[priority="normal"] button.priority-flag {color:#0C90E7 !important;}
+.pipeline-card[priority="high"] button.priority-flag {color:#FFC300 !important;}
+.pipeline-card[priority="urgent"] button.priority-flag {color:#e7546a !important;}
+
+
+.color-facebook {color:#1877f2 !important;}
+.color-facebook-messenger {color:#1877f2 !important;}
+.color-linkedin {color:#2d8be8 !important;}
+.color-linkedin-chat {color:#2d8be8 !important;}
+.color-instagram {color:#c32aa3 !important;}
+.color-twitter {color:#1da1f2 !important;}
+.color-tiktok {color:#ff0050 !important;}
+
+.card-color.none {color:#cecece !important;}
+.card-color.gray {color:#cecece !important;}
+.card-color.green {color:#71bb5f !important;}
+.card-color.blue {color:#0C90E7 !important;}
+.card-color.yellow {color:#FFC300 !important;}
+.card-color.red {color:#e7546a !important;}
+
+.card-color.color1 {color:#80FEDB !important;}
+.card-color.color2 {color:#2CB4DE !important;}
+.card-color.color3{color:#F0817B !important;}
+.card-color.color4 {color:#F72586 !important;}
+.card-color.color5 {color:#7401B8 !important;}
+.card-color.color6 {color:#240046 !important;}
+
+.pipeline-card[color="none"] .card-bg-color {background-color:transparent;}
+.pipeline-card[color="gray"] .card-bg-color {background-color:#cecece;}
+.pipeline-card[color="green"] .card-bg-color {background-color:#71bb5f;}
+.pipeline-card[color="blue"] .card-bg-color {background-color:#0C90E7;}
+.pipeline-card[color="yellow"] .card-bg-color {background-color:#FFC300;}
+.pipeline-card[color="red"] .card-bg-color {background-color:#e7546a}
+
+.pipeline-card[color="color1"] .card-bg-color {background-color:#80FEDB}
+.pipeline-card[color="color2"] .card-bg-color {background-color:#2CB4DE}
+.pipeline-card[color="color3"] .card-bg-color {background-color:#F0817B}
+.pipeline-card[color="color4"] .card-bg-color {background-color:#F72586}
+.pipeline-card[color="color5"] .card-bg-color {background-color:#7401B8}
+.pipeline-card[color="color6"] .card-bg-color {background-color:#240046}
+
+.truncate { white-space: nowrap; overflow: hidden;  text-overflow: ellipsis;  display: block;  float: left;}
+
+
+#funnel-title {border-bottom:  1px solid #bbb; background-color: #e2e2e7;}
+#funnel-title h2 {font-size: 1.1rem; color: #212529;}
+
+.fc-color-filter .bootstrap-select .dropdown-menu,
+.fc-color-filter .bootstrap-select .dropdown-menu div.inner {min-height: unset !important; height: auto;}
+.fc-color-filter .bootstrap-select .dropdown-menu li { position: relative; width: 16.6%; float: left; text-align: center;}
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li > a {margin: auto; padding: 10px 0;}
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li > a .text {margin:0;}
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected > a span.check-mark {right: auto; margin-left: 2px;}
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected > a .text,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li:hover > a .text,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected > a span.check-mark,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li:hover > a span.check-mark {color: #fff !important;}
+
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected > a .text,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li:hover > a .text,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected > a span.check-mark,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li:hover > a span.check-mark { font-weight: bold; color: #fff !important; line-height: 0.9rem;}
+
+
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected:first-child > a span.check-mark,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected:nth-child(2) > a span.check-mark,
+.fc-color-filter .bootstrap-select .dropdown-menu.inner > li.selected:nth-child(7) > a span.check-mark {color: #000 !important;}

@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<!--
+Theme: Keen - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- begin::Head -->
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>FlowChat LAB</title>
+    <meta name="description" content="FlowChat Test Environment">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+    <link href="assets/css/pages/multi-platform-inbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://www.flowchat.com/members/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">
+    <!--<link href="https://www.flowchat.com/members/assets/css/fc.css?v=1645454457" rel="stylesheet" type="text/css">-->
+    <link id="css_style_bundle" href="" rel="stylesheet" type="text/css">
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <link id="css_header_base" href="https://www.flowchat.com/members/assets/css/skins/header/base/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_header_menu" href="https://www.flowchat.com/members/assets/css/skins/header/menu/light.css?v=1620896282" rel="stylesheet" type="text/css">
+    <link id="css_brand" href="assets/css/skins/brand/fc-brand.css?v=1646659109" rel="stylesheet" type="text/css">
+    <link id="css_aside" href="assets/css/skins/aside/fc-aside.css?v=1646665747" rel="stylesheet" type="text/css">
+    <!--end::Layout Skins -->
+    <link rel="shortcut icon" href="https://www.flowchat.com/assets/media/logos/favicon-16x16.png?v=1641890934">
+</head>
+<!-- end::Head -->
+<!-- begin::Body -->
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading kt-brand--minimize kt-aside--minimize">
+    <!-- begin:: Header Mobile -->
+    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+        <div class="kt-header-mobile__logo">
+            <a href="./">
+                <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/fc-white.svg?v=1641898431" height="30" width="auto" onerror="this.src='assets/media/logos/fc-white.svg';">
+            </a>
+        </div>
+        <div class="kt-header-mobile__toolbar">
+            <button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+            <!--<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>-->
+            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        </div>
+    </div>
+    <!-- end:: Header Mobile -->
+    <!-- begin:: Root -->
+    <div class="kt-grid kt-grid--hor kt-grid--root">
+        <!-- begin:: Page -->
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+            <!-- begin:: Aside -->
+            <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+                <!-- begin::Aside Brand -->
+                <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
+                    <div class="kt-aside__brand-logo">
+                        <a href="./">
+                            <img alt="Logo" src="https://www.flowchat.com/members/assets/media/logos/logo-6.png" />
+                        </a>
+                    </div>
+                    <div class="kt-aside__brand-tools">
+                        <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
+                    </div>
+                </div>
+                <!-- end:: Aside Brand -->
+                <!-- begin:: Aside Menu -->
+                <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
+                    <div id="kt_aside_menu" class="kt-aside-menu" data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
+                        <ul class="kt-menu__nav ">
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./"><i class="kt-menu__link-icon flaticon2-browser-2"></i><span class="kt-menu__link-text">Dashboard</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./leads"><i class="kt-menu__link-icon flaticon2-avatar"></i><span class="kt-menu__link-text">Leads</span></a></li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./facebookmember"><i class="kt-menu__link-icon flaticon2-magnifier-tool"></i><span class="kt-menu__link-text">Prospecting Database</span></a></li>
+                            <li class="kt-menu__item kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a class="kt-menu__link kt-menu__toggle" href="#menuitem4"><i class="kt-menu__link-icon flaticon2-reload"></i><span class="kt-menu__link-text">Daily Flow</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                <div class="kt-menu__submenu"><span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="fbgroups"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Groups </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="tasks"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tasks </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="customers"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Customers </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="helpdesk"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Helpdesk </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="products"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Products </span></a></li>
+                                        <li class="kt-menu__item"><a class="kt-menu__link" href="podcasts"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Podcasts </span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="kt-menu__item" aria-haspopup="true"><a class="kt-menu__link" href="./reports-affiliates"><i class="kt-menu__link-icon flaticon2-group"></i><span class="kt-menu__link-text">Affiliate Area</span></a></li>
+                            <li class="kt-menu__section ">
+                                <h4 class="kt-menu__section-text">Trainings</h4><i class="kt-menu__section-icon flaticon-more-v2"></i>
+                            </li>
+                            <li class="kt-menu__item  kt-menu__item--submenu " aria-haspopup="true" data-ktmenu-submenu-toggle="hover">
+                                <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
+                                    <i class="kt-menu__link-icon flaticon2-cup"></i>
+                                    <span class="kt-menu__link-text">Product Guide</span>
+                                    <i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="kt-menu__submenu ">
+                                    <span class="kt-menu__arrow"></span>
+                                    <ul class="kt-menu__subnav">
+                                        <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true">
+                                            <span class="kt-menu__link">
+                                                <span class="kt-menu__link-text">Product Guide</span>
+                                            </span>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=152" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Set Up Your Pipeline</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=243" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Facebook Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=247" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">LinkedIn Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=252" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Instagram Import</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=172" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Organizing Pipelines</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=174" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Automate &amp; Integrate</span>
+                                            </a>
+                                        </li>
+                                        <li class="kt-menu__item" aria-haspopup="true">
+                                            <a href="lessons?productid=83&lessonid=183" class="kt-menu__link ">
+                                                <i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i>
+                                                <span class="kt-menu__link-text">Useful Flows</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end:: Aside Menu -->
+                <!-- begin:: Aside Footer -->
+                <div class="kt-aside__footer kt-grid__item" id="kt_aside_footer" kt-hidden-height="59" style="">
+                    <div class="kt-aside__footer-nav">
+                        <div class="kt-aside__footer-item">
+                            <a href="javascript:;" onclick="MUThemes.toggleDarkMode();" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Toggle Dark Mode"><i class="fa fa-lightbulb"></i></a>
+                            <a href="./navigation" class="btn btn-icon" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Personalize menu navigation"><i class="flaticon2-gear"></i></a>
+                            <a href="javascript:;" data-toggle="kt-tooltip" data-skin="dark" title data-original-title="Speech to Command" ontouchstart="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" ontouchend="MUSpeech.startButton(event);" onmouseup="MUSpeech.startButton(event);" onmousedown="if (typeof MUSpeech !== 'undefined') MUSpeech.init(); MUSpeech.startButton(event);" class="btn btn-icon" id="Icon_MUSpeech"><i class="flaticon2-sms"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end:: Aside Footer -->
+            </div>
+            <!-- end:: Aside -->
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+                <!-- begin:: Header -->
+                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+                    <!-- begin:: Header Menu -->
+                    <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+                    <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+                        <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile kt-header-menu--layout-">
+                            <ul class="kt-menu__nav  ">
+                                <!-- Remove kt-hidden to show the drop down menus-->
+                                <!-- begin:: Menu Pipelines -->
+                                <li class="pipeline-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Pipelines</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left pb-0" style="width: 500px; max-height: 300px;">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item bg-light">
+                                                <button onclick="MUModals.actionMemberPipelineAdd(); return false;" class="btn btn-label-primary w-100" data-toggle="modal" data-target="#modalMemberPipelineEditor" style="flex: none;"><i class="fas fa-plus-circle"></i> Add New Pipeline</button>
+                                            </li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=872" class="kt-menu__link "><span class="kt-menu__link-text">FB01 - Sell Product By Group Demo/Webinar (Outreach, Group Demo/Webinar, Sale)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1328" class="kt-menu__link "><span class="kt-menu__link-text">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=1288" class="kt-menu__link "><span class="kt-menu__link-text">FB13 - Bruno Message to Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=873" class="kt-menu__link "><span class="kt-menu__link-text">FBG - High Ticket Sellers (Sales Ascenders Group)</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=869" class="kt-menu__link "><span class="kt-menu__link-text">FBG - The Art of High Ticket Selling</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=878" class="kt-menu__link "><span class="kt-menu__link-text">FBSUM01 - Facebook: Get New People To Join Your Upcoming Summit/Event</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=877" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Li02 - Cold Outreach - Invite To Call - Sale</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=876" class="kt-menu__link "><span class="kt-menu__link-text">LinkedIN: Sell $100 - $1,500 Product (SAAS) By Group Demo</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=868" class="kt-menu__link "><span class="kt-menu__link-text">Mastermind Buyers - COD</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=874" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 01 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=875" class="kt-menu__link "><span class="kt-menu__link-text">Podcast Guesting Tour 02 : Cold Outreach - Value - Request To Be A Guest</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=257" class="kt-menu__link "><span class="kt-menu__link-text">SAIC PROSPECTS</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=879" class="kt-menu__link "><span class="kt-menu__link-text">test 12</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=880" class="kt-menu__link "><span class="kt-menu__link-text">test 13</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=881" class="kt-menu__link "><span class="kt-menu__link-text">test 14</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=882" class="kt-menu__link "><span class="kt-menu__link-text">test 15</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=883" class="kt-menu__link "><span class="kt-menu__link-text">test 16</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=884" class="kt-menu__link "><span class="kt-menu__link-text">test 17</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=885" class="kt-menu__link "><span class="kt-menu__link-text">test 18</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=886" class="kt-menu__link "><span class="kt-menu__link-text">test 19</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=887" class="kt-menu__link "><span class="kt-menu__link-text">test 20</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=888" class="kt-menu__link "><span class="kt-menu__link-text">test 21</span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=870" class="kt-menu__link "><span class="kt-menu__link-text">Unleash CEO FB Group - CTA: Software Demo Calls </span></a></li>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <li class="kt-menu__item"><a href="./leads?view=pipeline&amp;member_pipeline_id=871" class="kt-menu__link "><span class="kt-menu__link-text">YOUTUBE - Get Subscribers - Cold Outreach, Value, Subscriber Request</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Pipelines-->
+                                <!-- begin:: Menu Reports -->
+                                <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true">
+                                    <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left" style="width:1000px">
+                                        <ul class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Marketing Reports</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./reports-organic-leads" class="kt-menu__link "><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Organic Leads</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Menu Reports -->
+                                <!-- begin:: Menu Import / Export -->
+                                <li class="leads-import-topmenu kt-menu__item kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Import</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu  kt-menu__submenu--fixed kt-menu__submenu--left">
+                                        <div class="kt-menu__subnav">
+                                            <ul class="kt-menu__content">
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet fab fa-facebook mr-2"><span></span></i><span class="kt-menu__link-text">Facebook</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-friends" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Friends</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-facebook-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comments"></i><span class="kt-menu__link-text">Comments <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-linkedin mr-2"><span></span></i><span class="kt-menu__link-text">LinkedIn</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-connections" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Connections</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-group" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-users"></i><span class="kt-menu__link-text">Group</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-linkedin-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-instagram mr-2"><span></span></i><span class="kt-menu__link-text">Instagram</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-chats" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-followers" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers</span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-instagram-likes" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-heart"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--success  kt-badge--pill ml-1">New</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fab fa-twitter mr-2"><span></span></i><span class="kt-menu__link-text">Twitter</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-comment-dots"></i><span class="kt-menu__link-text">Chats <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-user-friends"></i><span class="kt-menu__link-text">Followers <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-thumbs-up"></i><span class="kt-menu__link-text">Likes <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-share"></i><span class="kt-menu__link-text">Retweets <span class="kt-badge kt-badge--outline kt-badge--inline kt-badge--danger  kt-badge--pill ml-1">Soon</span></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="kt-menu__item ">
+                                                    <h3 class="kt-menu__heading kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot fa fa-download mr-2"><span></span></i><span class="kt-menu__link-text text-nowrap">Other Sources</span><i class="kt-menu__ver-arrow la la-angle-right"></i></h3>
+                                                    <ul class="kt-menu__inner">
+                                                        <li class="kt-menu__item " aria-haspopup="true"><a href="./leads-import-sheet" class="kt-menu__link "><i class="kt-menu__link-icon fa fa-file-excel"></i><span class="kt-menu__link-text">Sheets</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel kt-menu__item--open-dropdown" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Export</span><i class="kt-menu__hor-arrow la la-angle-down"></i><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+                                        <ul class="kt-menu__subnav">
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_all" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-cloud-download-alt"><span></span></i><span class="kt-menu__link-text">All Leads to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_email" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-envelope"><span></span></i><span class="kt-menu__link-text">All Leads with Email to CSV</span></a>
+                                            </li>
+                                            <li class="kt-menu__item ">
+                                                <a href="../api/datatables/csv.php?action=lead_telephone" class="kt-menu__link "><i class="kt-menu__link-icon fas fa-mobile pl-1"><span></span></i><span class="kt-menu__link-text">All Leads with Phone to CSV</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- end:: Import/Export -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end:: Header Menu -->
+                    <!-- begin:: Header Topbar -->
+                    <div class="kt-header__topbar">
+                        <!--begin: Leads -->
+                        <div class="kt-header__topbar-item" title="Pending Leads" style="cursor:pointer;" onclick="window.location.href='./leads?view=list';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="5" value="19" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-calendar-3" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Leads -->
+                        <!--begin: Pending helpdesk tickets -->
+                        <div class="kt-header__topbar-item" title="Unsolved helpdesk tickets" style="cursor:pointer;" onclick="window.location.href='./helpdesk';">
+                            <div class="form-group my-auto">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control text-right" style="cursor:pointer;" size="4" value="0" readonly="">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span>
+                                            <i class="flaticon2-help" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Pending helpdesk tickets -->
+                        <!--begin: Search -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--search dropdown kt-hidden">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+                                <span class="kt-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-top-unround dropdown-menu-anim dropdown-menu-lg">
+                                <div class="kt-quick-search kt-quick-search--dropdown kt-quick-search--result-compact" id="kt_quick_search_dropdown">
+                                    <form method="get" class="kt-quick-search__form">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"><span class="input-group-text"><i class="flaticon2-search-1"></i></span></div>
+                                            <input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
+                                            <div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+                                        </div>
+                                    </form>
+                                    <div class="kt-quick-search__wrapper kt-scroll ps" data-scroll="true" data-height="325" data-mobile-height="200" style="height: 325px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Search -->
+                        <!--begin: Notifications -->
+                        <div class="kt-header__topbar-item dropdown">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px, 0px" aria-expanded="true" id="EventNotificationClick">
+                                <span class="kt-header__topbar-icon">
+                                    <i class="flaticon2-bell-alarm-symbol" id="EventNotificationIcon"></i>
+                                </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg">
+                                <form>
+                                    <div class="kt-head" style="background-image: url(https://www.flowchat.com/members/assets/media/misc/head_bg_sm.jpg)">
+                                        <h3 class="kt-head__title">User Notifications</h3>
+                                        <div class="kt-head__sub"><span class="kt-head__desc" id="EventNotificationsTotal">0 new notifications</span></div>
+                                    </div>
+                                    <div class="kt-notification kt-margin-t-30 kt-margin-b-20 kt-scroll ps" data-scroll="true" data-height="270" data-mobile-height="220" id="EventNotificationsList" style="height: 270px; overflow: hidden;">
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--end: Notifications -->
+                        <!--begin: User Bar -->
+                        <div class="kt-header__topbar-item kt-header__topbar-item--user">
+                            <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px, 0px">
+                                <!--use "kt-rounded" class for rounded avatar style-->
+                                <div class="kt-header__topbar-user kt-rounded-">
+                                    <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+                                    <span class="kt-header__topbar-username kt-hidden-mobile">André Teixeira</span>
+                                    <img id="MemberPictureUserBar" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                    <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                    <span class="kt-badge kt-badge--username kt-badge--lg kt-badge--brand kt-hidden kt-badge--bold">S</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-sm">
+                                <div class="kt-user-card kt-margin-b-40 kt-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                                    <div class="kt-user-card__wrapper">
+                                        <div class="kt-user-card__pic">
+                                            <!--use "kt-rounded" class for rounded avatar style-->
+                                            <img id="MemberPictureUserBarDropdown" alt="Pic" src="https://www.flowchat.com/members/assets/media/users/default.jpg" class="kt-rounded-" onerror="this.src='https://www.flowchat.com/members/assets/media/users/default.jpg';">
+                                        </div>
+                                        <div class="kt-user-card__details">
+                                            <div class="kt-user-card__name">André Teixeira (TEST ACCOUNT)</div>
+                                            <div class="kt-user-card__position"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="kt-nav kt-margin-b-10">
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-personal-information" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                                            <span class="kt-nav__link-text">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__item">
+                                        <a href="./my-profile-change-password" class="kt-nav__link">
+                                            <span class="kt-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                                            <span class="kt-nav__link-text">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li class="kt-nav__separator kt-nav__separator--fit"></li>
+                                    <li class="kt-nav__custom kt-space-between">
+                                        <a href="./logout" class="btn btn-label-brand btn-upper btn-sm btn-bold">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end: User Bar -->
+                    </div>
+                    <!-- end:: Header Topbar -->
+                </div>
+                <!-- end:: Header -->
+                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+                    <!-- begin:: Subheader -->
+                    <div class="kt-subheader   kt-grid__item" id="kt_subheader">
+                        <div class="kt-container  kt-container--fluid ">
+                            <div class="kt-subheader__main">
+                                <button class="kt-subheader__mobile-toggle" id="kt_subheader_mobile_toggle"><span></span></button>
+                                <h3 class="kt-subheader__title">Multi-Platform Chat Inbox</h3>
+                            </div>
+                            <div class="kt-subheader__toolbar">
+                                <div class="kt-subheader__wrapper">
+                                    <div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="" data-placement="top" data-original-title="Quick actions">
+                                        <a href="#" class="btn btn-icon btn btn-label btn-label-brand btn-bold" data-toggle="dropdown" data-offset="0px,0px" aria-haspopup="true" aria-expanded="false">
+                                            <i class="flaticon2-add-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:: Subheader -->
+                    <!-- begin:: Content -->
+                    <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+                        <!--Begin::Inbox-->
+                        <div class="kt-grid kt-grid--desktop kt-grid--ver-desktop kt-inbox" id="kt_inbox">
+                            <!--Begin::Aside Mobile Toggle-->
+                            <button class="kt-inbox__aside-close" id="kt_inbox_aside_close">
+                                <i class="la la-close"></i>
+                            </button>
+                            <!--End:: Aside Mobile Toggle-->
+                            <!--Begin:: Inbox Aside-->
+                            <div class="kt-grid__item kt-portlet kt-inbox__aside pt-4 pb-2" id="kt_inbox_aside">
+                                <div class="fc-search-group btn-group mt-1 mb-3" role="group">
+                                    <div class="kt-input-icon kt-input-icon--left">
+                                        <input type="text" class="form-control inbox-search-test" placeholder="Type a name and press enter..." id="inboxSearch">
+                                        <span class="kt-input-icon__icon kt-input-icon__icon--left"><span><i class="la la-search"></i></span></span>
+                                    </div>
+                                </div>
+                                <div class="fc-inbox-main-filters">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="float-left pt-2">
+                                                <span class="kt-switch kt-switch--sm float-left">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="">
+                                                        <span></span>
+                                                    </label>
+                                                </span>
+                                                <label class="float-left pt-1 ml-1">Only Show <span class="text-danger">Overdue</span> / <span class="text-success">Today</span></label>
+                                            </div>
+                                            <a href="javascript:;" onclick="$('#inboxMoreFilters').toggle();" class="btn btn-default btn-upper btn-sm btn-bold text-center float-sm-right">More Filters <span class="kt-badge kt-badge--unified-danger kt-badge--sm kt-badge--rounded kt-badge--boldest">3</span></a>
+                                        </div>
+                                    </div>
+                                    <div id="inboxMoreFilters" class="kt-portlet__body kt-shape-bg-color-1 p-3" style="display:none;">
+                                        <div class="form-group mb-2">
+                                            <label for="inboxPlatform">Social Platform:</label>
+                                            <select class="form-control selectpicker" multiple id="inboxPlatform">
+                                                <option value="default"> All Platforms </option>
+                                                <option value="" data-content="<i class='fab fa-facebook color-facebook mt-n1 mr-2'></i> Facebook">Facebook</option>
+                                                <option value="" data-content="<i class='fab fa-instagram color-instagram mt-n1 mr-2'></i> Instagram">Instagram</option>
+                                                <option value="" data-content="<i class='fab fa-linkedin color-linkedin mt-n1 mr-2'></i> Linkedin">Linkedin</option>
+                                                <option value="" data-content="<i class='fab fa-x-twitter color-x-twitter mt-n1 mr-2'></i> X (Formely Twitter)">X (Formely Twitter)</option>
+                                                <option value="" data-content="<i class='fab fa-tiktok color-tiktok mt-n1 mr-2'></i> TikTok">TikTok</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="inboxStatus">Lead Status:</label>
+                                            <select class="form-control selectpicker" multiple id="inboxStatus">
+                                                <option value="default"> All Status </option>
+                                                <option value="">Lead In</option>
+                                                <option value="">Contacted</option>
+                                                <option value="">Waiting for Payment</option>
+                                                <option value="">Qualified</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="inboxPipelines">Pipelines:</label>
+                                            <select class="form-control selectpicker" multiple id="inboxPipelines">
+                                                <option value="default"> All Pipelines </option>
+                                                <option value="">Leads for new Products</option>
+                                                <option value="">Facebook Pipeline for my product</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="inboxTags">Tags/Segments:</label>
+                                            <input class="fc-tags" name='basic' value='facebook, Contacted' style="backgroud:#fff;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="kt-inbox__nav">
+                                    <ul class="kt-nav">
+
+                                        <li class="kt-nav__item kt-nav__item--active">
+                                            <div class="kt-nav__link px-2" data-action="list" data-type="inbox">
+                                                <div class="kt-inbox__sender d-flex w-100">
+                                                    <div class="mt-1">
+                                                        <span class="fa-stack fa-1x" style="flex-shrink: 0;"><i class="fas fa-circle fa-stack-2x color-facebook"></i> <i class="fab fa-facebook-f fa-stack-1x fa-inverse text-white" style="--fa-inverse: var(--fa-navy);"></i></span>
+                                                    </div>
+                                                    <div class="kt-inbox__author ml-2 position-relative w-100">
+
+                                                        <div class="fc-inbox-name font-weight-bold mb-0 mt-n1">Christopher Walken</div>
+                                                        
+                                                        <div class="fc-inbox-priority float-left mr-2 mt-n1">
+                                                          <span class="kt-badge badge-light kt-badge--sm kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag urgent"></i></span>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date mt-n1">
+                                                            <input class="position-absolute" name="" style="opacity:0">
+                                                            <small><span class="badge badge-pill badge badge-pill badge-danger">Overdue</span></small>
+                                                        </div>
+                                                        <span class="fc-unread-messages-indicator" title="Unread Messages"></span>
+                                                        
+                                                        <div class="fc-inbox-pipeline-container border rounded w-100 mt-2 p-2 d-flex align-items-center">
+                                                            <div>
+                                                              <a href="javascript:;" class="icon pipeline-card-color ml-2 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="kt-nav__link-icon fa fa-circle card-color blue" style="font-size:0.7rem"></i></a>
+                                                              <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                                                                  <div class="kt-heading my-0">
+                                                                      <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                                                                  <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div>
+                                                              <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</div>
+                                                              <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                                                                <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                                                                <a class="dropdown-item" href="#">Open Pipeline</a>
+                                                              </div>
+
+                                                              <div class="fc-inbox-pipeline-stage-name text-truncate">
+                                                                <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                                                    <option value="347162">Import Leads</option>
+                                                                    <option value="534256">Undetermined</option>
+                                                                    <option value="534255">Disqualified</option>
+                                                                    <option value="502699" selected>Like and Friend</option>
+                                                                    <option value="502700">Friend Request Sent</option>
+                                                                    <option value="347163">Test Automation</option>
+                                                                    <option value="472464">First Message Sent</option>
+                                                                    <option value="472871">Test Bulk Likes</option>
+                                                                    <option value="472901">Post Liked</option>
+                                                                    <option value="472905">Test Friend Requests</option>
+                                                                    <option value="472906">Friend Request Sent</option>
+                                                                    <option value="478783">Send Multiple DMs</option>
+                                                                    <option value="478784">Multiple DMs Sent</option>
+                                                                    <option value="531748">Tag Profile In Post</option>
+                                                                    <option value="531749">Tagged</option>
+                                                                    <option value="479006">Unfriend</option>
+                                                                    <option value="479251">Unfriend Completed</option>
+                                                                    <option value="479700">test</option>
+                                                                    <option value="517907">Like a Page</option>
+                                                                    <option value="517909">Liked Page</option>
+                                                                    <option value="531353">Tag Profile In Post</option>
+                                                                    <option value="531354">Tagged</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="kt-nav__item">
+                                            <div class="kt-nav__link px-2" data-action="list" data-type="inbox">
+                                                <div class="kt-inbox__sender d-flex pt-1 w-100">
+                                                    <div>
+                                                        <span class="fa-stack fa-1x" style="flex-shrink: 0;"><i class="fas fa-circle fa-stack-2x color-facebook"></i> <i class="fab fa-facebook-f fa-stack-1x fa-inverse text-white" style="--fa-inverse: var(--fa-navy);"></i></span>
+                                                    </div>
+                                                    <div class="kt-inbox__author ml-2 position-relative w-100">
+                                                        <div class="fc-inbox-name font-weight-bold mb-0 mt-n1">Rachel McAdams</div>
+
+                                                        <div class="fc-inbox-priority float-left mr-2 mt-n1">
+                                                          <span class="kt-badge badge-light kt-badge--sm kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag urgent"></i></span>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date mt-n1">
+                                                            <input class="position-absolute" name="" style="opacity:0">
+                                                            <small><span class="badge badge-pill badge badge-pill badge-danger">Overdue</span></small>
+                                                        </div>
+                                                        <span class="fc-unread-messages-indicator" title="Unread Messages"></span>
+                                                        
+                                                        <div class="fc-inbox-pipeline-container border rounded w-100 mt-2 p-2 d-flex align-items-center">
+                                                            <div>
+                                                              <a href="javascript:;" class="icon pipeline-card-color ml-2 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="kt-nav__link-icon fa fa-circle card-color green" style="font-size:0.7rem"></i></a>
+                                                              <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                                                                  <div class="kt-heading my-0">
+                                                                      <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                                                                  <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div>
+                                                              <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">Leads For New Product</div>
+                                                              <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                                                                <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                                                                <a class="dropdown-item" href="#">Open Pipeline</a>
+                                                              </div>
+
+                                                              <div class="fc-inbox-pipeline-stage-name text-truncate">
+                                                                <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                                                    <option value="347162">Import Leads</option>
+                                                                    <option value="534256">Undetermined</option>
+                                                                    <option value="534255">Disqualified</option>
+                                                                    <option value="502699">Like and Friend</option>
+                                                                    <option value="502700">Friend Request Sent</option>
+                                                                    <option value="347163">Test Automation</option>
+                                                                    <option value="472464">First Message Sent</option>
+                                                                    <option value="472871">Test Bulk Likes</option>
+                                                                    <option value="472901" selected>Post Liked</option>
+                                                                    <option value="472905">Test Friend Requests</option>
+                                                                    <option value="472906">Friend Request Sent</option>
+                                                                    <option value="478783">Send Multiple DMs</option>
+                                                                    <option value="478784">Multiple DMs Sent</option>
+                                                                    <option value="531748">Tag Profile In Post</option>
+                                                                    <option value="531749">Tagged</option>
+                                                                    <option value="479006">Unfriend</option>
+                                                                    <option value="479251">Unfriend Completed</option>
+                                                                    <option value="479700">test</option>
+                                                                    <option value="517907">Like a Page</option>
+                                                                    <option value="517909">Liked Page</option>
+                                                                    <option value="531353">Tag Profile In Post</option>
+                                                                    <option value="531354">Tagged</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="kt-nav__item">
+                                            <div class="kt-nav__link px-2" data-action="list" data-type="inbox">
+                                                <div class="kt-inbox__sender d-flex pt-1 w-100">
+                                                    <div>
+                                                        <span class="fa-stack fa-1x" style="flex-shrink: 0;"><i class="fas fa-circle fa-stack-2x color-instagram"></i> <i class="fab fa-instagram fa-stack-1x fa-inverse text-white" style="--fa-inverse: var(--fa-navy);"></i></span>
+                                                    </div>
+                                                    <div class="kt-inbox__author ml-2 position-relative w-100">
+                                                        <div class="fc-inbox-name font-weight-bold mb-0 mt-n1">Willem Dafoe</div>
+
+                                                        <div class="fc-inbox-priority float-left mr-2 mt-n1">
+                                                          <span class="kt-badge badge-light kt-badge--sm kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag urgent"></i></span>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date mt-n1">
+                                                            <input class="position-absolute" name="" style="opacity:0">
+                                                            <small><span class="badge badge-pill badge badge-pill badge-success">Today</span></small>
+                                                        </div>
+                                                        
+                                                        <div class="fc-inbox-pipeline-container border rounded w-100 mt-2 p-2 d-flex align-items-center">
+                                                            <div>
+                                                              <a href="javascript:;" class="icon pipeline-card-color ml-2 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="kt-nav__link-icon fa fa-circle card-color blue" style="font-size:0.7rem"></i></a>
+                                                              <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                                                                  <div class="kt-heading my-0">
+                                                                      <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                                                                  <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div>
+                                                              <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</div>
+                                                              <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                                                                <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                                                                <a class="dropdown-item" href="#">Open Pipeline</a>
+                                                              </div>
+
+                                                              <div class="fc-inbox-pipeline-stage-name text-truncate">
+                                                                <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                                                    <option value="347162">Import Leads</option>
+                                                                    <option value="534256">Undetermined</option>
+                                                                    <option value="534255">Disqualified</option>
+                                                                    <option value="502699">Like and Friend</option>
+                                                                    <option value="502700">Friend Request Sent</option>
+                                                                    <option value="347163">Test Automation</option>
+                                                                    <option value="472464">First Message Sent</option>
+                                                                    <option value="472871">Test Bulk Likes</option>
+                                                                    <option value="472901">Post Liked</option>
+                                                                    <option value="472905">Test Friend Requests</option>
+                                                                    <option value="472906" selected>Friend Request Sent</option>
+                                                                    <option value="478783">Send Multiple DMs</option>
+                                                                    <option value="478784">Multiple DMs Sent</option>
+                                                                    <option value="531748">Tag Profile In Post</option>
+                                                                    <option value="531749">Tagged</option>
+                                                                    <option value="479006">Unfriend</option>
+                                                                    <option value="479251">Unfriend Completed</option>
+                                                                    <option value="479700">test</option>
+                                                                    <option value="517907">Like a Page</option>
+                                                                    <option value="517909">Liked Page</option>
+                                                                    <option value="531353">Tag Profile In Post</option>
+                                                                    <option value="531354">Tagged</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="kt-nav__item">
+                                            <div class="kt-nav__link px-2" data-action="list" data-type="inbox">
+                                                <div class="kt-inbox__sender d-flex pt-1 w-100">
+                                                    <div>
+                                                        <span class="fa-stack fa-1x" style="flex-shrink: 0;"><i class="fas fa-circle fa-stack-2x color-linkedin"></i> <i class="fab fa-linkedin-in fa-stack-1x fa-inverse text-white" style="--fa-inverse: var(--fa-navy);"></i></span>
+                                                    </div>
+                                                    <div class="kt-inbox__author ml-2 position-relative w-100">
+                                                        <div class="fc-inbox-name font-weight-bold mb-0 mt-n1">Ryan Gosling</div>
+
+                                                        <div class="fc-inbox-priority float-left mr-2 mt-n1">
+                                                          <span class="kt-badge badge-light kt-badge--sm kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag high"></i></span>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date mt-n1">
+                                                            <input class="position-absolute" name="" style="opacity:0">
+                                                            <small><span class="badge badge-pill badge badge-pill badge-light">2024-06-21</span></small>
+                                                        </div>
+                                                        
+                                                        <div class="fc-inbox-pipeline-container border rounded w-100 mt-2 p-2 d-flex align-items-center">
+                                                            <div>
+                                                              <a href="javascript:;" class="icon pipeline-card-color ml-2 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="kt-nav__link-icon fa fa-circle card-color blue" style="font-size:0.7rem"></i></a>
+                                                              <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                                                                  <div class="kt-heading my-0">
+                                                                      <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                                                                  <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div>
+                                                              <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</div>
+                                                              <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                                                                <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                                                                <a class="dropdown-item" href="#">Open Pipeline</a>
+                                                              </div>
+
+                                                              <div class="fc-inbox-pipeline-stage-name text-truncate">
+                                                                <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                                                    <option value="347162">Import Leads</option>
+                                                                    <option value="534256">Undetermined</option>
+                                                                    <option value="534255">Disqualified</option>
+                                                                    <option value="502699">Like and Friend</option>
+                                                                    <option value="502700">Friend Request Sent</option>
+                                                                    <option value="347163">Test Automation</option>
+                                                                    <option value="472464">First Message Sent</option>
+                                                                    <option value="472871">Test Bulk Likes</option>
+                                                                    <option value="472901">Post Liked</option>
+                                                                    <option value="472905">Test Friend Requests</option>
+                                                                    <option value="472906">Friend Request Sent</option>
+                                                                    <option value="478783">Send Multiple DMs</option>
+                                                                    <option value="478784" selected>Multiple DMs Sent</option>
+                                                                    <option value="531748">Tag Profile In Post</option>
+                                                                    <option value="531749">Tagged</option>
+                                                                    <option value="479006">Unfriend</option>
+                                                                    <option value="479251">Unfriend Completed</option>
+                                                                    <option value="479700">test</option>
+                                                                    <option value="517907">Like a Page</option>
+                                                                    <option value="517909">Liked Page</option>
+                                                                    <option value="531353">Tag Profile In Post</option>
+                                                                    <option value="531354">Tagged</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="kt-nav__item">
+                                            <div class="kt-nav__link px-2" data-action="list" data-type="inbox">
+                                                <div class="kt-inbox__sender d-flex pt-1 w-100">
+                                                    <div>
+                                                        <span class="fa-stack fa-1x" style="flex-shrink: 0;"><i class="fas fa-circle fa-stack-2x color-facebook"></i> <i class="fab fa-facebook-f fa-stack-1x fa-inverse text-white" style="--fa-inverse: var(--fa-navy);"></i></span>
+                                                    </div>
+                                                    <div class="kt-inbox__author ml-2 position-relative w-100">
+                                                        <div class="fc-inbox-name font-weight-bold mb-0 mt-n1">Samuel L. Jackson</div>
+
+                                                        <div class="fc-inbox-priority float-left mr-2 mt-n1">
+                                                          <span class="kt-badge badge-light kt-badge--sm kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag normal"></i></span>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                            <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date mt-n1">
+                                                            <input class="position-absolute" name="" style="opacity:0">
+                                                            <small><span class="badge badge-pill badge badge-pill badge-light">2024-06-21</span></small>
+                                                        </div>
+                                                        
+                                                        <div class="fc-inbox-pipeline-container border rounded w-100 mt-2 p-2 d-flex align-items-center">
+                                                            <div>
+                                                              <a href="javascript:;" class="icon pipeline-card-color ml-2 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="kt-nav__link-icon fa fa-circle card-color blue" style="font-size:0.7rem"></i></a>
+                                                              <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                                                                  <div class="kt-heading my-0">
+                                                                      <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                                                                  <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div>
+                                                              <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</div>
+                                                              <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                                                                <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                                                                <a class="dropdown-item" href="#">Open Pipeline</a>
+                                                              </div>
+
+                                                              <div class="fc-inbox-pipeline-stage-name text-truncate">
+                                                                <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                                                    <option value="347162">Import Leads</option>
+                                                                    <option value="534256">Undetermined</option>
+                                                                    <option value="534255">Disqualified</option>
+                                                                    <option value="502699" >Like and Friend</option>
+                                                                    <option value="502700">Friend Request Sent</option>
+                                                                    <option value="347163">Test Automation</option>
+                                                                    <option value="472464" selected>First Message Sent</option>
+                                                                    <option value="472871">Test Bulk Likes</option>
+                                                                    <option value="472901">Post Liked</option>
+                                                                    <option value="472905">Test Friend Requests</option>
+                                                                    <option value="472906">Friend Request Sent</option>
+                                                                    <option value="478783">Send Multiple DMs</option>
+                                                                    <option value="478784">Multiple DMs Sent</option>
+                                                                    <option value="531748">Tag Profile In Post</option>
+                                                                    <option value="531749">Tagged</option>
+                                                                    <option value="479006">Unfriend</option>
+                                                                    <option value="479251">Unfriend Completed</option>
+                                                                    <option value="479700">test</option>
+                                                                    <option value="517907">Like a Page</option>
+                                                                    <option value="517909">Liked Page</option>
+                                                                    <option value="531353">Tag Profile In Post</option>
+                                                                    <option value="531354">Tagged</option>
+                                                                </select>
+                                                              </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--End::Aside-->
+                            <!--Begin:: Inbox List-->
+                            <div class="kt-grid__item kt-grid__item--fluid    kt-portlet    kt-inbox__list kt-inbox__list--shown" id="kt_inbox_list">
+                                <div class="kt-portlet__head">
+                                    <div class="kt-inbox__toolbar kt-inbox__toolbar--extended">
+
+                                        <div class="kt-inbox__actions kt-inbox__actions--expanded">
+                                          <div>
+                                            <div class="fc-inbox-name font-weight-bold mb-0"><i class="fab fa-facebook color-facebook mr-2"></i>Christopher Walken</div>
+                                            <div class="mb-0"><i class="fas fa-sync-alt mr-2"></i>Last Update: 2024-03-3 at 12:45 am</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="kt-inbox__controls">
+                                          <div class="fc-inbox-priority mr-2 ">
+                                              <span class="kt-badge badge-light kt-badge--md kt-badge--rounded kt-badge--boldest border bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Set Lead Priority"><i class="fa fa-flag priority-flag urgent"></i></span>
+                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag none" style="font-size: 14px;"></i> No Priority</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag low" style="font-size: 14px;"></i> Low</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag normal" style="font-size: 14px;"></i> Normal</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag high" style="font-size: 14px;"></i> High</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-flag priority-flag urgent" style="font-size: 14px;"></i> Urgent</a>
+                                              </div>
+                                            </div>
+                                            <div class="fc-inbox-date text-danger text-uppercase font-weight-bold follow-up-date">
+                                                <input class="position-absolute" name="" style="opacity:0; max-width:70px">
+                                                <span class="badge badge-pill badge badge-pill badge-danger">Overdue</span>
+                                            </div>
+                                            <button id="infoButton" type="button" class="btn btn-primary btn-sm btn-icon btn-circle ml-2"><i class="fas fa-info"></i></button>
+                                            <div class="btn-group">
+                                                <button type="button" class="kt-inbox__icon" data-toggle="dropdown">
+                                                    <i class="flaticon-more-1"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <!--begin::Nav-->
+                                                    <ul class="kt-nav">
+                                                        <li class="kt-nav__item">
+                                                            <a href="#" class="kt-nav__link">
+                                                                <i class="kt-nav__link-icon flaticon2-edit"></i>
+                                                                <span class="kt-nav__link-text">Edit Lead</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="kt-nav__item">
+                                                            <a href="#" class="kt-nav__link">
+                                                                <i class="kt-nav__link-icon flaticon2-trash"></i>
+                                                                <span class="kt-nav__link-text">Remove Lead</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--end::Nav-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="kt-portlet__body kt-portlet__body--fit-x pl-3 py-0 border-bottom">
+                                    
+
+
+
+
+
+
+<div id="chat-messages-content-div" class="tab-content pl-2" style="overflow-y: auto; height: calc(100vh - 345px);">
+            <div class="" id="facebook_chat-div" role="tabpanel">
+              <div class="row message-container w-100 my-3 pr-5 align-items-center ">
+                <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                <div class="alert alert-dark float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                    <div class="alert-text" style="white-space: pre-line"><div><div><div><span><div></div><div><div><div><span><div>Hey André
+<span><img height="16" width="16" alt="😊" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t1e/2/16/1f60a.png"></span></div></span></div></div><div><div></div></div></div></span></div><div><div></div></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+                </div>
+              </div>
+              <div class="row message-container w-100 my-3 pr-5 align-items-center ">
+                <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                <div class="alert alert-dark float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                    <div class="alert-text" style="white-space: pre-line"><div><div><div><span><div><div><div><span><div>Hello André</div></span></div></div><div><div></div></div></div></span></div><div><div></div></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+                </div>
+              </div>
+              <div class="row message-container w-100 my-3 pr-5 align-items-center ">
+                <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                <div class="alert alert-dark float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                    <div class="alert-text" style="white-space: pre-line"><div><div><div><span><div><div><div><span><div>WOOHOO! So pleased to welcome you to the Vision Pros expert line up!!<span><img height="16" width="16" alt="🏆" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t5d/2/16/1f3c6.png"></span>
+
+I know you’re gonna crush it!<span><img height="16" width="16" alt="🚀" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t65/2/16/1f680.png"></span>
+
+Let’s not waste any time -&gt; here are your next steps:
+
+1. Announce via social media!
+2. Meet our audience in our networking event on Tuesdays.
+3. Let us know what you need to help make your appearance a massive success!
+
+See you for show time!</div></span></div></div><div><div></div></div></div></span></div><div><div></div></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+                </div>
+              </div>
+              <div class="row message-container w-100 my-3 pl-5 flex-row-reverse align-items-center ">
+              <div class="kt-media kt-media--sm kt-media--circle float-left mx-2 border">
+                <img src="assets/media/users/default.jpg" alt="image">
+              </div>
+              <div class="alert alert-brand float-right mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                <div class="alert-text" style="white-space: pre-line"><div><div><div><div></div></div><div><span><div><div><div></div></div><div><div><span><div>Hey there!  Just circling back as I know life gets busy <span><img height="16" width="16" alt="😀" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t6d/2/16/1f600.png"></span>.  We are getting really close to the event dates so I want to invite you one more time to be my guest at this awesome event.  I really think you will love the content and find it very helpful.  Let me know if you are ready to join us!  <span><img height="16" width="16" alt="🔥" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tef/2/16/1f525.png"></span></div></span></div></div></div></span></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+              </div>
+            </div>
+              <div class="row message-container w-100 my-3 pr-5 align-items-center ">
+                <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                <div class="alert alert-dark float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                    <div class="alert-text" style="white-space: pre-line"><div><div><div><span><div><div><div><span><div>WOOHOO! So pleased to welcome you to the Vision Pros expert line up!!<span><img height="16" width="16" alt="🏆" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t5d/2/16/1f3c6.png"></span>
+
+I know you’re gonna crush it!<span><img height="16" width="16" alt="🚀" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t65/2/16/1f680.png"></span>
+
+Let’s not waste any time -&gt; here are your next steps:
+
+1. Announce via social media!
+2. Meet our audience in our networking event on Tuesdays.
+3. Let us know what you need to help make your appearance a massive success!
+
+See you for show time!</div></span></div></div><div><div></div></div></div></span></div><div><div></div></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+                </div>
+              </div>
+              <div class="row message-container w-100 my-3 pl-5 flex-row-reverse align-items-center ">
+              <div class="kt-media kt-media--sm kt-media--circle float-left mx-2 border">
+                <img src="assets/media/users/default.jpg" alt="image">
+              </div>
+              <div class="alert alert-brand float-right mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                <div class="alert-text" style="white-space: pre-line"><div><div><div><div></div></div><div><span><div><div><div></div></div><div><div><span><div>Hey there!  Just circling back as I know life gets busy <span><img height="16" width="16" alt="😀" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t6d/2/16/1f600.png"></span>.  We are getting really close to the event dates so I want to invite you one more time to be my guest at this awesome event.  I really think you will love the content and find it very helpful.  Let me know if you are ready to join us!  <span><img height="16" width="16" alt="🔥" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tef/2/16/1f525.png"></span></div></span></div></div></div></span></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+              </div>
+            </div>
+              <div class="row message-container w-100 my-3 pr-5 align-items-center ">
+                <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                <div class="alert alert-dark float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                    <div class="alert-text" style="white-space: pre-line"><div><div><div><span><div><div><div><span><div>Hey André
+<span><img height="16" width="16" alt="😊" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t1e/2/16/1f60a.png"></span></div></span></div></div><div><div></div></div></div></span></div><div><div></div></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+                </div>
+              </div>
+            <div class="row message-container w-100 my-3 pl-5 flex-row-reverse align-items-center ">
+              <div class="kt-media kt-media--sm kt-media--circle float-left mx-2 border">
+                <img src="assets/media/users/default.jpg" alt="image">
+              </div>
+              <div class="alert alert-brand float-right mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                <div class="alert-text" style="white-space: pre-line"><div><div><div><div></div></div><div><span><div><div><div></div></div><div><div><span><div>Hey there!  Just circling back as I know life gets busy <span><img height="16" width="16" alt="😀" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t6d/2/16/1f600.png"></span>.  We are getting really close to the event dates so I want to invite you one more time to be my guest at this awesome event.  I really think you will love the content and find it very helpful.  Let me know if you are ready to join us!  <span><img height="16" width="16" alt="🔥" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tef/2/16/1f525.png"></span></div></span></div></div></div></span></div></div><div></div></div><div><div><div></div></div></div><div><div></div></div></div>
+              </div>
+            </div>
+              <div class="row message-container w-100 my-3 pr-5 align-items-center last-chat-message">
+                  <span class="kt-media kt-media--circle kt-media--sm kt-media--dark float-left mx-2 border"><span class="text-uppercase">CW</span></span>
+                  <div class="alert alert-solid-danger float-left mb-0" role="alert" style="border-radius: 15px; max-width: 75%;">
+                      <div class="alert-text font-weight-bold">
+                          <div class="float-left" style="width:20px; height:20px">
+                              <span target="_blank" class="fc-unread-messages-indicator" title="Unread Messages" style="top:30px; right:auto;"></span>
+                          </div>
+                          You have Unread Messages.
+                          <button type="button" class="btn btn-danger ml-3" onclick="window.open('https://www.facebook.com/messages/t/sheena.9395', '_blank');"> Open Messages </button></div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+        
+                                </div>
+                            </div>
+                            <!--End:: Inbox List-->
+                            
+                            <!--Start: Chat Editor -->
+                            <div class="container">
+                              <div class="row py-3 px-4">
+                                <div class="">
+                                  <button type="button" class="btn btn-outline-danger btn-sm display-block btn-icon" disabled ><i class="fas fa-comments"></i></button>
+                                  <button type="button" class="btn btn-outline-focus btn-sm display-block btn-icon" disabled ><i class="fas fa-robot"></i></button>
+                                </div>
+                                <div class="col form-group mb-0">
+                                  <span class="badge badge-pill badge-warning mx-auto text-center" style="
+                                      position: absolute;
+                                      right: 25px;
+                                      top: 6px;
+                                  ">Coming Soon...</span>
+                                  <textarea class="form-control w-100" placeholder="Type your message..." rows="1" style="height:33px; padding-top: 6px" disabled ></textarea>
+                                </div>
+                                <div class="">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-brand btn-sm font-weight-bold" disabled> SEND</button>
+                                        <button type="button" class="btn btn-brand btn-sm font-weight-bold dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu" style="">
+                                            <a class="dropdown-item" href="#"><i class="flaticon2-telegram-logo  mt-n1"></i> Send Now</a>
+                                            <a class="dropdown-item" href="#"><i class="flaticon-calendar-with-a-clock-time-tools mt-n1"></i> Schedule Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Start: Chat Editor -->
+                    </div>
+
+                    <div class="kt-grid__item kt-portlet kt-inbox__aside pt-4 pb-2 show" id="kt_inbox_selected">
+
+                      <div class="text-right">
+                        <button id="infoClose" type="button" class="btn btn-outline-hover-danger btn-sm btn-icon"><i class="fa fa-times"></i></button>
+                      </div>
+
+                      <div class="mx-auto mb-2">
+                        <span class="kt-media kt-media--circle kt-media--lg kt-media--brand" style="background-image: url('assets/media/users/100_14.jpg')">
+                          <span></span>
+                        </span>
+                      </div>
+                      <div class="fc-inbox-name font-weight-bold mb-0 mt-n1 text-center">Christopher Walken</div>
+                      <div class="kt-heading kt-heading--lg mt-0 mb-0 text-center" ><i class="fab fa-facebook color-facebook"></i></div>
+
+                      <div class="form-group mb-3">
+                        <label ><i class="fas fa-user-circle mr-1"></i> Status:</label>
+                        <select class="form-control form-control-sm" >
+                          <option>Lead In</option>
+                          <option>Contacted</option>
+                          <option>Waiting for Payment</option>
+                          <option>Not Qualified</option>
+                          <option>Do Not Contact</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group mb-3">
+                          <label><i class="fas fa-tags mr-1"></i>Tags/Segments:</label>
+                          <input class="fc-tags" name='basic' value='facebook' style="backgroud:#fff;">
+                      </div>
+
+                      <div class="form-group mb-3">
+                        <label><i class="fas fa-coins mr-1"></i>Ammount:</label>
+                        <input type="number" class="form-control form-control-sm" placeholder="Enter ammount">
+                      </div>
+
+
+                      <label for="inboxPipelines"><i class="fas fa-columns mr-1"></i>Pipelines:</label>
+                      <div class="fc-inbox-pipeline-container border rounded w-100 p-2 d-flex align-items-center mb-3">
+                        <div>
+                          <a href="javascript:;" class="icon pipeline-card-color ml-2 mr-4 mt-1" rel="tooltip" title="Pick a background color for this card" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="kt-nav__link-icon fa fa-circle card-color blue" style="font-size:0.7rem"></i></a>
+                          <div class="dropdown-menu dropdown-menu-left pl-2 text-center" style="">
+                              <div class="kt-heading my-0">
+                                  <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'none' });" class="mr-1"><i class="kt-nav__link-icon far fa-circle card-color none"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'gray' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color gray"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'green' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color green"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'blue' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color blue"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'yellow' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color yellow"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'red' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color red"></i> </a> </div>
+                              <div class="kt-heading my-0"> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color1' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color1"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color2' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color2"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color3' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color3"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color4' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color4"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color5' });" class="mr-1"><i class="kt-nav__link-icon fa fa-circle card-color color5"></i></a> <a onclick="MULeadsPipeline.actionChangeCardColor({ lead_id: 4960320, cardColor: 'color6' });" class=""><i class="kt-nav__link-icon fa fa-circle card-color color6"></i> </a> </div>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div href="javascript:;" data-toggle="dropdown" class="fc-inbox-pipeline-name font-weight-bold text-truncate">FB02 - Grow FB Group, Get Sales Cold Outreach - Cold Outreach - Invite to Group - Calendar - Sale</div>
+                          <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="dropdownMenuButton" style="">
+                            <a class="dropdown-item" href="#">Remove Lead from Pipeline</a>
+                            <a class="dropdown-item" href="#">Open Pipeline</a>
+                          </div>
+
+                          <div class="fc-inbox-pipeline-stage-name text-truncate">
+                            <select class="form-control mb-0 p-0" style="height: 24px;font-size: 12px;">
+                                <option value="347162">Import Leads</option>
+                                <option value="534256">Undetermined</option>
+                                <option value="534255">Disqualified</option>
+                                <option value="502699" selected="">Like and Friend</option>
+                                <option value="502700">Friend Request Sent</option>
+                                <option value="347163">Test Automation</option>
+                                <option value="472464">First Message Sent</option>
+                                <option value="472871">Test Bulk Likes</option>
+                                <option value="472901">Post Liked</option>
+                                <option value="472905">Test Friend Requests</option>
+                                <option value="472906">Friend Request Sent</option>
+                                <option value="478783">Send Multiple DMs</option>
+                                <option value="478784">Multiple DMs Sent</option>
+                                <option value="531748">Tag Profile In Post</option>
+                                <option value="531749">Tagged</option>
+                                <option value="479006">Unfriend</option>
+                                <option value="479251">Unfriend Completed</option>
+                                <option value="479700">test</option>
+                                <option value="517907">Like a Page</option>
+                                <option value="517909">Liked Page</option>
+                                <option value="531353">Tag Profile In Post</option>
+                                <option value="531354">Tagged</option>
+                            </select>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group mb-3">
+                        <label><i class="fas fa-sticky-note mr-1"></i>Notes:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      
+                    </div>
+                    <!-- end:: Content -->
+                </div>
+            </div>
+            <!-- end:: Page -->
+        </div>
+        <!-- end:: Root -->
+        <!-- begin:: Scrolltop -->
+        <div id="kt_scrolltop" class="kt-scrolltop">
+            <i class="la la-arrow-up"></i>
+        </div>
+        <!-- end:: Scrolltop -->
+        <!-- begin::Global Config(global config for global JS sciprts) -->
+        <script>
+        var KTAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#5d78ff",
+                    "metal": "#c4c5d6",
+                    "light": "#ffffff",
+                    "accent": "#00c5dc",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995",
+                    "focus": "#9816f4"
+                },
+                "base": {
+                    "label": [
+                        "#c5cbe3",
+                        "#a1a8c3",
+                        "#3d4465",
+                        "#3e4466"
+                    ],
+                    "shape": [
+                        "#f0f3ff",
+                        "#d9dffa",
+                        "#afb4d4",
+                        "#646c9a"
+                    ]
+                }
+            }
+        };
+        </script>
+        <!-- end::Global Config -->
+        <!--begin::Global Theme Bundle(used by all pages) -->
+        <script src="https://www.flowchat.com/members/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+        <script src="https://www.flowchat.com/members/assets/js/scripts.bundle.js" type="text/javascript"></script>
+        <script src="https://www.flowchat.com/members/assets/js/fc.js" type="text/javascript"></script>
+        <!--end::Global Theme Bundle -->
+        <!--begin::Page Vendors(used by this page) -->
+        <script src="https://www.flowchat.com/members/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+        <!--begin:: ANDRE JS DATE RANGE -->
+        <script src="https://www.flowchat.com/members/assets/js/pages/components/forms/widgets/bootstrap-daterangepicker.js" type="text/javascript"></script>
+        <script src="assets/js/pages/custom/inbox/inbox.js" type="text/javascript"></script>
+        <!--end:: ANDRE JS DATE RANGE -->
+        <!--end::Page Vendors -->
+        <!--begin::Page Scripts(used by this page) -->
+        <script src="assets/js/pages/components/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        // Initialize Tagify for all elements with class .fc-tags
+        document.querySelectorAll('.fc-tags').forEach(function(input) {
+          new Tagify(input);
+        });
+
+
+        $('.fc-inbox-date input').datepicker({orientation: "bottom"});
+
+        $(document).ready(function(){
+          // Add click event handler to the button
+          $("#infoButton, #infoClose").click(function(){
+              // Toggle the .hidden class on #kt_inbox_selected element
+              $("#kt_inbox_selected").toggleClass("hidden");
+          });
+      });
+
+
+$(document).ready(function(){
+    // Function to scroll to the bottom of the chat messages content div
+    function scrollToBottom() {
+        var chatMessagesDiv = $('#chat-messages-content-div');
+        chatMessagesDiv.scrollTop(chatMessagesDiv[0].scrollHeight);
+    }
+    
+    // Call the function to scroll to the bottom initially if needed
+    scrollToBottom();
+    
+    // Example usage - you can call this function whenever you need to scroll to the bottom
+    // scrollToBottom();
+});
+
+        </script>
+        <!--end::Page Scripts -->
+</body>
+<!-- end::Body -->
+
+</html>

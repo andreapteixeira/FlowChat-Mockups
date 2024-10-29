@@ -1,0 +1,87 @@
+/* begin:: Campaign Builder */
+
+.fc-box-container,
+.fc-add-message-container {background: url(../../media/misc/line-gray.png) repeat-y 75px center;}
+
+.fc-add-message-column:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 15px solid #aaa;
+    margin-left:60px;
+    margin-top: 15px;
+}
+
+
+.fc-add-message-container.last {
+    background: none;
+}
+
+.fc-add-message-container.last .fc-add-message-column {
+    padding-bottom: 0 !important;
+}
+
+.fc-add-message-container.last .fc-add-message-column:after {
+    display: none !important;
+}
+
+
+.fc-date-column,
+.fc-add-message-column
+ {
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.fc-message-portlet .fc-tools {
+    opacity: 0.1;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+.fc-date-portlet .fc-message-send-number{
+    font-size: 2rem;
+}
+.fc-date-portlet .fc-message-send-date{
+    font-size: 1.2rem;
+}
+
+.fc-message-portlet:hover .fc-tools{
+    opacity: 1;
+}
+
+.fc-message-portlet .fc-message-send-number {max-width: 70px;}
+
+.fc-message-portlet .fc-message-send-date {min-width: 40px;}
+
+.fc-builder-toolbox {
+    width: 230px;
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    z-index: 1;
+}
+
+#campaign-status-label {min-width: 70px;}
+
+#emaiPreviewWrap{
+    background-color: #c2c4ca;
+    width: 330px;
+    height: 550px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#emailPreviewContent{
+    position: absolute;
+    width: 300px;
+    height: 480px;
+    background: #fff;
+    margin: 35px 15px;
+    border-radius: 10px;
+}
+ 
+/* end:: Campaign Builder */

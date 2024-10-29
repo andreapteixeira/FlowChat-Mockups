@@ -1,0 +1,225 @@
+													<!-- begin: Modal EVO Assign Message Templates -->
+													<div class="modal fade assign-pipeline-message-template" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+														<div class="modal-dialog modal-lg">
+															<div class="modal-content">
+																
+																<div class="modal-header">
+																	<h5 class="modal-title">Pipeline Name Goes Here</h5>
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																</div>
+																
+																<div class="modal-body">
+																	<h6>Assign Message Templates</h6>
+																	<div class="row">
+																		<div class="col-xl-8">
+																			<form class="search-form">
+																				<div class="row">
+																					<div class="col-lg-6">
+																						<div class="kt-input-icon kt-input-icon--left">
+		               													 					<input type="text" class="form-control" placeholder="Search..." id="templateSearch">
+		                																	<span class="kt-input-icon__icon kt-input-icon__icon--left">
+		                  																		<span><i class="la la-search"></i></span>
+		                																	</span>
+		             														 			</div>
+		             														 		</div>
+		             														 		<div class="col-lg-6">
+																						<div class="kt-checkbox-inline">
+																							<label class="kt-font-transform-u" style="font-size:0.7rem; display:block;">Search in: </label>
+																							<label class="kt-checkbox">
+																								<input type="checkbox" checked> Assigned
+																								<span></span>
+																							</label>
+																							<label class="kt-checkbox">
+																								<input type="checkbox" checked> Unassigned
+																								<span></span>
+																							</label>
+																						</div>
+																					</div>
+	             														 		</div>
+         														 			</form>
+         														 		</div>
+         														 		<div class="col-xl-4" style="text-align:right;">
+         														 				<button type="button" class="btn btn-brand brand btn-bold btn-upper"><i class="fa fa-plus"></i> New Template</button>
+         														 		</div>
+         														 	</div>
+         														</div>
+
+																<!--Doc: For the datatable initialization refer to "recentOrdersInit" function in "src\theme\app\scripts\custom\dashboard.js" -->
+																<div class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--scroll kt-datatable--loaded" id="EVO-MessageTemplates" >
+																	<table class="kt-datatable__table table-hover" style="display: block;">
+																		<thead class="kt-datatable__head">
+																			<tr class="kt-datatable__row" style="left: 0px;">
+																				<th data-field="EVO-MessageTemplateDefault" data-autohide-disabled="true" class="kt-datatable__cell kt-datatable__cell--sort kt-font-transform-u kt-datatable__cell--center">
+																					<span style="width: 50px; font-size: 0.7rem; ">Default</span>
+																				</th>
+																				<th data-field="EVO-MessageTemplateAssigned" data-autohide-disabled="true" class="kt-datatable__cell kt-datatable__cell--sort kt-font-transform-u kt-datatable__cell--center">
+																					<span style="width: 50px; font-size: 0.7rem; ">Assigned</span>
+																				</th>
+																				<th data-field="EVO-MessageTemplateName" data-autohide-disabled="true" class="kt-datatable__cell kt-datatable__cell--sort">
+																					<span style="width: 480px;">Template Name</span>
+																				</th>
+																				<th data-field="EVO-MessageTemplateActions" class="kt-datatable__cell kt-datatable__cell--center">
+																					<span style="width: 105px;">Actions</span>
+																				</th>
+																			</tr>
+																		</thead>
+																		<tbody class="kt-datatable__body ps ps--active-y" style="max-height: 460px; overflow:auto !important;">
+																			<tr data-row="0" class="kt-datatable__row" style="left: 0px;  background: #f9faff;" class="default assigned" >
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateDefault" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-radio kt-radio--solid" style="margin-bottom:0;">
+																							<input type="radio" name="EVO-MessageTemplateDefault" checked>&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateAssigned" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-checkbox kt-checkbox--single kt-checkbox--solid">
+																							<input type="checkbox" value="1" checked>&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td data-field="EVO-MessageTemplateName" data-autohide-disabled="false" class="kt-datatable__cell">
+																					<span onclick="" style="width: 480px; cursor:pointer;">
+																						<span class="kt-font-bold">00) INVITE TO GROUP</span>
+																						<span data-field="EVO-MessageTemplatePreview" style="font-size: 0.8rem; display:block;">Hi [first_name], reaching out to you because you've made it through our preliminary...  </span>
+																					</span>
+																				</td>
+																				<td data-field="EVO-MessageTemplateActions" class="kt-datatable__cell">
+																					<span style="width: 105px;">
+																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Preview">
+      																						<i class="fa fa-eye"></i>
+   																						</a>
+					           															<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Edit">
+      																						<i class="flaticon2-edit"></i>
+   																						</a>
+   																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Delete">
+     			 																			<i class="flaticon2-trash"></i>
+    																					</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<tr data-row="0" class="kt-datatable__row" style="left: 0px;" class="assigned" >
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateDefault" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-radio kt-radio--solid" style="margin-bottom:0;">
+																							<input type="radio" name="EVO-MessageTemplateDefault">&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateAssigned" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-checkbox kt-checkbox--single kt-checkbox--solid">
+																							<input type="checkbox" value="1" checked>&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td data-field="EVO-MessageTemplateName" data-autohide-disabled="false" class="kt-datatable__cell">
+																					<span onclick="" style="width: 480px; cursor:pointer;">
+																						<span class="kt-font-bold">02) INVITE TO GROUP 48-HR FOLLOW UP (if needed)</span>
+																						<span data-field="EVO-MessageTemplatePreview" style="font-size: 0.8rem; display:block;">Hi [first_name], reaching out to you because you've made it through our preliminary...  </span>
+																					</span>
+																				</td>
+																				<td data-field="EVO-MessageTemplateActions" class="kt-datatable__cell">
+																					<span style="width: 105px;">
+																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Preview">
+      																						<i class="fa fa-eye"></i>
+   																						</a>
+					           															<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Edit">
+      																						<i class="flaticon2-edit"></i>
+   																						</a>
+   																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Delete">
+     			 																			<i class="flaticon2-trash"></i>
+    																					</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<tr data-row="0" class="kt-datatable__row" style="left: 0px;" class="assigned" >
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateDefault" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-radio kt-radio--solid" style="margin-bottom:0;">
+																							<input type="radio" name="EVO-MessageTemplateDefault">&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateAssigned" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-checkbox kt-checkbox--single kt-checkbox--solid">
+																							<input type="checkbox" value="1" checked>&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td data-field="EVO-MessageTemplateName" data-autohide-disabled="false" class="kt-datatable__cell">
+																					<span onclick="" style="width: 480px; cursor:pointer;">
+																						<span class="kt-font-bold">03) LAST INVITE TO GROUP (7 Days)</span>
+																						<span data-field="EVO-MessageTemplatePreview" style="font-size: 0.8rem; display:block;">Hi [first_name], reaching out to you because you've made it through our preliminary...  </span>
+																					</span>
+																				</td>
+																				<td data-field="EVO-MessageTemplateActions" class="kt-datatable__cell">
+																					<span style="width: 105px;">
+																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Preview">
+      																						<i class="fa fa-eye"></i>
+   																						</a>
+					           															<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Edit">
+      																						<i class="flaticon2-edit"></i>
+   																						</a>
+   																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Delete">
+     			 																			<i class="flaticon2-trash"></i>
+    																					</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<tr data-row="0" class="kt-datatable__row" style="left: 0px;" class="assigned" >
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateDefault" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-radio kt-radio--solid" style="margin-bottom:0;">
+																							<input type="radio" name="EVO-MessageTemplateDefault">&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--check" data-field="EVO-MessageTemplateAssigned" aria-label="1">
+																					<span style="width: 50px;">
+																						<label class="kt-checkbox kt-checkbox--single kt-checkbox--solid">
+																							<input type="checkbox" value="1" >&nbsp;<span></span>
+																						</label>
+																					</span>	
+																				</td>
+																				<td data-field="EVO-MessageTemplateName" data-autohide-disabled="false" class="kt-datatable__cell">
+																					<span onclick="" style="width: 480px; cursor:pointer;">
+																						<span class="kt-font-bold">03.2) If Busy or say they can't add value</span>
+																						<span data-field="EVO-MessageTemplatePreview" style="font-size: 0.8rem; display:block;">Hi [first_name], reaching out to you because you've made it through our preliminary...  </span>
+																					</span>
+																				</td>
+																				<td data-field="EVO-MessageTemplateActions" class="kt-datatable__cell">
+																					<span style="width: 105px;">
+																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Preview">
+      																						<i class="fa fa-eye"></i>
+   																						</a>
+					           															<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Edit">
+      																						<i class="flaticon2-edit"></i>
+   																						</a>
+   																						<a href="javascript:;" onclick="" class="btn btn-sm btn-clean btn-icon btn-icon-sm" title="Delete">
+     			 																			<i class="flaticon2-trash"></i>
+    																					</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<tr data-row="0" class="kt-datatable__row" style="left: 0px;" >
+																				<td class="kt-datatable__cell kt-datatable__cell--center" colspan="4">
+																					<button type="button" class="btn btn-label-primary">Load More</button>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-outline-brand" data-dismiss="modal">Close</button>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- end: Modal EVO Assign Message Templates -->

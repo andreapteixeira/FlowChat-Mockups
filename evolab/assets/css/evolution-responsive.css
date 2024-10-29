@@ -1,0 +1,23 @@
+/******  MEDIA QUERIES FOR EVOLUTION TOP NAV ******/
+
+
+@media only screen and (max-width: 1400px) {
+
+#kt_header_menu .kt-menu__submenu {margin-left: -15px !important; width: 300px !important; max-height: 300px !important; overflow-y: scroll !important;}
+
+#kt_header_menu .kt-menu__submenu .kt-menu__content {display: block !important;}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+#kt_header_menu.kt-header-menu-mobile .kt-menu__submenu  { margin-left: 0 !important; width: 100% !important; max-height: none !important; overflow-y: auto !important;}
+
+#kt_header_menu.kt-header-menu-mobile .kt-menu__submenu .kt-menu__content {display: block !important;}
+
+#kt_header_menu.kt-header-menu-mobile .leads-import-topmenu .kt-menu__submenu .kt-menu__content {display: block !important;}
+
+#kt_header_menu.kt-header-menu-mobile .pipeline-topmenu .kt-menu__submenu .kt-menu__subnav > .kt-menu__item > .kt-menu__link {padding: 5px 10px 5px 30px !important;}
+
+}
+

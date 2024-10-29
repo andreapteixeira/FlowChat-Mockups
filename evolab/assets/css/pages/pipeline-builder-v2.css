@@ -1,0 +1,104 @@
+/* begin:: Pipeline Builder */
+
+#funnel-title {
+    border-bottom: 1px solid #bbb;
+    background-color: #e2e2e7;
+}
+
+#funnel-title h2{
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.fc-stage-container {background: url(../../media/misc/line-gray.png) repeat-y center center;}
+
+.fc-stage-container:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 15px solid #aaa;
+    margin-top:50px;
+}
+
+.fc-stage-container .fc-tools {
+    bottom: 5px;
+    right: 10px;
+    opacity: 0.1;
+    font-size: 1.2em;
+}
+
+.fc-stage-container .toggle-default-link{
+    opacity: 0.1;
+}
+
+.fc-stage-container .toggle-default-link.default-message{
+    opacity: 1;
+}
+
+.fc-stage-container .fc-message-tools {
+    left: 10px;
+}
+
+ .fc-stage-container .fc-default-message .fc-message-tools {
+    opacity: 1;
+}
+
+.fc-message-btns {
+    margin-bottom: -30px;
+}
+
+.fc-stage-container .card:hover .fc-tools{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.fc-stage-container .card:hover .toggle-default-link{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.fc-builder-toolbox {
+    width: 230px;
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    z-index: 1;
+}
+
+ .fc-stage-container .fc-message {
+   min-height: 160px;
+ }
+ 
+ .fc-stage-container .fc-message .message-image-wrapper {
+   text-align: center;
+ }
+
+ .fc-stage-container .fc-message .message-image-wrapper img {
+   max-height: 60px;
+ }
+ 
+.fc-pipeline-notes .card-body.text-truncate {
+    max-width: calc(100% - 100px);
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+.fc-pipeline-notes .card-body.text-truncate {
+  max-width: calc(100% - 100px);
+  line-height: 1.5em;
+    height: 2.8em;
+    overflow: hidden;
+}
+
+
+.fc-pipeline-notes .fc-pipeline-notes-see-more{
+    position: absolute;
+    right: 50px;
+    top: 16px;
+}
+ 
+/* end:: Pipeline Builder */

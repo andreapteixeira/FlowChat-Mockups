@@ -1,0 +1,1104 @@
+    /****** ANDRE - STYLE FOR NEW PIPELINE ******/
+
+    #kt_content {
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    #kt_content #Div-Pipeline-Filters {
+        padding: 0 15px;
+        border-top: 1px solid #bbb;
+        padding-top: 10px;
+        background: #e9e9ed;
+    }
+
+    #kt_content .pipeline-name {
+        max-width: 300px;
+        float: right;
+    }
+
+    #kt_content .pipeline-wrap {
+        padding: 0 15px;
+        border-top: 1px solid #bbb;
+        width: 100%;
+    }
+
+    #funnel .table-responsive {
+        border-radius: 5px;
+        background-color: #f1f1f3;
+        cursor: grab;
+        overflow: auto;
+    }
+
+    #funnel table {
+        background-color: #f1f1f3;
+        width: auto;
+    }
+
+    #funnel table th {
+        position: relative;
+        z-index: 1;
+    }
+
+    #funnel table thead th {
+        border-bottom: 1px solid #bbb;
+        height: 50px;
+        padding: 0;
+    }
+
+    #funnel table thead th:last-child {
+        width: 100%;
+    }
+
+    #funnel table thead th:first-child {
+        background: none;
+    }
+
+
+
+    #funnel table thead th .pipeline-header-arrow {
+        width: 100%;
+        height: 40px;
+        background: #cfd0d2;
+        transform: skew(15deg,0deg);
+        margin-left: 6px;
+        border-right: 1px solid #FFF;
+        border-left: 1px solid #FFF;
+    }
+
+    #funnel table thead th .pipeline-header-arrow.arrow-bottom {
+        background: #e6e6e6;
+        transform: skew(-15deg,0deg);
+    }
+
+    #funnel table thead th .arrow-top-container {
+        transform: skew(-15deg,0deg);
+        display:  flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    #funnel table thead th .arrow-bottom-container {
+        transform: skew(15deg,0deg);
+        height: 40px;
+        width: 228px;
+        padding-top: 12px;
+    }
+
+    #funnel table thead th .pipeline-header-arrow.arrow-bottom button,
+    #funnel table thead th .pipeline-header-arrow.arrow-bottom .badge {opacity: 0.3; transition: all 0.2s;}
+    #funnel table thead th:hover .pipeline-header-arrow.arrow-bottom button,
+    #funnel table thead th:hover .pipeline-header-arrow.arrow-bottom .badge {opacity: 1;}
+
+    /***** Stages Color *****/
+
+    #funnel table thead th[color="gray"] .pipeline-header-arrow.arrow-top {background-color: #9c9c9c; color: #fff;}
+    #funnel table thead th[color="gray"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="gray"] {background-color: #9c9c9c30;}
+
+    #funnel table thead th[color="green"] .pipeline-header-arrow.arrow-top {background-color: #71bb5f; color: #fff;}
+    #funnel table thead th[color="green"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="green"]  {background-color: #71bb5f30;}
+    
+    #funnel table thead th[color="blue"] .pipeline-header-arrow.arrow-top {background-color: #0C90E7;color: #fff;}
+    #funnel table thead th[color="blue"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="blue"]  {background-color: #0c90e730;}
+    
+    #funnel table thead th[color="yellow"] .pipeline-header-arrow.arrow-top {background-color: #FFC300;color: #fff;}
+    #funnel table thead th[color="yellow"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="yellow"]  {background-color: #ffc30030;}
+    
+    #funnel table thead th[color="red"] .pipeline-header-arrow.arrow-top {background-color: #e7546a;color: #fff;}
+    #funnel table thead th[color="red"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="red"]  {background-color: #e7546a30;}
+    
+    #funnel table thead th[color="color1"] .pipeline-header-arrow.arrow-top {background-color: #80FEDB;}
+    #funnel table thead th[color="color1"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color1"]  {background-color: #80FEDB30;}
+    
+    #funnel table thead th[color="color2"] .pipeline-header-arrow.arrow-top {background-color: #2CB4DE;color: #fff;}
+    #funnel table thead th[color="color2"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color2"]  {background-color: #2CB4DE30;}
+    
+    #funnel table thead th[color="color3"] .pipeline-header-arrow.arrow-top {background-color: #F0817B;color: #fff;}
+    #funnel table thead th[color="color3"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color3"]  {background-color: #F0817B30;}
+    
+    #funnel table thead th[color="color4"] .pipeline-header-arrow.arrow-top {background-color: #F72586;color: #fff;}
+    #funnel table thead th[color="color4"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color4"]  {background-color: #F7258630;}
+
+    #funnel table thead th[color="color5"] .pipeline-header-arrow.arrow-top {background-color: #7401B8;color: #fff;}
+    #funnel table thead th[color="color5"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color5"]  {background-color: #7401B830;}
+
+    #funnel table thead th[color="color6"] .pipeline-header-arrow.arrow-top {background-color: #240046;color: #fff;}
+    #funnel table thead th[color="color6"] .pipeline-header-arrow.arrow-bottom,
+    #funnel table tbody td[color="color6"]  {background-color: #24004630;}
+
+    #funnel table thead th.pipeline-stage-head.active {
+        background: #d6d6d8;
+        opacity: 0.5;
+    }
+
+    #funnel table thead th.pipeline-stage-head.active>div,
+    #funnel table thead th.pipeline-stage-head.active>a {
+        display: none
+    }
+
+    #funnel .table th,
+    #funnel .table td {
+        width: 235px;
+    }
+
+    #funnel table thead th .pipeline-stage-name {
+        width: 230px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    #funnel table thead th .pipeline-stage-name h5 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #funnel table thead th .pipeline-stage-name h5 nobr {
+        display: block;
+        max-width: 100%;
+        float: left;
+    }
+
+    #funnel table thead th .pipeline-stage-description {
+        padding: 0;
+        float: left;
+        margin: 5px -10px 0px 5px;
+    }
+
+    #funnel table thead th .pipeline-stage-color {
+        float: right;
+        cursor:  pointer;
+    }
+
+    #funnel table thead th .pipeline-stage-color .pipeline-stage-color-button{
+        border: none;
+        background: transparent;
+        font-size: 0.8em;
+        margin: 0 0px 0 0;
+        padding: 3px 0 0 0;
+    }
+
+    #funnel table thead th .pipeline-stage-automation {
+        float: right;
+        cursor:  pointer;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 6px;
+    }
+
+    #funnel table thead th .pipeline-stage-values {
+        padding: 0.3rem 0rem 0rem 0rem;
+        font-size: 0.9rem;
+        font-weight: normal;
+        float: left;
+        margin-left: 10px;
+        margin-top: -11px;
+        line-height: 1.2rem;
+    }
+
+    #funnel table thead th .pipeline-stage-options {
+        padding: 0rem 0rem 0rem 0.2rem;
+        float: right;
+    }
+
+    #funnel table thead th .pipeline-stage-options .btn.btn-icon {
+        height: 2rem;
+        width: 1.5rem;
+    }
+
+    #funnel table thead th .pipeline-stage-add-middle {
+        display: block;
+        margin:5px 0 0 -2px;
+        height: 80px;
+        padding: 30px 0 0;
+        transition: all 0.2s;
+        width: 12px;
+        float: left;
+        position: sticky;
+        padding-right: 5px;
+        
+    }
+
+    #funnel table thead th .pipeline-stage-add-middle i {
+        opacity: 0;
+        transition: all 0.2s;
+    }
+
+    #funnel table thead th .pipeline-stage-add-middle:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #funnel table thead th .pipeline-stage-add-middle:hover i {
+        opacity: 1;
+    }
+
+    .pipeline-stage-add>span {
+        position: absolute;
+        margin-left: 220px;
+        width: 150px;
+        text-align: left;
+        font-size: 1rem
+    }
+
+    #funnel table thead th .column-handle {
+        text-align: center;
+        height: 10px;
+        margin: 5px 10px -10px 20px;
+        cursor: move !important;
+        background: #e2e2e2;
+        border-radius: 28px;
+        opacity: 0;
+        transition: all 0.2s;
+        line-height: 1rem;
+    }
+
+    #funnel table thead th:hover .column-handle {
+        opacity: 1
+    }
+
+    #funnel table thead th .pipeline-stage-add {
+        margin: 1rem 0 1rem 2rem !important;
+    }
+
+
+    #funnel table thead th h5 > span {
+        display: -webkit-box;
+        max-width: 200px;
+        height: auto;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+        white-space: normal;
+        float: none;
+    }
+
+    #funnel table tbody td {
+        padding: 0.3rem;
+    }
+
+    #funnel table tbody td>div {
+        height: calc(100vh - 276px);
+        min-width: 240px;
+    }
+
+    #funnel.open-filters table tbody td>div {
+        height: calc(100vh - 439px);
+    }
+
+    #funnel .funnel-item,
+    #funnel .pipeline-card {
+        position: relative;
+        overflow: initial !important;
+        background-color: #fff !important;
+        padding: 0;
+        border: none !important;
+        cursor: pointer !important;
+        transition: all 0.2s;
+        max-width: 233px;
+    }
+
+    #funnel .pipeline-card .card-top-info {
+        height: 30px;
+        padding: 10px 5px 0px 10px;
+    }
+
+    #funnel .pipeline-card .select-card-checkbox {
+        float: left;
+        margin-top: -6px;
+        height: 30px;
+        width: 0px;
+        transition: all 0.2s;
+        opacity: 0;
+    }
+
+    #funnel .pipeline-card:hover .select-card-checkbox,
+    #funnel .pipeline-card[checked = "checked"] .select-card-checkbox{
+        width: 25px;
+        opacity: 1;
+    }
+
+    #funnel .pipeline-card[checked = "checked"] {
+        box-shadow: 0px 0px 8px #0000008F;
+        width: 233px;
+    }
+
+    #funnel .pipeline-card:hover .card-top-info a nobr,
+    #funnel .pipeline-card[checked = "checked"] .card-top-info a nobr{
+        width: 138px;
+    }
+
+    #funnel .pipeline-card .card-top-info .pipeline-card-options button {
+        opacity: 0.2;
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .icon.pipeline-card-color {
+        opacity: 0.4;
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card:hover .card-top-info .pipeline-card-options button,
+    #funnel .pipeline-card:hover .pipeline-card-bottom .icon.pipeline-card-color,
+    #funnel .pipeline-card:hover .pipeline-card-bottom .icon.pipeline-card-notes-btn {
+        opacity: 1;
+    }
+    
+   #funnel .pipeline-card .pipeline-card-bottom .icon.pipeline-card-notes-btn .badge {
+     outline: 1px solid #fff !important;
+     width: 18px;
+     height: 18px;
+   }
+    
+    #funnel .pipeline-card .dropdown-menu {transform: translate3d(48px, 31px, 0px) !important;}
+
+    #funnel .pipeline-card .priority-flag,
+    #funnel .pipeline-card .pipeline-card-color {
+        font-size: 0.8rem;
+        padding: 0 0.3rem 0 0;
+        border: none;
+        background: transparent;
+    }
+
+    #funnel .pipeline-card .pipeline-card-priority button.priority-flag {
+        margin: 5px 5px 0 0;
+    }
+
+    #funnel .pipeline-card .card-top-info .pipeline-card-options {
+        padding: 0;
+        float: right;
+        margin-top: -5px;
+    }
+
+    #funnel .pipeline-card .card-top-info .pipeline-card-options .btn.btn-icon {
+        height: 2rem;
+        width: 1.5rem;
+    }
+
+    #funnel .pipeline-card .card-top-info .kt-media{margin-top: -4px;}
+    #funnel .pipeline-card .card-top-info .kt-media img,
+    #funnel .pipeline-card .card-top-info .kt-media span {width: 25px; height: 25px;}
+
+    #funnel .pipeline-card .card-top-info a nobr {
+        display: block;
+        width: 164px;
+        float: left;
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card .card-top-info a {
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card .card-top-info a:hover {
+        opacity: 0.5;
+    }
+
+    #funnel .pipeline-card .pipeline-lead-options {
+        clear: both;
+        overflow: hidden;
+    }
+
+    #funnel .pipeline-card .pipeline-card-status {
+        float: left;
+        margin-top: 2px;
+    }
+
+    #funnel .pipeline-card .pipeline-card-priority {
+        float: right;
+        margin-top:-24px;
+    }
+
+    #funnel .pipeline-card .pipeline-card-value {
+        padding: 2px 0 0 10px;
+        height: 20px;
+        font-weight: 600;
+    }
+
+    #funnel .pipeline-card .pipeline-card-social {
+        display: block;
+        height: 20px;
+        padding: 0px 0px 0 12px;
+        overflow: hidden;
+        margin-bottom: 2px;
+        width: 230px;
+    }
+
+    #funnel .pipeline-card .pipeline-card-social .icon i {
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card .pipeline-card-social .icon i:hover {
+        color: #ccc;
+    }
+
+    #funnel .pipeline-card .pipeline-card-social .social-search .icon i{
+        opacity:0.3;
+    }
+
+    #funnel .pipeline-card .pipeline-card-social .social-search .icon:hover i{
+        opacity:1;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom {
+        padding: 3px 5px 3px 10px;
+        overflow: hidden;
+        color: #fff;
+        min-height: 30px;
+    }
+
+    #funnel .pipeline-card[color="none"] .pipeline-card-bottom.card-bg-color {
+        color: #aaa;
+    }
+
+    #funnel .pipeline-card[color="none"] .pipeline-card-bottom .pipeline-card-color i {
+        color: #aaa;
+    }
+    
+    #funnel .pipeline-card[color="none"] .pipeline-card-bottom .pipeline-chats i {
+        color: #aaa !important;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-date {
+        float: left;
+        margin-left: -3px;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-date .card-quick-date {
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes-btn,
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-color {
+        float: right;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .icon i {
+        transition: all 0.2s;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .icon i:hover {
+        opacity: 0.5;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom.card-bg-color .badge.badge-success,
+    #funnel .pipeline-card .pipeline-card-bottom.card-bg-color .badge.badge-danger {
+        outline: 1px solid #fff;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes.kt-hidden {
+        display: block !important;
+        height: 0;
+        min-height: 0px;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes {
+        font-size: 13px;
+        clear: both;
+        margin: 26px 0px 0px -5px;
+        padding: 3px;
+        transition: all 0.2s;
+        max-width: 221px;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes .notes-text {
+        background: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 5px;
+        padding: 3px;
+        min-height: 75px;
+        overflow-wrap: break-word;
+        white-space: break-spaces;
+        cursor: text;
+        user-select:all;
+    }
+
+    #funnel .pipeline-card[color="none"] .pipeline-card-bottom.card-bg-color .pipeline-card-notes {
+        background: transparent;
+    }
+
+    #funnel .pipeline-card[color="none"] .pipeline-card-bottom.card-bg-color .pipeline-card-notes {
+        background: transparent;
+    }
+
+    #funnel .pipeline-card:not([color="none"]) .pipeline-card-bottom.card-bg-color .pipeline-card-notes .lead-data {
+        color: #fff !important;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes .lead-data {
+        line-height: normal;
+        border-color: #e0e0e05c !important;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes .lead-data .label {
+        cursor: text;
+        user-select:all;
+    }
+
+    #funnel .pipeline-card .pipeline-card-bottom .pipeline-card-notes .lead-data .text {
+        cursor: text;
+        user-select:all;
+    }
+
+    #funnel table tbody td .pipeline-card-add {
+        background: transparent;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        opacity: 0.2;
+        transition: all 0.2s;
+    }
+
+    #funnel table tbody td .pipeline-card-add:hover {
+        opacity: 0.7;
+    }
+
+    .toolbox-wrap {
+        position: fixed;
+        width: 100%;
+        bottom: -60px;
+        left: 0;
+        transition: all 0.5s;
+        width: -moz-available;
+        z-index: 100;
+    }
+
+    .toolbox-wrap.show {
+        bottom: 0;
+    }
+
+    #toolbox {
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        height: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #181b27;
+    }
+
+    #toolbox,
+    #toolbox td {
+        border: 2px dashed #bbb;
+    }
+
+    #toolbox tr td {
+        width: 33.3%;
+    }
+
+    #toolbox tr td.active {
+        background-color: #242939;
+        color: #fff;
+    }
+
+    #top-toolbox {
+        height: 55px;
+        color: #fff;
+    }
+
+    #top-toolbox > div {
+        min-width: 170px;
+    }
+
+    #top-toolbox button {
+        border-color: transparent;
+    }
+
+    #top-toolbox button:hover {
+        opacity: 1;
+    }
+
+    #top-toolbox button i{
+        padding: 10px;
+    }
+    
+    #top-toolbox button:disabled {
+        opacity: 0.4 !important;
+    }
+
+    #top-toolbox .dropdown-menu i.priority-flag {
+       font-size: 0.9rem;
+    }
+
+    #top-toolbox .dropdown-menu a {
+       cursor: pointer;
+    }
+
+    .toolbox-wrap.top{
+        top: -60px;
+    }
+
+    .toolbox-wrap.top.show {
+        top: 0px;
+    }
+
+    #top-toolbox #bulkFollowUpDate {
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+    
+    #top-toolbox #topToolboxCloseBtnFloatContainer {        
+      height: 0;        
+    }       
+        
+    #top-toolbox .btn-dark {        
+      background-color: #000;       
+    }       
+        
+    #top-toolbox #topToolboxCloseBtnFloat {     
+      margin-top: -60px;        
+      transition: all 0.4s;     
+    }       
+            
+    #top-toolbox.show #topToolboxCloseBtnFloat {        
+      margin-top: 15px;     
+    }       
+        
+    #top-toolbox #topToolboxCloseBtnFloat i {       
+      padding: 0;       
+    }
+    
+    #top-toolbox button > i {
+      font-size:1.25rem;
+    }
+
+    .dropdown-menu .priority-flag.none {
+        color: #ededed !important;
+    }
+
+    .dropdown-menu .priority-flag.low {
+        color: #8e9194 !important;
+    }
+
+    .dropdown-menu .priority-flag.normal {
+        color: #0C90E7 !important;
+    }
+
+    .dropdown-menu .priority-flag.high {
+        color: #FFC300 !important;
+    }
+
+    .dropdown-menu .priority-flag.urgent {
+        color: #e7546a !important;
+    }
+
+
+    .pipeline-card[priority="none"] button.priority-flag {
+        color: #ededed !important;
+    }
+
+    .pipeline-card[priority="low"] button.priority-flag {
+        color: #8e9194 !important;
+    }
+
+    .pipeline-card[priority="normal"] button.priority-flag {
+        color: #0C90E7 !important;
+    }
+
+    .pipeline-card[priority="high"] button.priority-flag {
+        color: #FFC300 !important;
+    }
+
+    .pipeline-card[priority="urgent"] button.priority-flag {
+        color: #e7546a !important;
+    }
+
+    .pipeline-card[priority="none"] button.priority-flag {
+        color: #ededed !important;
+    }
+
+    .pipeline-card[priority="low"] button.priority-flag {
+        color: #8e9194 !important;
+    }
+
+    .pipeline-card[priority="normal"] button.priority-flag {
+        color: #0C90E7 !important;
+    }
+
+    .pipeline-card[priority="high"] button.priority-flag {
+        color: #FFC300 !important;
+    }
+
+    .pipeline-card[priority="urgent"] button.priority-flag {
+        color: #e7546a !important;
+    }
+
+    .pipeline-card[color="none"] .card-bg-color {
+        background-color: transparent;
+    }
+
+    .pipeline-card[color="gray"] .card-bg-color {
+        background-color: #cecece;
+    }
+
+    .pipeline-card[color="green"] .card-bg-color {
+        background-color: #71bb5f;
+    }
+
+    .pipeline-card[color="blue"] .card-bg-color {
+        background-color: #0C90E7;
+    }
+
+    .pipeline-card[color="yellow"] .card-bg-color {
+        background-color: #FFC300;
+    }
+
+    .pipeline-card[color="red"] .card-bg-color {
+        background-color: #e7546a
+    }
+
+    .pipeline-card[color="color1"] .card-bg-color {
+        background-color: #80FEDB
+    }
+
+    .pipeline-card[color="color2"] .card-bg-color {
+        background-color: #2CB4DE
+    }
+
+    .pipeline-card[color="color3"] .card-bg-color {
+        background-color: #F0817B
+    }
+
+    .pipeline-card[color="color4"] .card-bg-color {
+        background-color: #F72586
+    }
+
+    .pipeline-card[color="color5"] .card-bg-color {
+        background-color: #7401B8
+    }
+
+    .pipeline-card[color="color6"] .card-bg-color {
+        background-color: #240046
+    }
+
+    .pipeline-card-status .dropdown-menu.show {
+        transform: translate3d(7px, 61px, 0px) !important;
+    }
+
+    .pipeline-card-status button{
+        border: 1px solid #8a8a8a59;
+        height: 25px;
+        padding: 3px 7px;
+        margin: 0px 0 5px 10px;
+        border-radius: 3px;
+    }
+
+    .truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        float: left;
+    }
+
+    #funnel-title {
+        border-bottom: 1px solid #bbb;
+        background-color: #e2e2e7;
+    }
+
+    #funnel-title h2 {
+        font-size: 1.2rem;
+        color: #212529;
+        font-weight: 600;
+        display:inline;
+    }
+
+    #funnel .reset-bg-color {
+        background-color: #f1f1f3 !important;
+    }
+
+    #funnel .nav-pipeline {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        width: 0px;
+        z-index: 1;
+        color: #fff;
+        font-size: 35px;
+        text-align: center;
+        top: 50%;
+        height: 120px;
+        padding-top: 35px;
+        transition: all 0.5s;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    #funnel .nav-pipeline.show {
+        opacity: 1;
+        width: 75px;
+    }
+
+    #funnel .nav-pipeline.show.active {
+        background-color: #0C90E7;
+    }
+
+    #funnel .nav-pipeline.nav-right {
+        right: 5px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    #funnel .nav-pipeline.nav-left {
+        margin-left: 0px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    /* TO CORRECT THE HORIZONTAL SCROLL ON THE PIPELINE STAGES */
+    .ps>.ps__rail-x {
+        display: none !important;
+    }
+    
+    .ps > .ps__rail-y > .ps__thumb-y {
+      width: 10px !important;
+      min-height:20px;
+    }
+
+    /*ENVELOPE FOR READ MESSAGES */    
+    .fc-has-read-messages-indicator {
+        right: 30px;
+        position: absolute;
+        color: #71bb5f;
+        top: 65px;
+    }
+    
+    /* PULSATING CIRCLE FOR READ MESSAGES */
+    .fc-read-messages-indicator {
+        position: absolute;
+        right: 30px;
+        top: 63px;
+        transform: translateX(-50%) translateY(-50%);
+        width: 10px;
+        height: 10px;
+    }
+
+    /* PULSATING CIRCLE FOR UNREAD MESSAGES */
+    .fc-unread-messages-indicator {
+      position: absolute;
+      right: 5px;
+      top: 67px;
+      transform: translateX(-50%) translateY(-50%);
+      width: 10px;
+      height: 10px;
+    }
+
+    .fc-unread-messages-indicator:before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 300%;
+      height: 300%;
+      box-sizing: border-box;
+      margin-left: -100%;
+      margin-top: -100%;
+      border-radius: 45px;
+      background-color: #fd397a;
+      -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+              animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    .fc-unread-messages-indicator:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fd397a;
+      border-radius: 15px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      -webkit-animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+      animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+    }
+
+    @-webkit-keyframes pulse-ring {
+      0% {
+        transform: scale(0.33);
+      }
+      80%, 100% {
+        opacity: 0;
+      }
+    }
+     
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.33);
+      }
+      80%, 100% {
+        opacity: 0;
+      }
+    }
+    @-webkit-keyframes pulse-dot {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0.8);
+      }
+    }
+    @keyframes pulse-dot {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0.8);
+      }
+    }
+
+    /* end PULSATING CIRCLE FOR UNREAD MESSAGES */
+    
+    
+    .kt-subheader .fc-search-group {width: 30%; height: 37px; min-width:450px}
+    
+    #Form-member-pipeline-stage .pipeline-stage-color-button.text-black-50:hover{opacity:0.5 !important;}
+    
+    .spinner-border-sm2{
+      width: 16px !important;
+      height: 16px !important;
+    }
+    
+    
+  /* FIX STYLES ON LAST MESSAGES */
+  #chat-messages-content-div .message-container svg{
+      width: 32px;
+      background: white;
+      padding: 5px;
+      border-radius: 5px;
+  }
+  
+    /* Automation card in the pipeline */
+
+  .fc-automation-pipeline-container .fc-automation-pipeline-container-header,
+  .fc-automation-pipeline-container .fc-automation-pipeline-container-footer {
+    background-color: #676767eb;
+    color: #FFF;
+  }
+
+.fc-automation-pipeline-container .fc-automation-pipeline-container-buttons{
+    background-color: #ffffffa3;
+  }
+  
+  
+ .fc-automation-pipeline-container .fc-automation-pipeline-container-arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #676767eb;
+    margin: auto;
+}
+  
+  .fc-automation-pipeline-container.no-automation .fc-automation-pipeline-container-header,
+  .fc-automation-pipeline-container.no-automation .fc-automation-pipeline-container-footer {
+    background-color: #6767677d;
+    color: #FFF;
+  }
+
+ .fc-automation-pipeline-container.no-automation .fc-automation-pipeline-container-arrow {
+    border-top: 8px solid #6767677d;
+}
+
+.fc-automation-pipeline-container + div {
+    height: calc(100vh - 350px) !important;
+}
+
+
+/**** AUTOMATION *****/
+
+.kt-offcanvas-panel.fc-automation-queue-panel { width: 800px !important;}
+
+.kt-offcanvas-panel--right .kt-offcanvas-panel{right: -800px;}
+.fc-automation-queue-panel .accordion .card .card-header .card-title {font-size: 1rem;}
+
+
+
+/**** GOLD CARDS *****/
+
+#funnel .pipeline-card.gold-card {
+    background: rgb(195,175,104);
+    background: linear-gradient(48deg, rgba(195,175,104,1) 0%, rgba(250,252,187,1) 49%, rgba(233,201,125,1) 64%);
+    background-image: url('../../../assets/media/layout/gold-card-bg.jpg');
+    background-position: top;
+    color: #634b21;
+}
+#funnel .pipeline-card.gold-card .card-top-info a nobr  {color: #634b21;}
+#funnel .pipeline-card.gold-card .kt-media.kt-media--dark span {color: #a37237;}
+#funnel .pipeline-card.gold-card .card-top-info .kt-media {
+    background: #ffffff;
+    border: none !important;
+}
+#funnel .pipeline-card.gold-card .pipeline-card-status button {
+    border: 1px solid #634b2191;
+    background-color: #ffffff !important;
+    color: #634b21;
+}
+#funnel .pipeline-card.gold-card[color="none"] .pipeline-card-bottom.card-bg-color {
+    background-color: #ffffff !important;
+}
+
+
+    /**** RESPONSIVE *****/
+    
+    @media only screen and (max-width: 1200px) {
+      .kt-subheader .fc-search-group {min-width:auto}
+    }
+    
+    @media only screen and (max-width: 1024px) {
+      .kt-subheader .fc-search-group {
+        min-width: 400px;
+        padding-top: 5px;
+      }
+    }
+    
+    @media only screen and (max-width: 600px) {
+      
+        .kt-subheader .fc-search-group {min-width:100%}
+        .kt-subheader .kt-subheader__toolbar .dropdown {
+            position: absolute;
+            right: 10px;
+            top: 65px;
+        }
+        
+        #Button-Pipeline-Stats {display:none}
+        
+        #top-toolbox {
+            display: block !important;
+            padding: 0 10px !important;
+        }
+        #top-toolbox > div.text-left {height:20px}
+        #top-toolbox #leadsSelected {
+            margin: auto;
+            display: block;
+            width: 175px;
+        }
+        #top-toolbox #topToolboxCloseBtn {display:none}
+        #top-toolbox .btn.btn-icon {width: 2rem;}
+    }
