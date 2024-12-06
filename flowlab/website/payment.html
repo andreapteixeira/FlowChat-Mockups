@@ -33,8 +33,6 @@
     <!--end::Styles(used by all pages)-->
     <link rel="shortcut icon" href="assets/media/logos/favicon-16x16.png" />
     <title>Chat Management System for Social Media</title>
-
-
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -361,8 +359,8 @@
                     <!--end::Wizard-->
 
                     <!-- BOOTSTRAP MODAL -->
-<!--                    <div class="modal fade" id="customModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">-->
-                    <div class="modal fade" id="customModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+                    <div class="modal fade" id="customModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+<!--                    <div class="modal fade" id="customModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">-->
                         <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 600px;">
                             <div class="modal-content">
                                 <div class="modal-header border-bottom-0 py-3">
@@ -377,21 +375,24 @@
                                             <span><i class="fa fa-headset"></i></span> Book 1-on-1 Demo
                                         </button>
                                         <p class="text-dark mb-5 font-weight-bold">We are ready to answer all your questions.</p>
-                                        <button class="btn btn-danger w-300px mb-2 font-size-h3 font-weight-bolder">
+                                        <button id="personalOffer" class="btn btn-danger w-300px mb-2 font-size-h3 font-weight-bolder">
                                             <span><i class="fas fa-grin-stars"></i></span> Get a personal offer!
                                         </button>
                                         <p class="text-dark mb-7 font-weight-bold">Looking for deals?<br>Contact us and we'll try to provide the most favorable offer for your needs.</p>
-                                        <p><h3 class="text-dark font-weight-bolder">What are you looking for?</h3></p>
-                                        <form>
-                                            <div class="mb-3">
-                                                <textarea class="form-control border-secondary" rows="3" placeholder="Type your message..."></textarea>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <input type="email" class="form-control border-secondary float-left w-300px mr-5" placeholder="Leave your email...">
-                                                <button type="submit" class="btn btn-primary float-left w-175px ml-1 py-2 font-size-h6 font-weight-bolder" style="background: #240046;">Request Offer</button>
-                                            </div>
-                                        </form>
+                                        <div class="personal-offer-form-wrapper hide">
+                                            <p><h3 class="text-dark font-weight-bolder">What are you looking for?</h3></p>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <textarea class="form-control border-secondary" rows="3" placeholder="Type your message..." required></textarea>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control border-secondary float-left w-300px mr-5" placeholder="Leave your email..." required>
+                                                    <button type="submit" class="btn btn-primary float-left w-175px ml-1 py-2 font-size-h6 font-weight-bolder" style="background: #240046;">Request Offer</button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="footer modal-custom-footer d-flex flex-lg-column mt-5 rounded-bottom">
@@ -495,7 +496,7 @@
             //         });
             //     }
             // })
-        }
+        // }
     </script>
 </section>
 <!--end:: CONTENT SECTION-->
@@ -578,6 +579,8 @@
     .modal-custom-footer::before {
         margin-top: -67px !important;
     }
+
+    .hide {display: none};
 </style>
 <!--end::Page Custom Styles(used by this page)-->
 
@@ -598,6 +601,13 @@
          */
         $("#kt_body").on('mouseleave', function() {
             $("#customModal").modal('show');
+        });
+
+        /**
+         * Show/Hide Form Offer
+         */
+        $("#personalOffer").on('click', function() {
+            $(".personal-offer-form-wrapper").toggleClass('hide');
         });
     });
 </script>
