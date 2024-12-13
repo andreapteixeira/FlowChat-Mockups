@@ -359,8 +359,8 @@
                     <!--end::Wizard-->
 
                     <!-- BOOTSTRAP MODAL -->
-                    <div class="modal fade" id="customModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-<!--                    <div class="modal fade" id="customModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">-->
+                    <div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+<!--                    <div class="modal fade" id="exitModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">-->
                         <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 600px;">
                             <div class="modal-content">
                                 <div class="modal-header border-bottom-0 py-3">
@@ -619,16 +619,16 @@
         // Handle mouseleave then show modal
         $("#kt_body").on('mouseleave', function () {
             // Check if the cookie exists
-            const modalShown = getCookie('paymentModalShown');
+            const modalShown = getCookie('exitModalShown');
             // const modalShown = localStorage.getItem('modalShown');
             console.log(modalShown);
 
             if (!modalShown) {
                 // Show the modal
-                $("#customModal").modal('show');
+                $("#exitModal").modal('show');
 
                 // Set the cookie to prevent the modal from reappearing
-                setCookie('paymentModalShown', 'true', 24);
+                setCookie('exitModalShown', 'true', 24);
             }
         });
     });
