@@ -276,62 +276,98 @@
                                                                     <div class="alert-text"><i class="fas fa-exclamation-triangle mr-2 alert-text"></i>We only accept payments with <b>ETH</b> from <b>Ethereum Network (ERC20)</b></div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <!-- Left Column -->
-                                                                    <div class="col-md-8 mt-5">
-                                                                        <div class="form-group row">
-                                                                            <div class="col-md-6">
-                                                                                <label><b>Your Name:*</b></label>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label><b>Name:*</b></label>
                                                                                 <div class="kt-input-icon kt-input-icon--left">
                                                                                     <input type="text" class="form-control" placeholder="Type your name..." id="customerName" style="border-color: #acacac" required>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-6">
+                                                                            <div class="form-group col-md-6">
                                                                                 <label><b>Your Account Email:</b></label>
                                                                                 <div class="kt-input-icon kt-input-icon--left">
                                                                                     <input type="email" class="form-control" placeholder="Type your email..." id="customerEmail" style="border-color: #acacac" value="myemail@gmail.com" required disabled readonly>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <p class="mb-2">
-                                                                            <strong>To complete your payment, transfer the indicated ammout to the wallet address:</strong>
-                                                                        </p>
-                                                                        <div class="mb-3">
-                                                                            <b>Amount:</b> <input type="text" class="form-control d-inline w-auto bg-light my-1" value="0.05 ETH" readonly="" disabled style="min-width: 140px;"> <button type="button" class="btn btn-icon btn-light btn-icon-primary font-weight-bold my-1" data-toggle="tooltip" title="" data-original-title="Copy to Clipboard"><i class="far fa-copy"></i></button>
-                                                                        </div>
-                                                                        <div class="mb-3">
-                                                                            <b>Address:</b> <input type="text" class="form-control d-inline w-auto bg-light my-1" value="0x2308a380bcd20f2i3012fa892" readonly="" disabled style="min-width: 240px;"> <button type="button" class="btn btn-icon btn-light btn-icon-primary font-weight-bold my-1" data-toggle="tooltip" title="" data-original-title="Copy to Clipboard"><i class="far fa-copy"></i></button>  <a  href="ethereum:0x2308a380bcd20f2i3012fa892?value=0.05" type="button" class="btn btn-light-primary font-weight-bold my-1">Open Wallet</a>
-                                                                        </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label><b>Phone Number:*</b></label>
+                                                                                <div class="kt-input-icon kt-input-icon--left">
+                                                                                    <input type="phone" class="form-control" placeholder="+0 000 000 000" id="customerPhone" style="border-color: #acacac" required>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group  col-md-6">
+                                                                                <label><b>Country:*</b></label>
+                                                                                <div class="kt-input-icon kt-input-icon--left">
+                                                                                    <input type="text" class="form-control" placeholder="Type your country..." id="customerCountry" style="border-color: #acacac" required>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group  col-md-12">
+                                                                                <label><b>Address:*</b></label>
+                                                                                <div class="kt-input-icon kt-input-icon--left">
+                                                                                    <input type="text" class="form-control" placeholder="Type your address..." id="customerAddress" style="border-color: #acacac" required>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label><b>Zip Code:*</b></label>
+                                                                                <div class="kt-input-icon kt-input-icon--left">
+                                                                                    <input type="text" class="form-control" placeholder="Type your Zip Code..." id="customerZipCode" style="border-color: #acacac" required>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group  col-md-6">
+                                                                                <label><b>City:*</b></label>
+                                                                                <div class="kt-input-icon kt-input-icon--left">
+                                                                                    <input type="text" class="form-control" placeholder="Type your city..." id="customerCity" style="border-color: #acacac" required>
+                                                                                </div>
+                                                                            </div>
                                                                     </div>
-                                                                    <!-- Right Column -->
-                                                                    <div class="col-md-4 mb-3 mt-5 text-center">
-                                                                        <img src="https://www.hellotech.com/guide/wp-content/uploads/2020/05/HelloTech-qr-code-1024x1024.jpg" alt="QR Code" class="img-fluid border mt-5" style="width: 150px;height: 150px;"><br>
-                                                                        <span>
-                                                                            <i class="fa fa-mobile text-dark mt-2 mb-2 border border-1 border-dark rounded-circle px-4 py-3 "></i>
-                                                                        </span>
-                                                                        <p class="justify-content-center w-180px text-center mx-auto">
-                                                                            You can scan this QR Code with your wallet app to pay.
-                                                                        </p>
-                                                                    </div>
-                                                                    <div class="col-md-8">
-                                                                        <p class="mb-0"><strong>After transferring the amount to our wallet, click the button below.</strong></p>
-                                                                        <p>
+                                                                    <div class="row mt-5">
 
-                                                                             Please note that it may take up to 1 minute for the transaction to be completed.
-                                                                        </p>
-                                                                        <div class="text-center text-md-left">
-                                                                            <button type="button" class="btn btn-secondary btn-lg mb-5 mr-2">
-                                                                                <i class="fas fa-arrow-left"></i> Back
-                                                                            </button>
-                                                                            <button type="button" class="btn btn-primary btn-lg mb-5">
-                                                                                <i class="fa fa-wallet"></i> I've Sent the Payment
-                                                                            </button>
+                                                                        <div class="col-md-12">
+                                                                            
                                                                         </div>
-                                                                        <div class="alert alert-custom alert-light-info p-4 mb-5" role="alert">
-                                                                            <div class="alert-text">
-                                                                                <strong><i class="fas fa-info-circle mr-2 text-info" style="color:black"></i> How does this work?</strong><br>
-                                                                                <div>
-                                                                                    When you send the payment to our wallet, our system will look for the new transaction in our payments wallet.
-                                                                                    Once it matches the transaction, it will validate the payment and complete the process.
+                                                                        <div class="col-md-8">
+                                                                            <h6 class="mb-5">
+                                                                                <strong>To complete your payment, transfer the indicated ammout to the wallet address:</strong>
+                                                                            </h6>
+                                                                            <div class="mt-5 mb-3">
+                                                                                <b>Amount:</b> <input type="text" class="form-control d-inline w-auto bg-light my-1" value="0.05 ETH" readonly="" disabled style="min-width: 140px;"> <button type="button" class="btn btn-icon btn-light btn-icon-primary font-weight-bold my-1" data-toggle="tooltip" title="" data-original-title="Copy to Clipboard"><i class="far fa-copy"></i></button>
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <b>Address:</b> <input type="text" class="form-control d-inline w-auto bg-light my-1" value="0x2308a380bcd20f2i3012fa892" readonly="" disabled style="min-width: 240px;"> <button type="button" class="btn btn-icon btn-light btn-icon-primary font-weight-bold my-1" data-toggle="tooltip" title="" data-original-title="Copy to Clipboard"><i class="far fa-copy"></i></button>  <a  href="ethereum:0x2308a380bcd20f2i3012fa892?value=0.05" type="button" class="btn btn-light-primary font-weight-bold my-1">Open Wallet</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Right Column -->
+                                                                        <div class="col-md-4 mb-3 mt-n5 text-center">
+                                                                            <img src="https://www.hellotech.com/guide/wp-content/uploads/2020/05/HelloTech-qr-code-1024x1024.jpg" alt="QR Code" class="img-fluid border mt-5" style="width: 150px;height: 150px;"><br>
+                                                                            <span>
+                                                                                <i class="fa fa-mobile text-dark mt-2 mb-2 border border-1 border-dark rounded-circle px-4 py-3 "></i>
+                                                                            </span>
+                                                                            <p class="justify-content-center w-180px text-center mx-auto">
+                                                                                You can scan this QR Code with your wallet app to pay.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row text-center">
+                                                                        <div class="col-md-12">
+                                                                            <p class="mb-0"><strong>After transferring the amount to our wallet, click the button below.</strong></p>
+                                                                            <p>
+
+                                                                                 Please note that it may take up to 1 minute for the transaction to be completed.
+                                                                            </p>
+                                                                            <div class="text-center">
+                                                                                <button type="button" class="btn btn-secondary btn-lg mb-5 mr-2">
+                                                                                    <i class="fas fa-arrow-left"></i> Back
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-primary btn-lg mb-5">
+                                                                                    <i class="fa fa-wallet"></i> I've Sent the Payment
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="alert alert-custom alert-light-info p-4 mb-5" role="alert">
+                                                                                <div class="alert-text">
+                                                                                    <strong><i class="fas fa-info-circle mr-2 text-info" style="color:black"></i> How does this work?</strong><br>
+                                                                                    <div>
+                                                                                        When you send the payment to our wallet, our system will look for the new transaction in our payments wallet.
+                                                                                        Once it matches the transaction, it will validate the payment and complete the process.
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
